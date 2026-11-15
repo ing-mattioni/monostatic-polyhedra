@@ -1,0 +1,6 @@
+verify.py: rho0 = 0.5 (= 1/2), trees = 375
+chart polynomials derived and identity-checked symbolically (shapes.py)
+chart Z: grid [8, 8, 8], 512 cells: {'nodes': 32136, 'leaves': 16324, 'skip_leaves': 870, 'certs': 575441, 'maxdepth': 13}  [51s]
+chart P: grid [4, 8, 8], 256 cells: {'nodes': 37120, 'leaves': 18688, 'skip_leaves': 0, 'certs': 763649, 'maxdepth': 12}  [106s]
+ALL CHECKS PASSED: for every shape of chart Z with t_1 <= 1 - rho0 and every shape of chart P, each of the 375 rooted trees is refuted.
+verify exit code 0

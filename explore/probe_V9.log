@@ -2,3 +2,8 @@
 200 {('rand', 'single'): 199, ('rand', 'pair'): 1} 7s
 400 {('rand', 'single'): 397, ('rand', 'pair'): 3} 13s
 600 {('rand', 'single'): 596, ('rand', 'pair'): 4} 16s
+800 {('rand', 'single'): 596, ('rand', 'pair'): 4, ('deep', 'pair'): 113, ('deep', 'single'): 87} 100s
+1000 {('rand', 'single'): 596, ('rand', 'pair'): 4, ('deep', 'pair'): 236, ('deep', 'single'): 164} 179s
+1200 {('rand', 'single'): 596, ('rand', 'pair'): 4, ('deep', 'pair'): 348, ('deep', 'single'): 252} 267s
+1400 {('rand', 'single'): 596, ('rand', 'pair'): 4, ('deep', 'pair'): 464, ('deep', 'single'): 336} 374s
+FINAL {('rand', 'single'): 596, ('rand', 'pair'): 4, ('deep', 'pair'): 517, ('deep', 'single'): 383} 425s

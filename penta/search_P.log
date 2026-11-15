@@ -1,0 +1,17 @@
+[P] 16/256 cells, 33s, totals {'nodes': 486, 'certs': 10948, 'sdp': 9320, 'maxdepth': 5, 'failed': 0, 'skipped': 0, 'time': 248.03282165527344}
+[P] 32/256 cells, 52s, totals {'nodes': 1134, 'certs': 25503, 'sdp': 21639, 'maxdepth': 5, 'failed': 0, 'skipped': 0, 'time': 509.47954630851746}
+[P] 48/256 cells, 76s, totals {'nodes': 1794, 'certs': 43180, 'sdp': 36537, 'maxdepth': 6, 'failed': 0, 'skipped': 0, 'time': 824.646719455719}
+[P] 64/256 cells, 98s, totals {'nodes': 2464, 'certs': 61177, 'sdp': 51837, 'maxdepth': 6, 'failed': 0, 'skipped': 0, 'time': 1143.3498861789703}
+[P] 80/256 cells, 120s, totals {'nodes': 3202, 'certs': 77892, 'sdp': 66226, 'maxdepth': 6, 'failed': 0, 'skipped': 0, 'time': 1442.3550667762756}
+[P] 96/256 cells, 150s, totals {'nodes': 4158, 'certs': 97962, 'sdp': 83739, 'maxdepth': 6, 'failed': 0, 'skipped': 0, 'time': 1811.8703360557556}
+[P] 112/256 cells, 189s, totals {'nodes': 5332, 'certs': 125959, 'sdp': 108586, 'maxdepth': 7, 'failed': 0, 'skipped': 0, 'time': 2308.112631082535}
+[P] 128/256 cells, 223s, totals {'nodes': 6588, 'certs': 154134, 'sdp': 133850, 'maxdepth': 7, 'failed': 0, 'skipped': 0, 'time': 2803.376069545746}
+[P] 144/256 cells, 259s, totals {'nodes': 7744, 'certs': 180221, 'sdp': 157446, 'maxdepth': 7, 'failed': 0, 'skipped': 0, 'time': 3281.7948746681213}
+[P] 160/256 cells, 315s, totals {'nodes': 9196, 'certs': 213202, 'sdp': 187508, 'maxdepth': 8, 'failed': 0, 'skipped': 0, 'time': 3936.6444363594055}
+[P] 176/256 cells, 402s, totals {'nodes': 11638, 'certs': 263588, 'sdp': 234606, 'maxdepth': 8, 'failed': 0, 'skipped': 0, 'time': 4982.954520940781}
+[P] 192/256 cells, 482s, totals {'nodes': 13846, 'certs': 309510, 'sdp': 277927, 'maxdepth': 8, 'failed': 0, 'skipped': 0, 'time': 5944.91209936142}
+[P] 208/256 cells, 548s, totals {'nodes': 16184, 'certs': 355310, 'sdp': 321135, 'maxdepth': 9, 'failed': 0, 'skipped': 0, 'time': 6931.594206809998}
+[P] 224/256 cells, 666s, totals {'nodes': 20220, 'certs': 424058, 'sdp': 387287, 'maxdepth': 9, 'failed': 0, 'skipped': 0, 'time': 8456.027338981628}
+[P] 240/256 cells, 890s, totals {'nodes': 26356, 'certs': 527040, 'sdp': 488101, 'maxdepth': 9, 'failed': 0, 'skipped': 0, 'time': 10761.894819498062}
+[P] 256/256 cells, 1336s, totals {'nodes': 37120, 'certs': 763649, 'sdp': 724790, 'maxdepth': 12, 'failed': 0, 'skipped': 0, 'time': 15165.337777614594}
+wrote C:\Projects\Claude4\penta\certs_P.json.gz; failed (box,tree) pairs: 0

@@ -8,3 +8,6 @@ lowerbound/results_V7.csv
 penta/certs_*.full.json.gz
 search_vertices/tmp_cert/
 audit/__pycache__/
+audit/snap_*.gz
+audit/*.json.gz
+penta/*.tmp

@@ -151,6 +151,11 @@ used); every vertex is a listed root or is mapped to one by a listed, verified a
 spanning trees are enumerated independently (count compared with Kirchhoff's determinant) and each has a
 certificate; every certificate matrix is positive definite. This proves Theorem 1. $\square$
 
+*Outlook: $V=9$.* There are 50 simplicial spheres with 9 vertices and 9 915 284 (sphere, root, tree)
+cases. A probe of 1 500 of them (600 random trees, 900 depth-first "long" trees, which are the hard ones)
+found every one certifiable by Prop. 3.1 or by Prop. 3.2 with two cones (`explore/probe_V9.log`), so
+$V_U\ge10$ is probably provable in the same way with roughly 80 CPU-hours; this has not been done.
+
 ## 4. Upper bound for vertices: thin plates (Theorem 2)
 
 ### 4.1 The flat-limit principle
@@ -195,6 +200,8 @@ thin near $T$, with no extra vertex. Numerical optimisation (CMA-ES on the plana
 full 3D) finds mono-unstable polyhedra with 14 vertices robustly, for arm sizes 7+6, 8+5 and 9+4.
 The example of Theorem 2 is such a plate (arms 7+6) rounded to small integers; a version with a larger
 margin is `search_vertices/certified/V14_spiral76_d7.json`.
+
+![Top view of the polyhedron of Theorem 2](../examples/V14_plate.svg)
 
 *Proof of Theorem 2.* `verify/exact_verify.py examples/V14_integer.json` computes, in exact rational
 arithmetic, the convex hull (14 vertices, 36 edges, 24 triangles), the volume and the centroid, and

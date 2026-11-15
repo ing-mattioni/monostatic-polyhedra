@@ -17,6 +17,8 @@ A homogeneous convex polyhedron is **mono-stable** if it can rest on exactly one
   improvement of the lower bound in Conway and Guy's original problem since 1969. (Rigorous
   ball-arithmetic cover of the 3-dimensional space of affine shapes, 375 rolling patterns.)
 
+![Top view of the 14-vertex mono-unstable polyhedron: a thin plate whose outline is a double spiral around the centre of mass](examples/V14_plate.svg)
+
 The mathematics (statements, proofs of all reductions, discussion, references) is in
 [`paper/paper.md`](paper/paper.md); the proof of Theorem 3 is detailed in
 [`penta/README.md`](penta/README.md).
