@@ -1,0 +1,19 @@
+V=14 flatseed seed=7004: F_flat=-3.2424e-02 F3d=-3.2060e-02 nvert=14 eps=0.0003 evals=35265 t=9.8s meta={'a': 7, 'b': 6, 'pattern': 'growalt', 'apex': False}
+V=14 flatseed seed=7001: F_flat=-3.1815e-02 F3d=-2.8930e-02 nvert=14 eps=0.0003 evals=31860 t=10.2s meta={'a': 12, 'b': 1, 'pattern': 'zero_top_alt', 'apex': False}
+V=14 flatseed seed=7002: F_flat=-3.3333e-02 F3d=-3.2803e-02 nvert=14 eps=0.0003 evals=27945 t=10.3s meta={'a': 8, 'b': 5, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=7005: F_flat=-3.0502e-02 F3d=-3.0110e-02 nvert=14 eps=0.001 evals=27405 t=10.4s meta={'a': 7, 'b': 6, 'pattern': 'armpm', 'apex': False}
+V=14 flatseed seed=7000: F_flat=-3.3870e-02 F3d=-2.9664e-02 nvert=14 eps=0.001 evals=30450 t=10.8s meta={'a': 11, 'b': 2, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=7006: F_flat=-3.0248e-02 F3d=-2.9626e-02 nvert=14 eps=0.0003 evals=22290 t=2.2s meta={'a': 9, 'b': 4, 'pattern': 'random', 'apex': False}
+V=14 flatseed seed=7003: F_flat=-2.9843e-02 F3d=-2.9800e-02 nvert=14 eps=0.0003 evals=106890 t=12.3s meta={'a': 8, 'b': 5, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=7010: F_flat=-3.2800e-02 F3d=-2.8861e-02 nvert=14 eps=0.001 evals=27255 t=3.1s meta={'a': 12, 'b': 1, 'pattern': 'armpm', 'apex': False}
+V=14 flatseed seed=7007: F_flat=-3.2680e-02 F3d=-3.1092e-02 nvert=14 eps=0.0003 evals=34110 t=3.8s meta={'a': 10, 'b': 3, 'pattern': 'alt', 'apex': False}
+V=14 flatseed seed=7008: F_flat=-2.9415e-02 F3d=-2.9074e-02 nvert=14 eps=0.0003 evals=40935 t=3.9s meta={'a': 12, 'b': 1, 'pattern': 'bottom_pm', 'apex': False}
+V=14 flatseed seed=7012: F_flat=-3.3814e-02 F3d=-1.5710e-02 nvert=14 eps=0.0003 evals=26070 t=2.3s meta={'a': 12, 'b': 1, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=7011: F_flat=-3.3792e-02 F3d=-3.3012e-02 nvert=14 eps=0.0003 evals=24735 t=3.2s meta={'a': 11, 'b': 2, 'pattern': 'bottom_pm', 'apex': False}
+V=14 flatseed seed=7013: F_flat=-3.6896e-02 F3d=-3.3844e-02 nvert=14 eps=0.0003 evals=21345 t=1.9s meta={'a': 7, 'b': 6, 'pattern': 'growalt', 'apex': False}
+V=14 flatseed seed=7014: F_flat=-2.9513e-02 F3d=-2.8694e-02 nvert=14 eps=0.0003 evals=30600 t=2.9s meta={'a': 7, 'b': 6, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=7015: F_flat=-3.0062e-02 F3d=-2.9728e-02 nvert=14 eps=0.0003 evals=63630 t=6.3s meta={'a': 11, 'b': 2, 'pattern': 'armpm', 'apex': False}
+V=14 flatseed seed=7009: F_flat=-2.5258e-02 F3d=-2.5258e-02 nvert=14 eps=0.0003 evals=159030 t=12.7s meta={'a': 8, 'b': 5, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=7016: F_flat=-2.6246e-02 F3d=-2.6223e-02 nvert=14 eps=0.0003 evals=159030 t=13.7s meta={'a': 10, 'b': 3, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=7017: F_flat=-2.5538e-02 F3d=-2.5407e-02 nvert=14 eps=0.0003 evals=159030 t=13.3s meta={'a': 10, 'b': 3, 'pattern': 'grow', 'apex': False}
+done 18 in 31s; best F_flat=-2.5258e-02 F3d=-2.5258e-02 C:\Projects\Claude4\search_vertices\sols\V14_flatseed_7009.npy

@@ -1,0 +1,12 @@
+retrying mode 'convex' for 287 systems with 64 starts
+newly solved: 48 of 287
+
+mode convex: solution found for 1187 of 1426 tried
+   max-min slack: min -1.68e-16, median 0.00322, max 0.00736
+   degenerate (affinely dependent) point sets: 0
+   convex position: 1187 | hull graph == G: 1187 | mono-unstable w.r.t. true centroid: 0 | v unstable w.r.t. true centroid: 1187
+   #unstable vertices w.r.t. true centroid: {2: 38, 3: 701, 4: 400, 5: 48}
+   #unstable vertices w.r.t. the origin: {1: 1187}
+   origin in conv(tetrahedra centroids): 0 of 1187
+   true centroid: x in [0.115, 0.359], |c| in [0.296, 0.498]; volume in [6.73e-03, 4.45e-02]
+   solved, by (graph, root): {(0, 0): 22, (0, 2): 37, (0, 3): 100, (0, 5): 85, (1, 0): 18, (1, 1): 22, (1, 4): 90, (2, 0): 44, (2, 1): 74, (2, 3): 83, (2, 5): 72, (3, 0): 76, (3, 3): 118, (3, 6): 132, (4, 0): 80, (4, 2): 134}

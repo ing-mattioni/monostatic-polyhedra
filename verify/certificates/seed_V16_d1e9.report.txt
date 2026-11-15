@@ -1,0 +1,97 @@
+==============================================================================
+EXACT EQUILIBRIUM CERTIFICATE: seed_V16 rationalized, denominator 1e9
+==============================================================================
+input points           : 16
+input sha256           : 455d181982a1e00c429142cf656e33556b53aa26ad1ce8ec4707c7c9663863ce
+common denominator     : 1000000000
+convex hull            : V = 16, E = 30, F = 16;  V - E + F = 2  [OK]
+face sizes             : 15 x 3-gon, 1 x 15-gon
+redundant input points : none (every input point is a vertex)
+volume                 : 65439833304818759/12500000000000000000
+                       ~ 0.0052351866643855
+centroid (exact)       :
+    x = 0
+    y = 1/400
+    z = -222263360901443203116983/261759333219275036000000000
+centroid (float)       : (0, 0.0025, -0.000849113413332444)
+
+FACES (F = 16)   margin = min signed distance of the foot of c to the edge lines
+  face   0 [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 14, 13] stable           margin +5.089e-01
+  face   1 [0, 1, 15]                               stable           margin +1.912e-05
+  face   2 [14, 0, 15]                              stable           margin +1.912e-05
+  face   3 [15, 1, 2]                               non-equilibrium  margin -1.869e-01  outside edge (15, 1)
+  face   4 [15, 2, 3]                               non-equilibrium  margin -2.826e-01  outside edge (15, 2)
+  face   5 [15, 3, 4]                               non-equilibrium  margin -3.574e-01  outside edge (15, 3)
+  face   6 [15, 4, 5]                               non-equilibrium  margin -4.174e-01  outside edge (15, 4)
+  face   7 [15, 5, 6]                               non-equilibrium  margin -4.635e-01  outside edge (15, 5)
+  face   8 [15, 6, 7]                               non-equilibrium  margin -4.927e-01  outside edge (15, 6)
+  face   9 [8, 15, 7]                               non-equilibrium  margin -1.045e-01  outside edge (8, 15)
+  face  10 [9, 15, 8]                               non-equilibrium  margin -4.927e-01  outside edge (9, 15)
+  face  11 [10, 15, 9]                              non-equilibrium  margin -4.635e-01  outside edge (10, 15)
+  face  12 [11, 15, 10]                             non-equilibrium  margin -4.174e-01  outside edge (11, 15)
+  face  13 [12, 15, 11]                             non-equilibrium  margin -3.574e-01  outside edge (12, 15)
+  face  14 [12, 13, 15]                             non-equilibrium  margin -2.826e-01  outside edge (13, 15)
+  face  15 [13, 14, 15]                             non-equilibrium  margin -1.869e-01  outside edge (14, 15)
+
+EDGES (E = 30)   t = position of the foot on the edge; h = max height of another vertex above the plane
+  edge   0-1   non-equilibrium  t = +1.000849  h = -1.026e-01  (foot of c outside the edge (t = 1.00085))
+  edge   0-14  non-equilibrium  t = +1.000849  h = -1.026e-01  (foot of c outside the edge (t = 1.00085))
+  edge   0-15  saddle           t = +0.663913  h = -2.166e-03  (saddle)
+  edge   1-2   non-equilibrium  t = +1.002413  h = -8.021e-02  (foot of c outside the edge (t = 1.00241))
+  edge   1-15  non-equilibrium  t = +0.629416  h = +4.649e-01  (plane through the foot cuts P (vertex 4 strictly beyond it))
+  edge   2-3   non-equilibrium  t = +1.003296  h = -7.291e-02  (foot of c outside the edge (t = 1.0033))
+  edge   2-15  non-equilibrium  t = +0.629433  h = +3.541e-01  (plane through the foot cuts P (vertex 5 strictly beyond it))
+  edge   3-4   non-equilibrium  t = +1.003685  h = -7.214e-02  (foot of c outside the edge (t = 1.00368))
+  edge   3-15  non-equilibrium  t = +0.637954  h = +2.534e-01  (plane through the foot cuts P (vertex 6 strictly beyond it))
+  edge   4-5   non-equilibrium  t = +1.003537  h = -7.447e-02  (foot of c outside the edge (t = 1.00354))
+  edge   4-15  non-equilibrium  t = +0.656332  h = +1.767e-01  (plane through the foot cuts P (vertex 6 strictly beyond it))
+  edge   5-6   non-equilibrium  t = +1.002831  h = -7.644e-02  (foot of c outside the edge (t = 1.00283))
+  edge   5-15  non-equilibrium  t = +0.691995  h = +1.018e-01  (plane through the foot cuts P (vertex 7 strictly beyond it))
+  edge   6-7   non-equilibrium  t = +1.001606  h = -8.448e-02  (foot of c outside the edge (t = 1.00161))
+  edge   6-15  non-equilibrium  t = +0.769574  h = +5.485e-02  (plane through the foot cuts P (vertex 7 strictly beyond it))
+  edge   7-8   saddle           t = +0.500000  h = -2.313e-03  (saddle)
+  edge   7-15  non-equilibrium  t = +1.017363  h = +4.225e-03  (foot of c outside the edge (t = 1.01736))
+  edge   8-9   non-equilibrium  t = -0.001606  h = -8.448e-02  (foot of c outside the edge (t = -0.00160621))
+  edge   8-15  non-equilibrium  t = +1.017363  h = +4.225e-03  (foot of c outside the edge (t = 1.01736))
+  edge   9-10  non-equilibrium  t = -0.002831  h = -7.644e-02  (foot of c outside the edge (t = -0.00283124))
+  edge   9-15  non-equilibrium  t = +0.769574  h = +5.485e-02  (plane through the foot cuts P (vertex 8 strictly beyond it))
+  edge  10-11  non-equilibrium  t = -0.003537  h = -7.447e-02  (foot of c outside the edge (t = -0.00353692))
+  edge  10-15  non-equilibrium  t = +0.691995  h = +1.018e-01  (plane through the foot cuts P (vertex 8 strictly beyond it))
+  edge  11-12  non-equilibrium  t = -0.003685  h = -7.214e-02  (foot of c outside the edge (t = -0.00368498))
+  edge  11-15  non-equilibrium  t = +0.656332  h = +1.767e-01  (plane through the foot cuts P (vertex 9 strictly beyond it))
+  edge  12-13  non-equilibrium  t = -0.003296  h = -7.291e-02  (foot of c outside the edge (t = -0.00329619))
+  edge  12-15  non-equilibrium  t = +0.637954  h = +2.534e-01  (plane through the foot cuts P (vertex 9 strictly beyond it))
+  edge  13-14  non-equilibrium  t = -0.002413  h = -8.021e-02  (foot of c outside the edge (t = -0.00241299))
+  edge  13-15  non-equilibrium  t = +0.629433  h = +3.541e-01  (plane through the foot cuts P (vertex 10 strictly beyond it))
+  edge  14-15  non-equilibrium  t = +0.629416  h = +4.649e-01  (plane through the foot cuts P (vertex 11 strictly beyond it))
+
+VERTICES (V = 16)   h = max over w of (w - v).(v - c)/|v - c|  (height of the highest other vertex above the plane through v perpendicular to v - c)
+  vertex   0  UNSTABLE         h = -3.265e-01 (closest: vertex 1)
+  vertex   1  non-equilibrium  h = +3.376e-04  shadowed by vertex 0 (adjacent); adjacent witness: vertex 0
+  vertex   2  non-equilibrium  h = +2.646e-04  shadowed by vertex 1 (adjacent); adjacent witness: vertex 1
+  vertex   3  non-equilibrium  h = +2.793e-04  shadowed by vertex 2 (adjacent); adjacent witness: vertex 2
+  vertex   4  non-equilibrium  h = +2.833e-04  shadowed by vertex 3 (adjacent); adjacent witness: vertex 3
+  vertex   5  non-equilibrium  h = +2.698e-04  shadowed by vertex 4 (adjacent); adjacent witness: vertex 4
+  vertex   6  non-equilibrium  h = +2.312e-04  shadowed by vertex 5 (adjacent); adjacent witness: vertex 5
+  vertex   7  non-equilibrium  h = +1.520e-04  shadowed by vertex 6 (adjacent); adjacent witness: vertex 6
+  vertex   8  non-equilibrium  h = +1.520e-04  shadowed by vertex 9 (adjacent); adjacent witness: vertex 9
+  vertex   9  non-equilibrium  h = +2.312e-04  shadowed by vertex 10 (adjacent); adjacent witness: vertex 10
+  vertex  10  non-equilibrium  h = +2.698e-04  shadowed by vertex 11 (adjacent); adjacent witness: vertex 11
+  vertex  11  non-equilibrium  h = +2.833e-04  shadowed by vertex 12 (adjacent); adjacent witness: vertex 12
+  vertex  12  non-equilibrium  h = +2.793e-04  shadowed by vertex 13 (adjacent); adjacent witness: vertex 13
+  vertex  13  non-equilibrium  h = +2.646e-04  shadowed by vertex 14 (adjacent); adjacent witness: vertex 14
+  vertex  14  non-equilibrium  h = +3.376e-04  shadowed by vertex 0 (adjacent); adjacent witness: vertex 0
+  vertex  15  non-equilibrium  h = +2.116e-03  shadowed by vertex 7 (adjacent); adjacent witness: vertex 7
+
+SUMMARY
+  stable faces      S = 3: face 0 [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 14, 13]; face 1 [0, 1, 15]; face 2 [14, 0, 15]
+  saddle edges      H = 2: 0-15, 7-8
+  unstable vertices U = 1: 0
+  (S, H, U) = (3, 2, 1);  S - H + U = 2  [Poincare-Hopf OK]
+  degeneracies: none (every decision was a strict inequality)
+  smallest decisive margin (float, informational only): 1.912e-05 at face 1 [0, 1, 15]
+  CERTIFIED (exact, nondegenerate): True
+  MONO-UNSTABLE: True
+  MONO-STABLE:   False
+==============================================================================
+JSON report written to verify/certificates/seed_V16_d1e9.report.json

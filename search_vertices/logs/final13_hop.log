@@ -1,0 +1,13 @@
+V=13 flatfile seed=12004: F_flat=-8.0962e-03 F3d=-8.0878e-03 nvert=13 eps=0.0003 evals=158438 t=17.3s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12002: F_flat=-8.3758e-03 F3d=-8.3578e-03 nvert=13 eps=0.0003 evals=158438 t=17.9s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12000: F_flat=-8.6562e-03 F3d=-8.3326e-03 nvert=13 eps=0.0003 evals=158438 t=18.0s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12003: F_flat=-8.3394e-03 F3d=-8.3405e-03 nvert=13 eps=0.0003 evals=158438 t=18.5s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12005: F_flat=-8.1321e-03 F3d=-8.1316e-03 nvert=13 eps=0.0003 evals=158438 t=18.5s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12001: F_flat=-8.4870e-03 F3d=-8.4886e-03 nvert=13 eps=0.0003 evals=158438 t=18.9s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12006: F_flat=-8.1614e-03 F3d=-8.1523e-03 nvert=13 eps=0.0003 evals=158438 t=12.8s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12007: F_flat=-8.1695e-03 F3d=-8.1767e-03 nvert=13 eps=0.0003 evals=158438 t=12.4s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12009: F_flat=-8.4859e-03 F3d=-8.4825e-03 nvert=13 eps=0.0003 evals=158438 t=12.1s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12010: F_flat=-8.5180e-03 F3d=-8.5222e-03 nvert=13 eps=0.0003 evals=158438 t=12.0s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12008: F_flat=-8.3136e-03 F3d=-8.2934e-03 nvert=13 eps=0.0003 evals=158438 t=12.9s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+V=13 flatfile seed=12011: F_flat=-8.1346e-03 F3d=-8.1145e-03 nvert=13 eps=0.0003 evals=158438 t=13.0s meta={'file': 'V13_spiral_6_6_9502.npy', 'drop': None}
+done 12 in 34s; best F_flat=-8.0962e-03 F3d=-8.0878e-03 C:\Projects\Claude4\search_vertices\sols\V13_flatfile_12004.npy

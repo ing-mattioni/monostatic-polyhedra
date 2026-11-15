@@ -1,0 +1,13 @@
+verify_joint.py: V = 5, files ['certs_V5.jsonl.gz']
+External fact used: number of triangulations of the 2-sphere with V vertices (OEIS A000109) = 1 for V = 5.
+(iv) 150 certificates read (0 of the general kind (2G)), each verified exactly (duplicates: 0); 0.0s
+(i)  1 simplicial 2-spheres, pairwise non-isomorphic = A000109(5): complete
+(ii) every vertex is a root or mapped to one by a verified automorphism
+     graph 0 root 0: 75 rooted spanning trees (= Kirchhoff 75), 75 certified, 0 missing
+     graph 0 root 3: 75 rooted spanning trees (= Kirchhoff 75), 75 certified, 0 missing
+(iii) 150 (graph, root, tree) cases, 0 without certificate; total time 0.0s
+ALL CHECKS PASSED: no homogeneous convex polyhedron with 5 vertices is mono-unstable (given the geometric lemma (1) and A000109).
+
+real	0m0.083s
+user	0m0.015s
+sys	0m0.000s

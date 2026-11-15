@@ -1,0 +1,7 @@
+V=13 seed3d/random seed=14003: F=-9.9539e-04 nvert=10 evals=12446 t=3.6s meta={}
+V=13 seed3d/random seed=14005: F=-1.1097e-02 nvert=10 evals=17234 t=3.9s meta={}
+V=13 seed3d/random seed=14000: F=-1.6900e-02 nvert=11 evals=200004 t=18.0s meta={}
+V=13 seed3d/random seed=14002: F=-4.0250e-03 nvert=10 evals=200004 t=17.9s meta={}
+V=13 seed3d/random seed=14001: F=-1.3826e-02 nvert=11 evals=200004 t=18.1s meta={}
+V=13 seed3d/random seed=14004: F=-1.5346e-02 nvert=13 evals=200004 t=18.5s meta={}
+done 6 tasks in 21s; best F=-9.9539e-04 file=C:\Projects\Claude4\search_vertices\sols\V13_seed3d_random_14003.npy

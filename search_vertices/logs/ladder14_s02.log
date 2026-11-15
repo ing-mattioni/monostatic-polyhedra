@@ -1,0 +1,15 @@
+V=13 refine/None seed=103: F=-1.0618e-03 nvert=12 evals=57414 t=5.5s meta={'file': 'V14_resh_best.npy', 'drop': 3}
+V=13 refine/None seed=101: F=-1.0604e-03 nvert=13 evals=63294 t=6.1s meta={'file': 'V14_resh_best.npy', 'drop': 1}
+V=13 refine/None seed=104: F=-9.0441e-04 nvert=13 evals=40180 t=6.2s meta={'file': 'V14_resh_best.npy', 'drop': 4}
+V=13 refine/None seed=105: F=-1.0421e-03 nvert=11 evals=72058 t=8.2s meta={'file': 'V14_resh_best.npy', 'drop': 5}
+V=13 refine/None seed=107: F=-9.7371e-04 nvert=13 evals=58506 t=5.3s meta={'file': 'V14_resh_best.npy', 'drop': 7}
+V=13 refine/None seed=100: F=-6.5562e-03 nvert=13 evals=179816 t=13.8s meta={'file': 'V14_resh_best.npy', 'drop': 0}
+V=13 refine/None seed=109: F=-8.6426e-04 nvert=11 evals=55440 t=5.8s meta={'file': 'V14_resh_best.npy', 'drop': 9}
+V=13 refine/None seed=110: F=-8.8382e-04 nvert=11 evals=42770 t=4.0s meta={'file': 'V14_resh_best.npy', 'drop': 10}
+V=13 refine/None seed=102: F=-8.4832e-03 nvert=13 evals=205618 t=16.0s meta={'file': 'V14_resh_best.npy', 'drop': 2}
+V=13 refine/None seed=111: F=-8.6515e-04 nvert=13 evals=78260 t=5.4s meta={'file': 'V14_resh_best.npy', 'drop': 11}
+V=13 refine/None seed=106: F=-9.6830e-04 nvert=13 evals=194488 t=14.1s meta={'file': 'V14_resh_best.npy', 'drop': 6}
+V=13 refine/None seed=108: F=-1.9105e-02 nvert=13 evals=205618 t=13.6s meta={'file': 'V14_resh_best.npy', 'drop': 8}
+V=13 refine/None seed=112: F=-1.2862e-02 nvert=13 evals=205618 t=12.0s meta={'file': 'V14_resh_best.npy', 'drop': 12}
+V=13 refine/None seed=113: F=-8.7708e-04 nvert=13 evals=191576 t=12.9s meta={'file': 'V14_resh_best.npy', 'drop': 13}
+done 14 tasks in 30s; best F=-8.6426e-04 file=C:\Projects\Claude4\search_vertices\sols\V13_refine__109.npy

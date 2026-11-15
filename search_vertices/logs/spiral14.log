@@ -1,0 +1,10 @@
+V=14 7+6 grow seed=9101: F_red=+3.4840e-03 F_flat=+5.7514e-03 F3d=+5.8650e-03 nvert=14 t=25.6s
+V=14 8+5 growalt seed=9000: F_red=+4.4207e-03 F_flat=+9.2701e-03 F3d=+9.2890e-03 nvert=14 t=29.9s
+V=14 7+6 random seed=9100: F_red=+5.2625e-03 F_flat=+9.2407e-03 F3d=+9.3499e-03 nvert=14 t=29.3s
+V=14 8+5 alt seed=9002: F_red=+4.4352e-03 F_flat=+9.3667e-03 F3d=+9.4134e-03 nvert=14 t=31.3s
+V=14 8+5 growalt seed=9001: F_red=+4.5023e-03 F_flat=+8.9798e-03 F3d=+8.9769e-03 nvert=14 t=32.0s
+V=14 7+6 growalt seed=9102: F_red=+6.4761e-03 F_flat=+1.0703e-02 F3d=+1.0700e-02 nvert=14 t=30.8s
+V=14 9+4 alt seed=9200: F_red=+1.9453e-03 F_flat=+5.4753e-03 F3d=+5.4978e-03 nvert=14 t=20.6s
+V=14 9+4 zero_top_alt seed=9201: F_red=+2.1022e-03 F_flat=+6.3944e-03 F3d=+6.3912e-03 nvert=14 t=19.8s
+V=14 9+4 random seed=9202: F_red=+1.5525e-03 F_flat=+4.6673e-03 F3d=+4.6676e-03 nvert=14 t=19.7s
+done 9 in 55s; best F3d=+1.0700e-02 C:\Projects\Claude4\search_vertices\sols\V14_spiral_7_6_9102.npy

@@ -1,0 +1,17 @@
+V=5, scale=2 (ours): 375 systems, 375 certified (exact check), 0 not; min z (certified) = 0.0680824, min z overall = 0.0681, #(z > 1e-6) = 375
+V=5, scale=1 (ours): 375 systems, 375 certified (exact check), 0 not; min z (certified) = 0.0340412, min z overall = 0.034, #(z > 1e-6) = 375
+V=6, scale=2 (ours): 5568 systems, 5568 certified (exact check), 0 not; min z (certified) = 0.00778495, min z overall = 0.00778, #(z > 1e-6) = 5568
+V=6, scale=1 (ours): 5568 systems, 5568 certified (exact check), 0 not; min z (certified) = 0.00389247, min z overall = 0.00389, #(z > 1e-6) = 5568
+authors' case list: 5943 cases (375 with V=5, 5568 with V=6)
+  V=5 scale=2: authors' cases: 375, certified 375, min z = 0.0680824; sorted-z max deviation from our enumeration = 3.68e-10
+  V=6 scale=2: authors' cases: 5568, certified 5568, min z = 0.00778495; sorted-z max deviation from our enumeration = 2.29e-09
+  first 3 / last 3 cases (z, y), scale 2 [compare with the notebook output Out[16]]:
+    1 0.29007217 [0.57893892, 0.56233556, 0.34059391, 0.29007217, 0.38530816]
+    2 0.29007217 [0.57893848, 0.5623352, 0.29007217, 0.34059435, 0.38530894]
+    3 0.44721360 [0.4472136, 0.4472136, 0.4472136, 0.4472136, 0.4472136]
+    5941 0.26248968 [0.39435174, 0.26248968, 0.39434917, 0.26248968, 0.68926656, 0.27583577]
+    5942 0.26248968 [0.39435174, 0.26248968, 0.26248968, 0.39434917, 0.68926656, 0.27583577]
+    5943 0.26248968 [0.26248968, 0.39435174, 0.26248968, 0.39434917, 0.68926656, 0.27583577]
+  min z over all 5943 authors' cases (scale 2): 0.007784949996  [notebook Out[17]: 0.007784953778603651]
+  V=5 scale=1: authors' cases: 375, certified 375, min z = 0.0340412; sorted-z max deviation from our enumeration = 3.78e-10
+  V=6 scale=1: authors' cases: 5568, certified 5568, min z = 0.00389248; sorted-z max deviation from our enumeration = 2.58e-09

@@ -1,0 +1,31 @@
+1426 systems uncertified at level bc; 1426 distinct (graph, root, tree)
+done in 1242s
+
+mode relaxed: solution found for 1426 of 1426 tried
+   max-min slack: min 0.00274, median 0.00896, max 0.00932
+   degenerate (affinely dependent) point sets: 0
+   convex position: 1411 | hull graph == G: 5 | mono-unstable w.r.t. true centroid: 0 | v unstable w.r.t. true centroid: 1426
+   #unstable vertices w.r.t. true centroid: {2: 10, 3: 1295, 4: 121}
+   #unstable vertices w.r.t. the origin: {1: 1426}
+   origin in conv(tetrahedra centroids): 0 of 1426
+   true centroid: x in [0.133, 0.361], |c| in [0.314, 0.498]; volume in [6.67e-10, 3.48e-07]
+   solved, by (graph, root): {(0, 0): 22, (0, 2): 46, (0, 3): 100, (0, 5): 124, (1, 0): 18, (1, 1): 22, (1, 4): 114, (2, 0): 44, (2, 1): 74, (2, 3): 102, (2, 5): 148, (3, 0): 76, (3, 3): 124, (3, 6): 192, (4, 0): 80, (4, 2): 140}
+
+mode convex: solution found for 1139 of 1426 tried
+   max-min slack: min -1.11e-15, median 0.00322, max 0.00736
+   degenerate (affinely dependent) point sets: 0
+   convex position: 1139 | hull graph == G: 1139 | mono-unstable w.r.t. true centroid: 0 | v unstable w.r.t. true centroid: 1139
+   #unstable vertices w.r.t. true centroid: {2: 25, 3: 667, 4: 399, 5: 48}
+   #unstable vertices w.r.t. the origin: {1: 1139}
+   origin in conv(tetrahedra centroids): 0 of 1139
+   true centroid: x in [0.115, 0.359], |c| in [0.296, 0.498]; volume in [6.73e-03, 4.45e-02]
+   solved, by (graph, root): {(0, 0): 22, (0, 2): 34, (0, 3): 99, (0, 5): 79, (1, 0): 18, (1, 1): 22, (1, 4): 82, (2, 0): 44, (2, 1): 72, (2, 3): 77, (2, 5): 68, (3, 0): 76, (3, 3): 111, (3, 6): 124, (4, 0): 80, (4, 2): 131}
+
+mode hull3d: solution found for 0 of 1426 tried
+   max-min slack: min -0.013, median -0.00441, max -0.00273
+
+mode hull3d_convex: solution found for 0 of 1426 tried
+   max-min slack: min -0.013, median -0.00441, max -0.00273
+
+mode full: solution found for 0 of 40 tried
+   max-min slack: min -0.377, median -0.223, max -0.141

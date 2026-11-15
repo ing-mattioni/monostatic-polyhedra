@@ -1,0 +1,40 @@
+V=7: 139636 systems, 138210 certified at baseline, 1426 not certified
+  level b: 0 of the 1426 newly certified, 1426 remain uncertified
+  level bc: 0 of the 1426 newly certified, 1426 remain uncertified
+
+Baseline-uncertified systems grouped by (graph, root):
+  graph 0 (degrees [6, 6, 4, 4, 4, 3, 3]), root 0 (deg 6): 22 uncertified at baseline, 22 after (b), 22 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 5), 5): 4, ((4, 5, 5), 5): 6, ((4, 5, 6), 6): 12}
+  graph 0 (degrees [6, 6, 4, 4, 4, 3, 3]), root 2 (deg 4): 46 uncertified at baseline, 46 after (b), 46 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 5), 5): 10, ((4, 5, 5), 5): 12, ((4, 5, 6), 6): 24}
+  graph 0 (degrees [6, 6, 4, 4, 4, 3, 3]), root 3 (deg 4): 100 uncertified at baseline, 100 after (b), 100 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 4), 4): 4, ((4, 4, 5), 5): 24, ((4, 5, 5), 5): 24, ((4, 5, 6), 6): 48}
+  graph 0 (degrees [6, 6, 4, 4, 4, 3, 3]), root 5 (deg 3): 124 uncertified at baseline, 124 after (b), 124 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 4), 4): 3, ((4, 4, 5), 5): 34, ((4, 5, 5), 5): 29, ((4, 5, 6), 6): 58}
+  graph 1 (degrees [6, 5, 5, 5, 3, 3, 3]), root 0 (deg 6): 18 uncertified at baseline, 18 after (b), 18 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 5, 5), 5): 6, ((4, 5, 6), 6): 12}
+  graph 1 (degrees [6, 5, 5, 5, 3, 3, 3]), root 1 (deg 5): 22 uncertified at baseline, 22 after (b), 22 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 5), 5): 4, ((4, 5, 5), 5): 6, ((4, 5, 6), 6): 12}
+  graph 1 (degrees [6, 5, 5, 5, 3, 3, 3]), root 4 (deg 3): 114 uncertified at baseline, 114 after (b), 114 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 4), 4): 4, ((4, 4, 5), 5): 32, ((4, 5, 5), 5): 26, ((4, 5, 6), 6): 52}
+  graph 2 (degrees [6, 5, 5, 4, 4, 3, 3]), root 0 (deg 6): 44 uncertified at baseline, 44 after (b), 44 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 5), 5): 8, ((4, 5, 5), 5): 12, ((4, 5, 6), 6): 24}
+  graph 2 (degrees [6, 5, 5, 4, 4, 3, 3]), root 1 (deg 5): 74 uncertified at baseline, 74 after (b), 74 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 4), 4): 3, ((4, 4, 5), 5): 20, ((4, 5, 5), 5): 17, ((4, 5, 6), 6): 34}
+  graph 2 (degrees [6, 5, 5, 4, 4, 3, 3]), root 3 (deg 4): 102 uncertified at baseline, 102 after (b), 102 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 4), 4): 4, ((4, 4, 5), 5): 32, ((4, 5, 5), 5): 22, ((4, 5, 6), 6): 44}
+  graph 2 (degrees [6, 5, 5, 4, 4, 3, 3]), root 5 (deg 3): 148 uncertified at baseline, 148 after (b), 148 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 4), 4): 5, ((4, 4, 5), 5): 44, ((4, 5, 5), 5): 33, ((4, 5, 6), 6): 66}
+  graph 3 (degrees [5, 5, 5, 4, 4, 4, 3]), root 0 (deg 5): 76 uncertified at baseline, 76 after (b), 76 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 5), 5): 16, ((4, 5, 5), 5): 20, ((4, 5, 6), 6): 40}
+  graph 3 (degrees [5, 5, 5, 4, 4, 4, 3]), root 3 (deg 4): 124 uncertified at baseline, 124 after (b), 124 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 4), 4): 4, ((4, 4, 5), 5): 36, ((4, 5, 5), 5): 28, ((4, 5, 6), 6): 56}
+  graph 3 (degrees [5, 5, 5, 4, 4, 4, 3]), root 6 (deg 3): 192 uncertified at baseline, 192 after (b), 192 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 5), 5): 48, ((4, 5, 5), 5): 48, ((4, 5, 6), 6): 96}
+  graph 4 (degrees [5, 5, 4, 4, 4, 4, 4]), root 0 (deg 5): 80 uncertified at baseline, 80 after (b), 80 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 5), 5): 20, ((4, 5, 5), 5): 20, ((4, 5, 6), 6): 40}
+  graph 4 (degrees [5, 5, 4, 4, 4, 4, 4]), root 2 (deg 4): 140 uncertified at baseline, 140 after (b), 140 after (b)+(c)
+     (face depths, tree depth): counts -> {((4, 4, 5), 5): 32, ((4, 5, 5), 5): 36, ((4, 5, 6), 6): 72}
+
+Face depth profiles over all baseline-uncertified systems: {(4, 4, 4): 27, (4, 4, 5): 364, (4, 5, 5): 345, (4, 5, 6): 690}
+Tree is a Hamiltonian path from the root: 690 of 1426

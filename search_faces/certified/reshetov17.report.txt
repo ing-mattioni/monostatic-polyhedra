@@ -1,0 +1,61 @@
+==============================================================================
+EXACT EQUILIBRIUM CERTIFICATE: reshetov17
+==============================================================================
+input points           : 30
+input sha256           : 3ed360419b939c63c19cfc0069dbfe522f93a34b6bb8dc62164e772e829ddca1
+common denominator     : 431568165985490472957476897172520928294268562553496406299948869058306644031840
+convex hull            : V = 30, E = 45, F = 17;  V - E + F = 2  [OK]
+face sizes             : 3 x 3-gon, 5 x 4-gon, 3 x 5-gon, 2 x 6-gon, 1 x 7-gon, 1 x 8-gon, 1 x 9-gon, 1 x 10-gon
+redundant input points : none (every input point is a vertex)
+volume                 : 39786401612604689451765055878445308857713294341566015080300257334242672651619377212700367010909/1829995974637897595181902145907874326902874988167155903473512525116909547963843675260096
+                       ~ 21741250.8901705
+centroid (exact)       :
+    x = -118702175174976674378289681274463748514511543533440461520516006300118583200491907454048810465032143217280356871497381206682567343894907988538780114978055401482954579248886931/33020277644449935460721188652909600444147684992463883028719553891728663577087454689620023111844414282258058353811842353258716113376308402191799157175497616053451663506428000
+    y = 2706936142181951982028873806257272815251414323251825693880488729017918267527672009628322559043155549938692179809445884849512372286569249671299075723712468779222037603469438989/171705443751139664395750180995129922309567961960812191749341680236989050600854764386024120181590954267741903439821580236945323789556803691397355617312587603477948650233425600
+    z = -122930727432904416784294295203799746062481744746817921604300191065950135827229776606904814213791056021966531274961971899947034590557349332664320915929572115644390755106324421/42926360937784916098937545248782480577391990490203047937335420059247262650213691096506030045397738566935475859955395059236330947389200922849338904328146900869487162558356400
+centroid (float)       : (-3.59482668356449, 15.7649989601101, -2.86375841667719)
+
+VERTICES (V = 30)   h = max over w of (w - v).(v - c)/|v - c|  (height of the highest other vertex above the plane through v perpendicular to v - c)
+  vertex   0  non-equilibrium  h = +8.610e+01  shadowed by vertex 2 (adjacent); adjacent witness: vertex 2
+  vertex   1  non-equilibrium  h = +9.709e+01  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 0
+  vertex   2  UNSTABLE         h = -8.689e+01 (closest: vertex 0)
+  vertex   3  non-equilibrium  h = +8.830e-01  shadowed by vertex 5 (adjacent); adjacent witness: vertex 5
+  vertex   4  non-equilibrium  h = +1.574e+01  shadowed by vertex 5 (adjacent); adjacent witness: vertex 5
+  vertex   5  non-equilibrium  h = +5.294e+02  shadowed by vertex 26 (adjacent); adjacent witness: vertex 26
+  vertex   6  non-equilibrium  h = +3.371e+02  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 1
+  vertex   7  non-equilibrium  h = +2.983e+02  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 8
+  vertex   8  non-equilibrium  h = +2.719e+01  shadowed by vertex 26 (adjacent); adjacent witness: vertex 26
+  vertex   9  non-equilibrium  h = +8.471e+02  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 12
+  vertex  10  non-equilibrium  h = +8.856e+02  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 11
+  vertex  11  non-equilibrium  h = +5.910e+02  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 20
+  vertex  12  non-equilibrium  h = +8.494e+02  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 19
+  vertex  13  non-equilibrium  h = +7.160e+02  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 12
+  vertex  14  non-equilibrium  h = +7.305e+02  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 10
+  vertex  15  non-equilibrium  h = +7.401e+02  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 17
+  vertex  16  non-equilibrium  h = +7.364e+02  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 18
+  vertex  17  non-equilibrium  h = +5.982e+02  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 6
+  vertex  18  non-equilibrium  h = +5.795e+02  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 7
+  vertex  19  non-equilibrium  h = +6.911e+02  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 25
+  vertex  20  non-equilibrium  h = +5.069e+02  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 27
+  vertex  21  non-equilibrium  h = +7.707e+02  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 15
+  vertex  22  non-equilibrium  h = +9.787e+02  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 16
+  vertex  23  non-equilibrium  h = +9.082e+02  shadowed by vertex 2 (non-adjacent); adjacent witness: vertex 21
+  vertex  24  non-equilibrium  h = +7.625e+02  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 22
+  vertex  25  non-equilibrium  h = +4.259e+02  shadowed by vertex 2 (adjacent); adjacent witness: vertex 2
+  vertex  26  UNSTABLE         h = -2.720e+01 (closest: vertex 8)
+  vertex  27  non-equilibrium  h = +3.242e+02  shadowed by vertex 26 (adjacent); adjacent witness: vertex 26
+  vertex  28  non-equilibrium  h = +2.622e+00  shadowed by vertex 3 (adjacent); adjacent witness: vertex 3
+  vertex  29  non-equilibrium  h = +5.247e+01  shadowed by vertex 26 (non-adjacent); adjacent witness: vertex 24
+
+SUMMARY
+  stable faces      S = 1: face 2 [25, 27, 26, 8, 0, 2]
+  saddle edges      H = 1: 2-3
+  unstable vertices U = 2: 2, 26
+  (S, H, U) = (1, 1, 2);  S - H + U = 2  [Poincare-Hopf OK]
+  degeneracies: none (every decision was a strict inequality)
+  smallest decisive margin (float, informational only): 9.983e-02 at edge 6-7
+  CERTIFIED (exact, nondegenerate): True
+  MONO-UNSTABLE: False
+  MONO-STABLE:   True
+==============================================================================
+JSON report written to C:\Projects\Claude4\search_faces\certified\reshetov17.report.json

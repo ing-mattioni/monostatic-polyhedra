@@ -1,0 +1,109 @@
+V=8: 14 graphs, 63 roots, 432041 trees, 2189 tasks
+  9840/432041 trees, 9816 certified, 24 uncertified, 59s
+  19520/432041 trees, 19312 certified, 208 uncertified, 128s
+  29360/432041 trees, 28999 certified, 361 uncertified, 197s
+  39030/432041 trees, 38614 certified, 416 uncertified, 260s
+  48865/432041 trees, 48373 certified, 492 uncertified, 327s
+  58535/432041 trees, 57878 certified, 657 uncertified, 409s
+  68205/432041 trees, 67242 certified, 963 uncertified, 487s
+  78040/432041 trees, 76887 certified, 1153 uncertified, 559s
+  87710/432041 trees, 86436 certified, 1274 uncertified, 607s
+  97545/432041 trees, 96164 certified, 1381 uncertified, 669s
+  107215/432041 trees, 105604 certified, 1611 uncertified, 734s
+  117050/432041 trees, 115083 certified, 1967 uncertified, 791s
+  126720/432041 trees, 124436 certified, 2284 uncertified, 849s
+  136675/432041 trees, 134268 certified, 2407 uncertified, 887s
+  146585/432041 trees, 143874 certified, 2711 uncertified, 934s
+  156540/432041 trees, 153463 certified, 3077 uncertified, 981s
+  166495/432041 trees, 163336 certified, 3159 uncertified, 1019s
+  176495/432041 trees, 173243 certified, 3252 uncertified, 1056s
+  186335/432041 trees, 182999 certified, 3336 uncertified, 1088s
+  196175/432041 trees, 192679 certified, 3496 uncertified, 1125s
+  206095/432041 trees, 202201 certified, 3894 uncertified, 1174s
+  215955/432041 trees, 211984 certified, 3971 uncertified, 1207s
+  225895/432041 trees, 221823 certified, 4072 uncertified, 1245s
+  235835/432041 trees, 231461 certified, 4374 uncertified, 1288s
+  245755/432041 trees, 241122 certified, 4633 uncertified, 1320s
+  255735/432041 trees, 250777 certified, 4958 uncertified, 1359s
+  265695/432041 trees, 260320 certified, 5375 uncertified, 1401s
+  275639/432041 trees, 270077 certified, 5562 uncertified, 1435s
+  285583/432041 trees, 279701 certified, 5882 uncertified, 1477s
+  295471/432041 trees, 289245 certified, 6226 uncertified, 1519s
+  305415/432041 trees, 298761 certified, 6654 uncertified, 1562s
+  315359/432041 trees, 308554 certified, 6805 uncertified, 1596s
+  325159/432041 trees, 318113 certified, 7046 uncertified, 1633s
+  335039/432041 trees, 327880 certified, 7159 uncertified, 1664s
+  344919/432041 trees, 337468 certified, 7451 uncertified, 1702s
+  354679/432041 trees, 346835 certified, 7844 uncertified, 1738s
+  364676/432041 trees, 356712 certified, 7964 uncertified, 1766s
+  374673/432041 trees, 366485 certified, 8188 uncertified, 1797s
+  384667/432041 trees, 376141 certified, 8526 uncertified, 1835s
+  394664/432041 trees, 385835 certified, 8829 uncertified, 1872s
+  404661/432041 trees, 395480 certified, 9181 uncertified, 1908s
+  414611/432041 trees, 404956 certified, 9655 uncertified, 1944s
+  424401/432041 trees, 414483 certified, 9918 uncertified, 1977s
+V=8: 432041 trees solved, 421834 certified exactly, 10207 uncertified; min z (certified) = 1.99261e-05; time 2002.6s
+   graph 0 root 0: trees 6240, certified 6218, min z 1.993e-05
+   graph 0 root 2: trees 6240, certified 6182, min z 1.993e-05
+   graph 0 root 3: trees 6240, certified 6134, min z 1.993e-05
+   graph 0 root 6: trees 6240, certified 6072, min z 1.993e-05
+   graph 1 root 0: trees 6235, certified 6206, min z 1.993e-05
+   graph 1 root 1: trees 6235, certified 6204, min z 1.993e-05
+   graph 1 root 2: trees 6235, certified 6196, min z 1.993e-05
+   graph 1 root 3: trees 6235, certified 6165, min z 1.993e-05
+   graph 1 root 4: trees 6235, certified 6150, min z 1.993e-05
+   graph 1 root 5: trees 6235, certified 6067, min z 1.993e-05
+   graph 1 root 6: trees 6235, certified 6015, min z 1.993e-05
+   graph 1 root 7: trees 6235, certified 6081, min z 1.993e-05
+   graph 2 root 0: trees 6435, certified 6388, min z 1.993e-05
+   graph 2 root 1: trees 6435, certified 6358, min z 1.993e-05
+   graph 2 root 2: trees 6435, certified 6358, min z 1.993e-05
+   graph 2 root 3: trees 6435, certified 6295, min z 1.993e-05
+   graph 2 root 4: trees 6435, certified 6323, min z 1.993e-05
+   graph 2 root 5: trees 6435, certified 6212, min z 1.993e-05
+   graph 2 root 6: trees 6435, certified 6243, min z 1.993e-05
+   graph 2 root 7: trees 6435, certified 6169, min z 1.993e-05
+   graph 3 root 0: trees 6555, certified 6479, min z 1.993e-05
+   graph 3 root 1: trees 6555, certified 6417, min z 1.993e-05
+   graph 3 root 3: trees 6555, certified 6359, min z 0.0004205
+   graph 3 root 4: trees 6555, certified 6390, min z 1.993e-05
+   graph 3 root 6: trees 6555, certified 6261, min z 1.993e-05
+   graph 4 root 0: trees 6000, certified 6000, min z 1.993e-05
+   graph 4 root 4: trees 6000, certified 5934, min z 1.993e-05
+   graph 5 root 0: trees 6320, certified 6275, min z 1.993e-05
+   graph 5 root 2: trees 6320, certified 6258, min z 0.0004205
+   graph 5 root 3: trees 6320, certified 6254, min z 1.993e-05
+   graph 5 root 4: trees 6320, certified 6200, min z 1.993e-05
+   graph 5 root 5: trees 6320, certified 6070, min z 1.993e-05
+   graph 5 root 7: trees 6320, certified 6162, min z 1.993e-05
+   graph 6 root 0: trees 7140, certified 7084, min z 1.993e-05
+   graph 6 root 2: trees 7140, certified 7074, min z 1.993e-05
+   graph 6 root 4: trees 7140, certified 6992, min z 1.993e-05
+   graph 6 root 6: trees 7140, certified 6864, min z 1.993e-05
+   graph 7 root 0: trees 6580, certified 6431, min z 1.993e-05
+   graph 7 root 2: trees 6580, certified 6391, min z 1.993e-05
+   graph 7 root 4: trees 6580, certified 6341, min z 1.993e-05
+   graph 7 root 6: trees 6580, certified 6256, min z 1.993e-05
+   graph 8 root 0: trees 7344, certified 7227, min z 1.993e-05
+   graph 8 root 2: trees 7344, certified 7126, min z 1.993e-05
+   graph 8 root 3: trees 7344, certified 7140, min z 1.993e-05
+   graph 8 root 4: trees 7344, certified 7132, min z 1.993e-05
+   graph 8 root 5: trees 7344, certified 7084, min z 1.993e-05
+   graph 8 root 7: trees 7344, certified 7000, min z 1.993e-05
+   graph 9 root 0: trees 8100, certified 8004, min z 1.993e-05
+   graph 9 root 2: trees 8100, certified 7872, min z 1.993e-05
+   graph 10 root 0: trees 7280, certified 7192, min z 1.993e-05
+   graph 10 root 1: trees 7280, certified 7154, min z 1.993e-05
+   graph 10 root 5: trees 7280, certified 7020, min z 1.993e-05
+   graph 10 root 6: trees 7280, certified 6956, min z 1.993e-05
+   graph 11 root 0: trees 7797, certified 7693, min z 1.993e-05
+   graph 11 root 1: trees 7797, certified 7653, min z 1.993e-05
+   graph 11 root 3: trees 7797, certified 7645, min z 1.993e-05
+   graph 11 root 4: trees 7797, certified 7518, min z 1.993e-05
+   graph 11 root 5: trees 7797, certified 7595, min z 1.993e-05
+   graph 11 root 7: trees 7797, certified 7437, min z 1.993e-05
+   graph 12 root 0: trees 7350, certified 7140, min z 1.993e-05
+   graph 12 root 6: trees 7350, certified 6978, min z 1.993e-05
+   graph 13 root 0: trees 8640, certified 8418, min z 1.993e-05
+   graph 13 root 4: trees 8640, certified 8322, min z 1.993e-05
+wrote C:\Projects\Claude4\lb_joint\certs_V8.jsonl.gz

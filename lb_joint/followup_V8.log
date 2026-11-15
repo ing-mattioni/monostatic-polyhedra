@@ -1,0 +1,54 @@
+=== step 1: S1 alone, S2 with Q={v,q} ===
+  250/10207 15s
+  500/10207 28s
+  750/10207 42s
+  1000/10207 56s
+  1250/10207 69s
+  1500/10207 84s
+  1750/10207 97s
+  2000/10207 113s
+  2250/10207 128s
+  2500/10207 140s
+  2750/10207 152s
+  3000/10207 167s
+  3250/10207 181s
+  3500/10207 194s
+  3750/10207 207s
+  4000/10207 220s
+  4250/10207 234s
+  4500/10207 247s
+  4750/10207 258s
+  5000/10207 271s
+  5250/10207 285s
+  5500/10207 297s
+  5750/10207 309s
+  6000/10207 323s
+  6250/10207 336s
+  6500/10207 350s
+  6750/10207 364s
+  7000/10207 377s
+  7250/10207 389s
+  7500/10207 402s
+  7750/10207 415s
+  8000/10207 427s
+  8250/10207 439s
+  8500/10207 452s
+  8750/10207 467s
+  9000/10207 481s
+  9250/10207 493s
+  9500/10207 506s
+  9750/10207 519s
+  10000/10207 532s
+V=8: 10207 previously uncertified trees; modes ['S1', 'S2pair']; 543s
+  S1 alone (Q={v}):            0 certified exactly
+  S2 with Q={v,q} (some q):    10207 certified exactly
+  certified by at least one: 10207; remaining: 0
+step 1 survivors: 0  (543s)
+step 2 survivors: 0  (543s)
+=== step 3: S3 / S3+S1 diagnostic on 100 random uncertified trees ===
+V=8: 100 previously uncertified trees; modes ['S3', 'S3S1']; 55s
+  S3 (omega-subdivision, <=64 nodes): 0 certified exactly
+  S3S1 (omega-subdivision, <=64 nodes): 0 certified exactly
+  certified by at least one: 0; remaining: 100
+done (598s)
+CHAIN_DONE

@@ -1,0 +1,5 @@
+  49454 systems solved, 114s
+  101515 systems solved, 194s
+  V=7 level=base: 139636 systems in 231.7s
+V=7 level=base: 139636 systems, 138210 certified (exact check), 1426 not; min z (certified) = 0.000150928, min z overall = -1.8e-10, #(z > 1e-6) = 138210
+wrote C:\Projects\Claude4\lowerbound\results_V7.csv

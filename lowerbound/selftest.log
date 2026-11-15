@@ -1,0 +1,3 @@
+self test: decoupling identity + Clarabel vs cvxpy (full matrices)
+  OK; max |z(reduced, Clarabel direct) - z(full or cvxpy)| = 1.02e-08
+  strengthening inequalities valid on 2000 random tree-feasible configurations: max value = -1.06e-07 (must be <= 0)

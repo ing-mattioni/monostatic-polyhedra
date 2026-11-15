@@ -1,0 +1,4 @@
+9 vertices: 50 triangulations
+200 {('rand', 'single'): 199, ('rand', 'pair'): 1} 7s
+400 {('rand', 'single'): 397, ('rand', 'pair'): 3} 13s
+600 {('rand', 'single'): 596, ('rand', 'pair'): 4} 16s

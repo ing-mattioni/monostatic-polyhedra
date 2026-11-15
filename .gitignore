@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+# large intermediate result dumps (regenerable)
+lowerbound/V7_feasible_points.json
+lowerbound/results_V7.csv
+*.log.tmp
+penta/certs_*.full.json.gz
+search_vertices/tmp_cert/
+audit/__pycache__/

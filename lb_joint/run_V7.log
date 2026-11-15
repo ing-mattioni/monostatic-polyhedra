@@ -1,0 +1,24 @@
+V=7: 5 graphs, 16 roots, 24795 trees, 254 tasks
+  4889/24795 trees, 4889 certified, 0 uncertified, 27s
+  9742/24795 trees, 9742 certified, 0 uncertified, 50s
+  14651/24795 trees, 14651 certified, 0 uncertified, 71s
+  19603/24795 trees, 19603 certified, 0 uncertified, 98s
+  24490/24795 trees, 24490 certified, 0 uncertified, 120s
+V=7: 24795 trees solved, 24795 certified exactly, 0 uncertified; min z (certified) = 0.00107018; time 121.5s
+   graph 0 root 0: trees 1463, certified 1463, min z 0.00107
+   graph 0 root 2: trees 1463, certified 1463, min z 0.00107
+   graph 0 root 3: trees 1463, certified 1463, min z 0.00107
+   graph 0 root 5: trees 1463, certified 1463, min z 0.00107
+   graph 1 root 0: trees 1445, certified 1445, min z 0.00107
+   graph 1 root 1: trees 1445, certified 1445, min z 0.00107
+   graph 1 root 4: trees 1445, certified 1445, min z 0.00107
+   graph 2 root 0: trees 1488, certified 1488, min z 0.00107
+   graph 2 root 1: trees 1488, certified 1488, min z 0.00107
+   graph 2 root 3: trees 1488, certified 1488, min z 0.00107
+   graph 2 root 5: trees 1488, certified 1488, min z 0.00107
+   graph 3 root 0: trees 1682, certified 1682, min z 0.00107
+   graph 3 root 3: trees 1682, certified 1682, min z 0.00107
+   graph 3 root 6: trees 1682, certified 1682, min z 0.00107
+   graph 4 root 0: trees 1805, certified 1805, min z 0.00107
+   graph 4 root 2: trees 1805, certified 1805, min z 0.00107
+wrote C:\Projects\Claude4\lb_joint\certs_V7.jsonl.gz

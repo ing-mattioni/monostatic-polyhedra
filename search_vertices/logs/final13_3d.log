@@ -1,0 +1,21 @@
+V=13 refine/None seed=11004: F=-7.9078e-03 nvert=13 evals=11228 t=9.3s meta={'file': 'V13_spiral_6_6_9502_thick5.npy', 'drop': None}
+V=13 refine/None seed=11000: F=-7.9078e-03 nvert=13 evals=11228 t=9.7s meta={'file': 'V13_spiral_6_6_9502_thick5.npy', 'drop': None}
+V=13 refine/None seed=11002: F=-7.9078e-03 nvert=13 evals=11228 t=9.8s meta={'file': 'V13_spiral_6_6_9502_thick5.npy', 'drop': None}
+V=13 refine/None seed=11001: F=-7.9078e-03 nvert=13 evals=11228 t=10.0s meta={'file': 'V13_spiral_6_6_9502_thick5.npy', 'drop': None}
+V=13 refine/None seed=11005: F=-7.9078e-03 nvert=13 evals=11228 t=9.9s meta={'file': 'V13_spiral_6_6_9502_thick5.npy', 'drop': None}
+V=13 refine/None seed=11003: F=-7.9078e-03 nvert=13 evals=11228 t=10.4s meta={'file': 'V13_spiral_6_6_9502_thick5.npy', 'drop': None}
+done 6 tasks in 13s; best F=-7.9078e-03 file=C:\Projects\Claude4\search_vertices\sols\V13_refine__11004.npy
+V=13 refine/None seed=11001: F=-8.4523e-03 nvert=13 evals=11228 t=4.6s meta={'file': 'V13_spiral_6_6_9502_thick20.npy', 'drop': None}
+V=13 refine/None seed=11002: F=-8.4523e-03 nvert=13 evals=11228 t=4.6s meta={'file': 'V13_spiral_6_6_9502_thick20.npy', 'drop': None}
+V=13 refine/None seed=11004: F=-8.4523e-03 nvert=13 evals=11228 t=4.6s meta={'file': 'V13_spiral_6_6_9502_thick20.npy', 'drop': None}
+V=13 refine/None seed=11005: F=-8.4523e-03 nvert=13 evals=11228 t=4.7s meta={'file': 'V13_spiral_6_6_9502_thick20.npy', 'drop': None}
+V=13 refine/None seed=11000: F=-7.9275e-03 nvert=13 evals=155624 t=12.0s meta={'file': 'V13_spiral_6_6_9502_thick20.npy', 'drop': None}
+V=13 refine/None seed=11003: F=-8.1411e-03 nvert=13 evals=155624 t=11.9s meta={'file': 'V13_spiral_6_6_9502_thick20.npy', 'drop': None}
+done 6 tasks in 14s; best F=-7.9275e-03 file=C:\Projects\Claude4\search_vertices\sols\V13_refine__11000.npy
+V=13 refine/None seed=11000: F=-8.9446e-03 nvert=13 evals=155624 t=13.1s meta={'file': 'V13_flatfile_1011_thick5.npy', 'drop': None}
+V=13 refine/None seed=11004: F=-8.9811e-03 nvert=13 evals=155624 t=13.5s meta={'file': 'V13_flatfile_1011_thick5.npy', 'drop': None}
+V=13 refine/None seed=11001: F=-8.6312e-03 nvert=13 evals=155624 t=13.6s meta={'file': 'V13_flatfile_1011_thick5.npy', 'drop': None}
+V=13 refine/None seed=11003: F=-8.7297e-03 nvert=13 evals=155624 t=13.6s meta={'file': 'V13_flatfile_1011_thick5.npy', 'drop': None}
+V=13 refine/None seed=11005: F=-8.9267e-03 nvert=13 evals=155624 t=13.5s meta={'file': 'V13_flatfile_1011_thick5.npy', 'drop': None}
+V=13 refine/None seed=11002: F=-9.3707e-03 nvert=13 evals=155624 t=13.7s meta={'file': 'V13_flatfile_1011_thick5.npy', 'drop': None}
+done 6 tasks in 16s; best F=-8.6312e-03 file=C:\Projects\Claude4\search_vertices\sols\V13_refine__11001.npy

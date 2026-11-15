@@ -1,0 +1,4 @@
+results_V5.csv: 375 rows, 375 marked certified, 375 verified exactly from the stored decimal multipliers, 0 failed
+results_V6.csv: 5568 rows, 5568 marked certified, 5568 verified exactly from the stored decimal multipliers, 0 failed
+results_V7.csv: 139636 rows, 138210 marked certified, 138210 verified exactly from the stored decimal multipliers, 0 failed
+ALLDONE

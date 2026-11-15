@@ -1,0 +1,57 @@
+==============================================================================
+EXACT EQUILIBRIUM CERTIFICATE: improved15
+==============================================================================
+input points           : 26
+input sha256           : 81c91016d5d469d084f242fe6c6d7282abff0033ac71d8e48ad9ed67575c90f0
+common denominator     : 24186691752116405526818970024920825198898823913210498168175411584559170358404038289462811391586471508184683491781504298935696918066555387213060148127378755627849145982715396177723678309620244930961815543719166380206418600543554535670687171662240
+convex hull            : V = 26, E = 39, F = 15;  V - E + F = 2  [OK]
+face sizes             : 2 x 3-gon, 4 x 4-gon, 2 x 5-gon, 4 x 6-gon, 2 x 7-gon, 1 x 8-gon
+redundant input points : none (every input point is a vertex)
+volume                 : <258-digit / 245-digit fraction, see JSON report>
+                       ~ 34085832377547.5
+centroid (exact)       :
+    x = <505-digit / 502-digit fraction, see JSON report>
+    y = <506-digit / 503-digit fraction, see JSON report>
+    z = <505-digit / 503-digit fraction, see JSON report>
+centroid (float)       : (777.171245535368, 4997.2032077026, 172.666796360629)
+
+VERTICES (V = 26)   h = max over w of (w - v).(v - c)/|v - c|  (height of the highest other vertex above the plane through v perpendicular to v - c)
+  vertex   0  non-equilibrium  h = +1.481e+05  shadowed by vertex 15 (non-adjacent); adjacent witness: vertex 8
+  vertex   1  non-equilibrium  h = +1.636e+05  shadowed by vertex 11 (non-adjacent); adjacent witness: vertex 9
+  vertex   2  non-equilibrium  h = +1.591e+05  shadowed by vertex 11 (non-adjacent); adjacent witness: vertex 1
+  vertex   3  non-equilibrium  h = +8.518e+04  shadowed by vertex 15 (non-adjacent); adjacent witness: vertex 13
+  vertex   4  non-equilibrium  h = +8.464e+04  shadowed by vertex 11 (non-adjacent); adjacent witness: vertex 14
+  vertex   5  non-equilibrium  h = +1.416e+05  shadowed by vertex 15 (non-adjacent); adjacent witness: vertex 3
+  vertex   6  non-equilibrium  h = +1.545e+05  shadowed by vertex 11 (non-adjacent); adjacent witness: vertex 7
+  vertex   7  non-equilibrium  h = +9.305e+04  shadowed by vertex 11 (non-adjacent); adjacent witness: vertex 4
+  vertex   8  non-equilibrium  h = +9.350e+04  shadowed by vertex 15 (non-adjacent); adjacent witness: vertex 17
+  vertex   9  non-equilibrium  h = +1.090e+05  shadowed by vertex 11 (non-adjacent); adjacent witness: vertex 18
+  vertex  10  non-equilibrium  h = +1.905e+04  shadowed by vertex 11 (adjacent); adjacent witness: vertex 11
+  vertex  11  UNSTABLE         h = -1.907e+04 (closest: vertex 10)
+  vertex  12  non-equilibrium  h = +2.217e+04  shadowed by vertex 15 (adjacent); adjacent witness: vertex 15
+  vertex  13  non-equilibrium  h = +2.946e+04  shadowed by vertex 15 (adjacent); adjacent witness: vertex 15
+  vertex  14  non-equilibrium  h = +4.449e+04  shadowed by vertex 11 (adjacent); adjacent witness: vertex 11
+  vertex  15  UNSTABLE         h = -2.230e+04 (closest: vertex 12)
+  vertex  16  non-equilibrium  h = +1.458e+05  shadowed by vertex 15 (non-adjacent); adjacent witness: vertex 17
+  vertex  17  non-equilibrium  h = +6.681e+04  shadowed by vertex 15 (non-adjacent); adjacent witness: vertex 22
+  vertex  18  non-equilibrium  h = +7.183e+04  shadowed by vertex 11 (non-adjacent); adjacent witness: vertex 20
+  vertex  19  non-equilibrium  h = +9.305e+04  shadowed by vertex 15 (non-adjacent); adjacent witness: vertex 16
+  vertex  20  non-equilibrium  h = +5.496e+04  shadowed by vertex 11 (non-adjacent); adjacent witness: vertex 10
+  vertex  21  non-equilibrium  h = +1.109e+05  shadowed by vertex 11 (adjacent); adjacent witness: vertex 11
+  vertex  22  non-equilibrium  h = +4.830e+04  shadowed by vertex 15 (non-adjacent); adjacent witness: vertex 12
+  vertex  23  non-equilibrium  h = +1.639e+05  shadowed by vertex 15 (non-adjacent); adjacent witness: vertex 5
+  vertex  24  non-equilibrium  h = +1.313e+05  shadowed by vertex 15 (adjacent); adjacent witness: vertex 15
+  vertex  25  non-equilibrium  h = +1.064e+05  shadowed by vertex 11 (non-adjacent); adjacent witness: vertex 7
+
+SUMMARY
+  stable faces      S = 1: face 11 [12, 10, 11, 14, 13, 15]
+  saddle edges      H = 1: 21-24
+  unstable vertices U = 2: 11, 15
+  (S, H, U) = (1, 1, 2);  S - H + U = 2  [Poincare-Hopf OK]
+  degeneracies: none (every decision was a strict inequality)
+  smallest decisive margin (float, informational only): 6.731e+01 at edge 20-22
+  CERTIFIED (exact, nondegenerate): True
+  MONO-UNSTABLE: False
+  MONO-STABLE:   True
+==============================================================================
+JSON report written to C:\Projects\Claude4\search_faces\certified\improved15.report.json

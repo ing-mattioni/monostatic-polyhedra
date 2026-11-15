@@ -1,0 +1,13 @@
+V=13 seed3d/spiral seed=13003: F=-2.3933e-02 nvert=11 evals=15428 t=6.7s meta={'a': 9, 'b': 3, 'pattern': 'zero_top_alt', 'eps': 0.02, 'apex': False}
+V=13 seed3d/spiral seed=13000: F=-2.0621e-03 nvert=12 evals=19096 t=7.0s meta={'a': 10, 'b': 2, 'pattern': 'random', 'eps': 0.1, 'apex': False}
+V=13 seed3d/spiral seed=13002: F=-2.3393e-02 nvert=10 evals=20062 t=6.9s meta={'a': 9, 'b': 3, 'pattern': 'grow', 'eps': 0.3, 'apex': False}
+V=13 seed3d/spiral seed=13005: F=-1.6594e-02 nvert=11 evals=22484 t=7.0s meta={'a': 7, 'b': 5, 'pattern': 'random', 'eps': 0.1, 'apex': False}
+V=13 seed3d/spiral seed=13006: F=-9.4046e-03 nvert=10 evals=12096 t=1.2s meta={'a': 8, 'b': 4, 'pattern': 'alt', 'eps': 0.3, 'apex': False}
+V=13 seed3d/spiral seed=13007: F=-8.1255e-03 nvert=12 evals=16072 t=1.6s meta={'a': 8, 'b': 4, 'pattern': 'armpm', 'eps': 0.02, 'apex': False}
+V=13 seed3d/spiral seed=13008: F=-1.3674e-02 nvert=8 evals=19810 t=1.8s meta={'a': 10, 'b': 2, 'pattern': 'growalt', 'eps': 0.3, 'apex': False}
+V=13 seed3d/spiral seed=13011: F=-1.0176e-03 nvert=12 evals=17416 t=1.6s meta={'a': 8, 'b': 4, 'pattern': 'armpm', 'eps': 0.1, 'apex': False}
+V=13 seed3d/spiral seed=13001: F=-2.0565e-02 nvert=11 evals=200004 t=18.1s meta={'a': 9, 'b': 3, 'pattern': 'alt', 'eps': 1.0, 'apex': False}
+V=13 seed3d/spiral seed=13004: F=-2.1385e-02 nvert=11 evals=197932 t=18.2s meta={'a': 6, 'b': 6, 'pattern': 'bottom_pm', 'eps': 0.1, 'apex': False}
+V=13 seed3d/spiral seed=13009: F=-1.7961e-02 nvert=10 evals=200004 t=13.0s meta={'a': 10, 'b': 2, 'pattern': 'grow', 'eps': 0.3, 'apex': False}
+V=13 seed3d/spiral seed=13010: F=-1.3707e-02 nvert=11 evals=200004 t=12.9s meta={'a': 9, 'b': 3, 'pattern': 'grow', 'eps': 1.0, 'apex': False}
+done 12 tasks in 23s; best F=-1.0176e-03 file=C:\Projects\Claude4\search_vertices\sols\V13_seed3d_spiral_13011.npy

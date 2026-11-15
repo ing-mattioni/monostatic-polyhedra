@@ -1,0 +1,83 @@
+verify_joint.py: V = 8, files ['certs_V8.jsonl.gz', 'exp1_V8_certG.jsonl.gz']
+External fact used: number of triangulations of the 2-sphere with V vertices (OEIS A000109) = 14 for V = 8.
+   50000 certificates verified (16s)
+   100000 certificates verified (33s)
+   150000 certificates verified (50s)
+   200000 certificates verified (68s)
+   250000 certificates verified (85s)
+   300000 certificates verified (102s)
+   350000 certificates verified (119s)
+   400000 certificates verified (136s)
+(iv) 432041 certificates read (10207 of the general kind (2G)), each verified exactly (duplicates: 0); 152.6s
+(i)  14 simplicial 2-spheres, pairwise non-isomorphic = A000109(8): complete
+(ii) every vertex is a root or mapped to one by a verified automorphism
+     graph 0 root 0: 6240 rooted spanning trees (= Kirchhoff 6240), 6240 certified, 0 missing
+     graph 0 root 2: 6240 rooted spanning trees (= Kirchhoff 6240), 6240 certified, 0 missing
+     graph 0 root 3: 6240 rooted spanning trees (= Kirchhoff 6240), 6240 certified, 0 missing
+     graph 0 root 6: 6240 rooted spanning trees (= Kirchhoff 6240), 6240 certified, 0 missing
+     graph 1 root 0: 6235 rooted spanning trees (= Kirchhoff 6235), 6235 certified, 0 missing
+     graph 1 root 1: 6235 rooted spanning trees (= Kirchhoff 6235), 6235 certified, 0 missing
+     graph 1 root 2: 6235 rooted spanning trees (= Kirchhoff 6235), 6235 certified, 0 missing
+     graph 1 root 3: 6235 rooted spanning trees (= Kirchhoff 6235), 6235 certified, 0 missing
+     graph 1 root 4: 6235 rooted spanning trees (= Kirchhoff 6235), 6235 certified, 0 missing
+     graph 1 root 5: 6235 rooted spanning trees (= Kirchhoff 6235), 6235 certified, 0 missing
+     graph 1 root 6: 6235 rooted spanning trees (= Kirchhoff 6235), 6235 certified, 0 missing
+     graph 1 root 7: 6235 rooted spanning trees (= Kirchhoff 6235), 6235 certified, 0 missing
+     graph 2 root 0: 6435 rooted spanning trees (= Kirchhoff 6435), 6435 certified, 0 missing
+     graph 2 root 1: 6435 rooted spanning trees (= Kirchhoff 6435), 6435 certified, 0 missing
+     graph 2 root 2: 6435 rooted spanning trees (= Kirchhoff 6435), 6435 certified, 0 missing
+     graph 2 root 3: 6435 rooted spanning trees (= Kirchhoff 6435), 6435 certified, 0 missing
+     graph 2 root 4: 6435 rooted spanning trees (= Kirchhoff 6435), 6435 certified, 0 missing
+     graph 2 root 5: 6435 rooted spanning trees (= Kirchhoff 6435), 6435 certified, 0 missing
+     graph 2 root 6: 6435 rooted spanning trees (= Kirchhoff 6435), 6435 certified, 0 missing
+     graph 2 root 7: 6435 rooted spanning trees (= Kirchhoff 6435), 6435 certified, 0 missing
+     graph 3 root 0: 6555 rooted spanning trees (= Kirchhoff 6555), 6555 certified, 0 missing
+     graph 3 root 1: 6555 rooted spanning trees (= Kirchhoff 6555), 6555 certified, 0 missing
+     graph 3 root 3: 6555 rooted spanning trees (= Kirchhoff 6555), 6555 certified, 0 missing
+     graph 3 root 4: 6555 rooted spanning trees (= Kirchhoff 6555), 6555 certified, 0 missing
+     graph 3 root 6: 6555 rooted spanning trees (= Kirchhoff 6555), 6555 certified, 0 missing
+     graph 4 root 0: 6000 rooted spanning trees (= Kirchhoff 6000), 6000 certified, 0 missing
+     graph 4 root 4: 6000 rooted spanning trees (= Kirchhoff 6000), 6000 certified, 0 missing
+     graph 5 root 0: 6320 rooted spanning trees (= Kirchhoff 6320), 6320 certified, 0 missing
+     graph 5 root 2: 6320 rooted spanning trees (= Kirchhoff 6320), 6320 certified, 0 missing
+     graph 5 root 3: 6320 rooted spanning trees (= Kirchhoff 6320), 6320 certified, 0 missing
+     graph 5 root 4: 6320 rooted spanning trees (= Kirchhoff 6320), 6320 certified, 0 missing
+     graph 5 root 5: 6320 rooted spanning trees (= Kirchhoff 6320), 6320 certified, 0 missing
+     graph 5 root 7: 6320 rooted spanning trees (= Kirchhoff 6320), 6320 certified, 0 missing
+     graph 6 root 0: 7140 rooted spanning trees (= Kirchhoff 7140), 7140 certified, 0 missing
+     graph 6 root 2: 7140 rooted spanning trees (= Kirchhoff 7140), 7140 certified, 0 missing
+     graph 6 root 4: 7140 rooted spanning trees (= Kirchhoff 7140), 7140 certified, 0 missing
+     graph 6 root 6: 7140 rooted spanning trees (= Kirchhoff 7140), 7140 certified, 0 missing
+     graph 7 root 0: 6580 rooted spanning trees (= Kirchhoff 6580), 6580 certified, 0 missing
+     graph 7 root 2: 6580 rooted spanning trees (= Kirchhoff 6580), 6580 certified, 0 missing
+     graph 7 root 4: 6580 rooted spanning trees (= Kirchhoff 6580), 6580 certified, 0 missing
+     graph 7 root 6: 6580 rooted spanning trees (= Kirchhoff 6580), 6580 certified, 0 missing
+     graph 8 root 0: 7344 rooted spanning trees (= Kirchhoff 7344), 7344 certified, 0 missing
+     graph 8 root 2: 7344 rooted spanning trees (= Kirchhoff 7344), 7344 certified, 0 missing
+     graph 8 root 3: 7344 rooted spanning trees (= Kirchhoff 7344), 7344 certified, 0 missing
+     graph 8 root 4: 7344 rooted spanning trees (= Kirchhoff 7344), 7344 certified, 0 missing
+     graph 8 root 5: 7344 rooted spanning trees (= Kirchhoff 7344), 7344 certified, 0 missing
+     graph 8 root 7: 7344 rooted spanning trees (= Kirchhoff 7344), 7344 certified, 0 missing
+     graph 9 root 0: 8100 rooted spanning trees (= Kirchhoff 8100), 8100 certified, 0 missing
+     graph 9 root 2: 8100 rooted spanning trees (= Kirchhoff 8100), 8100 certified, 0 missing
+     graph 10 root 0: 7280 rooted spanning trees (= Kirchhoff 7280), 7280 certified, 0 missing
+     graph 10 root 1: 7280 rooted spanning trees (= Kirchhoff 7280), 7280 certified, 0 missing
+     graph 10 root 5: 7280 rooted spanning trees (= Kirchhoff 7280), 7280 certified, 0 missing
+     graph 10 root 6: 7280 rooted spanning trees (= Kirchhoff 7280), 7280 certified, 0 missing
+     graph 11 root 0: 7797 rooted spanning trees (= Kirchhoff 7797), 7797 certified, 0 missing
+     graph 11 root 1: 7797 rooted spanning trees (= Kirchhoff 7797), 7797 certified, 0 missing
+     graph 11 root 3: 7797 rooted spanning trees (= Kirchhoff 7797), 7797 certified, 0 missing
+     graph 11 root 4: 7797 rooted spanning trees (= Kirchhoff 7797), 7797 certified, 0 missing
+     graph 11 root 5: 7797 rooted spanning trees (= Kirchhoff 7797), 7797 certified, 0 missing
+     graph 11 root 7: 7797 rooted spanning trees (= Kirchhoff 7797), 7797 certified, 0 missing
+     graph 12 root 0: 7350 rooted spanning trees (= Kirchhoff 7350), 7350 certified, 0 missing
+     graph 12 root 6: 7350 rooted spanning trees (= Kirchhoff 7350), 7350 certified, 0 missing
+     graph 13 root 0: 8640 rooted spanning trees (= Kirchhoff 8640), 8640 certified, 0 missing
+     graph 13 root 4: 8640 rooted spanning trees (= Kirchhoff 8640), 8640 certified, 0 missing
+(iii) 432041 (graph, root, tree) cases, 0 without certificate; total time 154.6s
+ALL CHECKS PASSED: no homogeneous convex polyhedron with 8 vertices is mono-unstable (given the geometric lemma (1) and A000109).
+
+real	2m34.683s
+user	0m0.015s
+sys	0m0.000s
+exit=0

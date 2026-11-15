@@ -1,0 +1,25 @@
+V=14 flatseed seed=5002: F_flat=-3.2405e-02 F3d=-2.9012e-02 nvert=12 eps=0.003 evals=21360 t=4.7s meta={'a': 11, 'b': 2, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=5000: F_flat=-2.9881e-02 F3d=-1.0342e-02 nvert=12 eps=0.0003 evals=30960 t=5.4s meta={'a': 9, 'b': 4, 'pattern': 'alt', 'apex': False}
+V=14 flatseed seed=5004: F_flat=-3.0819e-02 F3d=-8.9326e-04 nvert=12 eps=0.01 evals=22860 t=5.3s meta={'a': 7, 'b': 6, 'pattern': 'alt', 'apex': False}
+V=14 flatseed seed=5003: F_flat=-3.0130e-02 F3d=-2.8687e-02 nvert=14 eps=0.001 evals=27765 t=6.0s meta={'a': 8, 'b': 5, 'pattern': 'random', 'apex': False}
+V=14 flatseed seed=5005: F_flat=-3.1089e-02 F3d=-2.8906e-02 nvert=11 eps=0.0003 evals=37815 t=6.3s meta={'a': 11, 'b': 2, 'pattern': 'armpm', 'apex': False}
+V=14 flatseed seed=5006: F_flat=-2.7257e-02 F3d=-2.6874e-02 nvert=13 eps=0.0003 evals=22380 t=2.4s meta={'a': 8, 'b': 5, 'pattern': 'bottom_pm', 'apex': False}
+V=14 flatseed seed=5007: F_flat=-3.0205e-02 F3d=-2.9363e-02 nvert=12 eps=0.003 evals=28470 t=2.5s meta={'a': 10, 'b': 3, 'pattern': 'bottom_pm', 'apex': False}
+V=14 flatseed seed=5010: F_flat=-3.2465e-02 F3d=-2.8382e-02 nvert=12 eps=0.001 evals=26790 t=2.4s meta={'a': 8, 'b': 5, 'pattern': 'random', 'apex': False}
+V=14 flatseed seed=5012: F_flat=-3.0058e-02 F3d=-2.8853e-02 nvert=12 eps=0.0003 evals=27975 t=2.9s meta={'a': 8, 'b': 5, 'pattern': 'bottom_pm', 'apex': False}
+V=14 flatseed seed=5013: F_flat=-2.9613e-02 F3d=-2.9269e-02 nvert=10 eps=0.0003 evals=49500 t=4.2s meta={'a': 8, 'b': 5, 'pattern': 'zero_top_alt', 'apex': False}
+V=14 flatseed seed=5014: F_flat=-2.7304e-02 F3d=-2.6117e-02 nvert=14 eps=0.0003 evals=25440 t=2.7s meta={'a': 9, 'b': 4, 'pattern': 'growalt', 'apex': False}
+V=14 flatseed seed=5001: F_flat=-3.0306e-02 F3d=-2.9886e-02 nvert=9 eps=0.0003 evals=135435 t=14.0s meta={'a': 7, 'b': 6, 'pattern': 'armpm', 'apex': False}
+V=14 flatseed seed=5015: F_flat=-2.9786e-02 F3d=-2.8871e-02 nvert=13 eps=0.0003 evals=25785 t=2.3s meta={'a': 12, 'b': 1, 'pattern': 'random', 'apex': False}
+V=14 flatseed seed=5016: F_flat=-3.3009e-02 F3d=-2.9758e-02 nvert=11 eps=0.0003 evals=24210 t=2.4s meta={'a': 11, 'b': 2, 'pattern': 'zero_top_alt', 'apex': False}
+V=14 flatseed seed=5008: F_flat=-2.5834e-02 F3d=-2.5826e-02 nvert=12 eps=0.0003 evals=159030 t=11.9s meta={'a': 11, 'b': 2, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=5018: F_flat=-3.1744e-02 F3d=-2.9771e-02 nvert=12 eps=0.0003 evals=44775 t=3.5s meta={'a': 9, 'b': 4, 'pattern': 'random', 'apex': False}
+V=14 flatseed seed=5009: F_flat=-2.8352e-02 F3d=-2.8242e-02 nvert=12 eps=0.0003 evals=170115 t=13.3s meta={'a': 9, 'b': 4, 'pattern': 'armpm', 'apex': False}
+V=14 flatseed seed=5019: F_flat=-3.2551e-02 F3d=-3.1621e-02 nvert=13 eps=0.0003 evals=42420 t=3.6s meta={'a': 8, 'b': 5, 'pattern': 'zero_top_alt', 'apex': False}
+V=14 flatseed seed=5011: F_flat=-2.5445e-02 F3d=-2.5430e-02 nvert=9 eps=0.0003 evals=159030 t=12.3s meta={'a': 7, 'b': 6, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=5017: F_flat=-3.0227e-02 F3d=-2.9940e-02 nvert=12 eps=0.0003 evals=60360 t=5.7s meta={'a': 7, 'b': 6, 'pattern': 'alt', 'apex': False}
+V=14 flatseed seed=5021: F_flat=-2.8468e-02 F3d=-2.8024e-02 nvert=9 eps=0.001 evals=35265 t=2.8s meta={'a': 9, 'b': 4, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=5020: F_flat=-3.0042e-02 F3d=-2.9717e-02 nvert=12 eps=0.0003 evals=70830 t=5.7s meta={'a': 10, 'b': 3, 'pattern': 'grow', 'apex': False}
+V=14 flatseed seed=5022: F_flat=+6.9376e-03 F3d=+6.9752e-03 nvert=14 eps=0.0003 evals=159030 t=11.4s meta={'a': 7, 'b': 6, 'pattern': 'growalt', 'apex': False}
+V=14 flatseed seed=5023: F_flat=-4.7474e-02 F3d=-4.7432e-02 nvert=12 eps=0.0003 evals=159030 t=11.7s meta={'a': 8, 'b': 5, 'pattern': 'bottom_pm', 'apex': False}
+done 24 in 33s; best F_flat=+6.9376e-03 F3d=+6.9752e-03 C:\Projects\Claude4\search_vertices\sols\V14_flatseed_5022.npy

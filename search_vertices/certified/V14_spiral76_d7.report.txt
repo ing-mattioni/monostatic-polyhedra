@@ -1,0 +1,45 @@
+==============================================================================
+EXACT EQUILIBRIUM CERTIFICATE: V14_spiral76_d7
+==============================================================================
+input points           : 14
+input sha256           : 26defec4165cb8d362d7a54b643180fcca219b49ba3a3a8d74e362a3965818d0
+common denominator     : 10000000
+convex hull            : V = 14, E = 36, F = 24;  V - E + F = 2  [OK]
+face sizes             : 24 x 3-gon
+redundant input points : none (every input point is a vertex)
+volume                 : 369585797073951351/400000000000000000000
+                       ~ 0.000923964492684878
+centroid (exact)       :
+    x = -46197892830542479511/55437869561092702650000000
+    y = -24635880361379023/2956686376591610808000000
+    z = 10187974785257851367/55437869561092702650000000
+centroid (float)       : (-8.33327348188088e-07, -8.33226024796671e-09, 1.83772840946398e-07)
+
+VERTICES (V = 14)   h = max over w of (w - v).(v - c)/|v - c|  (height of the highest other vertex above the plane through v perpendicular to v - c)
+  vertex   0  UNSTABLE         h = -3.594e-01 (closest: vertex 1)
+  vertex   1  non-equilibrium  h = +6.375e-03  shadowed by vertex 0 (adjacent); adjacent witness: vertex 0
+  vertex   2  non-equilibrium  h = +3.567e-03  shadowed by vertex 1 (adjacent); adjacent witness: vertex 1
+  vertex   3  non-equilibrium  h = +3.027e-03  shadowed by vertex 2 (adjacent); adjacent witness: vertex 2
+  vertex   4  non-equilibrium  h = +2.753e-03  shadowed by vertex 3 (adjacent); adjacent witness: vertex 3
+  vertex   5  non-equilibrium  h = +2.414e-03  shadowed by vertex 4 (adjacent); adjacent witness: vertex 4
+  vertex   6  non-equilibrium  h = +2.294e-03  shadowed by vertex 5 (adjacent); adjacent witness: vertex 5
+  vertex   7  non-equilibrium  h = +2.027e-03  shadowed by vertex 8 (adjacent); adjacent witness: vertex 8
+  vertex   8  non-equilibrium  h = +2.204e-03  shadowed by vertex 9 (adjacent); adjacent witness: vertex 9
+  vertex   9  non-equilibrium  h = +2.374e-03  shadowed by vertex 10 (adjacent); adjacent witness: vertex 10
+  vertex  10  non-equilibrium  h = +2.516e-03  shadowed by vertex 11 (adjacent); adjacent witness: vertex 11
+  vertex  11  non-equilibrium  h = +2.674e-03  shadowed by vertex 12 (adjacent); adjacent witness: vertex 12
+  vertex  12  non-equilibrium  h = +3.243e-03  shadowed by vertex 13 (adjacent); adjacent witness: vertex 13
+  vertex  13  non-equilibrium  h = +6.436e-03  shadowed by vertex 0 (adjacent); adjacent witness: vertex 0
+
+SUMMARY
+  stable faces      S = 2: face 2 [5, 7, 0]; face 3 [6, 0, 8]
+  saddle edges      H = 1: 6-7
+  unstable vertices U = 1: 0
+  (S, H, U) = (2, 1, 1);  S - H + U = 2  [Poincare-Hopf OK]
+  degeneracies: none (every decision was a strict inequality)
+  smallest decisive margin (float, informational only): 2.027e-03 at vertex 7
+  CERTIFIED (exact, nondegenerate): True
+  MONO-UNSTABLE: True
+  MONO-STABLE:   False
+==============================================================================
+JSON report written to C:\Projects\Claude4\search_vertices\tmp_cert\V14_spiral76_d7.report.json
