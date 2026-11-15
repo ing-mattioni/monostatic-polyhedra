@@ -1,0 +1,3 @@
+V = 8: exhaustive enumeration: 356916 labelled graphs with 18 edges pass the filters; 223440 labelled simplicial 2-spheres  [27s]
+listed spheres: 14, pairwise non-isomorphic; labelled copies sum_k V!/|Aut_k| = 223440  [35s]
+COMPLETE: every simplicial 2-sphere on 8 vertices is isomorphic to a listed one (no external count used).

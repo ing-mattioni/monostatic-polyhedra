@@ -25,9 +25,10 @@ The mathematics (statements, proofs of all reductions, discussion, references) i
 
 **Status / caveats.** These are computer-assisted results produced in an AI-driven research session
 (Claude, with the repository owner); they have **not been peer reviewed**. Each theorem is checked by a
-small independent verifier (below). Theorem 1 uses one external fact (the number of triangulations of
-the sphere with ≤ 8 vertices, OEIS A000109); Theorem 3 relies on `python-flint`/Arb ball arithmetic and
-on `sympy` for polynomial algebra. Not found: a 13-vertex mono-unstable or a 13-face mono-stable
+small independent verifier (below). Theorem 1 is checked in exact integer arithmetic with the Python
+standard library only (the completeness of the list of triangulated spheres is itself re-derived by
+exhaustive enumeration); Theorem 3 relies on `python-flint`/Arb ball arithmetic and on `sympy` for
+polynomial algebra. Not found: a 13-vertex mono-unstable or a 13-face mono-stable
 polyhedron (limited searches; no conclusion). The problems themselves remain open: the exact minima are
 still unknown.
 
@@ -40,6 +41,7 @@ pip install sympy python-flint                     # only needed for Theorem 3
 # Theorem 1 (standard library only, exact integers)
 python lb_joint/verify_joint.py 7 lb_joint/certs_V7.jsonl.gz                                   # ~5 s
 python lb_joint/verify_joint.py 8 lb_joint/certs_V8.jsonl.gz lb_joint/exp1_V8_certG.jsonl.gz   # ~3 min
+python lb_joint/enumerate_spheres.py 8 lb_joint/certs_V8.jsonl.gz    # all 223,440 labelled spheres: list complete
 
 # Theorem 2 (standard library only, exact rationals)
 python verify/exact_verify.py examples/V14_integer.json

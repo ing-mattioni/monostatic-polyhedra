@@ -146,10 +146,16 @@ $V=7$); for them the single-cone Gram relaxation is genuinely feasible, and a se
 
 The verifier `lb_joint/verify_joint.py` (standard library only, integers only) checks: each listed
 complex is a simplicial 2-sphere; the listed spheres are pairwise non-isomorphic and their number equals
-the known number of triangulations of the sphere with $V$ vertices (OEIS A000109 — the one external fact
-used); every vertex is a listed root or is mapped to one by a listed, verified automorphism; all rooted
-spanning trees are enumerated independently (count compared with Kirchhoff's determinant) and each has a
-certificate; every certificate matrix is positive definite. This proves Theorem 1. $\square$
+the known number of triangulations of the sphere with $V$ vertices (OEIS A000109); every vertex is a
+listed root or is mapped to one by a listed, verified automorphism; all rooted spanning trees are
+enumerated independently (count compared with Kirchhoff's determinant) and each has a certificate; every
+certificate matrix is positive definite.
+
+The completeness of the lists of spheres does not have to be taken from the literature:
+`lb_joint/enumerate_spheres.py` (standard library only) enumerates *all* labelled simplicial 2-spheres on
+$\{0,\dots,V-1\}$ exhaustively (all edge sets with $3V-6$ edges, all exact double covers by triangles)
+and compares their number with $\sum_k V!/|\mathrm{Aut}_k|$ over the listed spheres: 1, 10, 195, 5 712 and
+223 440 labelled spheres for $V=4,\dots,8$, in agreement in every case. This proves Theorem 1. $\square$
 
 *Outlook: $V=9$.* There are 50 simplicial spheres with 9 vertices and 9 915 284 (sphere, root, tree)
 cases. A probe of 1 500 of them (600 random trees, 900 depth-first "long" trees, which are the hard ones)
@@ -243,8 +249,10 @@ The proof is in `penta/README.md`; in outline:
 3. *Rigorous cover.* Each chart is subdivided into boxes; on each box and for each tree an affine
    multiplier $y(x)$ is verified by a mean-value enclosure in ball arithmetic.
 
-Statistics of the final cover are in `penta/verify.log`. A Monte-Carlo test on $2\cdot10^6$ random
-pentahedra (independent code) found none with fewer than two stable faces. $\square$
+The final cover consists of 575 441 certificates on 32 136 boxes in the cone chart and 763 649
+certificates on 37 120 boxes in the prism chart; `penta/verify.py` re-checks all of them
+(`penta/verify.log`). A Monte-Carlo test on $2\cdot10^6$ random pentahedra (independent code) found none
+with fewer than two stable faces. $\square$
 
 The same reduction shows why simplices are easy (all simplices are affinely equivalent, so one SDP per
 tree decides the question — Conway's and Dawson's theorems) and why the difficulty grows with the
@@ -294,8 +302,9 @@ left open by Dawson, Finbow and Mak. This is not new: it is equivalent to the st
 |---|---|---|
 | Theorem 1, $V=7$ | `python lb_joint/verify_joint.py 7 lb_joint/certs_V7.jsonl.gz` | 5 s |
 | Theorem 1, $V=8$ | `python lb_joint/verify_joint.py 8 lb_joint/certs_V8.jsonl.gz lb_joint/exp1_V8_certG.jsonl.gz` | 3 min |
+| completeness of the sphere lists | `python lb_joint/enumerate_spheres.py 8 lb_joint/certs_V8.jsonl.gz` (same for 4–7) | 1 min |
 | Theorem 2 | `python verify/exact_verify.py examples/V14_integer.json` | 1 s |
-| Theorem 3 | `python penta/verify.py` | see `penta/verify.log` |
+| Theorem 3 | `python penta/verify.py` | 2 min on 12 cores |
 
 `verify_joint.py` and `exact_verify.py` need only the Python standard library; `penta/verify.py` needs
 `sympy` and `python-flint`.

@@ -1,0 +1,12 @@
+V = 4: exhaustive enumeration: 1 labelled graphs with 6 edges pass the filters; 1 labelled simplicial 2-spheres  [0s]
+listed spheres: 1, pairwise non-isomorphic; labelled copies sum_k V!/|Aut_k| = 1  [1s]
+COMPLETE: every simplicial 2-sphere on 4 vertices is isomorphic to a listed one (no external count used).
+V = 5: exhaustive enumeration: 10 labelled graphs with 9 edges pass the filters; 10 labelled simplicial 2-spheres  [0s]
+listed spheres: 1, pairwise non-isomorphic; labelled copies sum_k V!/|Aut_k| = 10  [0s]
+COMPLETE: every simplicial 2-sphere on 5 vertices is isomorphic to a listed one (no external count used).
+V = 6: exhaustive enumeration: 215 labelled graphs with 12 edges pass the filters; 195 labelled simplicial 2-spheres  [1s]
+listed spheres: 2, pairwise non-isomorphic; labelled copies sum_k V!/|Aut_k| = 195  [1s]
+COMPLETE: every simplicial 2-sphere on 6 vertices is isomorphic to a listed one (no external count used).
+V = 7: exhaustive enumeration: 7217 labelled graphs with 15 edges pass the filters; 5712 labelled simplicial 2-spheres  [2s]
+listed spheres: 5, pairwise non-isomorphic; labelled copies sum_k V!/|Aut_k| = 5712  [3s]
+COMPLETE: every simplicial 2-sphere on 7 vertices is isomorphic to a listed one (no external count used).
