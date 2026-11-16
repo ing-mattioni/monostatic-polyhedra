@@ -1,0 +1,4 @@
+stage 2 (hybrid): 751513 trees, 15 workers
+  5000/751513  {'H': 4873, 'G': 0, 'none': 127}  mean attempts 1.99  272s  (eta 11.3 h)
+  10000/751513  {'H': 9769, 'G': 0, 'none': 231}  mean attempts 1.89  474s  (eta 9.8 h)
+Process SpawnPoolWorker-14:

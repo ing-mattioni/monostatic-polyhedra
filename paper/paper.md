@@ -161,10 +161,20 @@ check, `lb_joint/flip_closure.py`, uses Wagner's theorem (any two triangulations
 number of vertices are connected by edge flips): the listed spheres are closed under flips up to
 isomorphism (159 flips for $V=8$), hence complete. This proves Theorem 1. $\square$
 
-*Outlook: $V=9$.* There are 50 simplicial spheres with 9 vertices and 9 915 284 (sphere, root, tree)
-cases. A probe of 1 500 of them (600 random trees, 900 depth-first "long" trees, which are the hard ones)
-found every one certifiable by Prop. 3.1 or by Prop. 3.2 with two cones (`explore/probe_V9.log`), so
-$V_U\ge10$ is probably provable in the same way with roughly 80 CPU-hours; this has not been done.
+*Where the method stops: $V=9$.* There are 50 simplicial spheres with 9 vertices (the list is complete by
+the flip-closure check) and 9 915 284 (sphere, root, tree) cases. The single-cone certificate
+(Prop. 3.1) settles 9 163 771 of them, 92.4% (`lb_joint/run_V9_stage1.log`). For the other 751 513 we
+used, besides Prop. 3.2, a cheaper sound variant ("hybrid": the second cone is used only for the deepest
+tetrahedra of the first; record kind `certH` in `verify_joint.py`, with its soundness argument). On a random
+sample of 3 000 of these trees (`lb_joint/v9_obstruction.py`, `.log`): 2 911 are certified by hybrid
+certificates, 22 need all nine cone decompositions plus the steepest-neighbour inequalities, and **67
+resist every certificate available here** — for them the Gram relaxation is feasible even with the cone
+identities from all nine vertices. Extrapolated, about 17 000 trees (0.17% of all cases) cannot be excluded
+this way; all obstructing trees in the sample contain a shadowing path of depth 6 or 7 (for example sphere 0,
+root 0, the path $0\leftarrow7\leftarrow6\leftarrow5\leftarrow4\leftarrow3\leftarrow2\leftarrow1$ plus
+$0\leftarrow8$), while the 294 sampled trees of depth 8 were all certified. So $V_U\ge10$ needs genuinely
+new valid constraints — for instance relations between the tetrahedron weights and the geometry, or
+convexity — and is left open.
 
 ## 4. Upper bound for vertices: thin plates (Theorem 2)
 
@@ -299,7 +309,9 @@ left open by Dawson, Finbow and Mak. This is not new: it is equivalent to the st
 
 ### 6.4 Open problems
 
-* Close $9\le V_U\le14$. Is there a mono-unstable polyhedron that is not a thin plate?
+* Close $9\le V_U\le14$. Is there a mono-unstable polyhedron that is not a thin plate? For the lower
+  bound, the Gram relaxation of §3 is too weak at $V=9$ (about 0.17% of the cases survive it); a
+  stronger relaxation is needed.
 * Close $6\le F_S\le14$. The shape × metric method is exact but the shape space of hexahedra is
   6-dimensional; is there a Gram-type relaxation for faces as there is for vertices?
 * Prove that thin plates need 14 vertices (a planar variational problem).

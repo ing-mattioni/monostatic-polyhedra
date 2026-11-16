@@ -1,0 +1,16 @@
+  250/3000  {'H': 250}  11s
+  500/3000  {'H': 496, 'allcones+S1': 1, 'none': 3}  42s
+  750/3000  {'H': 738, 'allcones+S1': 3, 'none': 9}  55s
+  1000/3000  {'H': 982, 'allcones+S1': 6, 'none': 12}  76s
+  1250/3000  {'H': 1229, 'allcones+S1': 7, 'none': 14}  92s
+  1500/3000  {'H': 1473, 'allcones+S1': 7, 'none': 20}  112s
+  1750/3000  {'H': 1713, 'allcones+S1': 10, 'none': 27}  144s
+  2000/3000  {'H': 1955, 'allcones+S1': 12, 'none': 33}  175s
+  2250/3000  {'H': 2196, 'allcones+S1': 14, 'none': 40}  197s
+  2500/3000  {'H': 2436, 'allcones+S1': 16, 'none': 48}  223s
+  2750/3000  {'H': 2679, 'allcones+S1': 18, 'none': 53}  241s
+  3000/3000  {'H': 2911, 'allcones+S1': 22, 'none': 67}  283s
+sample of 3000 of the 751513 stage-1-uncertified trees (seed 2026): {'H': 2911, 'allcones+S1': 22, 'none': 67}
+estimated number of trees resisting every certificate: 16784 (2.23% of stage 2, 0.169% of all 9,915,284)
+max tree depth, survivors: {6: 13, 7: 54}   all sampled: {5: 62, 6: 1190, 7: 1454, 8: 294}
+done in 283s
