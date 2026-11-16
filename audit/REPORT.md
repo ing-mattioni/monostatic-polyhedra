@@ -64,6 +64,7 @@ needed). The polynomials enter only as data dumped from `shapes.py` and are veri
 | Chart Z, stratified sample | 20,540 (20,000 uniform, 190 at depth ≥ 12, 350 on the boundary) | 0 failures |
 | Chart P, original file, sample | 6,556 (199 deep, 357 boundary) | 0 failures |
 | Chart P, compacted file, sample | 5,555 (196 deep, 359 boundary) | 0 failures |
+| Chart P, compacted file, **all** (run after the audit, see follow-up) | 763,649 (36,921 nodes) | 0 failures |
 
 Coverage: an independent traversal confirms the full grid, exact skip leaves, and all 375 trees on every
 root-to-leaf path; counts match `penta/verify.log` exactly. Pointwise end-to-end: 460 exact random shapes
@@ -120,7 +121,9 @@ This does not invalidate the current certificates. `compact.py` cannot affect so
   with `python -O`: all checks pass (`penta/verify.log`). The tamper suite was re-run against the fixed
   verifier: every tampered file is rejected, also under `-O` (`tamper_after_fix.log`).
 * **Chart P, all certificates.** The auditor's independent checker was run on *all* 763,649 chart-P
-  certificates of the final file: see `recheck_compactP_all.log` for the outcome.
+  certificates of the final file: all verified exactly, 0 failures, no subdivision needed
+  (`recheck_compactP_all.log`). Together with the full chart-Z run, every one of the 1,339,090
+  certificates of the final proof has now been re-checked by the independent implementation.
 * **Write-up.** The lemma on the prism type, the pyramid description and the positivity argument were
   added to `penta/README.md`; the statements criticised in (e) were corrected; `penta/sanity.log` stores
   the Monte-Carlo run; the completeness of the sphere lists in Theorem 1 is verified by

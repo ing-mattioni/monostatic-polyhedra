@@ -253,7 +253,8 @@ The proof is in `penta/README.md`; in outline:
 The final cover consists of 575 441 certificates on 32 136 boxes in the cone chart and 763 649
 certificates on 37 120 boxes in the prism chart (multipliers rounded to 6 significant digits);
 `penta/verify.py` re-checks all of them (`penta/verify.log`). An independent audit (`audit/REPORT.md`)
-re-verified the certificates with a separate exact-rational implementation and found no error.
+re-verified all of them with a separate exact-rational implementation (no shared code) and found no
+error.
 Monte-Carlo tests on more than $3\cdot10^6$ random pentahedra (two independent codes, `penta/sanity.log`,
 `audit/falsify_random.log`) and optimisation runs found none with fewer than two stable faces. $\square$
 

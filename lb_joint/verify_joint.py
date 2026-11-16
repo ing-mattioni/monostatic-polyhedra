@@ -67,6 +67,19 @@ E_ii - (E_ij + E_ji)/2, so <S_{i->j}, R> = (r_i - r_j) . r_i.
           the W_q cancel and we get a positive definite matrix whose pairing
           with R is <= 0: contradiction.  (Q = {v}, W = 0, no c: this is (2).)
 
+ (2H) [hybrid certificate, record kind "certH"]  A second vertex q != v; the
+     triangles avoiding v are split into "good" and "bad" ones.  Integer
+     vectors mu, mu' and, for every good T (cone from v) and for every pair
+     (T, T') with T bad and T' in the cone decomposition from q, integer
+     multipliers y >= 0 (y_v = 0) such that
+         good T:       sum_i y_i (2 S_i) + mu 1_T^T + 1_T mu^T                            > 0,
+         bad T, T':    sum_i y_i (2 S_i) + mu 1_T^T + 1_T mu^T + mu' 1_T'^T + 1_T' mu'^T > 0.
+     Soundness: by (1) for the cone from v there is T* of positive volume with
+     <sym(mu 1_T*^T), R> <= 0, and by (1) for the cone from q there is T'* of
+     positive volume with <sym(mu' 1_T'*^T), R> <= 0.  If T* is good, the first
+     matrix for T* pairs with R to <= 0; if T* is bad, the second matrix for
+     (T*, T'*) does.  Either contradicts positive definiteness (R >= 0, R != 0).
+
  External fact used (not verified here): the number of combinatorial types of
  triangulations of the 2-sphere with V vertices (equivalently, of maximal
  planar simple graphs) is 1, 1, 2, 5, 14, 50 for V = 4, 5, 6, 7, 8, 9
@@ -93,6 +106,10 @@ CHECKS performed:
        for each triangle not containing v (all of them, each once), and every
        integer matrix 2*M_T positive definite (fraction-free Gaussian
        elimination = all leading principal minors positive, Sylvester).
+       For a hybrid certificate (2H): q != v, integer mu, mu', every
+       triangle avoiding v exactly once as good or bad, every bad one paired
+       with every triangle avoiding q exactly once, y >= 0 with y_v = 0, and
+       every matrix exactly positive definite.
        For a general certificate (2G): distinct apexes q, integer symmetric
        W_q with sum_q W_q = 0 exactly (W = null for a single apex), for each
        apex all triangles avoiding it (each once), y >= 0 with y_v = 0, S1
@@ -135,7 +152,7 @@ def is_positive_definite(N):
             for j in range(k + 1, d):
                 num = N[i][j] * piv - N[i][k] * N[k][j]
                 q, r = divmod(num, prev)
-                assert r == 0
+                need(r == 0, "internal error: inexact Bareiss division")
                 N[i][j] = q
         prev = piv
     return True
@@ -356,6 +373,62 @@ def check_general_certificate(V, F, nbrs, v, parent, rec):
         need(got == want, f"some triangle avoiding apex {q} has no multipliers")
 
 
+def check_hybrid_certificate(V, F, nbrs, v, parent, rec):
+    """Record kind "certH" (see (2H) in the module docstring)."""
+    need(parent[v] == -1, "parent of root must be -1")
+    q = rec["q"]
+    need(isinstance(q, int) and 0 <= q < V and q != v, "bad second apex q")
+    mu, mu2 = rec["mu"], rec["mu2"]
+    int_list(mu, V, "mu")
+    int_list(mu2, V, "mu2")
+    want_v = {f for f in F if v not in f}
+    want_q = {f for f in F if q not in f}
+
+    def base_matrix(y):
+        int_list(y, V, "y")
+        need(all(t >= 0 for t in y), "negative multiplier")
+        need(y[v] == 0, "multiplier of the root must be 0")
+        N = [[0] * V for _ in range(V)]
+        for i in range(V):
+            if i != v and y[i]:
+                j = parent[i]
+                need(j in nbrs[i], "parent not adjacent")
+                N[i][i] += 2 * y[i]
+                N[i][j] -= y[i]
+                N[j][i] -= y[i]
+        return N
+
+    def add_direction(N, m, one):
+        for a in range(V):
+            for b in range(V):
+                N[a][b] += m[a] * one[b] + one[a] * m[b]
+
+    good, bad = set(), {}
+    for face, y in rec["single"]:
+        T = frozenset(face)
+        need(T in want_v, f"{face} is not a triangle avoiding the root")
+        need(T not in good, f"triangle {face} listed twice")
+        good.add(T)
+        N = base_matrix(y)
+        add_direction(N, mu, [1 if (k == v or k in T) else 0 for k in range(V)])
+        need(is_positive_definite(N), f"matrix not positive definite (good triangle {face})")
+    for face, face2, y in rec["pairs"]:
+        T, T2 = frozenset(face), frozenset(face2)
+        need(T in want_v, f"{face} is not a triangle avoiding the root")
+        need(T2 in want_q, f"{face2} is not a triangle avoiding q")
+        s = bad.setdefault(T, set())
+        need(T2 not in s, f"pair ({face}, {face2}) listed twice")
+        s.add(T2)
+        N = base_matrix(y)
+        add_direction(N, mu, [1 if (k == v or k in T) else 0 for k in range(V)])
+        add_direction(N, mu2, [1 if (k == q or k in T2) else 0 for k in range(V)])
+        need(is_positive_definite(N), f"matrix not positive definite (pair {face}, {face2})")
+    need(not (good & set(bad)), "a triangle is both good and bad")
+    need(good | set(bad) == want_v, "some triangle avoiding the root is neither good nor bad")
+    for T, s in bad.items():
+        need(s == want_q, f"bad triangle {sorted(T)} is not paired with every triangle avoiding q")
+
+
 # ---------------------------------------------------------------- main
 
 def main(V, paths):
@@ -365,7 +438,7 @@ def main(V, paths):
           f"(OEIS A000109) = {A000109[V]} for V = {V}.")
     graphs = {}
     verified = {}          # (gid, root) -> set of parent tuples with a valid certificate
-    n_cert = n_dup = n_gen = 0
+    n_cert = n_dup = n_gen = n_hyb = 0
     for nfile, path in enumerate(paths):
       with gzip.open(path, "rt") as fh:
         header = json.loads(fh.readline())
@@ -418,11 +491,23 @@ def main(V, paths):
                 verified[(gid, v)].add(parent)
                 n_cert += 1
                 n_gen += 1
+            elif rec["kind"] == "certH":
+                gid, v = rec["gid"], rec["root"]
+                need((gid, v) in verified, "certificate for unknown graph/root (graphs must come first)")
+                E, F, nbrs, roots = graphs[gid]
+                parent = tuple(rec["parent"])
+                need(len(parent) == V, "bad parent array")
+                check_hybrid_certificate(V, F, nbrs, v, parent, rec)
+                if parent in verified[(gid, v)]:
+                    n_dup += 1
+                verified[(gid, v)].add(parent)
+                n_cert += 1
+                n_hyb += 1
             else:
                 raise Fail("unknown record kind")
     t1 = time.time()
-    print(f"(iv) {n_cert} certificates read ({n_gen} of the general kind (2G)), each verified "
-          f"exactly (duplicates: {n_dup}); {t1 - t0:.1f}s")
+    print(f"(iv) {n_cert} certificates read ({n_gen} of the general kind (2G), {n_hyb} hybrid (2H)), "
+          f"each verified exactly (duplicates: {n_dup}); {t1 - t0:.1f}s")
 
     # (i) completeness of the list of spheres
     gids = sorted(graphs)

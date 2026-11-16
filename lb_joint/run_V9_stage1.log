@@ -1,0 +1,1421 @@
+V=9: 50 graphs, 328 roots, 9915284 trees, 49744 tasks
+  10000/9915284 trees, 9982 certified, 18 uncertified, 56s
+  20000/9915284 trees, 19875 certified, 125 uncertified, 78s
+  29999/9915284 trees, 29783 certified, 216 uncertified, 108s
+  39999/9915284 trees, 39705 certified, 294 uncertified, 146s
+  49999/9915284 trees, 49073 certified, 926 uncertified, 184s
+  59998/9915284 trees, 58677 certified, 1321 uncertified, 223s
+  69998/9915284 trees, 68585 certified, 1413 uncertified, 265s
+  79997/9915284 trees, 77789 certified, 2208 uncertified, 304s
+  89997/9915284 trees, 87431 certified, 2566 uncertified, 344s
+  99997/9915284 trees, 97163 certified, 2834 uncertified, 383s
+  109996/9915284 trees, 106299 certified, 3697 uncertified, 424s
+  119996/9915284 trees, 115548 certified, 4448 uncertified, 466s
+  129996/9915284 trees, 125242 certified, 4754 uncertified, 512s
+  139995/9915284 trees, 135181 certified, 4814 uncertified, 533s
+  149995/9915284 trees, 145028 certified, 4967 uncertified, 554s
+  159849/9915284 trees, 154676 certified, 5173 uncertified, 577s
+  169849/9915284 trees, 164592 certified, 5257 uncertified, 605s
+  179849/9915284 trees, 174362 certified, 5487 uncertified, 631s
+  189703/9915284 trees, 184037 certified, 5666 uncertified, 662s
+  199703/9915284 trees, 193822 certified, 5881 uncertified, 697s
+  209557/9915284 trees, 203199 certified, 6358 uncertified, 731s
+  219557/9915284 trees, 212972 certified, 6585 uncertified, 764s
+  229557/9915284 trees, 222747 certified, 6810 uncertified, 798s
+  239411/9915284 trees, 232029 certified, 7382 uncertified, 838s
+  249411/9915284 trees, 241783 certified, 7628 uncertified, 876s
+  259411/9915284 trees, 251101 certified, 8310 uncertified, 912s
+  269265/9915284 trees, 260284 certified, 8981 uncertified, 947s
+  279265/9915284 trees, 269924 certified, 9341 uncertified, 983s
+  289119/9915284 trees, 278942 certified, 10177 uncertified, 1019s
+  299119/9915284 trees, 288341 certified, 10778 uncertified, 1058s
+  309119/9915284 trees, 297766 certified, 11353 uncertified, 1104s
+  318973/9915284 trees, 306800 certified, 12173 uncertified, 1144s
+  328973/9915284 trees, 315680 certified, 13293 uncertified, 1184s
+  338973/9915284 trees, 325151 certified, 13822 uncertified, 1223s
+  348827/9915284 trees, 334163 certified, 14664 uncertified, 1262s
+  358827/9915284 trees, 342941 certified, 15886 uncertified, 1302s
+  368681/9915284 trees, 352457 certified, 16224 uncertified, 1342s
+  378681/9915284 trees, 362441 certified, 16240 uncertified, 1362s
+  388681/9915284 trees, 372280 certified, 16401 uncertified, 1383s
+  398678/9915284 trees, 382134 certified, 16544 uncertified, 1405s
+  408678/9915284 trees, 392053 certified, 16625 uncertified, 1430s
+  418678/9915284 trees, 401848 certified, 16830 uncertified, 1454s
+  428675/9915284 trees, 411713 certified, 16962 uncertified, 1483s
+  438675/9915284 trees, 421491 certified, 17184 uncertified, 1515s
+  448672/9915284 trees, 430826 certified, 17846 uncertified, 1552s
+  458672/9915284 trees, 440502 certified, 18170 uncertified, 1588s
+  468672/9915284 trees, 450022 certified, 18650 uncertified, 1624s
+  478669/9915284 trees, 459174 certified, 19495 uncertified, 1662s
+  488669/9915284 trees, 468274 certified, 20395 uncertified, 1703s
+  498669/9915284 trees, 478076 certified, 20593 uncertified, 1746s
+  508666/9915284 trees, 486924 certified, 21742 uncertified, 1789s
+  518666/9915284 trees, 495979 certified, 22687 uncertified, 1830s
+  528663/9915284 trees, 505344 certified, 23319 uncertified, 1865s
+  538663/9915284 trees, 515316 certified, 23347 uncertified, 1885s
+  548663/9915284 trees, 525098 certified, 23565 uncertified, 1906s
+  558572/9915284 trees, 534832 certified, 23740 uncertified, 1928s
+  568572/9915284 trees, 544703 certified, 23869 uncertified, 1951s
+  578572/9915284 trees, 554375 certified, 24197 uncertified, 1973s
+  588481/9915284 trees, 564108 certified, 24373 uncertified, 2001s
+  598481/9915284 trees, 573785 certified, 24696 uncertified, 2029s
+  608481/9915284 trees, 583285 certified, 25196 uncertified, 2058s
+  618390/9915284 trees, 592727 certified, 25663 uncertified, 2091s
+  628390/9915284 trees, 602321 certified, 26069 uncertified, 2124s
+  638299/9915284 trees, 611291 certified, 27008 uncertified, 2156s
+  648299/9915284 trees, 620846 certified, 27453 uncertified, 2189s
+  658299/9915284 trees, 630287 certified, 28012 uncertified, 2221s
+  668208/9915284 trees, 639302 certified, 28906 uncertified, 2254s
+  678208/9915284 trees, 648693 certified, 29515 uncertified, 2287s
+  688208/9915284 trees, 658154 certified, 30054 uncertified, 2319s
+  698117/9915284 trees, 667245 certified, 30872 uncertified, 2352s
+  708117/9915284 trees, 676454 certified, 31663 uncertified, 2385s
+  718026/9915284 trees, 685475 certified, 32551 uncertified, 2416s
+  728026/9915284 trees, 694798 certified, 33228 uncertified, 2452s
+  738026/9915284 trees, 703646 certified, 34380 uncertified, 2490s
+  747935/9915284 trees, 712978 certified, 34957 uncertified, 2527s
+  757935/9915284 trees, 721758 certified, 36177 uncertified, 2563s
+  767935/9915284 trees, 730723 certified, 37212 uncertified, 2599s
+  777844/9915284 trees, 740374 certified, 37470 uncertified, 2624s
+  787844/9915284 trees, 750288 certified, 37556 uncertified, 2643s
+  797844/9915284 trees, 760050 certified, 37794 uncertified, 2662s
+  807779/9915284 trees, 769911 certified, 37868 uncertified, 2687s
+  817779/9915284 trees, 779699 certified, 38080 uncertified, 2712s
+  827714/9915284 trees, 789259 certified, 38455 uncertified, 2739s
+  837714/9915284 trees, 799168 certified, 38546 uncertified, 2768s
+  847714/9915284 trees, 808826 certified, 38888 uncertified, 2797s
+  857649/9915284 trees, 818111 certified, 39538 uncertified, 2833s
+  867649/9915284 trees, 827608 certified, 40041 uncertified, 2870s
+  877584/9915284 trees, 836494 certified, 41090 uncertified, 2903s
+  887584/9915284 trees, 846392 certified, 41192 uncertified, 2921s
+  897584/9915284 trees, 856173 certified, 41411 uncertified, 2939s
+  907576/9915284 trees, 865943 certified, 41633 uncertified, 2961s
+  917576/9915284 trees, 875764 certified, 41812 uncertified, 2987s
+  927576/9915284 trees, 885446 certified, 42130 uncertified, 3011s
+  937568/9915284 trees, 894967 certified, 42601 uncertified, 3042s
+  947568/9915284 trees, 904721 certified, 42847 uncertified, 3071s
+  957560/9915284 trees, 913818 certified, 43742 uncertified, 3101s
+  967560/9915284 trees, 923414 certified, 44146 uncertified, 3133s
+  977560/9915284 trees, 933074 certified, 44486 uncertified, 3168s
+  987552/9915284 trees, 942225 certified, 45327 uncertified, 3203s
+  997552/9915284 trees, 951197 certified, 46355 uncertified, 3239s
+  1007552/9915284 trees, 960681 certified, 46871 uncertified, 3275s
+  1017544/9915284 trees, 969430 certified, 48114 uncertified, 3312s
+  1027544/9915284 trees, 978367 certified, 49177 uncertified, 3348s
+  1037544/9915284 trees, 987988 certified, 49556 uncertified, 3383s
+  1047536/9915284 trees, 997761 certified, 49775 uncertified, 3402s
+  1057536/9915284 trees, 1007542 certified, 49994 uncertified, 3420s
+  1067493/9915284 trees, 1017305 certified, 50188 uncertified, 3442s
+  1077493/9915284 trees, 1027110 certified, 50383 uncertified, 3468s
+  1087493/9915284 trees, 1036699 certified, 50794 uncertified, 3493s
+  1097450/9915284 trees, 1046411 certified, 51039 uncertified, 3518s
+  1107450/9915284 trees, 1056279 certified, 51171 uncertified, 3543s
+  1117450/9915284 trees, 1065888 certified, 51562 uncertified, 3568s
+  1127407/9915284 trees, 1075595 certified, 51812 uncertified, 3598s
+  1137407/9915284 trees, 1085172 certified, 52235 uncertified, 3627s
+  1147364/9915284 trees, 1094399 certified, 52965 uncertified, 3658s
+  1157364/9915284 trees, 1104002 certified, 53362 uncertified, 3691s
+  1167364/9915284 trees, 1113517 certified, 53847 uncertified, 3724s
+  1177321/9915284 trees, 1122725 certified, 54596 uncertified, 3755s
+  1187321/9915284 trees, 1132148 certified, 55173 uncertified, 3787s
+  1197321/9915284 trees, 1141294 certified, 56027 uncertified, 3820s
+  1207278/9915284 trees, 1150266 certified, 57012 uncertified, 3857s
+  1217278/9915284 trees, 1159620 certified, 57658 uncertified, 3895s
+  1227235/9915284 trees, 1168483 certified, 58752 uncertified, 3931s
+  1237235/9915284 trees, 1177668 certified, 59567 uncertified, 3966s
+  1247235/9915284 trees, 1186897 certified, 60338 uncertified, 4004s
+  1257192/9915284 trees, 1196032 certified, 61160 uncertified, 4040s
+  1267192/9915284 trees, 1204355 certified, 62837 uncertified, 4076s
+  1277192/9915284 trees, 1214075 certified, 63117 uncertified, 4113s
+  1287149/9915284 trees, 1223926 certified, 63223 uncertified, 4132s
+  1297149/9915284 trees, 1233697 certified, 63452 uncertified, 4151s
+  1307069/9915284 trees, 1243337 certified, 63732 uncertified, 4171s
+  1317069/9915284 trees, 1253261 certified, 63808 uncertified, 4196s
+  1327069/9915284 trees, 1262831 certified, 64238 uncertified, 4221s
+  1336989/9915284 trees, 1272385 certified, 64604 uncertified, 4249s
+  1346989/9915284 trees, 1282028 certified, 64961 uncertified, 4283s
+  1356989/9915284 trees, 1291235 certified, 65754 uncertified, 4315s
+  1366909/9915284 trees, 1300044 certified, 66865 uncertified, 4347s
+  1376909/9915284 trees, 1309629 certified, 67280 uncertified, 4380s
+  1386909/9915284 trees, 1318829 certified, 68080 uncertified, 4414s
+  1396829/9915284 trees, 1327604 certified, 69225 uncertified, 4449s
+  1406829/9915284 trees, 1336519 certified, 70310 uncertified, 4485s
+  1416749/9915284 trees, 1346011 certified, 70738 uncertified, 4519s
+  1426749/9915284 trees, 1355735 certified, 71014 uncertified, 4538s
+  1436749/9915284 trees, 1365422 certified, 71327 uncertified, 4556s
+  1446653/9915284 trees, 1375066 certified, 71587 uncertified, 4577s
+  1456653/9915284 trees, 1384857 certified, 71796 uncertified, 4603s
+  1466653/9915284 trees, 1394227 certified, 72426 uncertified, 4630s
+  1476557/9915284 trees, 1403683 certified, 72874 uncertified, 4656s
+  1486557/9915284 trees, 1413521 certified, 73036 uncertified, 4686s
+  1496557/9915284 trees, 1422834 certified, 73723 uncertified, 4716s
+  1506461/9915284 trees, 1432252 certified, 74209 uncertified, 4744s
+  1516461/9915284 trees, 1442029 certified, 74432 uncertified, 4773s
+  1526365/9915284 trees, 1451202 certified, 75163 uncertified, 4801s
+  1536365/9915284 trees, 1460756 certified, 75609 uncertified, 4830s
+  1546365/9915284 trees, 1470421 certified, 75944 uncertified, 4859s
+  1556269/9915284 trees, 1479390 certified, 76879 uncertified, 4890s
+  1566269/9915284 trees, 1488777 certified, 77492 uncertified, 4923s
+  1576269/9915284 trees, 1498382 certified, 77887 uncertified, 4955s
+  1586173/9915284 trees, 1507090 certified, 79083 uncertified, 4990s
+  1596173/9915284 trees, 1515908 certified, 80265 uncertified, 5025s
+  1606173/9915284 trees, 1525517 certified, 80656 uncertified, 5063s
+  1616077/9915284 trees, 1533907 certified, 82170 uncertified, 5098s
+  1626077/9915284 trees, 1542901 certified, 83176 uncertified, 5135s
+  1635981/9915284 trees, 1551747 certified, 84234 uncertified, 5171s
+  1645981/9915284 trees, 1560786 certified, 85195 uncertified, 5208s
+  1655981/9915284 trees, 1569303 certified, 86678 uncertified, 5245s
+  1665885/9915284 trees, 1578833 certified, 87052 uncertified, 5274s
+  1675885/9915284 trees, 1588675 certified, 87210 uncertified, 5293s
+  1685885/9915284 trees, 1598264 certified, 87621 uncertified, 5311s
+  1695729/9915284 trees, 1607899 certified, 87830 uncertified, 5332s
+  1705729/9915284 trees, 1617569 certified, 88160 uncertified, 5360s
+  1715729/9915284 trees, 1626999 certified, 88730 uncertified, 5385s
+  1725573/9915284 trees, 1636170 certified, 89403 uncertified, 5413s
+  1735573/9915284 trees, 1645996 certified, 89577 uncertified, 5443s
+  1745573/9915284 trees, 1655089 certified, 90484 uncertified, 5472s
+  1755417/9915284 trees, 1664312 certified, 91105 uncertified, 5504s
+  1765417/9915284 trees, 1673939 certified, 91478 uncertified, 5536s
+  1775261/9915284 trees, 1682017 certified, 93244 uncertified, 5569s
+  1785261/9915284 trees, 1690912 certified, 94349 uncertified, 5601s
+  1795261/9915284 trees, 1700516 certified, 94745 uncertified, 5634s
+  1805105/9915284 trees, 1709147 certified, 95958 uncertified, 5668s
+  1815105/9915284 trees, 1717484 certified, 97621 uncertified, 5704s
+  1825105/9915284 trees, 1726601 certified, 98504 uncertified, 5740s
+  1834949/9915284 trees, 1735850 certified, 99099 uncertified, 5770s
+  1844949/9915284 trees, 1745701 certified, 99248 uncertified, 5788s
+  1854949/9915284 trees, 1755443 certified, 99506 uncertified, 5807s
+  1864794/9915284 trees, 1765009 certified, 99785 uncertified, 5829s
+  1874794/9915284 trees, 1774776 certified, 100018 uncertified, 5854s
+  1884794/9915284 trees, 1784209 certified, 100585 uncertified, 5879s
+  1894639/9915284 trees, 1793602 certified, 101037 uncertified, 5907s
+  1904639/9915284 trees, 1803302 certified, 101337 uncertified, 5936s
+  1914639/9915284 trees, 1812552 certified, 102087 uncertified, 5965s
+  1924484/9915284 trees, 1821499 certified, 102985 uncertified, 5995s
+  1934484/9915284 trees, 1831315 certified, 103169 uncertified, 6023s
+  1944329/9915284 trees, 1840157 certified, 104172 uncertified, 6052s
+  1954329/9915284 trees, 1849534 certified, 104795 uncertified, 6085s
+  1964329/9915284 trees, 1859332 certified, 104997 uncertified, 6118s
+  1974174/9915284 trees, 1867918 certified, 106256 uncertified, 6150s
+  1984174/9915284 trees, 1877079 certified, 107095 uncertified, 6181s
+  1994174/9915284 trees, 1886781 certified, 107393 uncertified, 6214s
+  2004019/9915284 trees, 1895542 certified, 108477 uncertified, 6247s
+  2014019/9915284 trees, 1904644 certified, 109375 uncertified, 6279s
+  2024019/9915284 trees, 1914253 certified, 109766 uncertified, 6312s
+  2033864/9915284 trees, 1922399 certified, 111465 uncertified, 6346s
+  2043864/9915284 trees, 1931040 certified, 112824 uncertified, 6382s
+  2053864/9915284 trees, 1940385 certified, 113479 uncertified, 6419s
+  2063709/9915284 trees, 1949016 certified, 114693 uncertified, 6455s
+  2073709/9915284 trees, 1957019 certified, 116690 uncertified, 6491s
+  2083709/9915284 trees, 1966322 certified, 117387 uncertified, 6528s
+  2093554/9915284 trees, 1976104 certified, 117450 uncertified, 6549s
+  2103554/9915284 trees, 1985782 certified, 117772 uncertified, 6568s
+  2113374/9915284 trees, 1995139 certified, 118235 uncertified, 6587s
+  2123374/9915284 trees, 2004957 certified, 118417 uncertified, 6615s
+  2133374/9915284 trees, 2014484 certified, 118890 uncertified, 6645s
+  2143194/9915284 trees, 2022936 certified, 120258 uncertified, 6674s
+  2153194/9915284 trees, 2032509 certified, 120685 uncertified, 6702s
+  2163194/9915284 trees, 2042067 certified, 121127 uncertified, 6732s
+  2173014/9915284 trees, 2050814 certified, 122200 uncertified, 6762s
+  2183014/9915284 trees, 2059710 certified, 123304 uncertified, 6794s
+  2193014/9915284 trees, 2069345 certified, 123669 uncertified, 6827s
+  2202834/9915284 trees, 2077832 certified, 125002 uncertified, 6859s
+  2212834/9915284 trees, 2085945 certified, 126889 uncertified, 6895s
+  2222834/9915284 trees, 2094906 certified, 127928 uncertified, 6932s
+  2232654/9915284 trees, 2104022 certified, 128632 uncertified, 6964s
+  2242654/9915284 trees, 2113999 certified, 128655 uncertified, 6986s
+  2252654/9915284 trees, 2123830 certified, 128824 uncertified, 7008s
+  2262499/9915284 trees, 2133520 certified, 128979 uncertified, 7031s
+  2272499/9915284 trees, 2143439 certified, 129060 uncertified, 7057s
+  2282344/9915284 trees, 2152939 certified, 129405 uncertified, 7084s
+  2292344/9915284 trees, 2162826 certified, 129518 uncertified, 7109s
+  2302344/9915284 trees, 2172572 certified, 129772 uncertified, 7134s
+  2312189/9915284 trees, 2182116 certified, 130073 uncertified, 7163s
+  2322189/9915284 trees, 2191949 certified, 130240 uncertified, 7196s
+  2332034/9915284 trees, 2201115 certified, 130919 uncertified, 7228s
+  2342034/9915284 trees, 2210551 certified, 131483 uncertified, 7265s
+  2352034/9915284 trees, 2219999 certified, 132035 uncertified, 7301s
+  2361879/9915284 trees, 2228994 certified, 132885 uncertified, 7336s
+  2371879/9915284 trees, 2238109 certified, 133770 uncertified, 7373s
+  2381879/9915284 trees, 2247853 certified, 134026 uncertified, 7409s
+  2391724/9915284 trees, 2257175 certified, 134549 uncertified, 7446s
+  2401724/9915284 trees, 2266621 certified, 135103 uncertified, 7482s
+  2411569/9915284 trees, 2275556 certified, 136013 uncertified, 7514s
+  2421569/9915284 trees, 2285494 certified, 136075 uncertified, 7535s
+  2431569/9915284 trees, 2295248 certified, 136321 uncertified, 7559s
+  2441393/9915284 trees, 2304814 certified, 136579 uncertified, 7583s
+  2451393/9915284 trees, 2314712 certified, 136681 uncertified, 7608s
+  2461217/9915284 trees, 2324144 certified, 137073 uncertified, 7633s
+  2471217/9915284 trees, 2333879 certified, 137338 uncertified, 7661s
+  2481217/9915284 trees, 2343698 certified, 137519 uncertified, 7690s
+  2491041/9915284 trees, 2352845 certified, 138196 uncertified, 7721s
+  2501041/9915284 trees, 2361937 certified, 139104 uncertified, 7760s
+  2511041/9915284 trees, 2371467 certified, 139574 uncertified, 7795s
+  2520865/9915284 trees, 2380151 certified, 140714 uncertified, 7831s
+  2530865/9915284 trees, 2389137 certified, 141728 uncertified, 7867s
+  2540689/9915284 trees, 2398449 certified, 142240 uncertified, 7903s
+  2550689/9915284 trees, 2408260 certified, 142429 uncertified, 7925s
+  2560689/9915284 trees, 2418027 certified, 142662 uncertified, 7948s
+  2570606/9915284 trees, 2427593 certified, 143013 uncertified, 7970s
+  2580606/9915284 trees, 2437503 certified, 143103 uncertified, 7995s
+  2590606/9915284 trees, 2447112 certified, 143494 uncertified, 8020s
+  2600523/9915284 trees, 2456552 certified, 143971 uncertified, 8050s
+  2610523/9915284 trees, 2466390 certified, 144133 uncertified, 8078s
+  2620523/9915284 trees, 2475627 certified, 144896 uncertified, 8107s
+  2630440/9915284 trees, 2484925 certified, 145515 uncertified, 8138s
+  2640440/9915284 trees, 2494805 certified, 145635 uncertified, 8170s
+  2650357/9915284 trees, 2503682 certified, 146675 uncertified, 8204s
+  2660357/9915284 trees, 2513010 certified, 147347 uncertified, 8236s
+  2670357/9915284 trees, 2522625 certified, 147732 uncertified, 8270s
+  2680274/9915284 trees, 2531464 certified, 148810 uncertified, 8305s
+  2690274/9915284 trees, 2540971 certified, 149303 uncertified, 8341s
+  2700274/9915284 trees, 2549769 certified, 150505 uncertified, 8377s
+  2710191/9915284 trees, 2558521 certified, 151670 uncertified, 8413s
+  2720191/9915284 trees, 2567195 certified, 152996 uncertified, 8450s
+  2730191/9915284 trees, 2576678 certified, 153513 uncertified, 8487s
+  2740108/9915284 trees, 2586571 certified, 153537 uncertified, 8508s
+  2750108/9915284 trees, 2596383 certified, 153725 uncertified, 8530s
+  2759980/9915284 trees, 2605870 certified, 154110 uncertified, 8552s
+  2769980/9915284 trees, 2615763 certified, 154217 uncertified, 8575s
+  2779980/9915284 trees, 2625449 certified, 154531 uncertified, 8596s
+  2789852/9915284 trees, 2634991 certified, 154861 uncertified, 8619s
+  2799852/9915284 trees, 2644915 certified, 154937 uncertified, 8646s
+  2809852/9915284 trees, 2654518 certified, 155334 uncertified, 8672s
+  2819724/9915284 trees, 2663958 certified, 155766 uncertified, 8700s
+  2829724/9915284 trees, 2673704 certified, 156020 uncertified, 8728s
+  2839596/9915284 trees, 2682491 certified, 157105 uncertified, 8758s
+  2849596/9915284 trees, 2691844 certified, 157752 uncertified, 8790s
+  2859596/9915284 trees, 2701433 certified, 158163 uncertified, 8822s
+  2869468/9915284 trees, 2710274 certified, 159194 uncertified, 8855s
+  2879468/9915284 trees, 2719546 certified, 159922 uncertified, 8888s
+  2889468/9915284 trees, 2729079 certified, 160389 uncertified, 8920s
+  2899340/9915284 trees, 2738166 certified, 161174 uncertified, 8956s
+  2909340/9915284 trees, 2747603 certified, 161737 uncertified, 8992s
+  2919212/9915284 trees, 2755838 certified, 163374 uncertified, 9030s
+  2929212/9915284 trees, 2764867 certified, 164345 uncertified, 9068s
+  2939212/9915284 trees, 2773966 certified, 165246 uncertified, 9106s
+  2949084/9915284 trees, 2782932 certified, 166152 uncertified, 9147s
+  2959084/9915284 trees, 2791598 certified, 167486 uncertified, 9187s
+  2969084/9915284 trees, 2800714 certified, 168370 uncertified, 9230s
+  2978956/9915284 trees, 2810296 certified, 168660 uncertified, 9261s
+  2988956/9915284 trees, 2819999 certified, 168957 uncertified, 9286s
+  2998956/9915284 trees, 2829667 certified, 169289 uncertified, 9309s
+  3008945/9915284 trees, 2839403 certified, 169542 uncertified, 9333s
+  3018945/9915284 trees, 2849004 certified, 169941 uncertified, 9358s
+  3028945/9915284 trees, 2858468 certified, 170477 uncertified, 9381s
+  3038934/9915284 trees, 2868152 certified, 170782 uncertified, 9410s
+  3048934/9915284 trees, 2877719 certified, 171215 uncertified, 9443s
+  3058923/9915284 trees, 2886567 certified, 172356 uncertified, 9473s
+  3068923/9915284 trees, 2896370 certified, 172553 uncertified, 9503s
+  3078923/9915284 trees, 2905732 certified, 173191 uncertified, 9531s
+  3088912/9915284 trees, 2914846 certified, 174066 uncertified, 9560s
+  3098912/9915284 trees, 2924360 certified, 174552 uncertified, 9590s
+  3108912/9915284 trees, 2933775 certified, 175137 uncertified, 9623s
+  3118901/9915284 trees, 2943047 certified, 175854 uncertified, 9654s
+  3128901/9915284 trees, 2952432 certified, 176469 uncertified, 9686s
+  3138890/9915284 trees, 2961426 certified, 177464 uncertified, 9717s
+  3148890/9915284 trees, 2970048 certified, 178842 uncertified, 9754s
+  3158890/9915284 trees, 2979190 certified, 179700 uncertified, 9790s
+  3168879/9915284 trees, 2988413 certified, 180466 uncertified, 9826s
+  3178879/9915284 trees, 2996911 certified, 181968 uncertified, 9863s
+  3188879/9915284 trees, 3005795 certified, 183084 uncertified, 9898s
+  3198868/9915284 trees, 3015027 certified, 183841 uncertified, 9933s
+  3208868/9915284 trees, 3024238 certified, 184630 uncertified, 9968s
+  3218868/9915284 trees, 3032705 certified, 186163 uncertified, 10005s
+  3228857/9915284 trees, 3042279 certified, 186578 uncertified, 10029s
+  3238857/9915284 trees, 3052025 certified, 186832 uncertified, 10051s
+  3248857/9915284 trees, 3061667 certified, 187190 uncertified, 10072s
+  3258755/9915284 trees, 3071230 certified, 187525 uncertified, 10098s
+  3268755/9915284 trees, 3080926 certified, 187829 uncertified, 10128s
+  3278755/9915284 trees, 3090245 certified, 188510 uncertified, 10157s
+  3288653/9915284 trees, 3099488 certified, 189165 uncertified, 10184s
+  3298653/9915284 trees, 3109232 certified, 189421 uncertified, 10212s
+  3308653/9915284 trees, 3118551 certified, 190102 uncertified, 10242s
+  3318551/9915284 trees, 3127698 certified, 190853 uncertified, 10273s
+  3328551/9915284 trees, 3137176 certified, 191375 uncertified, 10306s
+  3338551/9915284 trees, 3146395 certified, 192156 uncertified, 10338s
+  3348449/9915284 trees, 3155526 certified, 192923 uncertified, 10369s
+  3358449/9915284 trees, 3164855 certified, 193594 uncertified, 10402s
+  3368449/9915284 trees, 3174327 certified, 194122 uncertified, 10435s
+  3378347/9915284 trees, 3183168 certified, 195179 uncertified, 10468s
+  3388347/9915284 trees, 3191570 certified, 196777 uncertified, 10506s
+  3398347/9915284 trees, 3200810 certified, 197537 uncertified, 10541s
+  3408245/9915284 trees, 3209732 certified, 198513 uncertified, 10576s
+  3418245/9915284 trees, 3218077 certified, 200168 uncertified, 10611s
+  3428245/9915284 trees, 3227212 certified, 201033 uncertified, 10646s
+  3438143/9915284 trees, 3236706 certified, 201437 uncertified, 10677s
+  3448143/9915284 trees, 3246467 certified, 201676 uncertified, 10699s
+  3458143/9915284 trees, 3255925 certified, 202218 uncertified, 10720s
+  3468012/9915284 trees, 3265204 certified, 202808 uncertified, 10747s
+  3478012/9915284 trees, 3275062 certified, 202950 uncertified, 10775s
+  3488012/9915284 trees, 3284005 certified, 204007 uncertified, 10803s
+  3497881/9915284 trees, 3293090 certified, 204791 uncertified, 10834s
+  3507881/9915284 trees, 3302498 certified, 205383 uncertified, 10867s
+  3517881/9915284 trees, 3310995 certified, 206886 uncertified, 10899s
+  3527750/9915284 trees, 3319781 certified, 207969 uncertified, 10932s
+  3537750/9915284 trees, 3328543 certified, 209207 uncertified, 10965s
+  3547619/9915284 trees, 3337680 certified, 209939 uncertified, 10997s
+  3557619/9915284 trees, 3346797 certified, 210822 uncertified, 11032s
+  3567619/9915284 trees, 3355222 certified, 212397 uncertified, 11067s
+  3577488/9915284 trees, 3363885 certified, 213603 uncertified, 11099s
+  3587488/9915284 trees, 3373774 certified, 213714 uncertified, 11120s
+  3597488/9915284 trees, 3383443 certified, 214045 uncertified, 11144s
+  3607322/9915284 trees, 3392715 certified, 214607 uncertified, 11165s
+  3617322/9915284 trees, 3402473 certified, 214849 uncertified, 11194s
+  3627322/9915284 trees, 3411888 certified, 215434 uncertified, 11223s
+  3637322/9915284 trees, 3420933 certified, 216389 uncertified, 11251s
+  3647156/9915284 trees, 3430184 certified, 216972 uncertified, 11283s
+  3657156/9915284 trees, 3439449 certified, 217707 uncertified, 11314s
+  3667156/9915284 trees, 3448546 certified, 218610 uncertified, 11347s
+  3676990/9915284 trees, 3457542 certified, 219448 uncertified, 11378s
+  3686990/9915284 trees, 3466691 certified, 220299 uncertified, 11412s
+  3696990/9915284 trees, 3476084 certified, 220906 uncertified, 11443s
+  3706824/9915284 trees, 3484667 certified, 222157 uncertified, 11474s
+  3716824/9915284 trees, 3493804 certified, 223020 uncertified, 11507s
+  3726824/9915284 trees, 3503292 certified, 223532 uncertified, 11538s
+  3736658/9915284 trees, 3511983 certified, 224675 uncertified, 11570s
+  3746658/9915284 trees, 3520769 certified, 225889 uncertified, 11602s
+  3756658/9915284 trees, 3530132 certified, 226526 uncertified, 11635s
+  3766492/9915284 trees, 3538740 certified, 227752 uncertified, 11667s
+  3776492/9915284 trees, 3547100 certified, 229392 uncertified, 11702s
+  3786492/9915284 trees, 3555863 certified, 230629 uncertified, 11741s
+  3796326/9915284 trees, 3564909 certified, 231417 uncertified, 11772s
+  3806326/9915284 trees, 3574729 certified, 231597 uncertified, 11794s
+  3816326/9915284 trees, 3584557 certified, 231769 uncertified, 11816s
+  3826326/9915284 trees, 3594387 certified, 231939 uncertified, 11838s
+  3836213/9915284 trees, 3604155 certified, 232058 uncertified, 11864s
+  3846213/9915284 trees, 3613915 certified, 232298 uncertified, 11899s
+  3856213/9915284 trees, 3622761 certified, 233452 uncertified, 11931s
+  3866100/9915284 trees, 3631542 certified, 234558 uncertified, 11962s
+  3876100/9915284 trees, 3641459 certified, 234641 uncertified, 11983s
+  3886100/9915284 trees, 3651112 certified, 234988 uncertified, 12005s
+  3895932/9915284 trees, 3660388 certified, 235544 uncertified, 12028s
+  3905932/9915284 trees, 3670163 certified, 235769 uncertified, 12053s
+  3915932/9915284 trees, 3679701 certified, 236231 uncertified, 12078s
+  3925764/9915284 trees, 3689120 certified, 236644 uncertified, 12102s
+  3935764/9915284 trees, 3698936 certified, 236828 uncertified, 12128s
+  3945764/9915284 trees, 3708352 certified, 237412 uncertified, 12153s
+  3955596/9915284 trees, 3717586 certified, 238010 uncertified, 12178s
+  3965596/9915284 trees, 3727393 certified, 238203 uncertified, 12202s
+  3975428/9915284 trees, 3736513 certified, 238915 uncertified, 12227s
+  3985428/9915284 trees, 3745794 certified, 239634 uncertified, 12259s
+  3995428/9915284 trees, 3755474 certified, 239954 uncertified, 12294s
+  4005260/9915284 trees, 3764019 certified, 241241 uncertified, 12325s
+  4015260/9915284 trees, 3773411 certified, 241849 uncertified, 12358s
+  4025260/9915284 trees, 3782738 certified, 242522 uncertified, 12390s
+  4035092/9915284 trees, 3791594 certified, 243498 uncertified, 12426s
+  4045092/9915284 trees, 3800118 certified, 244974 uncertified, 12462s
+  4055092/9915284 trees, 3809311 certified, 245781 uncertified, 12498s
+  4064924/9915284 trees, 3818013 certified, 246911 uncertified, 12534s
+  4074924/9915284 trees, 3827340 certified, 247584 uncertified, 12570s
+  4084756/9915284 trees, 3835662 certified, 249094 uncertified, 12605s
+  4094756/9915284 trees, 3844478 certified, 250278 uncertified, 12641s
+  4104756/9915284 trees, 3853187 certified, 251569 uncertified, 12677s
+  4114588/9915284 trees, 3862461 certified, 252127 uncertified, 12709s
+  4124588/9915284 trees, 3872365 certified, 252223 uncertified, 12731s
+  4134588/9915284 trees, 3881953 certified, 252635 uncertified, 12753s
+  4144460/9915284 trees, 3891548 certified, 252912 uncertified, 12777s
+  4154460/9915284 trees, 3901349 certified, 253111 uncertified, 12802s
+  4164460/9915284 trees, 3910752 certified, 253708 uncertified, 12829s
+  4174332/9915284 trees, 3920190 certified, 254142 uncertified, 12854s
+  4184332/9915284 trees, 3929994 certified, 254338 uncertified, 12881s
+  4194204/9915284 trees, 3938898 certified, 255306 uncertified, 12906s
+  4204204/9915284 trees, 3948152 certified, 256052 uncertified, 12940s
+  4214204/9915284 trees, 3957833 certified, 256371 uncertified, 12972s
+  4224076/9915284 trees, 3966465 certified, 257611 uncertified, 13007s
+  4234076/9915284 trees, 3976063 certified, 258013 uncertified, 13043s
+  4244076/9915284 trees, 3984801 certified, 259275 uncertified, 13081s
+  4253948/9915284 trees, 3993003 certified, 260945 uncertified, 13116s
+  4263948/9915284 trees, 4001482 certified, 262466 uncertified, 13152s
+  4273948/9915284 trees, 4010904 certified, 263044 uncertified, 13189s
+  4283820/9915284 trees, 4020461 certified, 263359 uncertified, 13213s
+  4293820/9915284 trees, 4030327 certified, 263493 uncertified, 13235s
+  4303820/9915284 trees, 4039934 certified, 263886 uncertified, 13257s
+  4313644/9915284 trees, 4049584 certified, 264060 uncertified, 13281s
+  4323644/9915284 trees, 4059369 certified, 264275 uncertified, 13306s
+  4333644/9915284 trees, 4068911 certified, 264733 uncertified, 13332s
+  4343468/9915284 trees, 4078384 certified, 265084 uncertified, 13359s
+  4353468/9915284 trees, 4088219 certified, 265249 uncertified, 13389s
+  4363468/9915284 trees, 4097504 certified, 265964 uncertified, 13418s
+  4373292/9915284 trees, 4106864 certified, 266428 uncertified, 13449s
+  4383292/9915284 trees, 4116417 certified, 266875 uncertified, 13483s
+  4393292/9915284 trees, 4125542 certified, 267750 uncertified, 13516s
+  4403116/9915284 trees, 4134294 certified, 268822 uncertified, 13551s
+  4413116/9915284 trees, 4143642 certified, 269474 uncertified, 13586s
+  4423116/9915284 trees, 4152936 certified, 270180 uncertified, 13623s
+  4432940/9915284 trees, 4161653 certified, 271287 uncertified, 13659s
+  4442940/9915284 trees, 4170232 certified, 272708 uncertified, 13696s
+  4452940/9915284 trees, 4179664 certified, 273276 uncertified, 13733s
+  4462764/9915284 trees, 4188812 certified, 273952 uncertified, 13759s
+  4472764/9915284 trees, 4198541 certified, 274223 uncertified, 13781s
+  4482764/9915284 trees, 4208058 certified, 274706 uncertified, 13804s
+  4492761/9915284 trees, 4217796 certified, 274965 uncertified, 13828s
+  4502761/9915284 trees, 4227285 certified, 275476 uncertified, 13854s
+  4512758/9915284 trees, 4236336 certified, 276422 uncertified, 13879s
+  4522758/9915284 trees, 4246084 certified, 276674 uncertified, 13907s
+  4532758/9915284 trees, 4255630 certified, 277128 uncertified, 13932s
+  4542755/9915284 trees, 4264851 certified, 277904 uncertified, 13960s
+  4552755/9915284 trees, 4274585 certified, 278170 uncertified, 13988s
+  4562755/9915284 trees, 4283787 certified, 278968 uncertified, 14017s
+  4572752/9915284 trees, 4292798 certified, 279954 uncertified, 14045s
+  4582752/9915284 trees, 4302345 certified, 280407 uncertified, 14076s
+  4592752/9915284 trees, 4311748 certified, 281004 uncertified, 14106s
+  4602749/9915284 trees, 4320799 certified, 281950 uncertified, 14137s
+  4612749/9915284 trees, 4330245 certified, 282504 uncertified, 14170s
+  4622749/9915284 trees, 4339239 certified, 283510 uncertified, 14203s
+  4632746/9915284 trees, 4347670 certified, 285076 uncertified, 14239s
+  4642746/9915284 trees, 4356663 certified, 286083 uncertified, 14275s
+  4652743/9915284 trees, 4365743 certified, 287000 uncertified, 14313s
+  4662743/9915284 trees, 4374208 certified, 288535 uncertified, 14350s
+  4672743/9915284 trees, 4383111 certified, 289632 uncertified, 14386s
+  4682740/9915284 trees, 4392114 certified, 290626 uncertified, 14422s
+  4692740/9915284 trees, 4401326 certified, 291414 uncertified, 14458s
+  4702740/9915284 trees, 4410092 certified, 292648 uncertified, 14494s
+  4712737/9915284 trees, 4419052 certified, 293685 uncertified, 14522s
+  4722737/9915284 trees, 4428785 certified, 293952 uncertified, 14544s
+  4732737/9915284 trees, 4438319 certified, 294418 uncertified, 14567s
+  4742583/9915284 trees, 4447804 certified, 294779 uncertified, 14590s
+  4752583/9915284 trees, 4457477 certified, 295106 uncertified, 14616s
+  4762583/9915284 trees, 4466862 certified, 295721 uncertified, 14641s
+  4772429/9915284 trees, 4476004 certified, 296425 uncertified, 14668s
+  4782429/9915284 trees, 4485780 certified, 296649 uncertified, 14696s
+  4792429/9915284 trees, 4495151 certified, 297278 uncertified, 14727s
+  4802275/9915284 trees, 4504161 certified, 298114 uncertified, 14757s
+  4812275/9915284 trees, 4513370 certified, 298905 uncertified, 14789s
+  4822275/9915284 trees, 4522987 certified, 299288 uncertified, 14822s
+  4832121/9915284 trees, 4531392 certified, 300729 uncertified, 14854s
+  4842121/9915284 trees, 4540890 certified, 301231 uncertified, 14887s
+  4852121/9915284 trees, 4550272 certified, 301849 uncertified, 14921s
+  4861967/9915284 trees, 4559120 certified, 302847 uncertified, 14954s
+  4871967/9915284 trees, 4568004 certified, 303963 uncertified, 14990s
+  4881967/9915284 trees, 4576833 certified, 305134 uncertified, 15027s
+  4891813/9915284 trees, 4585472 certified, 306341 uncertified, 15062s
+  4901813/9915284 trees, 4595233 certified, 306580 uncertified, 15084s
+  4911813/9915284 trees, 4604893 certified, 306920 uncertified, 15106s
+  4921813/9915284 trees, 4614377 certified, 307436 uncertified, 15128s
+  4931746/9915284 trees, 4624193 certified, 307553 uncertified, 15154s
+  4941746/9915284 trees, 4633845 certified, 307901 uncertified, 15180s
+  4951746/9915284 trees, 4643309 certified, 308437 uncertified, 15205s
+  4961679/9915284 trees, 4652852 certified, 308827 uncertified, 15230s
+  4971679/9915284 trees, 4662542 certified, 309137 uncertified, 15257s
+  4981679/9915284 trees, 4671769 certified, 309910 uncertified, 15282s
+  4991612/9915284 trees, 4681128 certified, 310484 uncertified, 15309s
+  5001612/9915284 trees, 4690976 certified, 310636 uncertified, 15339s
+  5011612/9915284 trees, 4700243 certified, 311369 uncertified, 15370s
+  5021545/9915284 trees, 4709527 certified, 312018 uncertified, 15400s
+  5031545/9915284 trees, 4718981 certified, 312564 uncertified, 15433s
+  5041545/9915284 trees, 4728134 certified, 313411 uncertified, 15465s
+  5051478/9915284 trees, 4736957 certified, 314521 uncertified, 15498s
+  5061478/9915284 trees, 4746305 certified, 315173 uncertified, 15532s
+  5071478/9915284 trees, 4755564 certified, 315914 uncertified, 15564s
+  5081411/9915284 trees, 4764373 certified, 317038 uncertified, 15597s
+  5091411/9915284 trees, 4773392 certified, 318019 uncertified, 15629s
+  5101411/9915284 trees, 4783035 certified, 318376 uncertified, 15662s
+  5111344/9915284 trees, 4791548 certified, 319796 uncertified, 15696s
+  5121344/9915284 trees, 4800114 certified, 321230 uncertified, 15734s
+  5131344/9915284 trees, 4809078 certified, 322266 uncertified, 15771s
+  5141277/9915284 trees, 4818006 certified, 323271 uncertified, 15806s
+  5151277/9915284 trees, 4826928 certified, 324349 uncertified, 15842s
+  5161277/9915284 trees, 4835423 certified, 325854 uncertified, 15880s
+  5171210/9915284 trees, 4844548 certified, 326662 uncertified, 15916s
+  5181210/9915284 trees, 4854415 certified, 326795 uncertified, 15946s
+  5191210/9915284 trees, 4863965 certified, 327245 uncertified, 15982s
+  5201050/9915284 trees, 4873066 certified, 327984 uncertified, 16021s
+  5211050/9915284 trees, 4882867 certified, 328183 uncertified, 16058s
+  5221050/9915284 trees, 4891973 certified, 329077 uncertified, 16091s
+  5230890/9915284 trees, 4901109 certified, 329781 uncertified, 16124s
+  5240890/9915284 trees, 4910965 certified, 329925 uncertified, 16156s
+  5250890/9915284 trees, 4920317 certified, 330573 uncertified, 16187s
+  5260730/9915284 trees, 4929349 certified, 331381 uncertified, 16215s
+  5270730/9915284 trees, 4939009 certified, 331721 uncertified, 16246s
+  5280730/9915284 trees, 4948138 certified, 332592 uncertified, 16279s
+  5290570/9915284 trees, 4956966 certified, 333604 uncertified, 16317s
+  5300570/9915284 trees, 4966429 certified, 334141 uncertified, 16356s
+  5310410/9915284 trees, 4974782 certified, 335628 uncertified, 16396s
+  5320410/9915284 trees, 4983305 certified, 337105 uncertified, 16434s
+  5330410/9915284 trees, 4992554 certified, 337856 uncertified, 16472s
+  5340250/9915284 trees, 5001235 certified, 339015 uncertified, 16509s
+  5350250/9915284 trees, 5010317 certified, 339933 uncertified, 16546s
+  5360250/9915284 trees, 5019122 certified, 341128 uncertified, 16585s
+  5370090/9915284 trees, 5028097 certified, 341993 uncertified, 16624s
+  5380090/9915284 trees, 5036173 certified, 343917 uncertified, 16667s
+  5390090/9915284 trees, 5044854 certified, 345236 uncertified, 16710s
+  5399930/9915284 trees, 5053869 certified, 346061 uncertified, 16752s
+  5409930/9915284 trees, 5063018 certified, 346912 uncertified, 16794s
+  5419930/9915284 trees, 5071469 certified, 348461 uncertified, 16837s
+  5429770/9915284 trees, 5080291 certified, 349479 uncertified, 16870s
+  5439770/9915284 trees, 5090117 certified, 349653 uncertified, 16897s
+  5449770/9915284 trees, 5099777 certified, 349993 uncertified, 16923s
+  5459733/9915284 trees, 5109236 certified, 350497 uncertified, 16951s
+  5469733/9915284 trees, 5119188 certified, 350545 uncertified, 16980s
+  5479733/9915284 trees, 5128673 certified, 351060 uncertified, 17010s
+  5489733/9915284 trees, 5138084 certified, 351649 uncertified, 17040s
+  5499696/9915284 trees, 5147666 certified, 352030 uncertified, 17073s
+  5509696/9915284 trees, 5157283 certified, 352413 uncertified, 17107s
+  5519696/9915284 trees, 5166426 certified, 353270 uncertified, 17143s
+  5529659/9915284 trees, 5175764 certified, 353895 uncertified, 17177s
+  5539659/9915284 trees, 5185340 certified, 354319 uncertified, 17211s
+  5549659/9915284 trees, 5194893 certified, 354766 uncertified, 17245s
+  5559622/9915284 trees, 5204044 certified, 355578 uncertified, 17281s
+  5569622/9915284 trees, 5213204 certified, 356418 uncertified, 17321s
+  5579622/9915284 trees, 5222902 certified, 356720 uncertified, 17360s
+  5589622/9915284 trees, 5231627 certified, 357995 uncertified, 17398s
+  5599585/9915284 trees, 5240435 certified, 359150 uncertified, 17440s
+  5609585/9915284 trees, 5249027 certified, 360558 uncertified, 17485s
+  5619585/9915284 trees, 5258333 certified, 361252 uncertified, 17527s
+  5629548/9915284 trees, 5267526 certified, 362022 uncertified, 17557s
+  5639548/9915284 trees, 5277272 certified, 362276 uncertified, 17584s
+  5649548/9915284 trees, 5286730 certified, 362818 uncertified, 17613s
+  5659537/9915284 trees, 5296372 certified, 363165 uncertified, 17641s
+  5669537/9915284 trees, 5306091 certified, 363446 uncertified, 17672s
+  5679537/9915284 trees, 5315512 certified, 364025 uncertified, 17701s
+  5689526/9915284 trees, 5324761 certified, 364765 uncertified, 17733s
+  5699526/9915284 trees, 5334651 certified, 364875 uncertified, 17767s
+  5709526/9915284 trees, 5343983 certified, 365543 uncertified, 17801s
+  5719515/9915284 trees, 5353051 certified, 366464 uncertified, 17837s
+  5729515/9915284 trees, 5362492 certified, 367023 uncertified, 17872s
+  5739515/9915284 trees, 5372090 certified, 367425 uncertified, 17906s
+  5749504/9915284 trees, 5380843 certified, 368661 uncertified, 17940s
+  5759504/9915284 trees, 5390242 certified, 369262 uncertified, 17975s
+  5769504/9915284 trees, 5399905 certified, 369599 uncertified, 18010s
+  5779504/9915284 trees, 5408720 certified, 370784 uncertified, 18044s
+  5789493/9915284 trees, 5417973 certified, 371520 uncertified, 18084s
+  5799493/9915284 trees, 5427333 certified, 372160 uncertified, 18122s
+  5809493/9915284 trees, 5436125 certified, 373368 uncertified, 18161s
+  5819482/9915284 trees, 5444817 certified, 374665 uncertified, 18201s
+  5829482/9915284 trees, 5454109 certified, 375373 uncertified, 18238s
+  5839482/9915284 trees, 5463383 certified, 376099 uncertified, 18278s
+  5849471/9915284 trees, 5471941 certified, 377530 uncertified, 18320s
+  5859471/9915284 trees, 5480273 certified, 379198 uncertified, 18361s
+  5869471/9915284 trees, 5489530 certified, 379941 uncertified, 18404s
+  5879460/9915284 trees, 5498209 certified, 381251 uncertified, 18448s
+  5889460/9915284 trees, 5506092 certified, 383368 uncertified, 18492s
+  5899460/9915284 trees, 5515043 certified, 384417 uncertified, 18538s
+  5909449/9915284 trees, 5524454 certified, 384995 uncertified, 18574s
+  5919449/9915284 trees, 5534147 certified, 385302 uncertified, 18601s
+  5929449/9915284 trees, 5543381 certified, 386068 uncertified, 18626s
+  5939414/9915284 trees, 5552853 certified, 386561 uncertified, 18654s
+  5949414/9915284 trees, 5562508 certified, 386906 uncertified, 18686s
+  5959414/9915284 trees, 5571648 certified, 387766 uncertified, 18716s
+  5969379/9915284 trees, 5580731 certified, 388648 uncertified, 18747s
+  5979379/9915284 trees, 5590402 certified, 388977 uncertified, 18781s
+  5989379/9915284 trees, 5599368 certified, 390011 uncertified, 18819s
+  5999344/9915284 trees, 5607951 certified, 391393 uncertified, 18853s
+  6009344/9915284 trees, 5617570 certified, 391774 uncertified, 18887s
+  6019344/9915284 trees, 5626396 certified, 392948 uncertified, 18921s
+  6029309/9915284 trees, 5635337 certified, 393972 uncertified, 18955s
+  6039309/9915284 trees, 5644654 certified, 394655 uncertified, 18989s
+  6049309/9915284 trees, 5653853 certified, 395456 uncertified, 19023s
+  6059274/9915284 trees, 5662488 certified, 396786 uncertified, 19062s
+  6069274/9915284 trees, 5671670 certified, 397604 uncertified, 19102s
+  6079274/9915284 trees, 5680668 certified, 398606 uncertified, 19140s
+  6089239/9915284 trees, 5688952 certified, 400287 uncertified, 19176s
+  6099239/9915284 trees, 5697557 certified, 401682 uncertified, 19214s
+  6109239/9915284 trees, 5707016 certified, 402223 uncertified, 19252s
+  6119204/9915284 trees, 5714630 certified, 404574 uncertified, 19297s
+  6129204/9915284 trees, 5723051 certified, 406153 uncertified, 19340s
+  6139169/9915284 trees, 5731981 certified, 407188 uncertified, 19383s
+  6149169/9915284 trees, 5740568 certified, 408601 uncertified, 19424s
+  6159169/9915284 trees, 5749099 certified, 410070 uncertified, 19467s
+  6169134/9915284 trees, 5757668 certified, 411466 uncertified, 19505s
+  6179134/9915284 trees, 5767485 certified, 411649 uncertified, 19532s
+  6189134/9915284 trees, 5777210 certified, 411924 uncertified, 19558s
+  6199134/9915284 trees, 5786784 certified, 412350 uncertified, 19584s
+  6208996/9915284 trees, 5796353 certified, 412643 uncertified, 19613s
+  6218996/9915284 trees, 5805979 certified, 413017 uncertified, 19643s
+  6228996/9915284 trees, 5815578 certified, 413418 uncertified, 19673s
+  6238858/9915284 trees, 5825060 certified, 413798 uncertified, 19705s
+  6248858/9915284 trees, 5834943 certified, 413915 uncertified, 19739s
+  6258858/9915284 trees, 5844339 certified, 414519 uncertified, 19773s
+  6268858/9915284 trees, 5853406 certified, 415452 uncertified, 19808s
+  6278720/9915284 trees, 5862398 certified, 416322 uncertified, 19845s
+  6288720/9915284 trees, 5871896 certified, 416824 uncertified, 19883s
+  6298720/9915284 trees, 5880916 certified, 417804 uncertified, 19923s
+  6308582/9915284 trees, 5889254 certified, 419328 uncertified, 19962s
+  6318582/9915284 trees, 5898172 certified, 420410 uncertified, 20000s
+  6328582/9915284 trees, 5907894 certified, 420688 uncertified, 20040s
+  6338582/9915284 trees, 5916785 certified, 421797 uncertified, 20078s
+  6348444/9915284 trees, 5925483 certified, 422961 uncertified, 20119s
+  6358444/9915284 trees, 5933205 certified, 425239 uncertified, 20157s
+  6368444/9915284 trees, 5942429 certified, 426015 uncertified, 20194s
+  6378306/9915284 trees, 5951972 certified, 426334 uncertified, 20226s
+  6388306/9915284 trees, 5961828 certified, 426478 uncertified, 20248s
+  6398306/9915284 trees, 5971350 certified, 426956 uncertified, 20270s
+  6408306/9915284 trees, 5980847 certified, 427459 uncertified, 20291s
+  6418268/9915284 trees, 5990619 certified, 427649 uncertified, 20318s
+  6428268/9915284 trees, 6000018 certified, 428250 uncertified, 20344s
+  6438268/9915284 trees, 6009465 certified, 428803 uncertified, 20369s
+  6448230/9915284 trees, 6018687 certified, 429543 uncertified, 20396s
+  6458230/9915284 trees, 6028453 certified, 429777 uncertified, 20425s
+  6468230/9915284 trees, 6037594 certified, 430636 uncertified, 20455s
+  6478192/9915284 trees, 6046180 certified, 432012 uncertified, 20485s
+  6488192/9915284 trees, 6055753 certified, 432439 uncertified, 20514s
+  6498192/9915284 trees, 6065162 certified, 433030 uncertified, 20542s
+  6508192/9915284 trees, 6074561 certified, 433631 uncertified, 20571s
+  6518154/9915284 trees, 6083745 certified, 434409 uncertified, 20602s
+  6528154/9915284 trees, 6093336 certified, 434818 uncertified, 20636s
+  6538154/9915284 trees, 6102227 certified, 435927 uncertified, 20669s
+  6548116/9915284 trees, 6110737 certified, 437379 uncertified, 20702s
+  6558116/9915284 trees, 6119950 certified, 438166 uncertified, 20734s
+  6568116/9915284 trees, 6129510 certified, 438606 uncertified, 20767s
+  6578116/9915284 trees, 6137985 certified, 440131 uncertified, 20799s
+  6588078/9915284 trees, 6146569 certified, 441509 uncertified, 20831s
+  6598078/9915284 trees, 6155966 certified, 442112 uncertified, 20866s
+  6608078/9915284 trees, 6165386 certified, 442692 uncertified, 20899s
+  6618040/9915284 trees, 6174134 certified, 443906 uncertified, 20932s
+  6628040/9915284 trees, 6182481 certified, 445559 uncertified, 20964s
+  6638040/9915284 trees, 6191852 certified, 446188 uncertified, 20996s
+  6648002/9915284 trees, 6200700 certified, 447302 uncertified, 21029s
+  6658002/9915284 trees, 6209347 certified, 448655 uncertified, 21067s
+  6668002/9915284 trees, 6217415 certified, 450587 uncertified, 21104s
+  6678002/9915284 trees, 6226603 certified, 451399 uncertified, 21141s
+  6687964/9915284 trees, 6236474 certified, 451490 uncertified, 21163s
+  6697964/9915284 trees, 6245929 certified, 452035 uncertified, 21185s
+  6707964/9915284 trees, 6255316 certified, 452648 uncertified, 21208s
+  6717868/9915284 trees, 6264878 certified, 452990 uncertified, 21232s
+  6727868/9915284 trees, 6274330 certified, 453538 uncertified, 21258s
+  6737868/9915284 trees, 6283278 certified, 454590 uncertified, 21283s
+  6747772/9915284 trees, 6292421 certified, 455351 uncertified, 21311s
+  6757772/9915284 trees, 6301869 certified, 455903 uncertified, 21341s
+  6767772/9915284 trees, 6310938 certified, 456834 uncertified, 21370s
+  6777676/9915284 trees, 6319304 certified, 458372 uncertified, 21399s
+  6787676/9915284 trees, 6328867 certified, 458809 uncertified, 21428s
+  6797676/9915284 trees, 6338463 certified, 459213 uncertified, 21458s
+  6807676/9915284 trees, 6347052 certified, 460624 uncertified, 21486s
+  6817580/9915284 trees, 6356226 certified, 461354 uncertified, 21518s
+  6827580/9915284 trees, 6365146 certified, 462434 uncertified, 21550s
+  6837580/9915284 trees, 6374113 certified, 463467 uncertified, 21584s
+  6847484/9915284 trees, 6382712 certified, 464772 uncertified, 21617s
+  6857484/9915284 trees, 6391783 certified, 465701 uncertified, 21649s
+  6867484/9915284 trees, 6401018 certified, 466466 uncertified, 21681s
+  6877388/9915284 trees, 6409317 certified, 468071 uncertified, 21715s
+  6887388/9915284 trees, 6417724 certified, 469664 uncertified, 21748s
+  6897388/9915284 trees, 6427013 certified, 470375 uncertified, 21781s
+  6907292/9915284 trees, 6435619 certified, 471673 uncertified, 21813s
+  6917292/9915284 trees, 6444479 certified, 472813 uncertified, 21845s
+  6927292/9915284 trees, 6453612 certified, 473680 uncertified, 21879s
+  6937196/9915284 trees, 6462380 certified, 474816 uncertified, 21912s
+  6947196/9915284 trees, 6470541 certified, 476655 uncertified, 21947s
+  6957196/9915284 trees, 6478312 certified, 478884 uncertified, 21982s
+  6967196/9915284 trees, 6487662 certified, 479534 uncertified, 22018s
+  6977100/9915284 trees, 6497260 certified, 479840 uncertified, 22043s
+  6987100/9915284 trees, 6506912 certified, 480188 uncertified, 22066s
+  6997100/9915284 trees, 6516454 certified, 480646 uncertified, 22088s
+  7006948/9915284 trees, 6525852 certified, 481096 uncertified, 22113s
+  7016948/9915284 trees, 6535644 certified, 481304 uncertified, 22142s
+  7026948/9915284 trees, 6544737 certified, 482211 uncertified, 22171s
+  7036796/9915284 trees, 6553452 certified, 483344 uncertified, 22199s
+  7046796/9915284 trees, 6562796 certified, 484000 uncertified, 22228s
+  7056796/9915284 trees, 6572644 certified, 484152 uncertified, 22257s
+  7066796/9915284 trees, 6581779 certified, 485017 uncertified, 22288s
+  7076644/9915284 trees, 6590824 certified, 485820 uncertified, 22316s
+  7086644/9915284 trees, 6600322 certified, 486322 uncertified, 22346s
+  7096644/9915284 trees, 6609830 certified, 486814 uncertified, 22376s
+  7106492/9915284 trees, 6618474 certified, 488018 uncertified, 22406s
+  7116492/9915284 trees, 6627417 certified, 489075 uncertified, 22440s
+  7126492/9915284 trees, 6637002 certified, 489490 uncertified, 22472s
+  7136340/9915284 trees, 6645512 certified, 490828 uncertified, 22505s
+  7146340/9915284 trees, 6653745 certified, 492595 uncertified, 22540s
+  7156340/9915284 trees, 6662178 certified, 494162 uncertified, 22576s
+  7166340/9915284 trees, 6671360 certified, 494980 uncertified, 22613s
+  7176188/9915284 trees, 6680598 certified, 495590 uncertified, 22643s
+  7186188/9915284 trees, 6690345 certified, 495843 uncertified, 22669s
+  7196188/9915284 trees, 6700009 certified, 496179 uncertified, 22694s
+  7206177/9915284 trees, 6709493 certified, 496684 uncertified, 22719s
+  7216177/9915284 trees, 6719405 certified, 496772 uncertified, 22745s
+  7226177/9915284 trees, 6728980 certified, 497197 uncertified, 22771s
+  7236177/9915284 trees, 6738235 certified, 497942 uncertified, 22796s
+  7246166/9915284 trees, 6747568 certified, 498598 uncertified, 22832s
+  7256166/9915284 trees, 6757149 certified, 499017 uncertified, 22863s
+  7266166/9915284 trees, 6765993 certified, 500173 uncertified, 22896s
+  7276155/9915284 trees, 6775040 certified, 501115 uncertified, 22928s
+  7286155/9915284 trees, 6784494 certified, 501661 uncertified, 22961s
+  7296155/9915284 trees, 6794064 certified, 502091 uncertified, 22993s
+  7306144/9915284 trees, 6803114 certified, 503030 uncertified, 23029s
+  7316144/9915284 trees, 6812365 certified, 503779 uncertified, 23066s
+  7326144/9915284 trees, 6821154 certified, 504990 uncertified, 23102s
+  7336133/9915284 trees, 6829877 certified, 506256 uncertified, 23135s
+  7346133/9915284 trees, 6839775 certified, 506358 uncertified, 23160s
+  7356133/9915284 trees, 6849271 certified, 506862 uncertified, 23185s
+  7366037/9915284 trees, 6858371 certified, 507666 uncertified, 23213s
+  7376037/9915284 trees, 6867823 certified, 508214 uncertified, 23242s
+  7386037/9915284 trees, 6877500 certified, 508537 uncertified, 23272s
+  7395941/9915284 trees, 6886201 certified, 509740 uncertified, 23300s
+  7405941/9915284 trees, 6894853 certified, 511088 uncertified, 23335s
+  7415941/9915284 trees, 6903779 certified, 512162 uncertified, 23375s
+  7425845/9915284 trees, 6912566 certified, 513279 uncertified, 23412s
+  7435845/9915284 trees, 6922137 certified, 513708 uncertified, 23437s
+  7445845/9915284 trees, 6931782 certified, 514063 uncertified, 23463s
+  7455845/9915284 trees, 6941132 certified, 514713 uncertified, 23488s
+  7465677/9915284 trees, 6950656 certified, 515021 uncertified, 23513s
+  7475677/9915284 trees, 6960327 certified, 515350 uncertified, 23538s
+  7485677/9915284 trees, 6969655 certified, 516022 uncertified, 23564s
+  7495509/9915284 trees, 6978794 certified, 516715 uncertified, 23592s
+  7505509/9915284 trees, 6988550 certified, 516959 uncertified, 23622s
+  7515509/9915284 trees, 6997728 certified, 517781 uncertified, 23652s
+  7525341/9915284 trees, 7006746 certified, 518595 uncertified, 23681s
+  7535341/9915284 trees, 7016220 certified, 519121 uncertified, 23710s
+  7545341/9915284 trees, 7025608 certified, 519733 uncertified, 23739s
+  7555173/9915284 trees, 7033982 certified, 521191 uncertified, 23771s
+  7565173/9915284 trees, 7042627 certified, 522546 uncertified, 23807s
+  7575173/9915284 trees, 7051992 certified, 523181 uncertified, 23845s
+  7585005/9915284 trees, 7060641 certified, 524364 uncertified, 23881s
+  7595005/9915284 trees, 7069916 certified, 525089 uncertified, 23917s
+  7605005/9915284 trees, 7078676 certified, 526329 uncertified, 23954s
+  7614837/9915284 trees, 7086559 certified, 528278 uncertified, 23990s
+  7624837/9915284 trees, 7095379 certified, 529458 uncertified, 24027s
+  7634837/9915284 trees, 7103970 certified, 530867 uncertified, 24064s
+  7644669/9915284 trees, 7112889 certified, 531780 uncertified, 24096s
+  7654669/9915284 trees, 7122804 certified, 531865 uncertified, 24121s
+  7664669/9915284 trees, 7132303 certified, 532366 uncertified, 24146s
+  7674533/9915284 trees, 7141509 certified, 533024 uncertified, 24173s
+  7684533/9915284 trees, 7151182 certified, 533351 uncertified, 24199s
+  7694533/9915284 trees, 7160849 certified, 533684 uncertified, 24224s
+  7704533/9915284 trees, 7170182 certified, 534351 uncertified, 24250s
+  7714397/9915284 trees, 7179437 certified, 534960 uncertified, 24277s
+  7724397/9915284 trees, 7188985 certified, 535412 uncertified, 24307s
+  7734397/9915284 trees, 7198441 certified, 535956 uncertified, 24337s
+  7744261/9915284 trees, 7207102 certified, 537159 uncertified, 24366s
+  7754261/9915284 trees, 7216584 certified, 537677 uncertified, 24399s
+  7764261/9915284 trees, 7225734 certified, 538527 uncertified, 24431s
+  7774261/9915284 trees, 7234340 certified, 539921 uncertified, 24464s
+  7784125/9915284 trees, 7242861 certified, 541264 uncertified, 24502s
+  7794125/9915284 trees, 7251498 certified, 542627 uncertified, 24537s
+  7804125/9915284 trees, 7260699 certified, 543426 uncertified, 24574s
+  7813989/9915284 trees, 7269574 certified, 544415 uncertified, 24603s
+  7823989/9915284 trees, 7279225 certified, 544764 uncertified, 24629s
+  7833989/9915284 trees, 7288738 certified, 545251 uncertified, 24655s
+  7843923/9915284 trees, 7297722 certified, 546201 uncertified, 24681s
+  7853923/9915284 trees, 7307328 certified, 546595 uncertified, 24706s
+  7863923/9915284 trees, 7316559 certified, 547364 uncertified, 24732s
+  7873857/9915284 trees, 7325490 certified, 548367 uncertified, 24759s
+  7883857/9915284 trees, 7334770 certified, 549087 uncertified, 24788s
+  7893857/9915284 trees, 7344520 certified, 549337 uncertified, 24817s
+  7903857/9915284 trees, 7353411 certified, 550446 uncertified, 24846s
+  7913791/9915284 trees, 7362127 certified, 551664 uncertified, 24879s
+  7923791/9915284 trees, 7371355 certified, 552436 uncertified, 24914s
+  7933791/9915284 trees, 7380254 certified, 553537 uncertified, 24946s
+  7943725/9915284 trees, 7388954 certified, 554771 uncertified, 24977s
+  7953725/9915284 trees, 7397918 certified, 555807 uncertified, 25011s
+  7963725/9915284 trees, 7407085 certified, 556640 uncertified, 25045s
+  7973659/9915284 trees, 7415494 certified, 558165 uncertified, 25080s
+  7983659/9915284 trees, 7424645 certified, 559014 uncertified, 25117s
+  7993659/9915284 trees, 7433088 certified, 560571 uncertified, 25153s
+  8003593/9915284 trees, 7441241 certified, 562352 uncertified, 25188s
+  8013593/9915284 trees, 7449289 certified, 564304 uncertified, 25224s
+  8023593/9915284 trees, 7458018 certified, 565575 uncertified, 25261s
+  8033527/9915284 trees, 7467144 certified, 566383 uncertified, 25296s
+  8043527/9915284 trees, 7476905 certified, 566622 uncertified, 25321s
+  8053527/9915284 trees, 7485883 certified, 567644 uncertified, 25346s
+  8063412/9915284 trees, 7494854 certified, 568558 uncertified, 25371s
+  8073412/9915284 trees, 7504257 certified, 569155 uncertified, 25398s
+  8083412/9915284 trees, 7513476 certified, 569936 uncertified, 25424s
+  8093297/9915284 trees, 7522368 certified, 570929 uncertified, 25452s
+  8103297/9915284 trees, 7531837 certified, 571460 uncertified, 25480s
+  8113297/9915284 trees, 7540968 certified, 572329 uncertified, 25508s
+  8123182/9915284 trees, 7549193 certified, 573989 uncertified, 25538s
+  8133182/9915284 trees, 7557896 certified, 575286 uncertified, 25571s
+  8143182/9915284 trees, 7567293 certified, 575889 uncertified, 25606s
+  8153067/9915284 trees, 7574852 certified, 578215 uncertified, 25640s
+  8163067/9915284 trees, 7582639 certified, 580428 uncertified, 25676s
+  8173067/9915284 trees, 7591493 certified, 581574 uncertified, 25711s
+  8182952/9915284 trees, 7600778 certified, 582174 uncertified, 25740s
+  8192952/9915284 trees, 7610381 certified, 582571 uncertified, 25765s
+  8202952/9915284 trees, 7619645 certified, 583307 uncertified, 25791s
+  8212799/9915284 trees, 7628622 certified, 584177 uncertified, 25817s
+  8222799/9915284 trees, 7638238 certified, 584561 uncertified, 25843s
+  8232799/9915284 trees, 7647595 certified, 585204 uncertified, 25869s
+  8242799/9915284 trees, 7656628 certified, 586171 uncertified, 25894s
+  8252646/9915284 trees, 7665529 certified, 587117 uncertified, 25924s
+  8262646/9915284 trees, 7675202 certified, 587444 uncertified, 25952s
+  8272646/9915284 trees, 7684215 certified, 588431 uncertified, 25982s
+  8282493/9915284 trees, 7692994 certified, 589499 uncertified, 26013s
+  8292493/9915284 trees, 7701818 certified, 590675 uncertified, 26044s
+  8302493/9915284 trees, 7711416 certified, 591077 uncertified, 26076s
+  8312493/9915284 trees, 7719564 certified, 592929 uncertified, 26108s
+  8322340/9915284 trees, 7728707 certified, 593633 uncertified, 26141s
+  8332340/9915284 trees, 7737903 certified, 594437 uncertified, 26174s
+  8342340/9915284 trees, 7746765 certified, 595575 uncertified, 26208s
+  8352187/9915284 trees, 7755125 certified, 597062 uncertified, 26240s
+  8362187/9915284 trees, 7763892 certified, 598295 uncertified, 26272s
+  8372187/9915284 trees, 7772936 certified, 599251 uncertified, 26306s
+  8382034/9915284 trees, 7781544 certified, 600490 uncertified, 26339s
+  8392034/9915284 trees, 7790012 certified, 602022 uncertified, 26375s
+  8402034/9915284 trees, 7798096 certified, 603938 uncertified, 26411s
+  8412034/9915284 trees, 7806743 certified, 605291 uncertified, 26447s
+  8421881/9915284 trees, 7816474 certified, 605407 uncertified, 26475s
+  8431881/9915284 trees, 7825885 certified, 605996 uncertified, 26502s
+  8441881/9915284 trees, 7834853 certified, 607028 uncertified, 26527s
+  8451781/9915284 trees, 7843738 certified, 608043 uncertified, 26553s
+  8461781/9915284 trees, 7852520 certified, 609261 uncertified, 26586s
+  8471781/9915284 trees, 7862044 certified, 609737 uncertified, 26620s
+  8481781/9915284 trees, 7870764 certified, 611017 uncertified, 26653s
+  8491681/9915284 trees, 7879405 certified, 612276 uncertified, 26682s
+  8501681/9915284 trees, 7888790 certified, 612891 uncertified, 26707s
+  8511681/9915284 trees, 7898295 certified, 613386 uncertified, 26734s
+  8521496/9915284 trees, 7907362 certified, 614134 uncertified, 26760s
+  8531496/9915284 trees, 7917123 certified, 614373 uncertified, 26789s
+  8541496/9915284 trees, 7926399 certified, 615097 uncertified, 26818s
+  8551496/9915284 trees, 7935293 certified, 616203 uncertified, 26847s
+  8561311/9915284 trees, 7943992 certified, 617319 uncertified, 26876s
+  8571311/9915284 trees, 7953447 certified, 617864 uncertified, 26905s
+  8581311/9915284 trees, 7962876 certified, 618435 uncertified, 26933s
+  8591126/9915284 trees, 7971491 certified, 619635 uncertified, 26963s
+  8601126/9915284 trees, 7980161 certified, 620965 uncertified, 26998s
+  8611126/9915284 trees, 7989146 certified, 621980 uncertified, 27031s
+  8620941/9915284 trees, 7998082 certified, 622859 uncertified, 27063s
+  8630941/9915284 trees, 8006875 certified, 624066 uncertified, 27099s
+  8640941/9915284 trees, 8015439 certified, 625502 uncertified, 27135s
+  8650941/9915284 trees, 8023975 certified, 626966 uncertified, 27172s
+  8660756/9915284 trees, 8032848 certified, 627908 uncertified, 27202s
+  8670756/9915284 trees, 8042290 certified, 628466 uncertified, 27228s
+  8680756/9915284 trees, 8051678 certified, 629078 uncertified, 27253s
+  8690618/9915284 trees, 8060514 certified, 630104 uncertified, 27279s
+  8700618/9915284 trees, 8069948 certified, 630670 uncertified, 27310s
+  8710618/9915284 trees, 8078848 certified, 631770 uncertified, 27339s
+  8720480/9915284 trees, 8087151 certified, 633329 uncertified, 27369s
+  8730480/9915284 trees, 8096167 certified, 634313 uncertified, 27398s
+  8740480/9915284 trees, 8105819 certified, 634661 uncertified, 27426s
+  8750480/9915284 trees, 8114497 certified, 635983 uncertified, 27456s
+  8760342/9915284 trees, 8123613 certified, 636729 uncertified, 27484s
+  8770342/9915284 trees, 8132887 certified, 637455 uncertified, 27514s
+  8780342/9915284 trees, 8142019 certified, 638323 uncertified, 27544s
+  8790204/9915284 trees, 8150645 certified, 639559 uncertified, 27574s
+  8800204/9915284 trees, 8159641 certified, 640563 uncertified, 27606s
+  8810204/9915284 trees, 8169076 certified, 641128 uncertified, 27639s
+  8820066/9915284 trees, 8176982 certified, 643084 uncertified, 27674s
+  8830066/9915284 trees, 8184771 certified, 645295 uncertified, 27712s
+  8840066/9915284 trees, 8193206 certified, 646860 uncertified, 27747s
+  8849928/9915284 trees, 8201964 certified, 647964 uncertified, 27783s
+  8859928/9915284 trees, 8210569 certified, 649359 uncertified, 27818s
+  8869928/9915284 trees, 8219419 certified, 650509 uncertified, 27855s
+  8879790/9915284 trees, 8227438 certified, 652352 uncertified, 27890s
+  8889790/9915284 trees, 8237122 certified, 652668 uncertified, 27915s
+  8899790/9915284 trees, 8246701 certified, 653089 uncertified, 27942s
+  8909790/9915284 trees, 8256020 certified, 653770 uncertified, 27967s
+  8919594/9915284 trees, 8265066 certified, 654528 uncertified, 27992s
+  8929594/9915284 trees, 8274850 certified, 654744 uncertified, 28019s
+  8939594/9915284 trees, 8284135 certified, 655459 uncertified, 28044s
+  8949594/9915284 trees, 8293466 certified, 656128 uncertified, 28070s
+  8959398/9915284 trees, 8302386 certified, 657012 uncertified, 28097s
+  8969398/9915284 trees, 8312150 certified, 657248 uncertified, 28126s
+  8979398/9915284 trees, 8321461 certified, 657937 uncertified, 28155s
+  8989202/9915284 trees, 8330060 certified, 659142 uncertified, 28185s
+  8999202/9915284 trees, 8339351 certified, 659851 uncertified, 28214s
+  9009202/9915284 trees, 8348790 certified, 660412 uncertified, 28243s
+  9019202/9915284 trees, 8358107 certified, 661095 uncertified, 28271s
+  9029006/9915284 trees, 8367012 certified, 661994 uncertified, 28300s
+  9039006/9915284 trees, 8376316 certified, 662690 uncertified, 28331s
+  9049006/9915284 trees, 8386106 certified, 662900 uncertified, 28359s
+  9059006/9915284 trees, 8395111 certified, 663895 uncertified, 28389s
+  9068810/9915284 trees, 8403721 certified, 665089 uncertified, 28419s
+  9078810/9915284 trees, 8412619 certified, 666191 uncertified, 28452s
+  9088810/9915284 trees, 8422242 certified, 666568 uncertified, 28486s
+  9098810/9915284 trees, 8431082 certified, 667728 uncertified, 28518s
+  9108614/9915284 trees, 8439523 certified, 669091 uncertified, 28551s
+  9118614/9915284 trees, 8448078 certified, 670536 uncertified, 28584s
+  9128614/9915284 trees, 8457283 certified, 671331 uncertified, 28618s
+  9138418/9915284 trees, 8466043 certified, 672375 uncertified, 28650s
+  9148418/9915284 trees, 8475309 certified, 673109 uncertified, 28682s
+  9158418/9915284 trees, 8484453 certified, 673965 uncertified, 28716s
+  9168418/9915284 trees, 8493198 certified, 675220 uncertified, 28749s
+  9178222/9915284 trees, 8501403 certified, 676819 uncertified, 28784s
+  9188222/9915284 trees, 8509908 certified, 678314 uncertified, 28819s
+  9198222/9915284 trees, 8518141 certified, 680081 uncertified, 28856s
+  9208222/9915284 trees, 8526664 certified, 681558 uncertified, 28893s
+  9218026/9915284 trees, 8536152 certified, 681874 uncertified, 28921s
+  9228026/9915284 trees, 8545765 certified, 682261 uncertified, 28947s
+  9238026/9915284 trees, 8555117 certified, 682909 uncertified, 28973s
+  9248026/9915284 trees, 8564429 certified, 683597 uncertified, 28998s
+  9257947/9915284 trees, 8574030 certified, 683917 uncertified, 29026s
+  9267947/9915284 trees, 8583598 certified, 684349 uncertified, 29056s
+  9277947/9915284 trees, 8592550 certified, 685397 uncertified, 29087s
+  9287947/9915284 trees, 8601360 certified, 686587 uncertified, 29115s
+  9297868/9915284 trees, 8610172 certified, 687696 uncertified, 29148s
+  9307868/9915284 trees, 8619330 certified, 688538 uncertified, 29180s
+  9317868/9915284 trees, 8628259 certified, 689609 uncertified, 29213s
+  9327868/9915284 trees, 8636961 certified, 690907 uncertified, 29247s
+  9337789/9915284 trees, 8645673 certified, 692116 uncertified, 29280s
+  9347789/9915284 trees, 8654385 certified, 693404 uncertified, 29313s
+  9357789/9915284 trees, 8663744 certified, 694045 uncertified, 29344s
+  9367710/9915284 trees, 8672013 certified, 695697 uncertified, 29378s
+  9377710/9915284 trees, 8680546 certified, 697164 uncertified, 29411s
+  9387710/9915284 trees, 8689225 certified, 698485 uncertified, 29444s
+  9397710/9915284 trees, 8698685 certified, 699025 uncertified, 29476s
+  9407631/9915284 trees, 8707523 certified, 700108 uncertified, 29507s
+  9417631/9915284 trees, 8717361 certified, 700270 uncertified, 29534s
+  9427631/9915284 trees, 8726610 certified, 701021 uncertified, 29560s
+  9437631/9915284 trees, 8735908 certified, 701723 uncertified, 29587s
+  9447554/9915284 trees, 8744888 certified, 702666 uncertified, 29613s
+  9457554/9915284 trees, 8754547 certified, 703007 uncertified, 29642s
+  9467554/9915284 trees, 8763715 certified, 703839 uncertified, 29671s
+  9477554/9915284 trees, 8772432 certified, 705122 uncertified, 29701s
+  9487477/9915284 trees, 8781176 certified, 706301 uncertified, 29730s
+  9497477/9915284 trees, 8790378 certified, 707099 uncertified, 29759s
+  9507477/9915284 trees, 8799750 certified, 707727 uncertified, 29788s
+  9517477/9915284 trees, 8808463 certified, 709014 uncertified, 29818s
+  9527400/9915284 trees, 8817404 certified, 709996 uncertified, 29847s
+  9537400/9915284 trees, 8826620 certified, 710780 uncertified, 29878s
+  9547400/9915284 trees, 8835739 certified, 711661 uncertified, 29906s
+  9557323/9915284 trees, 8844359 certified, 712964 uncertified, 29936s
+  9567323/9915284 trees, 8853273 certified, 714050 uncertified, 29969s
+  9577323/9915284 trees, 8862465 certified, 714858 uncertified, 30002s
+  9587323/9915284 trees, 8871462 certified, 715861 uncertified, 30034s
+  9597246/9915284 trees, 8879674 certified, 717572 uncertified, 30067s
+  9607246/9915284 trees, 8888134 certified, 719112 uncertified, 30101s
+  9617246/9915284 trees, 8897086 certified, 720160 uncertified, 30133s
+  9627246/9915284 trees, 8906540 certified, 720706 uncertified, 30166s
+  9637169/9915284 trees, 8914597 certified, 722572 uncertified, 30202s
+  9647169/9915284 trees, 8922664 certified, 724505 uncertified, 30238s
+  9657169/9915284 trees, 8930808 certified, 726361 uncertified, 30275s
+  9667169/9915284 trees, 8939630 certified, 727539 uncertified, 30310s
+  9677092/9915284 trees, 8949349 certified, 727743 uncertified, 30338s
+  9687092/9915284 trees, 8958772 certified, 728320 uncertified, 30364s
+  9697092/9915284 trees, 8967957 certified, 729135 uncertified, 30390s
+  9707092/9915284 trees, 8977154 certified, 729938 uncertified, 30415s
+  9716972/9915284 trees, 8986646 certified, 730326 uncertified, 30444s
+  9726972/9915284 trees, 8995874 certified, 731098 uncertified, 30472s
+  9736972/9915284 trees, 9004636 certified, 732336 uncertified, 30503s
+  9746972/9915284 trees, 9013391 certified, 733581 uncertified, 30533s
+  9756852/9915284 trees, 9022413 certified, 734439 uncertified, 30563s
+  9766852/9915284 trees, 9031664 certified, 735188 uncertified, 30592s
+  9776852/9915284 trees, 9040758 certified, 736094 uncertified, 30621s
+  9786852/9915284 trees, 9049842 certified, 737010 uncertified, 30650s
+  9796732/9915284 trees, 9058576 certified, 738156 uncertified, 30681s
+  9806732/9915284 trees, 9067556 certified, 739176 uncertified, 30714s
+  9816732/9915284 trees, 9076957 certified, 739775 uncertified, 30749s
+  9826732/9915284 trees, 9085259 certified, 741473 uncertified, 30783s
+  9836612/9915284 trees, 9094253 certified, 742359 uncertified, 30813s
+  9846612/9915284 trees, 9103577 certified, 743035 uncertified, 30842s
+  9856612/9915284 trees, 9112381 certified, 744231 uncertified, 30871s
+  9866612/9915284 trees, 9121251 certified, 745361 uncertified, 30901s
+  9876548/9915284 trees, 9129901 certified, 746647 uncertified, 30932s
+  9886548/9915284 trees, 9138648 certified, 747900 uncertified, 30965s
+  9896548/9915284 trees, 9147145 certified, 749403 uncertified, 30998s
+  9906548/9915284 trees, 9156408 certified, 750140 uncertified, 31031s
+V=9: 9915284 trees solved, 9163771 certified exactly, 751513 uncertified; min z (certified) = 1.47057e-05; time 31059.2s
+   graph 0 root 0: trees 26199, certified 26019, min z 1.471e-05
+   graph 0 root 2: trees 26199, certified 25213, min z 1.471e-05
+   graph 0 root 3: trees 26199, certified 25157, min z 1.471e-05
+   graph 0 root 4: trees 26199, certified 25087, min z 1.471e-05
+   graph 0 root 7: trees 26199, certified 24720, min z 1.471e-05
+   graph 1 root 0: trees 26454, certified 26080, min z 1.471e-05
+   graph 1 root 1: trees 26454, certified 26003, min z 1.471e-05
+   graph 1 root 2: trees 26454, certified 25654, min z 1.471e-05
+   graph 1 root 3: trees 26454, certified 25523, min z 1.471e-05
+   graph 1 root 4: trees 26454, certified 25149, min z 1.471e-05
+   graph 1 root 5: trees 26454, certified 24845, min z 1.471e-05
+   graph 1 root 6: trees 26454, certified 24653, min z 1.471e-05
+   graph 1 root 7: trees 26454, certified 24387, min z 1.471e-05
+   graph 1 root 8: trees 26454, certified 24367, min z 1.471e-05
+   graph 2 root 0: trees 26397, certified 26077, min z 1.471e-05
+   graph 2 root 1: trees 26397, certified 26049, min z 1.471e-05
+   graph 2 root 2: trees 26397, certified 25443, min z 1.471e-05
+   graph 2 root 4: trees 26397, certified 24940, min z 1.471e-05
+   graph 2 root 6: trees 26397, certified 24475, min z 1.471e-05
+   graph 2 root 7: trees 26397, certified 24303, min z 1.471e-05
+   graph 3 root 0: trees 27309, certified 26888, min z 1.471e-05
+   graph 3 root 1: trees 27309, certified 26702, min z 1.471e-05
+   graph 3 root 2: trees 27309, certified 26341, min z 1.471e-05
+   graph 3 root 3: trees 27309, certified 25646, min z 1.471e-05
+   graph 3 root 4: trees 27309, certified 25553, min z 1.471e-05
+   graph 3 root 5: trees 27309, certified 25400, min z 1.471e-05
+   graph 3 root 6: trees 27309, certified 25361, min z 1.471e-05
+   graph 3 root 7: trees 27309, certified 25106, min z 1.471e-05
+   graph 3 root 8: trees 27309, certified 24633, min z 1.471e-05
+   graph 4 root 0: trees 25935, certified 25555, min z 1.471e-05
+   graph 4 root 1: trees 25935, certified 25339, min z 1.471e-05
+   graph 4 root 3: trees 25935, certified 25193, min z 1.471e-05
+   graph 4 root 5: trees 25935, certified 23970, min z 1.471e-05
+   graph 5 root 0: trees 26792, certified 26312, min z 1.471e-05
+   graph 5 root 1: trees 26792, certified 26086, min z 1.471e-05
+   graph 5 root 3: trees 26792, certified 25398, min z 1.471e-05
+   graph 5 root 4: trees 26792, certified 25292, min z 1.471e-05
+   graph 5 root 6: trees 26792, certified 24488, min z 1.471e-05
+   graph 5 root 7: trees 26792, certified 24579, min z 1.471e-05
+   graph 6 root 0: trees 26757, certified 26319, min z 1.471e-05
+   graph 6 root 1: trees 26757, certified 25946, min z 1.471e-05
+   graph 6 root 2: trees 26757, certified 26164, min z 1.471e-05
+   graph 6 root 3: trees 26757, certified 25441, min z 1.471e-05
+   graph 6 root 4: trees 26757, certified 25249, min z 1.471e-05
+   graph 6 root 5: trees 26757, certified 25050, min z 1.471e-05
+   graph 6 root 6: trees 26757, certified 24323, min z 1.471e-05
+   graph 6 root 7: trees 26757, certified 24416, min z 1.471e-05
+   graph 6 root 8: trees 26757, certified 24449, min z 1.471e-05
+   graph 7 root 0: trees 27720, certified 27194, min z 1.471e-05
+   graph 7 root 1: trees 27720, certified 26860, min z 1.471e-05
+   graph 7 root 3: trees 27720, certified 25640, min z 1.471e-05
+   graph 7 root 4: trees 27720, certified 26024, min z 1.471e-05
+   graph 7 root 7: trees 27720, certified 25107, min z 1.471e-05
+   graph 8 root 0: trees 27304, certified 26698, min z 1.471e-05
+   graph 8 root 1: trees 27304, certified 26129, min z 1.471e-05
+   graph 8 root 2: trees 27304, certified 26058, min z 1.471e-05
+   graph 8 root 3: trees 27304, certified 26149, min z 1.471e-05
+   graph 8 root 4: trees 27304, certified 25714, min z 1.471e-05
+   graph 8 root 5: trees 27304, certified 25462, min z 1.471e-05
+   graph 8 root 6: trees 27304, certified 24542, min z 1.471e-05
+   graph 8 root 7: trees 27304, certified 24462, min z 1.471e-05
+   graph 8 root 8: trees 27304, certified 24451, min z 1.471e-05
+   graph 9 root 0: trees 28244, certified 27466, min z 1.471e-05
+   graph 9 root 1: trees 28244, certified 26784, min z 1.471e-05
+   graph 9 root 2: trees 28244, certified 26784, min z 1.471e-05
+   graph 9 root 4: trees 28244, certified 25614, min z 1.471e-05
+   graph 9 root 5: trees 28244, certified 25862, min z 1.471e-05
+   graph 9 root 7: trees 28244, certified 24907, min z 1.471e-05
+   graph 10 root 0: trees 28245, certified 27559, min z 1.471e-05
+   graph 10 root 1: trees 28245, certified 27111, min z 1.471e-05
+   graph 10 root 2: trees 28245, certified 26467, min z 1.471e-05
+   graph 10 root 3: trees 28245, certified 26708, min z 1.471e-05
+   graph 10 root 4: trees 28245, certified 26289, min z 1.471e-05
+   graph 10 root 5: trees 28245, certified 26040, min z 1.471e-05
+   graph 10 root 6: trees 28245, certified 25833, min z 1.471e-05
+   graph 10 root 7: trees 28245, certified 25062, min z 1.471e-05
+   graph 10 root 8: trees 28245, certified 24829, min z 1.471e-05
+   graph 11 root 0: trees 28820, certified 27904, min z 1.471e-05
+   graph 11 root 1: trees 28820, certified 26657, min z 1.471e-05
+   graph 11 root 2: trees 28820, certified 27105, min z 1.471e-05
+   graph 11 root 5: trees 28820, certified 26225, min z 1.471e-05
+   graph 11 root 7: trees 28820, certified 24983, min z 1.471e-05
+   graph 12 root 0: trees 25645, certified 25334, min z 1.471e-05
+   graph 12 root 2: trees 25645, certified 25183, min z 1.471e-05
+   graph 12 root 3: trees 25645, certified 25037, min z 1.471e-05
+   graph 12 root 4: trees 25645, certified 24617, min z 1.471e-05
+   graph 12 root 5: trees 25645, certified 23865, min z 1.471e-05
+   graph 12 root 6: trees 25645, certified 24137, min z 1.471e-05
+   graph 12 root 7: trees 25645, certified 23961, min z 1.471e-05
+   graph 13 root 0: trees 26224, certified 25712, min z 1.471e-05
+   graph 13 root 2: trees 26224, certified 25568, min z 1.471e-05
+   graph 13 root 3: trees 26224, certified 25280, min z 1.471e-05
+   graph 13 root 5: trees 26224, certified 23982, min z 1.471e-05
+   graph 13 root 6: trees 26224, certified 24176, min z 1.471e-05
+   graph 14 root 0: trees 27117, certified 26519, min z 1.471e-05
+   graph 14 root 2: trees 27117, certified 26269, min z 1.471e-05
+   graph 14 root 3: trees 27117, certified 25895, min z 1.471e-05
+   graph 14 root 4: trees 27117, certified 25573, min z 1.471e-05
+   graph 14 root 5: trees 27117, certified 25075, min z 1.471e-05
+   graph 14 root 6: trees 27117, certified 24743, min z 1.471e-05
+   graph 14 root 8: trees 27117, certified 24647, min z 1.471e-05
+   graph 15 root 0: trees 27072, certified 26475, min z 1.471e-05
+   graph 15 root 1: trees 27072, certified 26359, min z 1.471e-05
+   graph 15 root 2: trees 27072, certified 26334, min z 1.471e-05
+   graph 15 root 3: trees 27072, certified 25528, min z 1.471e-05
+   graph 15 root 4: trees 27072, certified 25103, min z 1.471e-05
+   graph 15 root 5: trees 27072, certified 25182, min z 1.471e-05
+   graph 15 root 6: trees 27072, certified 24509, min z 1.471e-05
+   graph 15 root 7: trees 27072, certified 24648, min z 1.471e-05
+   graph 15 root 8: trees 27072, certified 24363, min z 1.471e-05
+   graph 16 root 0: trees 27389, certified 26543, min z 1.471e-05
+   graph 16 root 1: trees 27389, certified 26367, min z 1.471e-05
+   graph 16 root 2: trees 27389, certified 25561, min z 1.471e-05
+   graph 16 root 3: trees 27389, certified 25850, min z 1.471e-05
+   graph 16 root 4: trees 27389, certified 25939, min z 1.471e-05
+   graph 16 root 5: trees 27389, certified 25261, min z 1.471e-05
+   graph 16 root 6: trees 27389, certified 24535, min z 1.471e-05
+   graph 16 root 7: trees 27389, certified 24217, min z 1.471e-05
+   graph 16 root 8: trees 27389, certified 24334, min z 1.471e-05
+   graph 17 root 0: trees 30498, certified 29673, min z 1.471e-05
+   graph 17 root 2: trees 30498, certified 28996, min z 1.471e-05
+   graph 17 root 3: trees 30498, certified 28740, min z 1.471e-05
+   graph 17 root 4: trees 30498, certified 28458, min z 1.471e-05
+   graph 17 root 6: trees 30498, certified 28268, min z 1.471e-05
+   graph 17 root 7: trees 30498, certified 27220, min z 1.471e-05
+   graph 17 root 8: trees 30498, certified 27248, min z 1.471e-05
+   graph 18 root 0: trees 28269, certified 27090, min z 1.471e-05
+   graph 18 root 2: trees 28269, certified 26517, min z 1.471e-05
+   graph 18 root 4: trees 28269, certified 25365, min z 1.471e-05
+   graph 18 root 5: trees 28269, certified 25515, min z 1.471e-05
+   graph 18 root 7: trees 28269, certified 24692, min z 1.471e-05
+   graph 19 root 0: trees 31434, certified 30389, min z 1.471e-05
+   graph 19 root 2: trees 31434, certified 29370, min z 1.471e-05
+   graph 19 root 3: trees 31434, certified 29133, min z 1.471e-05
+   graph 19 root 5: trees 31434, certified 28576, min z 1.471e-05
+   graph 19 root 6: trees 31434, certified 28804, min z 1.471e-05
+   graph 19 root 7: trees 31434, certified 28446, min z 1.471e-05
+   graph 19 root 8: trees 31434, certified 27498, min z 1.471e-05
+   graph 20 root 0: trees 35287, certified 34685, min z 1.471e-05
+   graph 20 root 2: trees 35287, certified 32745, min z 1.471e-05
+   graph 21 root 0: trees 27232, certified 26266, min z 1.471e-05
+   graph 21 root 1: trees 27232, certified 26197, min z 1.471e-05
+   graph 21 root 2: trees 27232, certified 26115, min z 1.471e-05
+   graph 21 root 3: trees 27232, certified 25980, min z 1.471e-05
+   graph 21 root 4: trees 27232, certified 25101, min z 1.471e-05
+   graph 21 root 5: trees 27232, certified 24996, min z 1.471e-05
+   graph 21 root 6: trees 27232, certified 24195, min z 1.471e-05
+   graph 21 root 7: trees 27232, certified 24505, min z 1.471e-05
+   graph 21 root 8: trees 27232, certified 24175, min z 1.471e-05
+   graph 22 root 0: trees 27472, certified 26702, min z 1.471e-05
+   graph 22 root 1: trees 27472, certified 26445, min z 1.471e-05
+   graph 22 root 3: trees 27472, certified 26090, min z 0.000171
+   graph 22 root 4: trees 27472, certified 25305, min z 1.471e-05
+   graph 22 root 6: trees 27472, certified 24532, min z 1.471e-05
+   graph 22 root 7: trees 27472, certified 24548, min z 1.471e-05
+   graph 23 root 0: trees 30024, certified 29322, min z 1.471e-05
+   graph 23 root 1: trees 30024, certified 29140, min z 1.471e-05
+   graph 23 root 3: trees 30024, certified 28769, min z 1.471e-05
+   graph 23 root 5: trees 30024, certified 28000, min z 1.471e-05
+   graph 23 root 6: trees 30024, certified 27227, min z 1.471e-05
+   graph 23 root 7: trees 30024, certified 27094, min z 1.471e-05
+   graph 24 root 0: trees 27797, certified 26822, min z 1.471e-05
+   graph 24 root 1: trees 27797, certified 26279, min z 1.471e-05
+   graph 24 root 2: trees 27797, certified 26348, min z 1.471e-05
+   graph 24 root 3: trees 27797, certified 26005, min z 1.471e-05
+   graph 24 root 4: trees 27797, certified 26093, min z 1.471e-05
+   graph 24 root 5: trees 27797, certified 25568, min z 1.471e-05
+   graph 24 root 6: trees 27797, certified 24522, min z 1.471e-05
+   graph 24 root 7: trees 27797, certified 24323, min z 1.471e-05
+   graph 24 root 8: trees 27797, certified 24481, min z 1.471e-05
+   graph 25 root 0: trees 30846, certified 29728, min z 1.471e-05
+   graph 25 root 1: trees 30846, certified 29368, min z 1.471e-05
+   graph 25 root 3: trees 30846, certified 29124, min z 1.471e-05
+   graph 25 root 4: trees 30846, certified 28250, min z 1.471e-05
+   graph 25 root 5: trees 30846, certified 28598, min z 1.471e-05
+   graph 25 root 7: trees 30846, certified 27130, min z 1.471e-05
+   graph 26 root 0: trees 30933, certified 29960, min z 1.471e-05
+   graph 26 root 1: trees 30933, certified 29816, min z 1.471e-05
+   graph 26 root 2: trees 30933, certified 29355, min z 1.471e-05
+   graph 26 root 3: trees 30933, certified 29379, min z 1.471e-05
+   graph 26 root 4: trees 30933, certified 28427, min z 1.471e-05
+   graph 26 root 5: trees 30933, certified 28363, min z 1.471e-05
+   graph 26 root 6: trees 30933, certified 28210, min z 1.471e-05
+   graph 26 root 7: trees 30933, certified 27437, min z 1.471e-05
+   graph 26 root 8: trees 30933, certified 27327, min z 1.471e-05
+   graph 27 root 0: trees 28440, certified 27118, min z 1.471e-05
+   graph 27 root 1: trees 28440, certified 26761, min z 1.471e-05
+   graph 27 root 2: trees 28440, certified 27023, min z 1.471e-05
+   graph 27 root 3: trees 28440, certified 26340, min z 1.471e-05
+   graph 27 root 4: trees 28440, certified 25313, min z 1.471e-05
+   graph 27 root 5: trees 28440, certified 25684, min z 1.471e-05
+   graph 27 root 6: trees 28440, certified 25763, min z 1.471e-05
+   graph 27 root 7: trees 28440, certified 24236, min z 1.471e-05
+   graph 27 root 8: trees 28440, certified 24905, min z 1.471e-05
+   graph 28 root 0: trees 32763, certified 31745, min z 1.471e-05
+   graph 28 root 1: trees 32763, certified 31457, min z 1.471e-05
+   graph 28 root 2: trees 32763, certified 30843, min z 1.471e-05
+   graph 28 root 4: trees 32763, certified 31025, min z 1.471e-05
+   graph 28 root 5: trees 32763, certified 30086, min z 1.471e-05
+   graph 28 root 7: trees 32763, certified 28911, min z 1.471e-05
+   graph 29 root 0: trees 31589, certified 30425, min z 1.471e-05
+   graph 29 root 1: trees 31589, certified 30147, min z 1.471e-05
+   graph 29 root 2: trees 31589, certified 29727, min z 1.471e-05
+   graph 29 root 3: trees 31589, certified 29388, min z 1.471e-05
+   graph 29 root 4: trees 31589, certified 29167, min z 1.471e-05
+   graph 29 root 5: trees 31589, certified 28693, min z 1.471e-05
+   graph 29 root 6: trees 31589, certified 28738, min z 1.471e-05
+   graph 29 root 7: trees 31589, certified 27555, min z 1.471e-05
+   graph 29 root 8: trees 31589, certified 27456, min z 1.471e-05
+   graph 30 root 0: trees 28965, certified 27399, min z 1.471e-05
+   graph 30 root 1: trees 28965, certified 27113, min z 1.471e-05
+   graph 30 root 2: trees 28965, certified 26245, min z 1.471e-05
+   graph 30 root 3: trees 28965, certified 26508, min z 1.471e-05
+   graph 30 root 4: trees 28965, certified 26679, min z 1.471e-05
+   graph 30 root 5: trees 28965, certified 25780, min z 1.471e-05
+   graph 30 root 6: trees 28965, certified 25619, min z 1.471e-05
+   graph 30 root 7: trees 28965, certified 24269, min z 1.471e-05
+   graph 30 root 8: trees 28965, certified 24602, min z 1.471e-05
+   graph 31 root 0: trees 34662, certified 33626, min z 1.471e-05
+   graph 31 root 1: trees 34662, certified 33366, min z 1.471e-05
+   graph 31 root 2: trees 34662, certified 32552, min z 1.471e-05
+   graph 31 root 4: trees 34662, certified 31346, min z 1.471e-05
+   graph 31 root 5: trees 34662, certified 31548, min z 1.471e-05
+   graph 31 root 8: trees 34662, certified 30666, min z 1.471e-05
+   graph 32 root 0: trees 33762, certified 32519, min z 1.471e-05
+   graph 32 root 1: trees 33762, certified 32101, min z 1.471e-05
+   graph 32 root 2: trees 33762, certified 31031, min z 1.471e-05
+   graph 32 root 3: trees 33762, certified 31816, min z 1.471e-05
+   graph 32 root 4: trees 33762, certified 30670, min z 1.471e-05
+   graph 32 root 5: trees 33762, certified 30509, min z 1.471e-05
+   graph 32 root 6: trees 33762, certified 30678, min z 1.471e-05
+   graph 32 root 7: trees 33762, certified 30192, min z 1.471e-05
+   graph 32 root 8: trees 33762, certified 29261, min z 1.471e-05
+   graph 33 root 0: trees 32304, certified 30729, min z 1.471e-05
+   graph 33 root 1: trees 32304, certified 29997, min z 1.471e-05
+   graph 33 root 2: trees 32304, certified 29229, min z 1.471e-05
+   graph 33 root 3: trees 32304, certified 29814, min z 1.471e-05
+   graph 33 root 4: trees 32304, certified 29132, min z 1.471e-05
+   graph 33 root 5: trees 32304, certified 28734, min z 1.471e-05
+   graph 33 root 6: trees 32304, certified 28508, min z 1.471e-05
+   graph 33 root 7: trees 32304, certified 28806, min z 1.471e-05
+   graph 33 root 8: trees 32304, certified 27394, min z 1.471e-05
+   graph 34 root 0: trees 33448, certified 32184, min z 1.471e-05
+   graph 34 root 1: trees 33448, certified 31088, min z 1.471e-05
+   graph 34 root 3: trees 33448, certified 31391, min z 1.471e-05
+   graph 34 root 5: trees 33448, certified 31166, min z 1.471e-05
+   graph 34 root 6: trees 33448, certified 30026, min z 1.471e-05
+   graph 34 root 7: trees 33448, certified 29051, min z 1.471e-05
+   graph 35 root 0: trees 32589, certified 31495, min z 1.471e-05
+   graph 35 root 1: trees 32589, certified 31331, min z 1.471e-05
+   graph 35 root 4: trees 32589, certified 29931, min z 1.471e-05
+   graph 35 root 5: trees 32589, certified 30405, min z 1.471e-05
+   graph 35 root 7: trees 32589, certified 29117, min z 1.471e-05
+   graph 36 root 0: trees 31104, certified 29694, min z 1.471e-05
+   graph 36 root 3: trees 31104, certified 28988, min z 1.471e-05
+   graph 36 root 6: trees 31104, certified 27268, min z 1.471e-05
+   graph 37 root 0: trees 30832, certified 29504, min z 1.471e-05
+   graph 37 root 1: trees 30832, certified 29349, min z 1.471e-05
+   graph 37 root 3: trees 30832, certified 28849, min z 1.471e-05
+   graph 37 root 5: trees 30832, certified 28742, min z 1.471e-05
+   graph 37 root 6: trees 30832, certified 27250, min z 1.471e-05
+   graph 37 root 7: trees 30832, certified 27004, min z 1.471e-05
+   graph 37 root 8: trees 30832, certified 26964, min z 1.471e-05
+   graph 38 root 0: trees 33264, certified 31752, min z 1.471e-05
+   graph 38 root 1: trees 33264, certified 31799, min z 1.471e-05
+   graph 38 root 3: trees 33264, certified 30935, min z 1.471e-05
+   graph 38 root 5: trees 33264, certified 30100, min z 1.471e-05
+   graph 38 root 7: trees 33264, certified 29099, min z 1.471e-05
+   graph 39 root 0: trees 31734, certified 29948, min z 1.471e-05
+   graph 39 root 2: trees 31734, certified 29624, min z 1.471e-05
+   graph 39 root 3: trees 31734, certified 29434, min z 1.471e-05
+   graph 39 root 5: trees 31734, certified 28154, min z 1.471e-05
+   graph 39 root 6: trees 31734, certified 28430, min z 1.471e-05
+   graph 39 root 7: trees 31734, certified 27382, min z 1.471e-05
+   graph 39 root 8: trees 31734, certified 27198, min z 1.471e-05
+   graph 40 root 0: trees 29085, certified 26910, min z 1.471e-05
+   graph 40 root 2: trees 29085, certified 26795, min z 1.471e-05
+   graph 40 root 3: trees 29085, certified 26345, min z 1.471e-05
+   graph 40 root 5: trees 29085, certified 25533, min z 1.471e-05
+   graph 40 root 7: trees 29085, certified 24051, min z 1.471e-05
+   graph 41 root 0: trees 34047, certified 32044, min z 1.471e-05
+   graph 41 root 2: trees 34047, certified 31705, min z 1.471e-05
+   graph 41 root 3: trees 34047, certified 31219, min z 1.471e-05
+   graph 41 root 4: trees 34047, certified 30369, min z 1.471e-05
+   graph 41 root 5: trees 34047, certified 30695, min z 1.471e-05
+   graph 41 root 6: trees 34047, certified 30091, min z 1.471e-05
+   graph 41 root 8: trees 34047, certified 29057, min z 1.471e-05
+   graph 42 root 0: trees 36300, certified 33580, min z 1.471e-05
+   graph 42 root 3: trees 36300, certified 32082, min z 1.471e-05
+   graph 43 root 0: trees 33615, certified 31721, min z 1.471e-05
+   graph 43 root 2: trees 33615, certified 30859, min z 1.471e-05
+   graph 43 root 4: trees 33615, certified 31216, min z 1.471e-05
+   graph 43 root 6: trees 33615, certified 29727, min z 1.471e-05
+   graph 43 root 7: trees 33615, certified 28905, min z 1.471e-05
+   graph 44 root 0: trees 32062, certified 29866, min z 1.471e-05
+   graph 44 root 2: trees 32062, certified 28874, min z 1.471e-05
+   graph 44 root 3: trees 32062, certified 29122, min z 1.471e-05
+   graph 44 root 4: trees 32062, certified 29446, min z 1.471e-05
+   graph 44 root 6: trees 32062, certified 28456, min z 1.471e-05
+   graph 44 root 7: trees 32062, certified 26800, min z 1.471e-05
+   graph 44 root 8: trees 32062, certified 27236, min z 1.471e-05
+   graph 45 root 0: trees 36804, certified 34818, min z 1.471e-05
+   graph 45 root 1: trees 36804, certified 34710, min z 1.471e-05
+   graph 45 root 2: trees 36804, certified 33948, min z 1.471e-05
+   graph 45 root 3: trees 36804, certified 34339, min z 1.471e-05
+   graph 45 root 4: trees 36804, certified 34144, min z 1.471e-05
+   graph 45 root 5: trees 36804, certified 33118, min z 1.471e-05
+   graph 45 root 6: trees 36804, certified 32746, min z 1.471e-05
+   graph 45 root 7: trees 36804, certified 32817, min z 1.471e-05
+   graph 45 root 8: trees 36804, certified 31514, min z 1.471e-05
+   graph 46 root 0: trees 39121, certified 36913, min z 1.471e-05
+   graph 46 root 2: trees 39121, certified 35903, min z 1.471e-05
+   graph 46 root 4: trees 39121, certified 34991, min z 1.471e-05
+   graph 46 root 6: trees 39121, certified 34497, min z 1.471e-05
+   graph 46 root 7: trees 39121, certified 34817, min z 1.471e-05
+   graph 47 root 0: trees 37323, certified 34831, min z 1.471e-05
+   graph 47 root 1: trees 37323, certified 34084, min z 1.471e-05
+   graph 47 root 3: trees 37323, certified 33804, min z 1.471e-05
+   graph 47 root 5: trees 37323, certified 33783, min z 1.471e-05
+   graph 47 root 6: trees 37323, certified 33199, min z 1.471e-05
+   graph 47 root 7: trees 37323, certified 32821, min z 1.471e-05
+   graph 47 root 8: trees 37323, certified 31285, min z 1.471e-05
+   graph 48 root 0: trees 40480, certified 37876, min z 1.471e-05
+   graph 48 root 1: trees 40480, certified 36636, min z 1.471e-05
+   graph 48 root 2: trees 40480, certified 37118, min z 1.471e-05
+   graph 48 root 5: trees 40480, certified 35609, min z 1.471e-05
+   graph 49 root 0: trees 42336, certified 38462, min z 1.471e-05
+   graph 49 root 6: trees 42336, certified 36940, min z 1.471e-05
+wrote C:\Projects\Claude4\lb_joint\certs_V9.jsonl.gz
+=== step 1 done: 751513 uncertified (31072s)
+  250/751513 33s
+  500/751513 68s
+  750/751513 103s
+  1000/751513 149s
+  1250/751513 196s
+  1500/751513 234s
+  1750/751513 273s
+  2000/751513 321s
+  2250/751513 368s
+  2500/751513 413s
+  2750/751513 453s
+  3000/751513 497s
+  3250/751513 548s
+  3500/751513 600s
+  3750/751513 648s
+  4000/751513 691s
+  4250/751513 736s
+  4500/751513 774s
+  4750/751513 819s
+  5000/751513 845s
+  5250/751513 871s
+  5500/751513 905s
+  5750/751513 934s
+  6000/751513 974s
+  6250/751513 1009s
+  6500/751513 1050s
+  6750/751513 1086s
+  7000/751513 1122s
+  7250/751513 1163s
+  7500/751513 1205s
+  7750/751513 1241s
+  8000/751513 1279s
+  8250/751513 1325s
+  8500/751513 1368s
+  8750/751513 1408s
+  9000/751513 1445s
+  9250/751513 1478s
+  9500/751513 1512s
+  9750/751513 1550s
+  10000/751513 1598s
+  10250/751513 1635s
+  10500/751513 1675s
+  10750/751513 1715s
+  11000/751513 1760s
+  11250/751513 1807s
+  11500/751513 1842s
+  11750/751513 1892s
+  12000/751513 1943s
+  12250/751513 1983s
+  12500/751513 2021s
+  12750/751513 2057s
+  13000/751513 2095s
+  13250/751513 2140s
+  13500/751513 2179s
+  13750/751513 2210s
+  14000/751513 2255s
+  14250/751513 2298s
+  14500/751513 2342s
+  14750/751513 2384s
+  15000/751513 2425s
+  15250/751513 2467s
+  15500/751513 2509s
+  15750/751513 2555s
+  16000/751513 2593s
+  16250/751513 2627s
+  16500/751513 2652s
+  16750/751513 2683s
+  17000/751513 2714s
+  17250/751513 2751s
+  17500/751513 2789s
+  17750/751513 2830s
+  18000/751513 2869s
+  18250/751513 2903s
+  18500/751513 2943s
+  18750/751513 2988s
+  19000/751513 3035s
+  19250/751513 3079s
+  19500/751513 3130s
+  19750/751513 3176s
+  20000/751513 3222s
+  20250/751513 3269s
+  20500/751513 3308s
+  20750/751513 3362s
+  21000/751513 3423s
+  21250/751513 3480s
+  21500/751513 3529s
+  21750/751513 3584s
+  22000/751513 3632s
+  22250/751513 3677s
+  22500/751513 3728s
+  22750/751513 3772s
+  23000/751513 3816s
+  23250/751513 3860s
+  23500/751513 3891s
+  23750/751513 3924s

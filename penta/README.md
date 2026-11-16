@@ -150,9 +150,9 @@ python-flint/Arb (ball arithmetic). All checks in the trusted files are explicit
 so they are not disabled by `python -O`). The mathematical reductions of Sections 1–2 are proved by hand
 above and are not machine-checked.
 
-An independent audit (`audit/`, see `audit/REPORT.md`) re-checked the certificates with a separate
-exact-rational implementation that shares no code with `core.py`/`shapes.py` (all of chart Z; see the
-report for chart P), re-derived the chart data from the vertices, tried to falsify the theorem by random
+An independent audit (`audit/`, see `audit/REPORT.md`) re-checked all 1,339,090 certificates of both
+charts with a separate exact-rational implementation that shares no code with `core.py`/`shapes.py`
+(0 failures), re-derived the chart data from the vertices, tried to falsify the theorem by random
 search and optimisation over pentahedra, and attacked `verify.py` with tampered certificate files. It
 found no mathematical error and no counterexample; its one finding about the code (checks written as
 `assert`, hence disabled under `python -O`) has been fixed. The result has not been refereed by a human
