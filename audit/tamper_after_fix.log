@@ -1,0 +1,7 @@
+missing_cells            exit=1  last stdout: 'VERIFICATION FAILED: chart Z: cells do not form the grid'  last stderr: ''  [9s]
+missing_cells_with_-O    exit=1  last stdout: 'VERIFICATION FAILED: chart Z: cells do not form the grid'  last stderr: ''  [9s]
+illegal_skip             exit=1  last stdout: 'VERIFICATION FAILED: chart Z cell [0.0, 0.0, 0.0]-[1.0, 1.0, 1.0]: illegal skip leaf at lo = [0.0, 0.0, 0.0]'  last stderr: ''  [11s]
+nan_multiplier           exit=1  last stdout: 'VERIFICATION FAILED: chart Z cell [0.0, 0.0, 0.0]-[1.0, 1.0, 1.0]: malformed multipliers'  last stderr: ''  [11s]
+one_child                exit=1  last stdout: 'VERIFICATION FAILED: chart Z cell [0.0, 0.0, 0.0]-[1.0, 1.0, 1.0]: bad bisection record'  last stderr: ''  [10s]
+nondict_node             exit=1  last stdout: "VERIFICATION FAILED: 'list' object has no attribute 'get'"  last stderr: ''  [10s]
+rho0_mismatch            exit=1  last stdout: 'VERIFICATION FAILED: rho0 missing, different in the two files, or out of range'  last stderr: ''  [0s]

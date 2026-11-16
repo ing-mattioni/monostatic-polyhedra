@@ -38,9 +38,30 @@ whereas `<N, W> = Σ y_i ν_iᵀ W η_{i→π(i)} ≥ 0`.
 ## 2. Shapes
 
 A convex polyhedron with five faces is combinatorially a triangular prism (two triangles *A*, *B*, three
-quadrilaterals *Q1, Q2, Q3*; 6 vertices) or a quadrilateral pyramid (5 vertices) — Euler's formula.
-In the first case the three lateral edges lie on three pairwise coplanar lines, which are concurrent
-(apex *O*) or parallel; the pyramid is the limit in which one lateral edge has length 0.
+quadrilaterals *Q1, Q2, Q3*; 6 vertices) or a quadrilateral pyramid (5 vertices): by Euler's formula
+`E = V + 3`, `2E ≥ 3V` gives `V ≤ 6`, `2E ≥ 15` gives `V ≥ 5`, and no face has more than 4 sides because
+it has only 4 neighbours.
+
+**Lemma (prism type).** Let the triangles be `A = A_1A_2A_3`, `B = B_1B_2B_3` and the lateral edges
+`A_iB_i`, on lines `L_i`. Then `L_1, L_2, L_3` are concurrent in a point *O* or parallel. In the first
+case *O* lies on none of the segments `[A_i,B_i]` and, after exchanging the names *A*, *B* if necessary,
+`A_i = O + t_i (B_i − O)` with `0 < t_i < 1` for all *i*; in the second case `A_i = B_i + s_i d` with a
+common direction *d* and all `s_i > 0`.
+*Proof.* `L_i` and `L_j` lie in the plane of the lateral face containing both edges, so the three lines
+are pairwise coplanar; they are not all in one plane. If `L_1 ∩ L_2 = {O}` and `L_3` met `L_1` and `L_2` in
+two different points, or met one of them and were parallel to the other, it would lie in the plane of
+`L_1, L_2`; so `L_3` passes through *O*. If `L_1 ∥ L_2`, the same argument shows `L_3` is parallel to both.
+In a lateral face the convex quadrilateral `A_iA_jB_jB_i` has the opposite sides `A_iB_i ⊂ L_i`,
+`A_jB_j ⊂ L_j`; lines through opposite sides of a convex quadrilateral can only meet outside both sides,
+so `O ∉ [A_i,B_i]`; and `A_i` is nearer to *O* than `B_i` iff `A_j` is nearer than `B_j`, since otherwise
+the sides `A_iA_j` and `B_iB_j` would cross. The parallel case is the same. ∎
+
+A quadrilateral pyramid with apex *X* fits the same description with one lateral edge of length 0: take
+two opposite sides of the base as the lateral edges `A_1B_1`, `A_2B_2` and `A_3 = B_3 = X`; then
+`A = A_1A_2X`, `B = B_1B_2X`, `Q_1 = A_2B_2X`, `Q_2 = A_1B_1X`, and `Q_3` is the base. (If the chosen
+opposite sides are parallel this is the parallel case.) In a pyramid `Q_1, Q_2` meet only in the apex, as
+do `A, B`; its face-adjacency graph is a subgraph of that of the prism type.
+
 Face adjacency in the prism type: all pairs except {*A*, *B*}; this graph has 75 spanning trees, i.e.
 **375 rooted trees**; the adjacency graph of a pyramid is a subgraph, so its rooted trees are among them.
 All 375 are refuted at every shape. Lateral edges are labelled so that the parameters below are sorted
@@ -63,12 +84,21 @@ is a shape of chart P with `ρ = 1 − t_1 < ρ₀`. So it suffices to refute al
 
 `shapes.py` derives, exactly (sympy), for each chart polynomial vectors `ν_f` and `η_{(i,j)}`: if plane *k*
 is `n_k·x ≤ d_k` in the chart frame and the centroid is `g = mom/vol`, then with
-`Δ_k = d_k·vol − n_k·mom > 0` (the centroid is interior) `l_k = vol·n_k/Δ_k` and
+`Δ_k = d_k·vol − n_k·mom` we have `l_k = vol·n_k/Δ_k` and
 `l_j − l_i = vol·(Δ_i n_j − Δ_j n_i)/(Δ_iΔ_j)`; so `ν_k = n_k` and
 `η_{(i,j)} = (Δ_i n_j − Δ_j n_i)/monomial` (the monomial content in the chart variables is divided out so
 that the vectors do not vanish identically on the boundary of the parameter box; identity checks are
-executed in exact arithmetic), scaled to integer coefficients. `test_shapes.py` cross-checks them
-numerically against covectors computed directly from the vertices.
+executed in exact arithmetic), scaled by positive integers to integer coefficients.
+
+*Positivity.* At a genuine shape (`u, v, w > 0` and not `u = v = w = 1` in chart Z; any point of the box of
+chart P with `p > 0`), `vol > 0` and `Δ_k = vol·(d_k − n_k·g) > 0` because the centroid *g* is an interior
+point of *P* while `n_k·x ≤ d_k` on *P*; the only monomial divided out is `u` (for `η_{(Q1,A)}` in chart Z;
+none in chart P). Hence `ν_k = (Δ_k/vol)·l_k` and `η_{(i,j)} = c·(Δ_iΔ_j/(vol·monomial))·(l_j − l_i)` with
+`c > 0` are positive multiples of `l_k` and `l_j − l_i`, as the certificate requires. The verification is
+carried out on the closed parameter boxes, which also contain degenerate boundary points (not
+pentahedra); there the certificates are simply inequalities between polynomials and nothing has to be
+interpreted. `test_shapes.py` cross-checks the chart data numerically against covectors computed
+directly from the vertices, and `audit/derive_check.py` re-derives the proportionality factors exactly.
 
 ## 3. Rigorous cover
 
@@ -116,5 +146,14 @@ run of `verify.py` on the files shipped here.
 ## 5. What the computer check does and does not cover
 
 Trusted: `shapes.py`, `core.py`, `verify.py`, the Python interpreter, sympy (polynomial algebra) and
-python-flint/Arb (ball arithmetic). The mathematical reductions of Sections 1–2 are proved by hand above
-and are not machine-checked. The result has not been independently refereed.
+python-flint/Arb (ball arithmetic). All checks in the trusted files are explicit (no `assert` statements,
+so they are not disabled by `python -O`). The mathematical reductions of Sections 1–2 are proved by hand
+above and are not machine-checked.
+
+An independent audit (`audit/`, see `audit/REPORT.md`) re-checked the certificates with a separate
+exact-rational implementation that shares no code with `core.py`/`shapes.py` (all of chart Z; see the
+report for chart P), re-derived the chart data from the vertices, tried to falsify the theorem by random
+search and optimisation over pentahedra, and attacked `verify.py` with tampered certificate files. It
+found no mathematical error and no counterexample; its one finding about the code (checks written as
+`assert`, hence disabled under `python -O`) has been fixed. The result has not been refereed by a human
+expert.

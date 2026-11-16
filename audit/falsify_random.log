@@ -1,0 +1,4 @@
+frustum : 399695 valid samples, #stable-faces histogram 0..5 = [0, 0, 335799, 53884, 9635, 377], min second-best margin = 3.111e-05
+prism   : 399998 valid samples, #stable-faces histogram 0..5 = [0, 0, 327667, 57818, 13568, 945], min second-best margin = 5.089e-05
+pyramid : 323450 valid samples, #stable-faces histogram 0..5 = [0, 0, 271516, 35163, 14573, 2198], min second-best margin = 3.266e-05
+random sampling done in 26s

@@ -1,0 +1,5 @@
+frustum         : 500000 samples, #stable faces histogram (0..5) = [0, 0, 410713, 71526, 16941, 820], smallest 2nd-best margin = 6.368e-05
+prism           : 500000 samples, #stable faces histogram (0..5) = [0, 0, 399514, 73519, 24786, 2181], smallest 2nd-best margin = 5.430e-05
+frustum_pyramid : 500000 samples, #stable faces histogram (0..5) = [0, 0, 415989, 68293, 15013, 705], smallest 2nd-best margin = 1.806e-05
+prism_pyramid   : 500000 samples, #stable faces histogram (0..5) = [0, 0, 417308, 62819, 18866, 1007], smallest 2nd-best margin = 1.487e-04
+TOTAL histogram of number of stable faces: [0, 0, 1643524, 276157, 75606, 4713]  (samples with fewer than 2 stable faces: 0);  time 34s

@@ -380,7 +380,7 @@ def run_experiments(V, unc_path, modes, workers=4, out_prefix=None, limit=None):
     out_prefix = out_prefix or os.path.join(HERE, f"exp_V{V}_{'_'.join(modes)}")
     results = []
     with gzip.open(out_prefix + "_certG.jsonl.gz", "wt") as fo, \
-            mp.get_context("spawn").Pool(min(workers, 4)) as pool:
+            mp.get_context("spawn").Pool(workers) as pool:
         fo.write(json.dumps(dict(kind="header_certG", V=V, modes=modes)) + "\n")
         for k, (r, line) in enumerate(pool.imap_unordered(try_tree, tasks, chunksize=2)):
             results.append(r)

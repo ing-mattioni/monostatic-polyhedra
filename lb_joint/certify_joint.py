@@ -322,7 +322,7 @@ def run(V, workers=4, chunk=100, out=None, only=None):
         done = 0
         if workers > 1:
             import multiprocessing as mp
-            pool = mp.get_context("spawn").Pool(min(workers, 4))
+            pool = mp.get_context("spawn").Pool(workers)
             it = pool.imap_unordered(_worker, tasks, chunksize=1)
         else:
             pool = None

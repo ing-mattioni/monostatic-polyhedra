@@ -13,8 +13,8 @@ A homogeneous convex polyhedron is **mono-stable** if it can rest on exactly one
   vertices. (Exact integer certificates: 24 795 cases for 7 vertices, 432 041 for 8.)
 * **Theorem 2.** There is a homogeneous mono-unstable polyhedron with 14 vertices; one with integer
   coordinates of absolute value ≤ 1000 is in `examples/V14_integer.json`. (Exact rational verification.)
-* **Theorem 3.** Every homogeneous convex pentahedron has at least two stable faces — the first
-  improvement of the lower bound in Conway and Guy's original problem since 1969. (Rigorous
+* **Theorem 3.** Every homogeneous convex pentahedron has at least two stable faces — to our knowledge
+  the first improvement of the lower bound in Conway and Guy's original problem since 1969. (Rigorous
   ball-arithmetic cover of the 3-dimensional space of affine shapes, 375 rolling patterns.)
 
 ![Top view of the 14-vertex mono-unstable polyhedron: a thin plate whose outline is a double spiral around the centre of mass](examples/V14_plate.svg)

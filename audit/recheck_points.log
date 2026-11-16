@@ -1,0 +1,1 @@
+pointwise end-to-end: {'Z': 208, 'P_from_Z': 22, 'P_direct': 230, 'fully_certified': 460, 'bad_cert_at_point': 0, 'positivity_ok': 460, 'skipped_no_P': 0}  [124s]

@@ -204,20 +204,23 @@ def main(V, path, workers=12):
             if rec.get("kind") == "graph":
                 E = {frozenset(e) for e in rec["edges"]}
                 F = {frozenset(f) for f in rec["faces"]}
-                assert is_sphere(V, E, list(F)) and len(E) == 3 * V - 6 and len(F) == 2 * V - 4
+                # explicit checks (not `assert`: they must survive `python -O`)
+                if not (is_sphere(V, E, list(F)) and len(E) == 3 * V - 6 and len(F) == 2 * V - 4):
+                    raise RuntimeError("a listed complex is not a simplicial 2-sphere")
                 listed.append((E, F))
     # pairwise non-isomorphic (as graphs)
     for (E1, _), (E2, _) in itertools.combinations(listed, 2):
         d1 = sorted(sum(1 for e in E1 if u in e) for u in range(V))
         d2 = sorted(sum(1 for e in E2 if u in e) for u in range(V))
         if d1 == d2:
-            assert not any(all(frozenset(p[x] for x in e) in E2 for e in E1) for p in itertools.permutations(range(V))), \
-                "two listed spheres are isomorphic"
+            if any(all(frozenset(p[x] for x in e) in E2 for e in E1) for p in itertools.permutations(range(V))):
+                raise RuntimeError("two listed spheres are isomorphic")
     total = 0
     for k, (E, F) in enumerate(listed):
         a = automorphisms(V, E, F)
+        if math.factorial(V) % a != 0:
+            raise RuntimeError("automorphism count does not divide V!")
         total += math.factorial(V) // a
-        assert math.factorial(V) % a == 0
     print(f"listed spheres: {len(listed)}, pairwise non-isomorphic; labelled copies sum_k V!/|Aut_k| = {total}  "
           f"[{time.time() - t0:.0f}s]")
     if total == N:

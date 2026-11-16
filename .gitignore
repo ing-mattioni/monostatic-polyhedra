@@ -11,3 +11,8 @@ audit/__pycache__/
 audit/snap_*.gz
 audit/*.json.gz
 penta/*.tmp
+lb_joint/certs_V9.jsonl.gz
+lb_joint/certs_V9.jsonl.gz.part
+lb_joint/exp*_V9_certG.jsonl.gz
+lb_joint/exp*_V9_results.json
+lb_joint/uncertified_V9.json

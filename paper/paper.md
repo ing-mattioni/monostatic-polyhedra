@@ -2,7 +2,8 @@
 
 *Computer-assisted results on the Conway–Guy problems — research notes, November 2026.*
 *Not peer reviewed. Every theorem below is backed by an exact or rigorous-arithmetic verification
-script in this repository; the hand-written reductions are given in full so that they can be checked.*
+script in this repository; the hand-written reductions are given here and, for Theorem 3, in
+`penta/README.md`, so that they can be checked.*
 
 ## 1. Results
 
@@ -250,13 +251,15 @@ The proof is in `penta/README.md`; in outline:
    multiplier $y(x)$ is verified by a mean-value enclosure in ball arithmetic.
 
 The final cover consists of 575 441 certificates on 32 136 boxes in the cone chart and 763 649
-certificates on 37 120 boxes in the prism chart; `penta/verify.py` re-checks all of them
-(`penta/verify.log`). A Monte-Carlo test on $2\cdot10^6$ random pentahedra (independent code) found none
-with fewer than two stable faces. $\square$
+certificates on 37 120 boxes in the prism chart (multipliers rounded to 6 significant digits);
+`penta/verify.py` re-checks all of them (`penta/verify.log`). An independent audit (`audit/REPORT.md`)
+re-verified the certificates with a separate exact-rational implementation and found no error.
+Monte-Carlo tests on more than $3\cdot10^6$ random pentahedra (two independent codes, `penta/sanity.log`,
+`audit/falsify_random.log`) and optimisation runs found none with fewer than two stable faces. $\square$
 
-The same reduction shows why simplices are easy (all simplices are affinely equivalent, so one SDP per
-tree decides the question — Conway's and Dawson's theorems) and why the difficulty grows with the
-number of faces: the shape space of $F$-hedra has dimension $3F-12$.
+The same reduction shows why simplices are easy (all simplices are affinely equivalent, so the question
+reduces to one small linear matrix inequality per tree — Conway's and Dawson's theorems) and why the
+difficulty grows with the number of faces: the shape space of $F$-hedra has dimension $3F-12$.
 
 ## 6. Remarks
 
@@ -284,7 +287,8 @@ this is a small effort compared with Reshetov's $10^{10}$ evaluations and proves
 ### 6.3 Simplices
 
 For $d$-simplices the conditions of §5 involve only the Gram matrix of the scaled facet normals, which
-has zero row sums; "is there a monostatic $d$-simplex with a given falling pattern" is then one small SDP.
+has zero row sums; "is there a monostatic $d$-simplex with a given falling pattern" then reduces to one
+small semidefinite feasibility problem (which still has to be certified exactly).
 All 719 rooted trees on 10 nodes are infeasible, so there is no monostatic 9-simplex — the one case
 left open by Dawson, Finbow and Mak. This is not new: it is equivalent to the statement, proved in
 [PRDB23, Cor. 6], that mono-unstable 0-skeleta need 11 vertices in every dimension.

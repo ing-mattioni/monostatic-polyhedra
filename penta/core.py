@@ -56,7 +56,8 @@ def rooted_trees():
 
 
 TREES = rooted_trees()
-assert len(TREES) == 375
+if len(TREES) != 375:          # explicit (not an assert: must survive python -O)
+    raise RuntimeError("expected 375 rooted spanning trees")
 
 
 def tree_edges(tid):

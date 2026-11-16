@@ -1,0 +1,9 @@
+frustum : 400 chains x 3000 ES steps; best second-best margin after ES 3.7410e-03, after NM polish 4.2707e-11; chains ending <= 0: 0; median final 2.7888e-01
+     best shape: margins=[-52.7969, -47.82988, 0.0, 0.0, 54.53408], singular values of vertex cloud (aspect) [1.0, 0.4072, 0.0], vol/diam^3=1.345e-08
+prism   : 400 chains x 3000 ES steps; best second-best margin after ES 4.8641e-04, after NM polish 1.7978e-09; chains ending <= 0: 0; median final 2.9836e-01
+     best shape: margins=[-41.15622, -22.57533, -0.0, 0.0, 22.57533], singular values of vertex cloud (aspect) [1.0, 0.2641, 0.0], vol/diam^3=3.996e-08
+pyramid : 400 chains x 3000 ES steps; best second-best margin after ES 9.6719e-03, after NM polish 1.4220e-10; chains ending <= 0: 0; median final 3.1916e-01
+     best shape: margins=[-34.88541, -22.88703, 0.0, 0.0, 22.88703], singular values of vertex cloud (aspect) [1.0, 0.3162, 0.0], vol/diam^3=2.585e-08
+pyr_par : 400 chains x 3000 ES steps; best second-best margin after ES 1.2298e-02, after NM polish 9.7158e-11; chains ending <= 0: 0; median final 2.8907e-01
+     best shape: margins=[-38.15923, -15.31618, 0.0, 0.0, 38.15923], singular values of vertex cloud (aspect) [1.0, 0.6255, 0.0], vol/diam^3=1.271e-07
+ES done in 340s

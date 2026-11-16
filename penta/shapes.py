@@ -28,6 +28,12 @@ Chart P ("prism frame", variables rho, p, q):  B_1 = (0,0,0), B_2 = (1,0,0), B_3
 import itertools
 import sympy as sp
 
+
+def require(cond, msg="shapes.py: internal identity check failed"):
+    """explicit check (unlike `assert`, not removed by `python -O`)"""
+    if not cond:
+        raise RuntimeError(msg)
+
 FACES = ["Q1", "Q2", "Q3", "A", "B"]
 ADJ_PAIRS = [(i, j) for i in range(5) for j in range(i + 1, 5) if (i, j) != (3, 4)]   # 9 pairs
 
@@ -41,7 +47,7 @@ def _tet_data(verts, tets, sample):
         M = sp.Matrix.hstack(verts[b] - verts[a], verts[c] - verts[a], verts[d] - verts[a])
         det = sp.expand(M.det())
         val = det.subs(sample)
-        assert val != 0, "degenerate tetrahedron at the sample point"
+        require(val != 0, "degenerate tetrahedron at the sample point")
         sgn = 1 if val > 0 else -1
         vol6 += sgn * det
         mom += sgn * det * (verts[a] + verts[b] + verts[c] + verts[d])
@@ -70,7 +76,7 @@ def _integer_scale(vec, xs):
     out = vec.applyfunc(lambda c: sp.expand(c * den))
     for c in out:
         if c != 0:
-            assert all(sp.Rational(k).q == 1 for k in sp.Poly(c, *xs).coeffs())
+            require(all(sp.Rational(k).q == 1 for k in sp.Poly(c, *xs).coeffs()), "non-integer coefficient")
     return out
 
 
@@ -85,7 +91,7 @@ def _finish(name, xs, planes, vol, mom):
         m = _monomial_content(raw, xs)
         red = raw.applyfunc(lambda c: sp.expand(sp.cancel(c / m)))
         # exact identity check:  red * m == raw
-        assert all(sp.expand(red[k] * m - raw[k]) == 0 for k in range(3))
+        require(all(sp.expand(red[k] * m - raw[k]) == 0 for k in range(3)), "monomial-content identity failed")
         red = _integer_scale(red, xs)          # positive rational multiple with integer coefficients
         eta[(i, j)] = red
         mono[(i, j)] = m
@@ -108,7 +114,7 @@ def chart_Z():
     # closed form check:  g_i = (1 - tau t_i) / (4 (1 - tau))
     tau = t[0] * t[1] * t[2]
     for i in range(3):
-        assert sp.simplify(mom[i] / vol - (1 - tau * t[i]) / (4 * (1 - tau))) == 0
+        require(sp.simplify(mom[i] / vol - (1 - tau * t[i]) / (4 * (1 - tau))) == 0, "centroid closed form mismatch")
     planes = [(-e[0], sp.Integer(0)), (-e[1], sp.Integer(0)), (-e[2], sp.Integer(0)),
               (-sp.Matrix([1, u, u * v]), -u * v * w),            # A:  x1 + u x2 + uv x3 >= uvw
               (sp.Matrix([1, 1, 1]), sp.Integer(1))]              # B:  x1 + x2 + x3 <= 1
@@ -116,7 +122,7 @@ def chart_Z():
     for k, names in enumerate([("A2", "A3", "B2", "B3"), ("A1", "A3", "B1", "B3"), ("A1", "A2", "B1", "B2"),
                                ("A1", "A2", "A3"), ("B1", "B2", "B3")]):
         n, d = planes[k]
-        assert all(sp.expand((n.T * verts[nm])[0] - d) == 0 for nm in names)
+        require(all(sp.expand((n.T * verts[nm])[0] - d) == 0 for nm in names), f"plane {k} does not contain {names}")
     return _finish("Z", (u, v, w), planes, vol, mom)
 
 
@@ -135,7 +141,7 @@ def chart_P():
     vol6, mom = _tet_data(verts, tets, sample)
     vol = sp.expand(4 * vol6)
     nA = (A[1] - A[0]).cross(A[2] - A[0]).applyfunc(sp.expand)
-    assert nA[2].subs(sample) > 0
+    require(nA[2].subs(sample) > 0, "normal of A not oriented upwards")
     planes = [(sp.Matrix([3, 3, rho]), sp.Integer(3)),            # Q1 through B2, B3
               (sp.Matrix([-3, 0, rho]), sp.Integer(0)),           # Q2 through B1, B3
               (sp.Matrix([0, -3, rho]), sp.Integer(0)),           # Q3 through B1, B2
@@ -144,7 +150,7 @@ def chart_P():
     for k, names in enumerate([("A2", "A3", "B2", "B3"), ("A1", "A3", "B1", "B3"), ("A1", "A2", "B1", "B2"),
                                ("A1", "A2", "A3"), ("B1", "B2", "B3")]):
         n, d = planes[k]
-        assert all(sp.expand((n.T * verts[nm])[0] - d) == 0 for nm in names), (k, names)
+        require(all(sp.expand((n.T * verts[nm])[0] - d) == 0 for nm in names), f"plane {k} does not contain {names}")
     ch = _finish("P", (rho, p, q), planes, vol, mom)
     ch["verts"] = verts
     return ch

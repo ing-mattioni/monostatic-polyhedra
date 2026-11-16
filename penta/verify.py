@@ -34,6 +34,16 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 NTREES = 375
 
 
+class VerificationError(Exception):
+    pass
+
+
+def require(cond, msg):
+    """explicit check (unlike `assert`, not removed by `python -O`)"""
+    if not cond:
+        raise VerificationError(msg)
+
+
 def is_dyadic_float(x):
     return isinstance(x, float) and math.isfinite(x)
 
@@ -41,11 +51,11 @@ def is_dyadic_float(x):
 def verify_cell(args):
     chart, lo, hi, node, rho0 = args
     from core import BoxData, check, TREES
-    assert len(TREES) == NTREES
+    require(len(TREES) == NTREES, "wrong number of rooted trees")
     stats = {"nodes": 0, "leaves": 0, "skip_leaves": 0, "certs": 0, "maxdepth": 0}
 
     def fail(msg):
-        raise AssertionError(f"chart {chart} cell {lo}-{hi}: {msg}")
+        raise VerificationError(f"chart {chart} cell {lo}-{hi}: {msg}")
 
     def rec(lo, hi, node, pending, depth):
         stats["nodes"] += 1
@@ -105,9 +115,9 @@ def main():
     for chart in ("Z", "P"):
         with gzip.open(os.path.join(a.dir, f"certs_{chart}.json.gz"), "rt") as fh:
             data[chart] = json.load(fh)
-        assert data[chart]["chart"] == chart
+        require(isinstance(data[chart], dict) and data[chart].get("chart") == chart, f"file of chart {chart}: wrong header")
     rho0 = data["Z"]["rho0"]
-    assert rho0 == data["P"]["rho0"] and is_dyadic_float(rho0) and 0 < rho0 < 1
+    require(is_dyadic_float(rho0) and rho0 == data["P"]["rho0"] and 0 < rho0 < 1, "rho0 missing, different in the two files, or out of range")
     print(f"verify.py: rho0 = {rho0} (= {Fraction(rho0)}), trees = {NTREES}")
     import shapes  # noqa  (runs the exact symbolic derivation and its identity checks)
     for name in ("Z", "P"):
@@ -119,10 +129,10 @@ def main():
         g = d["grid"]
         dlo = [0.0, 0.0, 0.0]
         dhi = [1.0, 1.0, 1.0] if chart == "Z" else [rho0, 1.0, 1.0]
-        assert all(isinstance(n, int) and n >= 1 for n in g) and len(g) == 3
+        require(isinstance(g, list) and len(g) == 3 and all(isinstance(n, int) and n >= 1 for n in g), "bad grid")
         expected = {(i, j, k) for i in range(g[0]) for j in range(g[1]) for k in range(g[2])}
         got = [tuple(c["index"]) for c in d["cells"]]
-        assert len(got) == len(set(got)) and set(got) == expected, f"chart {chart}: cells do not form the grid"
+        require(len(got) == len(set(got)) and set(got) == expected, f"chart {chart}: cells do not form the grid")
         tasks = []
         for c in d["cells"]:
             idx = c["index"]
@@ -132,7 +142,7 @@ def main():
                 l = Fraction(dlo[m]) + w * idx[m] / g[m]
                 h = Fraction(dlo[m]) + w * (idx[m] + 1) / g[m]
                 lf, hf = float(l), float(h)
-                assert Fraction(lf) == l and Fraction(hf) == h, "grid point not exactly representable"
+                require(Fraction(lf) == l and Fraction(hf) == h, "grid point not exactly representable")
                 lo.append(lf)
                 hi.append(hf)
             tasks.append((chart, lo, hi, c["node"], rho0))
@@ -142,7 +152,7 @@ def main():
                 for st in ex.map(verify_cell, tasks, chunksize=1):
                     for key, val in st.items():
                         tot[key] = max(tot.get(key, 0), val) if key == "maxdepth" else tot.get(key, 0) + val
-        except AssertionError as e:
+        except Exception as e:           # any failure in a worker (VerificationError or malformed data)
             print("VERIFICATION FAILED:", e)
             ok = False
             break
@@ -154,4 +164,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except VerificationError as e:
+        print("VERIFICATION FAILED:", e)
+        sys.exit(1)

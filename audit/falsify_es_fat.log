@@ -1,0 +1,10 @@
+non-degeneracy constraint: vol/diam^3 >= 0.001
+frustum : 400 chains x 2500 ES steps; best second-best margin after ES 1.1455e-02, after NM polish 4.0277e-04; chains ending <= 0: 0; median final 2.9758e-01
+     best shape: margins=[-0.86442, -0.69568, 0.0004, 0.0004, 0.69758], singular values of vertex cloud (aspect) [1.0, 0.4856, 0.0075], vol/diam^3=1.000e-03
+prism   : 400 chains x 2500 ES steps; best second-best margin after ES 1.0060e-02, after NM polish 3.3534e-04; chains ending <= 0: 0; median final 3.1850e-01
+     best shape: margins=[-1.71992, -1.62086, 0.00034, 0.00034, 1.72033], singular values of vertex cloud (aspect) [1.0, 0.7172, 0.0051], vol/diam^3=1.000e-03
+pyramid : 400 chains x 2500 ES steps; best second-best margin after ES 8.7402e-03, after NM polish 4.8532e-04; chains ending <= 0: 0; median final 3.2995e-01
+     best shape: margins=[-1.58298, -1.14343, 0.00049, 0.00049, 1.1504], singular values of vertex cloud (aspect) [1.0, 0.6558, 0.0087], vol/diam^3=1.000e-03
+pyr_par : 400 chains x 2500 ES steps; best second-best margin after ES 1.2601e-02, after NM polish 2.9965e-04; chains ending <= 0: 0; median final 3.0154e-01
+     best shape: margins=[-2.15326, -0.71637, 0.00027, 0.0003, 2.50317], singular values of vertex cloud (aspect) [1.0, 0.6541, 0.0072], vol/diam^3=1.003e-03
+ES done in 485s
