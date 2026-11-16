@@ -4,7 +4,11 @@ title: "Monostatic polyhedra: no mono-stable pentahedron, and 9 <= V_U <= 14 (co
 authors:
   - family-names: Mattioni
     given-names: Claudio
-version: "0.1-draft"
+    email: claudio.mattioni@gmail.com
+license:
+  - MIT
+  - CC-BY-4.0
+version: "0.1-review"
 date-released: 2026-11-16
 keywords:
   - monostatic polyhedra

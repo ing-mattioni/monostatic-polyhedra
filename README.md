@@ -70,6 +70,12 @@ Theorems B and C need only the Python standard library. Theorem A needs `sympy` 
 the versions pinned in `requirements-verify.txt`. The generators and searches need more packages
 (`requirements-search.txt`), but they are not needed to check the proofs.
 
+## Licence
+
+The code (`*.py`, `*.sh`) is MIT-licensed. The manuscript, figures, certificates, data, logs and
+documentation are licensed CC BY 4.0. See [`LICENSE.md`](LICENSE.md) for the file-by-file rule and for the
+third-party data from Reshetov (2014).
+
 ## Layout
 
 | path | content |

@@ -1,6 +1,7 @@
 # Monostatic polyhedra: no mono-stable pentahedron, and $9\le V_U\le 14$
 
-*Claudio Mattioni* &nbsp; *Draft manuscript, November 2026; not yet peer reviewed.*
+*Claudio Mattioni (claudio.mattioni@gmail.com)* &nbsp; *Draft manuscript, November 2026; not yet peer
+reviewed.*
 *Code, certificates and logs: repository `monostatic-polyhedra` (see Appendix A).*
 
 **Abstract.** A homogeneous convex polyhedron is *mono-stable* if it can rest on only one of its faces,
@@ -813,6 +814,12 @@ point in the code remain valid, including for genuine pyramids.
   cell. A node holds optional certificates (tree id in $[0,375)$, $y^0\in\mathbb R^4$,
   $Y\in\mathbb R^{4\times3}$ as binary floats) and either two children with a bisection axis, or nothing
   (a leaf), or the skip flag (chart Z only).
+
+## Data availability
+
+All code, certificate files and logs are in the repository `monostatic-polyhedra`; an archived snapshot
+will be deposited on Zenodo [DOI to be added]. The code is released under the MIT licence; the
+manuscript, figures, certificates and data under CC BY 4.0 (see `LICENSE.md`).
 
 ## References
 
