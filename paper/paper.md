@@ -4,8 +4,8 @@
 *Code, certificates and logs: repository `monostatic-polyhedra` (see Appendix A).*
 
 **Abstract.** A homogeneous convex polyhedron is *mono-stable* if it can rest on only one of its faces,
-and *mono-unstable* if it can be balanced on only one of its vertices. Conway and Guy (1966) showed that no
-homogeneous tetrahedron is mono-stable, and Goldberg and Guy (1969) asked whether every homogeneous
+and *mono-unstable* if it can be balanced on only one of its vertices. No homogeneous tetrahedron is
+mono-stable (Conway, Goldberg and Guy, 1969), and Goldberg and Guy (1969) asked whether every homogeneous
 pentahedron has at least two stable faces. We prove that it does, so a homogeneous mono-stable polyhedron
 has at least 6 faces; the best known example, due to Reshetov, has 14. For the vertex version we prove that
 every homogeneous convex polyhedron with at most 8 vertices has at least two unstable vertices, which
@@ -41,12 +41,12 @@ In the generic (nondegenerate) case the numbers $S$, $H$, $U$ of stable, saddle-
 equilibria satisfy $S-H+U=2$. $P$ is **mono-stable** if $S=1$ and **mono-unstable** if $U=1$.
 
 Conway and Guy [CG66] asked to show that every homogeneous tetrahedron has at least two stable faces, and
-to construct a mono-stable polyhedron. The solution [CGG69] proved the first claim and gave Guy's
-19-face mono-stable polyhedron. In the same note Goldberg and Guy asked, among other questions:
+to construct a mono-stable polyhedron. The published solution [CGG69] settled the first claim (see also
+[Daw85]) and gave Guy's 19-face mono-stable polyhedron. In the same note Goldberg and Guy asked, among other questions:
 
 > *Can it be proved that each uniform pentahedron has at least two stable faces?*
 
-(This is the first problem of Goldberg and Guy in Lángi's list [Lán21, slide 4]; see also [CFG91].)
+(This is the first problem of Goldberg and Guy in Lángi's list [Lán21, slide 4].)
 Shephard [She68] asked for the mono-stable polyhedron with the fewest faces. The examples were later
 reduced to 18 faces (Bezdek [Bez11]) and to 14 faces (Reshetov [Res14], found by a large computer search).
 So the minimum number $F_S$ of faces of a homogeneous mono-stable polyhedron satisfied $5\le F_S\le 14$.
@@ -114,10 +114,10 @@ identity, its pairing with $r_v$, and test each tetrahedron separately. We add t
    identities of two cone decompositions are coupled by matrices $W_q$ with $\sum_qW_q=0$.
 
 At $V=7$ the relaxation of [BDPR24] is feasible for 1,426 of the 139,636 (tree, tetrahedron) systems (in
-our reproduction, `lowerbound/`), which is why that method stops at 7. With ingredient 1 every case with $V\le7$ and 97.6% of the trees with
-$V=8$ are excluded. Ingredient 2 excludes the remaining 10,207 trees with $V=8$. §6.1 shows that
-the relaxation is genuinely feasible for about 0.17% of the trees with $V=9$, so $V_U\ge10$ needs new
-geometric input.
+our reproduction, `lowerbound/`), which is why that method stops at 7. With ingredient 1, every case with
+$V\le7$ and 97.6% of the trees with $V=8$ are excluded; ingredient 2 excludes the remaining 10,207 trees
+with $V=8$. §6.1 shows that the relaxation is genuinely feasible for about 0.17% of the trees with $V=9$,
+so $V_U\ge10$ needs new geometric input.
 
 **Theorem C: thin plates (§5).** As a polyhedron is flattened, the shadowing conditions become planar
 conditions with respect to a weighted centroid of the outline, while the heights still shape the mass
@@ -322,8 +322,8 @@ $\ell_k=n_k/(d_k-n_k\cdot g)=\Lambda n_k/\Delta_k$. Therefore
 $$n_k=\frac{\Delta_k}{\Lambda}\,\ell_k,\qquad
 \Delta_in_j-\Delta_jn_i=\frac{\Delta_i\Delta_j}{\Lambda}\,(\ell_j-\ell_i).$$
 
-We take $\nu_k=n_k$, and $\eta_{(i,j)}=(\Delta_in_j-\Delta_jn_i)/m_{ij}$ for adjacent $i<j$ (and
-$\eta_{(j,i)}=-\eta_{(i,j)}$). Here $m_{ij}$ is the largest monomial in the chart variables dividing all
+We take $\nu_k=n_k$, and $\eta_{(i,j)}=(\Delta_in_j-\Delta_jn_i)/\omega_{ij}$ for adjacent $i<j$ (and
+$\eta_{(j,i)}=-\eta_{(i,j)}$). Here $\omega_{ij}$ is the largest monomial in the chart variables dividing all
 three components. It is $u$ for the pair $(Q_1,A)$ of chart Z and $1$ otherwise. Dividing by it keeps the
 vector from vanishing identically on a boundary face of the parameter box. Both vectors are finally
 multiplied by positive integers to clear denominators.
@@ -340,10 +340,10 @@ an independent centroid computation (Appendix A.3).
 
 ### 3.3 Rigorous certificates on boxes
 
-For a box $X=c+[-h_1,h_1]\times[-h_2,h_2]\times[-h_3,h_3]$ of a chart and a rooted tree $(s,\pi)$, a
+For a box $X=\hat x+[-h_1,h_1]\times[-h_2,h_2]\times[-h_3,h_3]$ of a chart and a rooted tree $(s,\pi)$, a
 certificate consists of **affine** multipliers
 
-$$y_i(x)=y_i^0+\sum_kY_{ik}(x_k-c_k)\qquad(i\ne s).$$
+$$y_i(x)=y_i^0+\sum_kY_{ik}(x_k-\hat x_k)\qquad(i\ne s).$$
 
 They must satisfy $y_i\ge0$ on $X$ and $N(x)=\sum_iy_i(x)C_i(x)\prec0$ on $X$, where
 $C_i=\operatorname{sym}(\nu_i\eta_{i\to\pi(i)}^{\mathsf T})$. By Lemma 3.6 and Proposition 3.2 the tree is
@@ -354,13 +354,13 @@ $X$. Write $D_k=\operatorname{mid}G_k$ and $E_k=\operatorname{rad}G_k$ (entrywis
 $\bar E=\sum_kh_kE_k$ and $r=\|\bar E\|_F$. Suppose that, at each of the 8 corners
 $\delta\in\{\pm h_1\}\times\{\pm h_2\}\times\{\pm h_3\}$,
 
-$$-\Big(N(c)+\sum_k\delta_kD_k\Big)-r\,I\succ0 .$$
+$$-\Big(N(\hat x)+\sum_k\delta_kD_k\Big)-r\,I\succ0 .$$
 
 Then $N(x)\prec0$ for all $x\in X$.
 
 *Proof.* By the mean value theorem applied to each entry on the convex box,
-$N(x)=N(c)+\sum_k\delta_k\,\partial_kN(\xi)$, with $\delta=x-c$ and a point $\xi$ that depends on the
-entry. Hence $N(x)=L(\delta)+\mathrm{Rem}$, where $L(\delta)=N(c)+\sum_k\delta_kD_k$ and
+$N(x)=N(\hat x)+\sum_k\delta_k\,\partial_kN(\xi)$, with $\delta=x-\hat x$ and a point $\xi$ that depends on the
+entry. Hence $N(x)=L(\delta)+\mathrm{Rem}$, where $L(\delta)=N(\hat x)+\sum_k\delta_kD_k$ and
 $|\mathrm{Rem}_{ab}|\le\bar E_{ab}$, so $\|\mathrm{Rem}\|_2\le\|\bar E\|_F=r$. The map
 $\delta\mapsto-L(\delta)-rI$ is affine and positive definite at the corners, hence on the whole box, by
 convexity of the positive definite cone. So $N(x)\preceq L(\delta)+rI\prec0$. $\square$
@@ -544,10 +544,10 @@ so its centre of mass is $(c',\varepsilon c_h)$ with $c'$ independent of $\varep
   of $P_1$: the upper concave envelope of the heights minus the lower convex envelope.
 * $(x_j-x_i)\cdot(x_i-c)=(p_j-p_i)\cdot(p_i-c')+\varepsilon^2(h_j-h_i)(h_i-c_h)$.
 
-Hence, if every vertex but one is strictly shadowed in the plane with respect to $c'$, and the remaining
-vertex is strictly unstable in the plane, then $P_\varepsilon$ is mono-unstable for all small
-$\varepsilon>0$. The heights do not enter the shadowing conditions in the limit; they only shape the mass
-distribution.
+Suppose every vertex but one is strictly shadowed, in the plane and with respect to $c'$, by a neighbour
+along the outline. Then $P_\varepsilon$ is mono-unstable for all small $\varepsilon>0$, because the
+vertex farthest from $c$ is always unstable. The heights do not enter the shadowing conditions in the
+limit; they only shape the mass distribution.
 
 *Tight Conway spirals.* In the plane, a chain $T=P_0,P_1,\dots$ about a point $O$, with polar angles
 increasing by $\varphi_k$ and radii $r_k=r_{k-1}\cos\varphi_k$, has $\angle OP_kP_{k-1}=90^\circ$. So $P_k$ is
@@ -555,8 +555,10 @@ on the verge of being shadowed by $P_{k-1}$. Moving the reference point from $O$
 $\delta\cdot(P_{k-1}-P_k)<0$ for all $k$ makes every shadowing strict.
 
 Two such arms on either side of $T$ form a convex polygon that is mono-unstable with respect to every
-reference point slightly "below" $O$. A homogeneous planar polygon has its centroid above $O$, which is
-why the third dimension is needed: its job is to pull the weighted centroid $c'$ down.
+reference point slightly "below" $O$. The polygon's own centroid is never such a point: a homogeneous
+planar convex body has at least four equilibria with respect to its centroid, two of them unstable
+[DPR94]. This is why the third dimension is needed: its job
+is to pull the weighted centroid $c'$ down.
 
 ### 5.2 The construction
 
@@ -689,9 +691,15 @@ as a check. Each verifier exits with status 0 only if every check passes. Tamper
 | `lb_joint/certs_V8.jsonl.gz` (48.4 MB) | `089be2691aa339e6d11e061e07a4a06820a7c62236fecdffe65b6ad0789c5aa2` |
 | `lb_joint/exp1_V8_certG.jsonl.gz` (5.8 MB) | `05851381f6b07dcecd9c6d6f2d4a82627686ad4667b4bbffe22943d8e0de0bc6` |
 
-Running times on a 16-thread desktop: Theorem C under 1 s; Theorem B 3 min for $V=8$ (seconds for
-$V\le7$); the sphere enumeration 1 min for $V=8$; Theorem A about 5 min with 14 processes. A complete run
-from a fresh clone in a fresh virtual environment is recorded in `reproduce_clean_run.log`.
+Running times on a 16-thread desktop are:
+
+* Theorem C: under 1 s;
+* Theorem B: about 3.5 min for $V=8$, and seconds for $V\le7$;
+* the sphere enumeration: 30 s for $V=8$;
+* Theorem A: about 2 min with 14 processes.
+
+A complete run (about 7 min) from a fresh clone of the repository, in a fresh virtual environment, is
+recorded in `reproduce_clean_run.log`.
 
 ### A.3 Independent re-check of Theorem A
 
@@ -765,7 +773,6 @@ those of chart P, whose vertices and planes are given in §3.2 and in `penta/sha
   polyhedron has at least 7 vertices*, arXiv:2401.17906 (2024).
 * [Bez11] A. Bezdek, *On stability of polyhedra*, talk, Workshop on Discrete Geometry, Fields Institute,
   Toronto, 2011.
-* [CFG91] H. T. Croft, K. J. Falconer, R. K. Guy, *Unsolved Problems in Geometry*, Springer, 1991.
 * [CG66] J. H. Conway, R. K. Guy, *Stability of polyhedra* (Problem 66-12), SIAM Rev. 8 (1966) 381.
 * [CGG69] J. H. Conway, M. Goldberg, R. K. Guy, Problem 66-12 (solution and comments), SIAM Rev. 11
   (1969) 78–82, doi:10.1137/1011014.
@@ -774,6 +781,8 @@ those of chart P, whose vertices and planes are given in §3.2 and in `penta/sha
   *Monostatic simplexes III*, Geom. Dedicata 84 (2001).
 * [DKLRV20] G. Domokos, F. Kovács, Z. Lángi, K. Regős, P. T. Varga, *Balancing polyhedra*, Ars Math.
   Contemp. 19 (2020) 95–124.
+* [DPR94] G. Domokos, J. Papadopulos, A. Ruina, *Static equilibria of planar, rigid bodies: is there
+  anything new?*, J. Elasticity 36 (1994) 59–66.
 * [Joh17] F. Johansson, *Arb: efficient arbitrary-precision midpoint-radius interval arithmetic*, IEEE
   Trans. Comput. 66 (2017) 1281–1292.
 * [Lán21] Z. Lángi, *On some problems of Conway and Guy on monostable polyhedra*, talk at the 8th
