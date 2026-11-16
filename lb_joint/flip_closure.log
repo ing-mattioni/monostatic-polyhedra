@@ -1,0 +1,12 @@
+V = 4: 1 listed simplicial 2-spheres, pairwise non-isomorphic; all 0 flips stay in the list (up to isomorphism)  [0.0s]
+COMPLETE (by Wagner's flip theorem): every triangulation of the sphere with 4 vertices is isomorphic to a listed one.
+V = 5: 1 listed simplicial 2-spheres, pairwise non-isomorphic; all 3 flips stay in the list (up to isomorphism)  [0.0s]
+COMPLETE (by Wagner's flip theorem): every triangulation of the sphere with 5 vertices is isomorphic to a listed one.
+V = 6: 2 listed simplicial 2-spheres, pairwise non-isomorphic; all 17 flips stay in the list (up to isomorphism)  [0.0s]
+COMPLETE (by Wagner's flip theorem): every triangulation of the sphere with 6 vertices is isomorphic to a listed one.
+V = 7: 5 listed simplicial 2-spheres, pairwise non-isomorphic; all 47 flips stay in the list (up to isomorphism)  [0.0s]
+COMPLETE (by Wagner's flip theorem): every triangulation of the sphere with 7 vertices is isomorphic to a listed one.
+V = 8: 14 listed simplicial 2-spheres, pairwise non-isomorphic; all 159 flips stay in the list (up to isomorphism)  [0.1s]
+COMPLETE (by Wagner's flip theorem): every triangulation of the sphere with 8 vertices is isomorphic to a listed one.
+V = 9: 50 listed simplicial 2-spheres, pairwise non-isomorphic; all 667 flips stay in the list (up to isomorphism)  [0.5s]
+COMPLETE (by Wagner's flip theorem): every triangulation of the sphere with 9 vertices is isomorphic to a listed one.

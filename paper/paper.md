@@ -156,7 +156,10 @@ The completeness of the lists of spheres does not have to be taken from the lite
 `lb_joint/enumerate_spheres.py` (standard library only) enumerates *all* labelled simplicial 2-spheres on
 $\{0,\dots,V-1\}$ exhaustively (all edge sets with $3V-6$ edges, all exact double covers by triangles)
 and compares their number with $\sum_k V!/|\mathrm{Aut}_k|$ over the listed spheres: 1, 10, 195, 5 712 and
-223 440 labelled spheres for $V=4,\dots,8$, in agreement in every case. This proves Theorem 1. $\square$
+223 440 labelled spheres for $V=4,\dots,8$, in agreement in every case. A second, independent completeness
+check, `lb_joint/flip_closure.py`, uses Wagner's theorem (any two triangulations of the sphere with the same
+number of vertices are connected by edge flips): the listed spheres are closed under flips up to
+isomorphism (159 flips for $V=8$), hence complete. This proves Theorem 1. $\square$
 
 *Outlook: $V=9$.* There are 50 simplicial spheres with 9 vertices and 9 915 284 (sphere, root, tree)
 cases. A probe of 1 500 of them (600 random trees, 900 depth-first "long" trees, which are the hard ones)
@@ -308,6 +311,7 @@ left open by Dawson, Finbow and Mak. This is not new: it is equivalent to the st
 | Theorem 1, $V=7$ | `python lb_joint/verify_joint.py 7 lb_joint/certs_V7.jsonl.gz` | 5 s |
 | Theorem 1, $V=8$ | `python lb_joint/verify_joint.py 8 lb_joint/certs_V8.jsonl.gz lb_joint/exp1_V8_certG.jsonl.gz` | 3 min |
 | completeness of the sphere lists | `python lb_joint/enumerate_spheres.py 8 lb_joint/certs_V8.jsonl.gz` (same for 4–7) | 1 min |
+| same, via Wagner's flip theorem | `python lb_joint/flip_closure.py 8 lb_joint/certs_V8.jsonl.gz` (works for 9 too) | 1 s |
 | Theorem 2 | `python verify/exact_verify.py examples/V14_integer.json` | 1 s |
 | Theorem 3 | `python penta/verify.py` | 2 min on 12 cores |
 
