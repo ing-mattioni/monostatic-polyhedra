@@ -1,20 +1,20 @@
-# Release reproduction for the review snapshot v0.1-review: fresh clone of commit 6aa729e from GitHub,
-# fresh virtual environment with requirements-verify.txt, then
+# Release reproduction for version v1.0 (Zenodo doi:10.5281/zenodo.24286668): fresh clone of commit 17ccb41
+# from GitHub, fresh virtual environment with requirements-verify.txt, then
 #   reproduce.py --with-tests --with-audit --workers 14
-# (all verifiers, the tamper tests and the independent Theorem B checker). The tag v0.1-review adds only this log.
+# (all verifiers, the tamper tests and the independent Theorem B checker). The tag v1.0 adds only this log.
 
-== clone Mon Nov 16 15:05:15     2026
-6aa729e Licences (MIT for code, CC BY 4.0 for manuscript, figures, certificates and data); author email
+== clone Mon Nov 16 18:06:37     2026
+17ccb41 Version 1.0: Zenodo DOI 10.5281/zenodo.24286668 in manuscript, supplement, README and CITATION.cff
 == fresh venv from system CPython
 mpmath==1.3.0
 python-flint==0.9.0
 sympy==1.14.0
 == reproduce.py (full, with tests and the independent Theorem B checker)
-reproduce.py  2026-11-16 15:06:32  (full)
+reproduce.py  2026-11-16 18:07:43  (full)
 python 3.11.9 (CPython), Windows-10-10.0.26300-SP0, 16 logical CPUs
   sympy 1.14.0
   flint 0.9.0
-git commit 6aa729e52642c6055d47bfe3afbc1c7cd9656971
+git commit 17ccb41e5d6700adf264ca6253ac501e9b4cbd5a (with local modifications)
 
 == SHA-256 of certificate files and trusted code (CHECKSUMS.sha256)
   ok       fe5128b4381d4ddc...  lb_joint/certs_V4.jsonl.gz
@@ -119,9 +119,9 @@ $ python lb_joint/verify_joint.py 7 lb_joint/certs_V7.jsonl.gz
   |      graph 3 root 6: 1682 rooted spanning trees (= Kirchhoff 1682), 1682 certified, 0 missing
   |      graph 4 root 0: 1805 rooted spanning trees (= Kirchhoff 1805), 1805 certified, 0 missing
   |      graph 4 root 2: 1805 rooted spanning trees (= Kirchhoff 1805), 1805 certified, 0 missing
-  | (iii) 24795 (graph, root, tree) cases, 0 without certificate; total time 5.2s
+  | (iii) 24795 (graph, root, tree) cases, 0 without certificate; total time 5.0s
   | ALL CHECKS PASSED: no homogeneous convex polyhedron with 7 vertices is mono-unstable (given the geometric lemma (1) and the completeness of the sphere list).
-  -> exit status 0  [5.3s]
+  -> exit status 0  [5.1s]
 
 == Theorem B: certificates, V = 8
 $ python lb_joint/verify_joint.py 8 lb_joint/certs_V8.jsonl.gz lb_joint/exp1_V8_certG.jsonl.gz
@@ -135,9 +135,9 @@ $ python lb_joint/verify_joint.py 8 lb_joint/certs_V8.jsonl.gz lb_joint/exp1_V8_
   |      graph 12 root 6: 7350 rooted spanning trees (= Kirchhoff 7350), 7350 certified, 0 missing
   |      graph 13 root 0: 8640 rooted spanning trees (= Kirchhoff 8640), 8640 certified, 0 missing
   |      graph 13 root 4: 8640 rooted spanning trees (= Kirchhoff 8640), 8640 certified, 0 missing
-  | (iii) 432041 (graph, root, tree) cases, 0 without certificate; total time 172.0s
+  | (iii) 432041 (graph, root, tree) cases, 0 without certificate; total time 170.1s
   | ALL CHECKS PASSED: no homogeneous convex polyhedron with 8 vertices is mono-unstable (given the geometric lemma (1) and the completeness of the sphere list).
-  -> exit status 0  [172.1s]
+  -> exit status 0  [170.2s]
 
 == Theorem B: sphere list complete (enumeration), V = 4
 $ python lb_joint/enumerate_spheres.py 4 lb_joint/certs_V4.jsonl.gz
@@ -196,7 +196,7 @@ $ python lb_joint/enumerate_spheres.py 8 lb_joint/certs_V8.jsonl.gz
   | V = 8: exhaustive enumeration: 356916 labelled graphs with 18 edges pass the filters; 223440 labelled simplicial 2-spheres  [21s]
   | listed spheres: 14, pairwise non-isomorphic; labelled copies sum_k V!/|Aut_k| = 223440  [26s]
   | COMPLETE: every simplicial 2-sphere on 8 vertices is isomorphic to a listed one (no external count used).
-  -> exit status 0  [25.7s]
+  -> exit status 0  [25.6s]
 
 == Theorem B: sphere list complete (flip closure), V = 8
 $ python lb_joint/flip_closure.py 8 lb_joint/certs_V8.jsonl.gz
@@ -208,10 +208,10 @@ $ python lb_joint/flip_closure.py 8 lb_joint/certs_V8.jsonl.gz
 $ python -O penta/verify.py --workers 14
   | verify.py: rho0 = 0.5 (= 1/2), trees = 375
   | chart polynomials derived and identity-checked symbolically (shapes.py)
-  | chart Z: grid [8, 8, 8], 512 cells: {'nodes': 32136, 'leaves': 16324, 'skip_leaves': 870, 'certs': 575441, 'maxdepth': 13}  [42s]
-  | chart P: grid [4, 8, 8], 256 cells: {'nodes': 37120, 'leaves': 18688, 'skip_leaves': 0, 'certs': 763649, 'maxdepth': 12}  [87s]
+  | chart Z: grid [8, 8, 8], 512 cells: {'nodes': 32136, 'leaves': 16324, 'skip_leaves': 870, 'certs': 575441, 'maxdepth': 13}  [41s]
+  | chart P: grid [4, 8, 8], 256 cells: {'nodes': 37120, 'leaves': 18688, 'skip_leaves': 0, 'certs': 763649, 'maxdepth': 12}  [85s]
   | ALL CHECKS PASSED: for every shape of chart Z with t_1 <= 1 - rho0 and every shape of chart P, each of the 375 rooted trees is refuted.
-  -> exit status 0  [87.5s]
+  -> exit status 0  [86.2s]
 
 == tamper tests of verify_joint.py
 $ python lb_joint/test_verifier.py
@@ -305,9 +305,9 @@ $ python audit/theoremB/check_theoremB.py 8 lb_joint/certs_V8.jsonl.gz lb_joint/
   | (D) certG  records: valid 10207, invalid 0
   | (D) exact positive-definiteness tests performed: 3313358
   | (D) required trees: 432041, covered by a valid certificate: 432041, missing: 0
-  | elapsed 212.3 s
+  | elapsed 210.4 s
   | RESULT V=8: PASS
-  -> exit status 0  [212.6s]
+  -> exit status 0  [210.8s]
 
 == SUMMARY
   PASS  SHA-256 checksums  [0s]
@@ -317,7 +317,7 @@ $ python audit/theoremB/check_theoremB.py 8 lb_joint/certs_V8.jsonl.gz lb_joint/
   PASS  Theorem B: certificates, V = 5  [0s]
   PASS  Theorem B: certificates, V = 6  [0s]
   PASS  Theorem B: certificates, V = 7  [5s]
-  PASS  Theorem B: certificates, V = 8  [172s]
+  PASS  Theorem B: certificates, V = 8  [170s]
   PASS  Theorem B: sphere list complete (enumeration), V = 4  [0s]
   PASS  Theorem B: sphere list complete (flip closure), V = 4  [0s]
   PASS  Theorem B: sphere list complete (enumeration), V = 5  [0s]
@@ -328,13 +328,13 @@ $ python audit/theoremB/check_theoremB.py 8 lb_joint/certs_V8.jsonl.gz lb_joint/
   PASS  Theorem B: sphere list complete (flip closure), V = 7  [0s]
   PASS  Theorem B: sphere list complete (enumeration), V = 8  [26s]
   PASS  Theorem B: sphere list complete (flip closure), V = 8  [0s]
-  PASS  Theorem A: rigorous cover of all pentahedra (python -O)  [87s]
+  PASS  Theorem A: rigorous cover of all pentahedra (python -O)  [86s]
   PASS  tamper tests of verify_joint.py  [3s]
   PASS  Theorem B, independent audit checker, V = 4  [0s]
   PASS  Theorem B, independent audit checker, V = 5  [0s]
   PASS  Theorem B, independent audit checker, V = 6  [1s]
   PASS  Theorem B, independent audit checker, V = 7  [6s]
-  PASS  Theorem B, independent audit checker, V = 8  [213s]
+  PASS  Theorem B, independent audit checker, V = 8  [211s]
 
-ALL STEPS PASSED; total 519s
+ALL STEPS PASSED; total 513s
 exit 0
