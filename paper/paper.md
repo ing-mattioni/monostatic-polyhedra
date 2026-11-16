@@ -1,6 +1,6 @@
 # Monostatic polyhedra: no mono-stable pentahedron, and $9\le V_U\le 14$
 
-*Authors: to be completed.* &nbsp; *Draft manuscript, November 2026; not yet peer reviewed.*
+*Claudio Mattioni* &nbsp; *Draft manuscript, November 2026; not yet peer reviewed.*
 *Code, certificates and logs: repository `monostatic-polyhedra` (see Appendix A).*
 
 **Abstract.** A homogeneous convex polyhedron is *mono-stable* if it can rest on only one of its faces,
@@ -113,11 +113,12 @@ identity, its pairing with $r_v$, and test each tetrahedron separately. We add t
 2. The same polyhedron is tiled from every vertex, with different unknown volume weights. The
    identities of two cone decompositions are coupled by matrices $W_q$ with $\sum_qW_q=0$.
 
-At $V=7$ the relaxation of [BDPR24] is feasible for 1,426 of the 139,636 (tree, tetrahedron) systems (in
-our reproduction, `lowerbound/`), which is why that method stops at 7. With ingredient 1, every case with
+At $V=7$ our numerical reproduction (`lowerbound/`) found feasible solutions, to numerical tolerance,
+for 1,426 of the 139,636 (tree, tetrahedron) systems of [BDPR24]. With ingredient 1, every case with
 $V\le7$ and 97.6% of the trees with $V=8$ are excluded; ingredient 2 excludes the remaining 10,207 trees
-with $V=8$. §6.1 shows that the relaxation is genuinely feasible for about 0.17% of the trees with $V=9$,
-so $V_U\ge10$ needs new geometric input.
+with $V=8$. At $V=9$, the sampled searches in §6.1 leave some trees uncertified and suggest that stronger
+geometric constraints may be useful. They do not establish feasibility of the relaxation or
+non-existence of certificates for those trees.
 
 **Theorem C: thin plates (§5).** As a polyhedron is flattened, the shadowing conditions become planar
 conditions with respect to a weighted centroid of the outline, while the heights still shape the mass
@@ -308,8 +309,8 @@ parameters are sorted, and use the free choice of an affine frame.
 * *Pyramid over a parallelogram.* Take two parallel opposite sides as $A_1B_1$, $A_2B_2$. This is the
   parallel case with $s_3=0$, i.e. $(0,p,0)\in D_P$. $\square$
 
-The closed sets $D_Z$, $D_P$ also contain degenerate points that are not pentahedra (for example $u=0$, or
-$(u,v,w)=(1,1,1)$, or $p=0$). The certificates below hold on the closed sets, but they are *interpreted*
+The closed sets $D_Z$, $D_P$ also contain degenerate points that are not pentahedra (for example $u=0$
+in $D_Z$, or $p=0$ in $D_P$). The certificates below hold on the closed sets, but they are *interpreted*
 only at genuine pentahedra.
 
 **The data $\nu$ and $\eta$.** In a chart, face $k$ is $n_k\cdot x\le d_k$, with $n_k$, $d_k$ polynomial in
@@ -500,7 +501,7 @@ $\mu=e_v$, i.e. $w=r_v$, decided tetrahedron by tetrahedron.
   vertices with different unknown weights, and both identities must hold simultaneously.
 
 Neither ingredient uses the actual tetrahedron volumes or the convexity of the configuration beyond the
-shadowing inequalities. That is where the method stops (§6.1).
+shadowing inequalities. These are natural places to strengthen the method (§6.1).
 
 ### 4.2 Finitely many cases
 
@@ -535,9 +536,10 @@ fraction-free Gaussian elimination: all leading principal minors must be positiv
 | 7 | 5 | 16 | 24,795 | Prop. 4.2 |
 | 8 | 14 | 63 | 432,041 | Prop. 4.2 for 421,834; Prop. 4.3 with $Q=\{v,q\}$ for 10,207 |
 
-For $V=8$, the trees not covered by Proposition 4.2 are exactly those in which some triangle avoiding $v$
-has all three vertices at depth $\ge5$ in the tree. For them the single-cone relaxation is feasible, and a
-second apex $q$ removes it.
+For $V=8$, the trees assigned a two-cone certificate in the stored files are exactly those in which some
+triangle avoiding $v$ has all three vertices at depth $\ge5$ in the tree. Each is excluded using a second
+apex $q$. This observation about the stored certificates does not assert that a one-cone certificate
+is impossible for any of these trees.
 
 *Proof of Theorem B.* Suppose $P$ has $V\le8$ vertices and at most one unstable vertex. Then $V\ge4$, and
 by the remark after Lemma 2.1 there is exactly one unstable vertex $v$.
@@ -642,21 +644,23 @@ are 9,915,284 (sphere, root, tree) cases.
   $r_i\cdot r_k\le r_i\cdot r_{p(i)}$, which are valid once each vertex is assigned its steepest shadowing
   neighbour (see `lb_joint/verify_joint.py`).
 
-On a random sample of 3,000 of these trees, 2,911 were excluded by the variant, 22 needed all nine cone
-decompositions plus the steepest-neighbour inequalities, and **67 resisted everything**: for them the
-relaxation is feasible even with all nine cone identities. Extrapolated, about 17,000 trees (0.17% of all
-cases) cannot be excluded this way. All of them have a shadowing path of depth 6 or 7, while the 294
-sampled trees of depth 8 were all excluded. So proving $V_U\ge10$ needs new valid constraints, for example
-relations between the tetrahedron weights and the geometry, or convexity. Details are in the
-supplement.
+On a random sample of 3,000 of these trees, 2,911 were excluded by the variant, a further 22 were excluded
+using all nine cone decompositions plus the steepest-neighbour inequalities, and **67 remained
+uncertified by the tested searches**. The last outcome records failure to obtain an exact certificate;
+it does not prove that the relaxation is feasible or that no certificate of these types exists.
+Extrapolating the observed failure rate suggests about 17,000 cases (0.17% of the total) would remain
+uncertified by the same procedure; this is a sample-based estimate, not an exhaustive count. All 67
+sampled survivors have maximal tree depth 6 or 7, while the 294 sampled trees of depth 8 were all
+excluded. Relations between the tetrahedron weights and the geometry, or further convexity constraints,
+are possible directions for extending the method. Details are in the supplement.
 
 ### 6.2 Searches for 13 vertices and 13 faces
 
 We did not find a mono-unstable polyhedron with 13 vertices.
 * A search over thin plates made 328 optimisation runs and about $3\cdot10^7$ evaluations. It ended at
   minimax points with all margins equal and negative.
-* An "ideal thickness" bound suggests that thin plates built from symmetric tight spirals need at least
-  14 vertices.
+* An exploratory frustum thickness model helps explain the centroid shift in spiral constructions,
+  but supplies no certified lower bound on the number of vertices.
 
 About 100 optimisation runs aimed at a mono-stable polyhedron with 13 faces also failed. Compared with
 Reshetov's $10^{10}$ evaluations this is a small effort. Neither search proves anything. Both, together
@@ -665,7 +669,8 @@ supplement.
 
 ### 6.3 Open problems
 
-1. Close $9\le V_U\le14$. For the lower bound a stronger relaxation is needed (§6.1). For the upper bound,
+1. Close $9\le V_U\le14$. For the lower bound, resolve the uncertified $V=9$ cases (§6.1), possibly with
+   stronger geometric constraints. For the upper bound,
    is there a mono-unstable polyhedron that is not a thin plate?
 2. Close $6\le F_S\le14$. Theorem A uses a three-dimensional shape space; for hexahedra it is
    six-dimensional, with more combinatorial types. Is there a Gram-type relaxation for faces, as there is
@@ -751,7 +756,7 @@ It found no error and no missing case. Its three expository suggestions are inco
 ### A.4 Use of AI
 
 The problem choice, the methods, the code, the computations and the first draft of this text were
-produced in an AI-assisted research session (Claude, Anthropic) directed by the repository owner. The
+produced in an AI-assisted research session (Claude, Anthropic) directed by the author. The
 audits of A.3 were performed by separate AI instances. No human expert has yet checked the proofs. The
 hand-written reductions (§§2–4 and Appendix B) are the parts that most need human review;
 `REVIEW_GUIDE.md` lists them with pointers to the code.
@@ -778,6 +783,23 @@ Here $\tau t_1=u^2v^3w^4$, $\tau t_2=uv^3w^4$ and $\tau t_3=uv^2w^4$. Then $\nu_
 $\eta_{(i,j)}=\Delta_in_j-\Delta_jn_i$, except that $\eta_{(Q_1,A)}$ is divided by $u$. For example
 $\eta_{(Q_1,Q_2)}=(1-\tau t_2,\ -(1-\tau t_1),\ 0)$. `python penta/shapes.py` prints all of them, and
 those of chart P, whose vertices and planes are given in §3.2 and in `penta/shapes.py`.
+
+The orientation choices in `shapes._tet_data` can also be checked explicitly. In either chart the
+polyhedron is decomposed into the tetrahedra below: cone from $A_1$ over the opposite triangle $B$ and
+over a triangulation of the opposite quadrilateral $B_2B_3A_3A_2$. For an ordered tetrahedron $(a,b,c,d)$,
+write $D(a,b,c,d)=\det(b-a,c-a,d-a)$. Direct substitution of the vertices gives:
+
+| ordered tetrahedron | chart Z | chart P |
+|---|---|---|
+| $(B_1,B_2,B_3,A_1)$ | $-(1-t_1)$ | $1$ |
+| $(A_1,B_2,B_3,A_3)$ | $-t_1(1-t_3)$ | $(1-\rho)pq$ |
+| $(A_1,B_2,A_3,A_2)$ | $-t_1t_3(1-t_2)$ | $(1-\rho)(1-\rho pq)p$ |
+
+For genuine prism-type shapes these signs are respectively negative in Z and positive in P, since
+$0<t_1\le t_2\le t_3<1$ and $0\le\rho\le1/2$, $p,q>0$. At a pyramid boundary ($t_3=1$ or $q=0$), the
+middle tetrahedron is flat and contributes zero. The signs do not reverse; the polynomial volume and
+first-moment formulas extend to these boundaries by continuity. Thus the signs selected at a sample
+point in the code remain valid, including for genuine pyramids.
 
 ## Appendix C. Certificate files
 

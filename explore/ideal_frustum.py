@@ -1,8 +1,9 @@
-"""Ideal flat-limit bound.  Outline K = tight double spiral (arms a, b; reference O = origin, T=(0,1)).
-Best possible thickness for pushing the planar centroid in direction -u: frustum t = cone_E, E = K ∩ {u.p <= zeta}
+"""Exploratory flat-limit frustum model. Outline K = tight double spiral (arms a, b; reference O = origin, T=(0,1)).
+Candidate thickness for pushing the planar centroid in direction -u: frustum t = cone_E, E = K ∩ {u.p <= zeta}
 (plateau 1 on E, minimal concave extension elsewhere).  Body = conv(K x {0}  ∪  E x {1}).
 We compute how far 'below' O the planar centroid can be pushed:  val = max over (zeta) of  -(u . c')  with u=(0,1)
-for symmetric outlines, and report the best over the spiral angles."""
+for symmetric outlines, and report the best found over the spiral angles. The numerical searches do not
+certify global optimality, optimality over arbitrary thickness functions, or a vertex-count bound."""
 import os, sys
 os.environ["OMP_NUM_THREADS"] = "1"
 import numpy as np
@@ -61,4 +62,4 @@ if __name__ == "__main__":
             res = minimize(obj, x0, method="Nelder-Mead", options={"xatol":1e-6, "fatol":1e-8, "maxfev":1500})
             if res.fun < best[0]: best = (res.fun, np.abs(res.x), best_zbar(np.abs(res.x), np.abs(res.x))[1])
         zb, ang, zeta = best
-        print(f"symmetric m={m} (outline k={2*m+1}): ideal lowest planar centroid z = {zb:+.5f} (need < 0); plateau level zeta={zeta:+.4f}; angles {np.degrees(ang).round(1)}", flush=True)
+        print(f"symmetric m={m} (outline k={2*m+1}): best sampled frustum centroid z = {zb:+.5f} (need < 0); plateau level zeta={zeta:+.4f}; angles {np.degrees(ang).round(1)}", flush=True)

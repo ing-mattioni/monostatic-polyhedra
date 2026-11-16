@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code or these certificates, please cite the accompanying manuscript."
+title: "Monostatic polyhedra: no mono-stable pentahedron, and 9 <= V_U <= 14 (code, certificates and verifiers)"
+authors:
+  - family-names: Mattioni
+    given-names: Claudio
+version: "0.1-draft"
+date-released: 2026-11-16
+keywords:
+  - monostatic polyhedra
+  - mono-stable
+  - mono-unstable
+  - computer-assisted proof
+  - semidefinite certificates
+  - interval arithmetic
+abstract: >-
+  Computer-assisted proofs that every homogeneous convex pentahedron has at least two stable faces and
+  that every homogeneous convex polyhedron with at most 8 vertices has at least two unstable vertices,
+  and an explicit mono-unstable polyhedron with 14 vertices. The archive contains the certificates, the
+  trusted verifiers, a one-command reproduction script and the manuscript sources.

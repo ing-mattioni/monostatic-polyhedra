@@ -1,5 +1,5 @@
 # Everything needed to CHECK the three theorems (python reproduce.py).  Tested with CPython 3.11.9.
-# Theorems 1 and 2 need only the Python standard library; Theorem 3 (penta/verify.py) needs these two
+# Theorems B and C need only the Python standard library; Theorem A (penta/verify.py) needs these two
 # packages (sympy for the exact derivation of the chart polynomials, python-flint for Arb ball arithmetic).
 sympy==1.14.0
 mpmath==1.3.0

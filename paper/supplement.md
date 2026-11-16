@@ -35,13 +35,18 @@ uniformly (seed 2026):
 | outcome | trees |
 |---|---|
 | excluded by a hybrid certificate | 2,911 |
-| excluded only with all nine cone decompositions + S1 | 22 |
-| **not excluded by any certificate available here** | **67** |
+| excluded by all nine cone decompositions + S1 after the earlier searches failed | 22 |
+| **left uncertified by the tested searches** | **67** |
 
-For the 67 survivors the SDP relaxation is feasible even with the cone identities from all nine vertices
-and the S1 inequalities. No certificate of these types exists for them.
+For the 67 survivors, the search with all nine cone decompositions and the S1 inequalities did not
+produce an exact certificate. `v9_obstruction.py` records the numerical SDP objective and accepts this
+last certificate type only when that objective exceeds $10^{-7}$ and integer rounding passes the exact
+check. It does not construct or verify an exact feasible point of the relaxation for the failures.
+These outcomes therefore do not establish feasibility of the relaxation or non-existence of
+certificates of the tested types.
 
-Extrapolated, about 17,000 trees (0.17% of all cases) survive. All survivors in the sample have maximal
+Extrapolating this sample suggests that about 17,000 trees (0.17% of all cases) would remain uncertified
+by the same procedure; this is not an exhaustive count. All survivors in the sample have maximal
 tree depth 6 or 7. A typical one is sphere 0, root 0, with the path
 $0\leftarrow7\leftarrow6\leftarrow5\leftarrow4\leftarrow3\leftarrow2\leftarrow1$ and the leaf
 $0\leftarrow8$. The 294 sampled trees of depth 8 were all excluded.
@@ -60,7 +65,7 @@ of a double tight spiral and optimise the spiral angles. This works for outlines
 splits 7+7, 8+6, 9+5, 10+4), giving certified mono-unstable polyhedra with 16 vertices
 (`verify/certificates/seed_V16*`).
 
-For 14-gons the numerical optimum stays infeasible for every arm split. The previous record, 18 vertices
+For 14-gons no feasible candidate was found in the tested arm splits. The previous record, 18 vertices
 [DKLRV20], is a flat pyramid over Conway and Guy's 17-gon; certified versions are in
 `verify/certificates/seed_V18*`.
 
@@ -76,13 +81,16 @@ A version with a larger safety margin is `search_vertices/certified/V14_spiral76
 * *Search.* 328 optimisation runs with about $3\cdot10^7$ evaluations covered all arm splits and many
   height patterns. They ended at clean minimax points with all margins equal and negative: the best
   angular margin was $-7.9\cdot10^{-3}$, against $+1.07\cdot10^{-2}$ at 14 vertices.
-* *Flat limit.* In three dimensions the optimiser always drives the thickness to zero: the flat limit is
-  locally optimal.
-* *Ideal thickness bound.* For a given outline $K$, the thickness function that pushes the weighted
-  centroid furthest in a given direction is a frustum: a plateau below a level, with the minimal concave
-  extension above it. Even with this ideal thickness, which would cost extra vertices, symmetric tight
-  spirals need a 13-gon outline. In units with $|T-O|=1$ the ideal centroid height is $+0.0285$ for the
-  best 11-gon and $-0.0034$ for the best 13-gon; it must be negative.
+* *Flat limit.* In the reported three-dimensional optimisation runs, the thickness tends towards zero.
+  This is evidence favouring thin plates within the tested searches, not a proof of local optimality.
+* *Frustum thickness model.* `explore/ideal_frustum.py` searches bodies of the form
+  $\operatorname{conv}((K\times\{0\})\cup(E\times\{1\}))$, where $E$ is the portion of a spiral outline
+  $K$ below a chosen level. Their thickness has a plateau on $E$ and a concave extension over the rest
+  of $K$. The script optimises the level and the spiral angles numerically; it does not prove that this
+  thickness is optimal among all admissible functions or that the numerical minima are global. In
+  units with $|T-O|=1$, the best reported centroid heights are $+0.0285$ for an 11-gon outline and
+  $-0.0034$ for a 13-gon outline. The construction can add vertices beyond those of the outline, so these
+  observations do not give a lower bound on the vertex count of a mono-unstable polyhedron.
 
 None of this is a proof, and genuinely three-dimensional (non-plate) designs were explored only lightly.
 
@@ -143,4 +151,4 @@ All 719 rooted trees on 10 nodes are infeasible numerically, consistent with the
 | `lb_joint/` | certificate generators (`certify_joint.py`, `general_cert.py`, `hybrid_cert.py`, `stage2_hybrid.py`), the trusted verifier and the V = 9 experiments |
 | `penta/` | `search.py`, `propose.py`, `compact.py` (untrusted, they produce the cover); `sanity.py` (Monte-Carlo test) |
 | `search_vertices/`, `search_faces/`, `explore/` | optimisation searches and prototypes |
-| `audit/` | the independent referee pass on Theorem A (scripts, logs, `REPORT.md`) |
+| `audit/` | independent AI audits of Theorem A (`REPORT.md`) and Theorem B (`theoremB/REPORT.md`), with separate checkers and logs |

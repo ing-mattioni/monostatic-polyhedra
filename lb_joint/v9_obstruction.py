@@ -5,8 +5,9 @@ v9_obstruction.py -- where the Gram-matrix certificates stop: a random sample of
 Each sampled tree is attacked with (1) hybrid two-cone certificates and (2) coupled two-cone certificates
 (stage2_hybrid.work, every certificate checked exactly); trees that resist both are tested with the
 strongest relaxation available here, all nine cone decompositions at once plus the steepest-neighbour
-inequalities (general_cert.solve_general with Q = all vertices, S1).  A tree that fails that SDP has a
-feasible relaxed Gram matrix: the method cannot exclude it.
+inequalities (general_cert.solve_general with Q = all vertices, S1). A failed search leaves the tree
+uncertified. It does not prove feasibility of the relaxation or non-existence of these certificates;
+no exact feasible Gram matrix is constructed or checked for such failures here.
 
     python v9_obstruction.py N_SAMPLE WORKERS SEED    ->  v9_obstruction.json, printed summary
 """
@@ -65,7 +66,7 @@ if __name__ == "__main__":
     surv = [r for r in res if r["how"] == "none"]
     frac = len(surv) / n
     print(f"sample of {n} of the {total_unc} stage-1-uncertified trees (seed {seed}): {dict(cnt)}")
-    print(f"estimated number of trees resisting every certificate: {frac * total_unc:.0f} "
+    print(f"estimated number of trees left uncertified by the tested searches: {frac * total_unc:.0f} "
           f"({100 * frac:.2f}% of stage 2, {100 * frac * total_unc / 9915284:.3f}% of all 9,915,284)")
     md = collections.Counter(max(r["depths"]) for r in surv)
     md_all = collections.Counter(max(r["depths"]) for r in res)

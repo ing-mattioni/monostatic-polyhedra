@@ -22,3 +22,8 @@ explore/prof_cvx.out
 reproduce.log
 venv-verify/
 audit/theoremB/tamper/
+outreach/
+paper/latex/*.log
+paper/latex/*.aux
+paper/latex/*.xdv
+paper/latex/*.out
