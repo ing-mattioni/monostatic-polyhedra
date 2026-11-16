@@ -134,9 +134,10 @@ produced the certificates:
   `python-flint`.
 
 Theorem C is checked by a 100-line integer-only script (§5.3). Appendix A lists the trusted code, the
-commands, the SHA-256 hashes of the certificate files and the running times. An independent
-implementation that shares no code with ours re-checked all 1,339,090 certificates of Theorem A in exact
-rational arithmetic and found no failure (Appendix A.3).
+commands, the SHA-256 hashes of the certificate files and the running times. Independent
+implementations that share no code with ours re-checked all 1,339,090 certificates of Theorem A in exact
+rational arithmetic, and all 458,394 cases of Theorem B with different algorithms. Neither found a failure
+(Appendix A.3).
 
 The research, the code and the first draft of this manuscript were produced with substantial assistance
 of an AI system (Claude, Anthropic); see Appendix A.4.
@@ -164,6 +165,7 @@ $r_j$ adjacent to $r_i$. If $(r_j-r_i)\cdot r_i\ge0$ ("$j$ shadows $i$"), then $
 Finally,
 $0<|r_j-r_i|^2=|r_j|^2-|r_i|^2-2(r_j-r_i)\cdot r_i\le|r_j|^2-|r_i|^2$. $\square$
 
+In particular, the vertex farthest from $c$ has no shadowing neighbour, so it is unstable and $U\ge1$.
 Consequently, if $v$ is the only unstable vertex, choosing for every $i\neq v$ an adjacent shadowing vertex
 $p(i)$ gives a map along which $|r|$ strictly increases. So $p$ has no cycles: it is a spanning tree of the
 graph of $P$, oriented towards $v$.
@@ -428,7 +430,11 @@ face.
 Let $P$ have $V$ vertices $r_1,\dots,r_V$, centre of mass $0$, and exactly one unstable vertex $v$.
 
 1. Triangulate each face of $P$ by diagonals, adding no vertices. The boundary becomes a simplicial
-   2-sphere $G$ on the $V$ vertices: a maximal planar graph with $3V-6$ edges and $2V-4$ triangles.
+   2-sphere $G$ on the $V$ vertices: a maximal planar graph with $3V-6$ edges and $2V-4$ triangles. It is
+   a simplicial complex because two faces $F\ne F'$ of $P$ meet in the empty set, a vertex or an edge.
+   * A diagonal of $F$ is never an edge of $P$: an edge of $P$ through two vertices of $F$ meets $F$ in a
+     face of $F$ containing both, so they are adjacent in $F$.
+   * No diagonal or triangle occurs in two faces.
 2. By Lemma 2.1 there is a spanning tree $p$, oriented towards $v$, that uses edges of $P$ (hence of $G$)
    and satisfies $(r_{p(i)}-r_i)\cdot r_i\ge0$ for $i\ne v$.
 3. Let $R=(r_a\cdot r_b)_{a,b}$ be the Gram matrix. Then $R\succeq0$, $R\ne0$, and with
@@ -442,9 +448,18 @@ Hence
 
 $$\sum_{T}\operatorname{vol}(T)\sum_{k\in T}r_k=4\operatorname{vol}(P)\,c=0. \tag{4.2}$$
 
-*Proof.* Almost every $x\in P$ lies on a unique segment from $q$ to the point where the ray from $q$
-through $x$ leaves $P$. That point lies in a triangle $F$ of $G$, and $F\not\ni q$ unless $x$ is on the
-boundary. The centroid of a tetrahedron is the mean of its vertices. $\square$
+*Proof.*
+* *Cover.* For $x\in\operatorname{int}P$, the ray from $q$ through $x$ leaves $P$ at a unique boundary
+  point $y$, and the open segment $(q,y)$ is interior. If $y$ lay in a face containing $q$, the segment
+  $[q,y]$ would lie in that face, so on $\partial P$. Hence $x\in\operatorname{conv}(q,F)$ for a triangle
+  $F\ni y$ of a face not containing $q$.
+* *Disjoint interiors.* If $x$ is interior to both $\operatorname{conv}(q,F_1)$ and
+  $\operatorname{conv}(q,F_2)$, then $y$ is in the relative interior of $F_1$ and of $F_2$, so $F_1=F_2$.
+* *Flat tetrahedra.* $\operatorname{conv}(q,F)$ is flat exactly when $F$ lies in a face of $P$ containing
+  $q$.
+
+The identity follows from the additivity of first moments, since the centroid of a tetrahedron is the
+mean of its vertices. $\square$
 
 Write $1_T\in\{0,1\}^V$ for the indicator vector of the four vertices of $T$.
 
@@ -524,7 +539,8 @@ For $V=8$, the trees not covered by Proposition 4.2 are exactly those in which s
 has all three vertices at depth $\ge5$ in the tree. For them the single-cone relaxation is feasible, and a
 second apex $q$ removes it.
 
-*Proof of Theorem B.* Suppose $P$ has $V\le8$ vertices and exactly one unstable vertex $v$. Then $V\ge4$.
+*Proof of Theorem B.* Suppose $P$ has $V\le8$ vertices and at most one unstable vertex. Then $V\ge4$, and
+by the remark after Lemma 2.1 there is exactly one unstable vertex $v$.
 1. §4.1 produces a triangulated boundary $G$ and a shadowing tree $p$.
 2. By §4.2, an isomorphism maps $(G,v,p)$ onto a listed sphere, a listed root and an enumerated tree. The
    isomorphism preserves (4.1) and (4.2), because these depend only on the labelling.
@@ -701,10 +717,10 @@ Running times on a 16-thread desktop are:
 A complete run (about 7 min) from a fresh clone of the repository, in a fresh virtual environment, is
 recorded in `reproduce_clean_run.log`.
 
-### A.3 Independent re-check of Theorem A
+### A.3 Independent re-checks
 
-A separate referee pass was done by an independent AI agent (a separate Claude instance, `audit/REPORT.md`).
-It was asked to break the proof and shares no code with `penta/`. In summary:
+**Theorem A.** A separate referee pass was done by an independent AI agent (a separate Claude instance,
+`audit/REPORT.md`). It was asked to break the proof and shares no code with `penta/`. In summary:
 
 * It re-derived the face covectors from the vertices, using its own divergence-theorem centroid, and
   proved exactly that $\nu_k\parallel\ell_k$ and $\eta_{ij}\parallel(\ell_j-\ell_i)$ with positive
@@ -719,11 +735,24 @@ It was asked to break the proof and shares no code with `penta/`. In summary:
 It found no mathematical error and no counterexample. Its one code finding was fixed: checks written as
 `assert` are disabled under `python -O`.
 
+**Theorem B.** A second independent agent (`audit/theoremB/REPORT.md`) reviewed §2 and §4 and wrote its own
+exact checker from the mathematical statements, without reading `verify_joint.py`'s code. The checker
+is 788 lines, uses only the standard library, and works differently in each part:
+* it proves sphere completeness by generating all triangulations through coning fan disks, with
+  canonical forms;
+* it recomputes the automorphism orbits;
+* it enumerates trees as edge subsets;
+* it tests positive definiteness by rational $LDL^{\mathsf T}$.
+
+It confirmed all 458,394 cases with zero invalid records, and 30 negative controls behaved as expected.
+It found no error and no missing case. Its three expository suggestions are incorporated in Lemma 2.1,
+§4.1 and Lemma 4.1.
+
 ### A.4 Use of AI
 
 The problem choice, the methods, the code, the computations and the first draft of this text were
 produced in an AI-assisted research session (Claude, Anthropic) directed by the repository owner. The
-audit of A.3 was performed by a separate AI instance. No human expert has yet checked the proofs. The
+audits of A.3 were performed by separate AI instances. No human expert has yet checked the proofs. The
 hand-written reductions (§§2–4 and Appendix B) are the parts that most need human review;
 `REVIEW_GUIDE.md` lists them with pointers to the code.
 

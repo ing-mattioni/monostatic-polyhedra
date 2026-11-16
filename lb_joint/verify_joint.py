@@ -38,7 +38,8 @@ E_ii - (E_ij + E_ji)/2, so <S_{i->j}, R> = (r_i - r_j) . r_i.
      and nonzero, so <M_T*, R> > 0.  Contradiction: no polyhedron has this
      (sphere triangulation, root v, tree p).
 
- (3) [completeness, checked here]  Every simplicial 2-sphere on V vertices is
+ (3) [cases; the list of spheres is proved complete by enumerate_spheres.py and
+     flip_closure.py, everything else is checked here]  Every simplicial 2-sphere on V vertices is
      isomorphic (by a vertex bijection carrying triangles to triangles) to one
      of the listed ones; every vertex is equivalent under a listed
      automorphism to a listed root; for every listed (graph, root) EVERY
@@ -80,12 +81,13 @@ E_ii - (E_ij + E_ji)/2, so <S_{i->j}, R> = (r_i - r_j) . r_i.
      matrix for T* pairs with R to <= 0; if T* is bad, the second matrix for
      (T*, T'*) does.  Either contradicts positive definiteness (R >= 0, R != 0).
 
- External fact used (not verified here): the number of combinatorial types of
- triangulations of the 2-sphere with V vertices (equivalently, of maximal
- planar simple graphs) is 1, 1, 2, 5, 14, 50 for V = 4, 5, 6, 7, 8, 9
- (OEIS A000109; e.g. Bowen-Fisk 1967, Brinkmann-McKay "plantri").
- Since the listed spheres are verified to be pairwise non-isomorphic AS GRAPHS
- (hence as complexes) and their number equals that count, the list is complete.
+ COMPLETENESS OF THE SPHERE LIST is proved separately, without any literature
+ count, by enumerate_spheres.py (exhaustive enumeration of labelled spheres,
+ V <= 8) and by flip_closure.py (closure under edge flips + Wagner's theorem).
+ As an additional cross-check this verifier compares the number of listed,
+ pairwise non-isomorphic spheres with the known number of triangulations of
+ the 2-sphere with V vertices, 1, 1, 2, 5, 14, 50 for V = 4..9 (OEIS A000109;
+ Bowen-Fisk 1967, Brinkmann-McKay "plantri").
 
 CHECKS performed:
  (i)   each listed (edges, faces) is a simplicial 2-sphere on {0..V-1}: simple
@@ -434,8 +436,9 @@ def check_hybrid_certificate(V, F, nbrs, v, parent, rec):
 def main(V, paths):
     t0 = time.time()
     print(f"verify_joint.py: V = {V}, files {paths}")
-    print("External fact used: number of triangulations of the 2-sphere with V vertices "
-          f"(OEIS A000109) = {A000109[V]} for V = {V}.")
+    print("Cross-check against the known number of triangulations of the 2-sphere with V vertices "
+          f"(OEIS A000109) = {A000109[V]} for V = {V}; completeness itself is proved by "
+          "enumerate_spheres.py and flip_closure.py.")
     graphs = {}
     verified = {}          # (gid, root) -> set of parent tuples with a valid certificate
     n_cert = n_dup = n_gen = n_hyb = 0
@@ -514,7 +517,7 @@ def main(V, paths):
     for a, b in itertools.combinations(gids, 2):
         need(not isomorphic(V, graphs[a][0], graphs[b][0]), f"graphs {a} and {b} are isomorphic")
     need(len(gids) == A000109[V], f"{len(gids)} spheres listed, A000109 gives {A000109[V]}")
-    print(f"(i)  {len(gids)} simplicial 2-spheres, pairwise non-isomorphic = A000109({V}): complete")
+    print(f"(i)  {len(gids)} simplicial 2-spheres, pairwise non-isomorphic; count = A000109({V})")
     print(f"(ii) every vertex is a root or mapped to one by a verified automorphism")
 
     # (iii) every rooted spanning tree has a verified certificate
@@ -534,7 +537,7 @@ def main(V, paths):
           f"total time {time.time() - t0:.1f}s")
     need(missing == 0, f"{missing} trees have no certificate")
     print(f"ALL CHECKS PASSED: no homogeneous convex polyhedron with {V} vertices "
-          f"is mono-unstable (given the geometric lemma (1) and A000109).")
+          f"is mono-unstable (given the geometric lemma (1) and the completeness of the sphere list).")
 
 
 if __name__ == "__main__":

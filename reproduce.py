@@ -6,6 +6,7 @@ reproduce.py -- one command that re-checks all three theorems from the files in 
     python reproduce.py --quick         # Theorem C, Theorem B for V <= 7, sphere-list completeness (seconds)
     python reproduce.py --workers 4     # number of processes for penta/verify.py (default: all cores)
     python reproduce.py --with-tests    # also run the tamper tests of the verifiers
+    python reproduce.py --with-audit    # also run the independent Theorem B checker (audit/theoremB)
 
 Setup from a clean checkout (Python 3.11 tested):
     python -m venv venv-verify
@@ -80,11 +81,23 @@ def tests():
     return [("tamper tests of verify_joint.py", py + ["lb_joint/test_verifier.py"])]
 
 
+def audit_steps(quick, workers):
+    """the independent re-implementation of the Theorem B check (audit/theoremB, separate code)"""
+    py = [sys.executable]
+    out = []
+    for V in range(4, 8 if quick else 9):
+        files = [f"lb_joint/certs_V{V}.jsonl.gz"] + (["lb_joint/exp1_V8_certG.jsonl.gz"] if V == 8 else [])
+        out.append((f"Theorem B, independent audit checker, V = {V}",
+                    py + ["audit/theoremB/check_theoremB.py", str(V)] + files + [f"--procs={workers}", "--quiet"]))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[1])
     ap.add_argument("--quick", action="store_true")
     ap.add_argument("--workers", type=int, default=os.cpu_count() or 4)
     ap.add_argument("--with-tests", action="store_true")
+    ap.add_argument("--with-audit", action="store_true", help="also run the independent Theorem B checker")
     ap.add_argument("--log", default=os.path.join(ROOT, "reproduce.log"))
     ap.add_argument("--write-checksums", action="store_true", help="(maintainers) regenerate CHECKSUMS.sha256")
     a = ap.parse_args()
@@ -140,7 +153,8 @@ def main():
     results.append(("SHA-256 checksums", ok_hash, 0.0))
 
     # 2.-4. verifiers
-    todo = steps(a.quick, a.workers) + (tests() if a.with_tests else [])
+    todo = (steps(a.quick, a.workers) + (tests() if a.with_tests else [])
+            + (audit_steps(a.quick, a.workers) if a.with_audit else []))
     env = dict(os.environ, OMP_NUM_THREADS="1", PYTHONIOENCODING="utf-8")
     for title, cmd in todo:
         say(f"\n== {title}\n$ {' '.join(['python'] + cmd[1:])}")

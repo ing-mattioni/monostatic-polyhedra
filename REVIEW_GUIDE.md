@@ -73,7 +73,10 @@ A wrong certificate can only make a verifier fail. It cannot make one pass.
 * The trusted base consists of the Python interpreter, `sympy` (exact polynomial algebra: expansion,
   differentiation, `lambdify` to a division-free polynomial evaluator), Arb through `python-flint`
   (ball arithmetic), and the trusted files named above.
-* Theorem A was re-checked by an independent implementation (`audit/`); see Appendix A.3 of the paper.
-  An independent re-check of Theorem B is in `audit/theoremB/`, if present.
+* Both computer-assisted theorems were re-checked by independent implementations written by separate AI
+  agents: Theorem A in `audit/` (exact rationals, all 1,339,090 certificates) and Theorem B in
+  `audit/theoremB/` (all 458,394 cases, with different algorithms for every part). See Appendix A.3 of
+  the paper. Neither agent found a mathematical error. Their suggestions for the exposition are
+  incorporated.
 * All verification so far has been done by machines and by AI agents. No human expert has yet checked
   the reductions in §§2–4 of the paper. That check is what this guide is for.

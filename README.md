@@ -27,9 +27,10 @@ reductions, the verification protocol and references. Experiments and side resul
 every step that connects the geometry to the computer checks.
 
 **Status.** These are computer-assisted results produced in an AI-assisted research session (Claude,
-Anthropic, with the repository owner). They have **not been peer reviewed**. An independent AI audit of
-Theorem A ([`audit/REPORT.md`](audit/REPORT.md)) re-checked every certificate with separate exact code and
-found no error. We did not find a 13-vertex mono-unstable or a 13-face mono-stable polyhedron (the
+Anthropic, with the repository owner). They have **not been peer reviewed**. Independent AI audits of
+Theorem A ([`audit/REPORT.md`](audit/REPORT.md)) and of Theorem B
+([`audit/theoremB/REPORT.md`](audit/theoremB/REPORT.md)) re-checked every certificate with separately
+written exact code and found no mathematical error. We did not find a 13-vertex mono-unstable or a 13-face mono-stable polyhedron (the
 searches were limited, so no conclusion can be drawn). The exact minima remain unknown.
 
 ## Verify
@@ -39,6 +40,7 @@ python -m venv venv-verify                                    # CPython 3.11 tes
 venv-verify/bin/python -m pip install -r requirements-verify.txt   # Windows: venv-verify\Scripts\python
 venv-verify/bin/python reproduce.py            # everything, ~6 min on 16 threads
 venv-verify/bin/python reproduce.py --quick    # Theorem C, Theorem B for V <= 7, sphere lists: seconds
+venv-verify/bin/python reproduce.py --with-tests --with-audit   # + tamper tests + independent Theorem B checker
 ```
 
 `reproduce.py` first checks the SHA-256 hashes of the certificate files and of the trusted code

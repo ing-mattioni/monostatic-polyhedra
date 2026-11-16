@@ -1,0 +1,58 @@
+Part 1: end-to-end, V=6 (certs_V6.jsonl.gz)
+untampered copy (must PASS)                                PASS as expected
+dropped tree record                                        REJECTED as expected   FAIL: no valid certificate for (gid, root, parent) = (1, 0, (-1, 5, 5, 5, 3, 0))
+negated multiplier y_i                                     REJECTED as expected   FAIL: invalid cert record (0, 0, (-1, 0, 0, 0, 0, 0)): negative multiplier y
+negated direction vector mu                                REJECTED as expected   FAIL: invalid cert record (0, 0, (-1, 0, 0, 0, 0, 0)): block (1, 2, 3) (apex 0) not positive definite
+missing triangle block                                     REJECTED as expected   FAIL: invalid cert record (0, 0, (-1, 0, 0, 0, 0, 0)): blocks do not cover all triangles avoiding apex 0
+duplicated block replacing another                         REJECTED as expected   FAIL: invalid cert record (0, 0, (-1, 0, 0, 0, 0, 0)): triangle [1, 2, 3] has two blocks
+block triangle containing the apex                         REJECTED as expected   FAIL: invalid cert record (0, 0, (-1, 0, 0, 0, 0, 0)): block triangle [0, 1, 4] contains the apex
+y_root != 0                                                REJECTED as expected   FAIL: invalid cert record (0, 0, (-1, 0, 0, 0, 0, 0)): y_root != 0
+non-integer entry in mu                                    REJECTED as expected   FAIL: invalid cert record (0, 0, (-1, 0, 0, 0, 0, 0)): mu not an integer vector of length V
+parent not adjacent                                        REJECTED as expected   FAIL: invalid cert record None: parent edge 4-2 not an edge of G
+parent map with a 2-cycle                                  REJECTED as expected   FAIL: invalid cert record None: parent map has a cycle
+sphere changed by an edge flip                             REJECTED as expected   FAIL: gid 1 isomorphic to an earlier listed sphere
+sphere with a triangle removed                             REJECTED as expected   FAIL: gid 0 is not a simplicial 2-sphere: ['some edge not in exactly two triangles', 'link of 1 is not a cycle
+root removed from root list                                REJECTED as expected   FAIL: gid 0: orbits without listed root: [[4, 5]]
+wrong stated automorphism                                  REJECTED as expected   FAIL: gid 0: stated automorphism for vertex 3 invalid
+
+Part 2: record level, V=8, Prop. 4.3 records (exp1_V8_certG.jsonl.gz)
+untampered certG record: error = None, PD tests = 14
+W_q not summing to zero (one symmetric entry +1)           REJECTED as expected   error: sum of W_q is not 0
+W_q not symmetric (sum still zero)                         REJECTED as expected   error: W not symmetric
+missing triangle block (second apex)                       REJECTED as expected   error: blocks do not cover all triangles avoiding apex 6
+negated multiplier y_i (second apex)                       REJECTED as expected   error: negative multiplier y
+y_root != 0 in a block of the second apex                  REJECTED as expected   error: y_root != 0
+negated mu^(q)                                             REJECTED as expected   error: block (0, 1, 7) (apex 6) not positive definite
+S1 term injected                                           REJECTED as expected   error: S1 terms present (not part of Prop. 4.3)
+s1 flag set                                                REJECTED as expected   error: s1 flag set (S1 is not part of Prop. 4.3)
+two groups with the same apex                              REJECTED as expected   error: apexes not distinct vertices
+block triangle containing its apex                         REJECTED as expected   error: block triangle [0, 1, 6] contains the apex
+second group dropped (W_v alone != 0)                      REJECTED as expected   error: sum of W_q is not 0
+
+Part 3: sharpness of the exact positive-definiteness test
+Prop 4.2 record (V=6, gid 0, root 0): mu_root - 26 accepted (None); mu_root - 27 rejected ('block (1, 2, 3) (apex 0) not positive definite')
+Prop 4.3 record (V=8, gid 0, root 0): W_q[3][3] shifted by 94 accepted (None); by 95 rejected ('block (1, 2, 7) (apex 0) not positive definite')
+
+Part 4: end-to-end V=8 with a tampered certG file (full run, several minutes)
+   FAIL: invalid certG record (0, 3, (3, 6, 7, -1, 0, 4, 5, 1)): sum of W_q is not 0
+   FAIL: invalid certG record (0, 3, (4, 2, 7, -1, 3, 1, 1, 0)): blocks do not cover all triangles avoiding apex 4
+   FAIL: invalid certG record (0, 3, (4, 2, 7, -1, 3, 1, 5, 0)): negative multiplier y
+   FAIL: invalid certG record (0, 3, (4, 2, 7, -1, 3, 6, 1, 0)): block (0, 1, 6) (apex 4) not positive definite
+   FAIL: invalid certG record (0, 3, (4, 3, 0, -1, 5, 6, 1, 0)): W not symmetric
+   FAIL: 5 invalid certificate records
+   FAIL: no valid certificate for (gid, root, parent) = (0, 3, (3, 6, 7, -1, 0, 4, 5, 1))
+   FAIL: no valid certificate for (gid, root, parent) = (0, 3, (4, 2, 7, -1, 3, 1, 1, 0))
+   FAIL: no valid certificate for (gid, root, parent) = (0, 3, (4, 2, 7, -1, 3, 1, 5, 0))
+   FAIL: no valid certificate for (gid, root, parent) = (0, 3, (4, 2, 7, -1, 3, 6, 1, 0))
+   FAIL: no valid certificate for (gid, root, parent) = (0, 3, (4, 3, 0, -1, 5, 6, 1, 0))
+   FAIL: no valid certificate for (gid, root, parent) = (0, 6, (2, 0, 3, 4, 5, 6, -1, 2))
+   FAIL: 6 required trees without valid certificate
+   (D) cert   records: valid 421834, invalid 0
+   (D) certG  records: valid 10201, invalid 5
+   (D) exact positive-definiteness tests performed: 3313292
+   (D) required trees: 432041, covered by a valid certificate: 432035, missing: 6
+   RESULT V=8: FAIL (2 problems)
+V=8: 5 tampered + 1 dropped certG records                  REJECTED as expected   exit status 1
+
+SUMMARY: 30 controls, 30 behaved as expected
+exit status: 0

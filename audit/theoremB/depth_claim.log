@@ -1,0 +1,4 @@
+cert   trees: with a deep (>=5) triangle avoiding v: 0, without: 421834
+certG  trees: with a deep (>=5) triangle avoiding v: 10207, without: 0
+remark consistent with the certificate files: True
+exit 0

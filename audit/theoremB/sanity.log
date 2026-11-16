@@ -1,0 +1,37 @@
+random sampling (definition of unstable vertex applied directly)
+family             V     n  minU U histogram                   L2.1 mis   cone err
+cube               5   100     3 {3: 15, 4: 45, 5: 40}                0   7.13e-16
+cube               6   100     3 {3: 5, 4: 31, 5: 41, 6: 23}          0   1.40e-15
+cube               7   100     3 {3: 2, 4: 17, 5: 38, 6: 31, 7: 12}         0   7.32e-16
+cube               8   100     4 {4: 4, 5: 19, 6: 39, 7: 31, 8: 7}         0   6.44e-16
+elongated          5   100     2 {2: 87, 3: 10, 4: 2, 5: 1}           0   1.49e-15
+elongated          6   100     2 {2: 79, 3: 16, 4: 5}                 0   2.13e-15
+elongated          7   100     2 {2: 77, 3: 13, 4: 7, 5: 2, 6: 1}         0   8.93e-16
+elongated          8   100     2 {2: 84, 3: 12, 4: 4}                 0   1.07e-15
+flat               5   100     2 {2: 9, 3: 55, 4: 34, 5: 2}           0   1.02e-15
+flat               6   100     2 {2: 8, 3: 40, 4: 39, 5: 13}          0   1.05e-15
+flat               7   100     2 {2: 5, 3: 37, 4: 45, 5: 12, 6: 1}         0   9.61e-16
+flat               8   100     3 {3: 19, 4: 54, 5: 22, 6: 5}          0   1.41e-15
+gauss              5   100     2 {2: 3, 3: 23, 4: 43, 5: 31}          0   8.70e-16
+gauss              6   100     2 {2: 2, 3: 6, 4: 28, 5: 46, 6: 18}         0   6.62e-16
+gauss              7   100     3 {3: 5, 4: 25, 5: 27, 6: 29, 7: 14}         0   8.10e-16
+gauss              8   100     3 {3: 2, 4: 11, 5: 20, 6: 41, 7: 22, 8: 4}         0   5.89e-16
+needle_ellipsoid   5   100     2 {2: 56, 3: 24, 4: 10, 5: 10}         0   2.11e-15
+needle_ellipsoid   6   100     2 {2: 49, 3: 17, 4: 23, 5: 9, 6: 2}         0   2.61e-15
+needle_ellipsoid   7   100     2 {2: 46, 3: 28, 4: 16, 5: 6, 6: 3, 7: 1}         0   1.44e-15
+needle_ellipsoid   8   100     2 {2: 45, 3: 18, 4: 20, 5: 12, 6: 3, 7: 1, 8: 1}         0   1.32e-15
+sphere             5   100     3 {3: 4, 4: 22, 5: 74}                 0   5.31e-15
+sphere             6   100     3 {3: 3, 4: 11, 5: 25, 6: 61}          0   9.69e-16
+sphere             7   100     3 {3: 2, 4: 3, 5: 7, 6: 37, 7: 51}         0   8.51e-16
+sphere             8   100     4 {4: 1, 5: 2, 6: 9, 7: 27, 8: 61}         0   6.24e-16
+total samples: 2400  samples with U < 2: 0
+smallest normalised margin of the second most unstable vertex: 1.983e-04 (('elongated', 8))
+
+adversarial hill-climb (score = second smallest margin; score >= 0 <=> at most one unstable vertex)
+  V=5: best score over 12 runs x 400 steps: -6.786e-05
+  V=6: best score over 12 runs x 400 steps: -1.431e-04
+  V=7: best score over 12 runs x 400 steps: -1.811e-04
+  V=8: best score over 12 runs x 400 steps: -1.147e-04
+max score found: -6.786e-05 (negative => no mono-unstable example found)
+elapsed 120.1 s
+exit status: 0
