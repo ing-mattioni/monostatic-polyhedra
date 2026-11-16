@@ -21,27 +21,29 @@
     success only makes pdfLaTeX compatibility plausible. This can be done with TeX Live or MiKTeX
     locally, or by checking arXiv's own compilation preview; until then, pdfLaTeX compatibility is
     unverified.
-* **Reviewer access before going public:** the repository stays private.
-  * The material is shared as an **unpublished Zenodo draft** containing the ZIP of a fixed, tagged
-    version, through a link with the permission "Can preview draft". This needs no GitHub
-    collaborators.
-  * A *published* Zenodo record would make its metadata public even with restricted files, so the
-    record stays a draft until the author decides to publish.
-  * `CITATION.cff` is read only by Zenodo's GitHub integration. For a manual ZIP upload the metadata
-    must be entered in the form; the values to use are prepared in the local file
-    `outreach/zenodo_form.md`.
+* **Public archive:** the author chose to publish the Zenodo record rather than keep it as a draft.
+  * The DOI 10.5281/zenodo.24286668 was reserved before the upload. It is written into the manuscript
+    (header, Appendix A.2, Data availability), the supplement, `README.md` and `CITATION.cff`.
+  * A published record can be deleted by its owner only within 30 days. Its files cannot be changed
+    afterwards: corrections become new versions with their own DOIs. Metadata stays editable.
+  * The values for the manual upload form are in the local file `outreach/zenodo_form.md`.
+    `CITATION.cff` is read only by the GitHub integration.
+  * Once the record is public there is little reason to keep the GitHub repository private. It can be
+    made public and added to the record's related works.
 * **Expert contact:** the email drafts for Z. Lángi (Theorem A) and D. Papp (Theorem B) are in the local,
   git-ignored folder `outreach/`, so they do not become public with the repository. Nothing has been
   sent.
 
-**Review snapshot `v0.1-review`.**
+**Archived version `v1.0`** (DOI 10.5281/zenodo.24286668).
 1. The full reproduction, including the tamper tests and the independent Theorem B checker, was run
    from a fresh clone of the commit before the tag, in a fresh virtual environment. The result is
    stored in `reproduce_release_run.log`.
 2. The tag adds only that log.
-3. The ZIP was produced with
-   `git archive --format=zip --prefix=monostatic-polyhedra-v0.1-review/ -o <zip> v0.1-review`.
+3. The ZIP was produced with `git archive --format=zip --prefix=monostatic-polyhedra-v1.0/ -o <zip> v1.0`.
    Its SHA-256 is recorded in `outreach/zenodo_form.md`.
+
+The earlier tag `v0.1-review` (same certificates and verifiers, before the DOI was added) remains in the
+repository but was not archived.
 
 ---
 

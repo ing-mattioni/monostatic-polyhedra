@@ -1,8 +1,8 @@
 # Monostatic polyhedra: no mono-stable pentahedron, and $9\le V_U\le 14$
 
-*Claudio Mattioni (claudio.mattioni@gmail.com)* &nbsp; *Draft manuscript, November 2026; not yet peer
-reviewed.*
-*Code, certificates and logs: repository `monostatic-polyhedra` (see Appendix A).*
+*Claudio Mattioni (claudio.mattioni@gmail.com)* &nbsp; *Preprint, November 2026; not yet peer reviewed.*
+*Code, certificates and logs: archived at [doi:10.5281/zenodo.24286668](https://doi.org/10.5281/zenodo.24286668)
+(version v1.0; see Appendix A).*
 
 **Abstract.** A homogeneous convex polyhedron is *mono-stable* if it can rest on only one of its faces,
 and *mono-unstable* if it can be balanced on only one of its vertices. No homogeneous tetrahedron is
@@ -699,6 +699,9 @@ as a check. Each verifier exits with status 0 only if every check passes. Tamper
 
 ### A.2 Reproduction
 
+All files are archived at [doi:10.5281/zenodo.24286668](https://doi.org/10.5281/zenodo.24286668)
+(version v1.0). In the unpacked archive:
+
     python -m venv venv-verify
     venv-verify/bin/python -m pip install -r requirements-verify.txt   # sympy, mpmath, python-flint (pinned)
     venv-verify/bin/python reproduce.py                                # all checks; --quick: seconds
@@ -817,9 +820,10 @@ point in the code remain valid, including for genuine pyramids.
 
 ## Data availability
 
-All code, certificate files and logs are in the repository `monostatic-polyhedra`; an archived snapshot
-will be deposited on Zenodo [DOI to be added]. The code is released under the MIT licence; the
-manuscript, figures, certificates and data under CC BY 4.0 (see `LICENSE.md`).
+All code, certificate files and logs, together with the sources of this manuscript, are archived on
+Zenodo as version v1.0 of `monostatic-polyhedra`:
+[doi:10.5281/zenodo.24286668](https://doi.org/10.5281/zenodo.24286668). The code is released under the
+MIT licence; the manuscript, figures, certificates and data under CC BY 4.0 (see `LICENSE.md`).
 
 ## References
 

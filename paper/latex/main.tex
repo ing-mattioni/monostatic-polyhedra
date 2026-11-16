@@ -38,7 +38,7 @@
 \title[No mono-stable pentahedron, and $9\le V_U\le14$]{Monostatic polyhedra: no mono-stable pentahedron,\\ and \texorpdfstring{$9\le V_U\le 14$}{9 <= V\_U <= 14}}
 \author{Claudio Mattioni}
 \email{claudio.mattioni@gmail.com}
-\date{November 2026. Draft, not yet peer reviewed.}
+\date{November 2026. Preprint, not yet peer reviewed.}
 
 \begin{document}
 
@@ -832,6 +832,8 @@ passes. Tampered certificate files (dropped cells or trees, illegal skip leaves,
 multipliers, changed matrices) are rejected.
 
 \subsection{Reproduction}
+All files are archived at \href{https://doi.org/10.5281/zenodo.24286668}{doi:10.5281/zenodo.24286668}
+(version v1.0). In the unpacked archive:
 \begin{verbatim}
 python -m venv venv-verify
 venv-verify/bin/python -m pip install -r requirements-verify.txt
@@ -948,9 +950,10 @@ $y^0\in\R^4$, $Y\in\R^{4\times3}$ as binary floats) and either two children with
 nothing (a leaf), or the skip flag (chart Z only).
 
 \section*{Data availability}
-All code, certificate files and logs are in the repository \texttt{monostatic-polyhedra}; an archived
-snapshot will be deposited on Zenodo [DOI to be added]. The code is released under the MIT licence; the
-manuscript, figures, certificates and data under CC BY 4.0 (see \path{LICENSE.md}).
+All code, certificate files and logs, together with the sources of this manuscript, are archived on
+Zenodo as version v1.0 of \texttt{monostatic-polyhedra},
+\href{https://doi.org/10.5281/zenodo.24286668}{doi:10.5281/zenodo.24286668}. The code is released under
+the MIT licence; the manuscript, figures, certificates and data under CC BY 4.0 (see \path{LICENSE.md}).
 
 % =====================================================================================================
 \begin{thebibliography}{DKLRV20}

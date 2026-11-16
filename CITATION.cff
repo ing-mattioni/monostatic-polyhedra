@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code or these certificates, please cite the accompanying manuscript."
+message: "If you use this code or these certificates, please cite the archived version."
 title: "Monostatic polyhedra: no mono-stable pentahedron, and 9 <= V_U <= 14 (code, certificates and verifiers)"
 authors:
   - family-names: Mattioni
@@ -8,8 +8,13 @@ authors:
 license:
   - MIT
   - CC-BY-4.0
-version: "0.1-review"
+version: "1.0"
 date-released: 2026-11-16
+doi: 10.5281/zenodo.24286668
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24286668
+    description: "Zenodo archive of version v1.0"
 keywords:
   - monostatic polyhedra
   - mono-stable
