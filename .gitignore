@@ -19,3 +19,5 @@ lb_joint/uncertified_V9.json
 lb_joint/exp_hybrid_V9.jsonl.gz
 lb_joint/exp_hybrid_V9.jsonl.gz.part
 explore/prof_cvx.out
+reproduce.log
+venv-verify/
