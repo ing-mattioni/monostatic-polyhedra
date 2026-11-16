@@ -1,5 +1,8 @@
 # Independent audit of the pentahedron proof (Theorem 3)
 
+*(Numbering of the time: "Theorem 3" is Theorem A of the current manuscript, "Theorem 1" is Theorem B.
+Section numbers refer to `penta/README.md` and to the old `paper/paper.md`.)*
+
 This is the report of an independent referee pass carried out by a separate AI agent (Claude Opus) that
 was asked to try to break the proof in `penta/`: mathematics, code, numerics, verifier. Its scripts and
 logs are in this directory; it shares no code with `penta/core.py` / `penta/shapes.py`. The report is

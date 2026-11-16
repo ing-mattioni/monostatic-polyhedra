@@ -1,6 +1,6 @@
 # No homogeneous convex pentahedron is mono-stable
 
-**Theorem C.** Let *P* be a convex polyhedron with five faces and uniform density, and let *c* be its
+**Theorem A.** Let *P* be a convex polyhedron with five faces and uniform density, and let *c* be its
 centre of mass. Then at least two faces of *P* contain the orthogonal projection of *c* onto their plane
 in their relative interior (i.e. *P* can rest on at least two faces). Consequently a homogeneous
 mono-stable polyhedron has at least **6** faces. (The previous lower bound, 5, is Conway and Guy's

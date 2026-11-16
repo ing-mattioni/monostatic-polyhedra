@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-V14_short_check.py -- a short, self-contained exact check that the 14-point polyhedron of Theorem 2 is
+V14_short_check.py -- a short, self-contained exact check that the 14-point polyhedron of Theorem C is
 mono-unstable.  Standard library only, integers only; about one second.  It does not compute a convex
 hull: the 24 boundary triangles are given below and the script only CHECKS them.
 

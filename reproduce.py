@@ -3,7 +3,7 @@
 reproduce.py -- one command that re-checks all three theorems from the files in this repository.
 
     python reproduce.py                 # everything (about 10 minutes with 8+ cores)
-    python reproduce.py --quick         # Theorem 2, Theorem 1 for V <= 7, sphere-list completeness (seconds)
+    python reproduce.py --quick         # Theorem C, Theorem B for V <= 7, sphere-list completeness (seconds)
     python reproduce.py --workers 4     # number of processes for penta/verify.py (default: all cores)
     python reproduce.py --with-tests    # also run the tamper tests of the verifiers
 
@@ -17,11 +17,11 @@ Steps:
   1. SHA-256 of the certificate files and of the trusted checking code against CHECKSUMS.sha256
      (text files are hashed with LF line endings, as stored in git, so the hashes do not depend on the
      platform's checkout settings);
-  2. Theorem 2: examples/V14_short_check.py and verify/exact_verify.py on the 14-vertex example;
-  3. Theorem 1: lb_joint/verify_joint.py for V = 4..8, and completeness of the sphere lists twice
+  2. Theorem C: examples/V14_short_check.py and verify/exact_verify.py on the 14-vertex example;
+  3. Theorem B: lb_joint/verify_joint.py for V = 4..8, and completeness of the sphere lists twice
      (exhaustive enumeration, lb_joint/enumerate_spheres.py, and Wagner's flip theorem,
      lb_joint/flip_closure.py);
-  4. Theorem 3: penta/verify.py, run with `python -O` (the verifier contains no `assert`).
+  4. Theorem A: penta/verify.py, run with `python -O` (the verifier contains no `assert`).
 Every step is a separate process; the script exits with status 0 iff every step exits with status 0.
 A transcript is written to reproduce.log (or --log FILE).
 """
@@ -54,23 +54,23 @@ def sha256(rel):
 
 def steps(quick, workers):
     py = [sys.executable]
-    out = [("Theorem 2: short exact check of the 14-vertex example", py + ["examples/V14_short_check.py"]),
-           ("Theorem 2: full exact equilibrium classification", py + ["verify/exact_verify.py",
+    out = [("Theorem C: short exact check of the 14-vertex example", py + ["examples/V14_short_check.py"]),
+           ("Theorem C: full exact equilibrium classification", py + ["verify/exact_verify.py",
                                                                      "examples/V14_integer.json"])]
     for V in range(4, 9):
         if quick and V == 8:
             continue
         files = [f"lb_joint/certs_V{V}.jsonl.gz"] + (["lb_joint/exp1_V8_certG.jsonl.gz"] if V == 8 else [])
-        out.append((f"Theorem 1: certificates, V = {V}", py + ["lb_joint/verify_joint.py", str(V)] + files))
+        out.append((f"Theorem B: certificates, V = {V}", py + ["lb_joint/verify_joint.py", str(V)] + files))
     for V in range(4, 9):
         if quick and V == 8:
             continue
-        out.append((f"Theorem 1: sphere list complete (enumeration), V = {V}",
+        out.append((f"Theorem B: sphere list complete (enumeration), V = {V}",
                     py + ["lb_joint/enumerate_spheres.py", str(V), f"lb_joint/certs_V{V}.jsonl.gz"]))
-        out.append((f"Theorem 1: sphere list complete (flip closure), V = {V}",
+        out.append((f"Theorem B: sphere list complete (flip closure), V = {V}",
                     py + ["lb_joint/flip_closure.py", str(V), f"lb_joint/certs_V{V}.jsonl.gz"]))
     if not quick:
-        out.append(("Theorem 3: rigorous cover of all pentahedra (python -O)",
+        out.append(("Theorem A: rigorous cover of all pentahedra (python -O)",
                     py + ["-O", "penta/verify.py", "--workers", str(workers)]))
     return out
 
@@ -111,7 +111,7 @@ def main():
             m = __import__(mod)
             say(f"  {mod} {getattr(m, '__version__', '?')}")
         except ImportError:
-            say(f"  {mod}: NOT INSTALLED" + ("" if a.quick else "  (needed for Theorem 3)"))
+            say(f"  {mod}: NOT INSTALLED" + ("" if a.quick else "  (needed for Theorem A)"))
     try:
         commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
         dirty = subprocess.run(["git", "status", "--porcelain", "--untracked-files=no"], cwd=ROOT,
@@ -159,7 +159,7 @@ def main():
         say(f"  {'PASS' if ok else 'FAIL'}  {title}  [{dt:.0f}s]")
     all_ok = all(ok for _, ok, _ in results)
     say(f"\n{'ALL STEPS PASSED' if all_ok else 'SOME STEPS FAILED'}"
-        f"{' (quick mode: V = 8 and Theorem 3 skipped)' if a.quick else ''}; total {time.time() - t_start:.0f}s")
+        f"{' (quick mode: V = 8 and Theorem A skipped)' if a.quick else ''}; total {time.time() - t_start:.0f}s")
     log.close()
     return 0 if all_ok else 1
 
