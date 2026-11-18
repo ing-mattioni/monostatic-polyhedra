@@ -1,6 +1,7 @@
 cff-version: 1.2.0
-message: "If you use this code or these certificates, please cite the archived version."
-title: "Monostatic polyhedra: no mono-stable pentahedron, and 9 <= V_U <= 14 (code, certificates and verifiers)"
+message: "Please cite the paper and its accompanying exact verification archive."
+type: software
+title: "A homogeneous mono-unstable polyhedron with fourteen vertices"
 authors:
   - family-names: Mattioni
     given-names: Claudio
@@ -9,21 +10,30 @@ license:
   - MIT
   - CC-BY-4.0
 version: "1.0"
-date-released: 2026-11-16
 doi: 10.5281/zenodo.24286668
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.24286668
-    description: "Zenodo archive of version v1.0"
+preferred-citation:
+  type: article
+  title: "A homogeneous mono-unstable polyhedron with fourteen vertices"
+  authors:
+    - family-names: Mattioni
+      given-names: Claudio
+  doi: 10.5281/zenodo.24286668
+  status: preprint
+  version: "1.0"
+# DOI reserved for the current unpublished draft.
+# date-released is intentionally omitted until actual first publication.
 keywords:
-  - monostatic polyhedra
-  - mono-stable
-  - mono-unstable
+  - mono-unstable polyhedra
+  - convex geometry
+  - static equilibria
+  - homogeneous solids
+  - exact arithmetic
   - computer-assisted proof
-  - semidefinite certificates
-  - interval arithmetic
+  - lattice polyhedra
 abstract: >-
-  Computer-assisted proofs that every homogeneous convex pentahedron has at least two stable faces and
-  that every homogeneous convex polyhedron with at most 8 vertices has at least two unstable vertices,
-  and an explicit mono-unstable polyhedron with 14 vertices. The archive contains the certificates, the
-  trusted verifiers, a one-command reproduction script and the manuscript sources.
+  An explicit homogeneous convex polyhedron with fourteen integer-coordinate
+  vertices, thirty-six edges and twenty-four triangular facets has exactly two
+  stable, one saddle and one unstable equilibrium about its volume centroid.
+  Every positive vertical contraction by a factor at most one remains
+  mono-unstable. The archive supplies the manuscript, coordinates, exact
+  verification programs, reports and a standard-library reproduction command.

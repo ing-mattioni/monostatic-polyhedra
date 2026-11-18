@@ -1,0 +1,44 @@
+{
+  "note": "Human-readable preparation values, not an API import payload. Keep the existing unpublished draft and its reserved DOI.",
+  "title": "A homogeneous mono-unstable polyhedron with fourteen vertices",
+  "resource_type": "publication-preprint",
+  "doi": "10.5281/zenodo.24286668",
+  "version": "1.0",
+  "prepared_on": "2026-11-17",
+  "publication_date": "Set to the actual date of first public release.",
+  "creators": [
+    {
+      "family_name": "Mattioni",
+      "given_name": "Claudio"
+    }
+  ],
+  "description": "We present an explicit convex polyhedron with fourteen vertices whose uniformly distributed volume has exactly one unstable equilibrium with respect to its center of mass. The vertices have small integer coordinates; the polyhedron has thirty-six edges and twenty-four triangular facets, with exactly two stable, one saddle and one unstable equilibrium.\n\nThe construction varies the thickness along a double-spiral outline to control the projected volume centroid without adding an apex. A self-contained exact proof establishes the equilibrium counts. A further certificate proves that every vertical contraction by a factor 0 < t <= 1 preserves the face lattice and the unique unstable equilibrium.\n\nThis deposit contains the preprint, LaTeX and Markdown sources, exact coordinates, three verification programs, complete equilibrium reports, figure source, integrity hashes and an execution transcript. The command \"python reproduce.py\" verifies the results using only the Python standard library.\n\nThe result is a constructive upper bound of fourteen vertices, not a proof of minimality. The paper explicitly discusses the earlier public sixteen-vertex construction. The full equilibrium count (2,1,1) is asserted for the supplied example, while the contraction family is certified only for the unique unstable equilibrium.\n\nThe work was developed with substantial assistance from Claude (Anthropic) and Codex (OpenAI), under the author's direction. It is a preprint; no external human expert review is claimed.",
+  "additional_description": {
+    "type": "technical-info",
+    "text": "Code files (*.py and *.sh) are licensed under MIT. The manuscript, figures, exact data, reports, logs and documentation are licensed under CC BY 4.0. These licences apply to separate file types, as specified in LICENSE.md. Verification requires Python 3.10 or later and no third-party packages. Contact: claudio.mattioni@gmail.com."
+  },
+  "licenses": [
+    {
+      "id": "CC-BY-4.0",
+      "scope": "Manuscript, figures, data, reports, logs and documentation"
+    },
+    {
+      "id": "MIT",
+      "scope": "Program code (*.py and *.sh)"
+    }
+  ],
+  "language": "eng",
+  "publisher": "Zenodo",
+  "access": "public",
+  "embargo": false,
+  "keywords": [
+    "mono-unstable polyhedra",
+    "convex geometry",
+    "static equilibria",
+    "homogeneous solids",
+    "exact arithmetic",
+    "computer-assisted proof",
+    "lattice polyhedra"
+  ],
+  "contact": "claudio.mattioni@gmail.com"
+}

@@ -1,95 +1,82 @@
-# Monostatic polyhedra: new bounds for the Conway–Guy problems
+# A homogeneous mono-unstable polyhedron with fourteen vertices
 
-A homogeneous convex polyhedron is **mono-stable** if it can rest on exactly one face, and
-**mono-unstable** if it can balance on exactly one vertex. How small can such polyhedra be? This question
-goes back to Conway and Guy (1966/69), and every case of it is still open.
+Claudio Mattioni · Version 1.0 · Prepared 17 November 2026 · Preprint, not peer reviewed
 
-| quantity | before | now (this repository) |
-|---|---|---|
-| fewest faces of a mono-stable polyhedron | 5 ≤ F ≤ 14 | **6 ≤ F ≤ 14** |
-| fewest vertices of a mono-unstable polyhedron | 7 ≤ V ≤ 18 | **9 ≤ V ≤ 14** |
+An explicit convex polyhedron with uniform **volume** density has **14 vertices,
+36 edges and 24 triangular facets**, with **S = 2, H = 1, U = 1** about its actual
+volume centroid. Every positive vertical contraction by a factor at most one
+also has exactly one unstable equilibrium. The full S/H census is asserted
+for the supplied integer example, not for every contraction.
 
-* **Theorem A.** Every homogeneous convex pentahedron has at least two stable faces. This answers a
-  question of Goldberg and Guy (1969) and is, to our knowledge, the first improvement of the lower bound in
-  Conway and Guy's original problem since 1969. The proof is a rigorous ball-arithmetic cover of the
-  three-dimensional space of affine shapes, with 375 rolling patterns and 1,339,090 certificates.
-* **Theorem B.** Every homogeneous convex polyhedron with at most 8 vertices has at least two unstable
-  vertices. The proof uses exact integer certificates for all 458,394 combinatorial cases.
-* **Theorem C.** There is a homogeneous mono-unstable polyhedron with 14 vertices and integer coordinates
-  of absolute value at most 1000 (`examples/V14_integer.json`). It is verified in exact arithmetic, and
-  the verification fits on one page.
+Start with the [paper PDF](paper/latex/main.pdf), its
+[Markdown companion](paper/paper.md), or the [review guide](REVIEW_GUIDE.md).
 
-![Top view of the 14-vertex mono-unstable polyhedron: a thin plate whose outline is a double spiral around the centre of mass](examples/V14_plate.svg)
+## Reproduce the proof
 
-**Manuscript** (Claudio Mattioni):
-* the PDF is [`paper/latex/main.pdf`](paper/latex/main.pdf), with LaTeX source `paper/latex/main.tex`;
-* the same text in Markdown is [`paper/paper.md`](paper/paper.md).
+Python 3.10 or later; Python 3.11.9 has been tested. No pip packages, virtual
+environment or network access are required.
 
-It is self-contained: statements, all hand-proved reductions, the verification protocol and references.
-Experiments and side results are in the supplement ([`paper/latex/supplement.pdf`](paper/latex/supplement.pdf),
-or [`paper/supplement.md`](paper/supplement.md)). For reviewers, [`REVIEW_GUIDE.md`](REVIEW_GUIDE.md) lists
-every step that connects the geometry to the computer checks.
-
-To rebuild the PDFs, run `tectonic -X compile main.tex` in `paper/latex/`. The sources use only standard
-packages and should also build with pdfLaTeX, but that has not been tested yet. The figure is regenerated
-by `python paper/latex/make_figure.py`.
-
-**Archive.** Version v1.0 (code, certificates, logs, manuscript) is archived on Zenodo:
-[doi:10.5281/zenodo.24286668](https://doi.org/10.5281/zenodo.24286668).
-
-**Status.** These are computer-assisted results produced in an AI-assisted research session (Claude,
-Anthropic) directed by the author. They have **not been peer reviewed**. Independent AI audits of
-Theorem A ([`audit/REPORT.md`](audit/REPORT.md)) and of Theorem B
-([`audit/theoremB/REPORT.md`](audit/theoremB/REPORT.md)) re-checked every certificate with separately
-written exact code and found no mathematical error. We did not find a 13-vertex mono-unstable or a 13-face mono-stable polyhedron (the
-searches were limited, so no conclusion can be drawn). The exact minima remain unknown.
-
-## Verify
-
-```bash
-python -m venv venv-verify                                    # CPython 3.11 tested
-venv-verify/bin/python -m pip install -r requirements-verify.txt   # Windows: venv-verify\Scripts\python
-venv-verify/bin/python reproduce.py            # everything, ~6 min on 16 threads
-venv-verify/bin/python reproduce.py --quick    # Theorem C, Theorem B for V <= 7, sphere lists: seconds
-venv-verify/bin/python reproduce.py --with-tests --with-audit   # + tamper tests + independent Theorem B checker
+```sh
+python reproduce.py
 ```
 
-`reproduce.py` first checks the SHA-256 hashes of the certificate files and of the trusted code
-(`CHECKSUMS.sha256`). It then runs each verifier as a separate process and writes a transcript to
-`reproduce.log`. A run from a fresh clone in a fresh virtual environment is recorded in
-[`reproduce_clean_run.log`](reproduce_clean_run.log).
+Eight checks cover file integrity, three exact checking paths, regenerated
+reports, numerical manuscript tables and the complete equilibrium sign ledger.
+The script writes reproduce.log and exits nonzero if any check fails.
+For explicit isolation from installed packages:
 
-The individual verifiers are:
-
-```bash
-python examples/V14_short_check.py                        # Theorem C (standard library, ~100 lines)
-python verify/exact_verify.py examples/V14_integer.json   # Theorem C, full exact classification
-python lb_joint/verify_joint.py 8 lb_joint/certs_V8.jsonl.gz lb_joint/exp1_V8_certG.jsonl.gz   # Theorem B, V = 8
-python lb_joint/enumerate_spheres.py 8 lb_joint/certs_V8.jsonl.gz   # the sphere list is complete
-python lb_joint/flip_closure.py 8 lb_joint/certs_V8.jsonl.gz        # ... and again via Wagner's flip theorem
-python -O penta/verify.py                                  # Theorem A (needs sympy, python-flint)
+```sh
+python -I -S reproduce.py
 ```
 
-Theorems B and C need only the Python standard library. Theorem A needs `sympy` and `python-flint`, with
-the versions pinned in `requirements-verify.txt`. The generators and searches need more packages
-(`requirements-search.txt`), but they are not needed to check the proofs.
+The supplied transcript is [release/reproduce_extracted.log](release/reproduce_extracted.log).
+Do not use that filename for a new log. The SHA-256 manifest normalizes CRLF
+to LF for text files; binary files are hashed unchanged. It detects accidental
+changes, but is not a digital signature or a substitute for reading the proof.
 
-## Licence
+## Contents
 
-The code (`*.py`, `*.sh`) is MIT-licensed. The manuscript, figures, certificates, data, logs and
-documentation are licensed CC BY 4.0. See [`LICENSE.md`](LICENSE.md) for the file-by-file rule and for the
-third-party data from Reshetov (2014).
+- [examples/V14_integer.json](examples/V14_integer.json): exact coordinates.
+- [examples/V14_short_check.py](examples/V14_short_check.py): short integer existence proof.
+- [verify/exact_verify.py](verify/exact_verify.py): general rational hull and equilibrium checker.
+- [verify/check_c.py](verify/check_c.py): separate integer hull, complete census and family certificate.
+- [examples/V14_exact_report.json](examples/V14_exact_report.json) and
+  [examples/V14_family_report.json](examples/V14_family_report.json): full exact reports.
+- [paper/latex/](paper/latex/): manuscript, sign ledger and figure.
+- [release/BUILD.md](release/BUILD.md): manuscript and package build instructions.
+- [release/PROVENANCE.md](release/PROVENANCE.md): scope, prior work and provenance.
 
-## Layout
+All three proof checkers use arbitrary-precision integers or exact fractions.
+Decimal values in the general checker's report are display aids only.
+The figure generator optionally uses matplotlib, and PDF compilation requires
+a TeX engine; neither is needed to verify the mathematics.
 
-| path | content |
-|---|---|
-| `paper/` | manuscript and supplement |
-| `examples/` | the 14-vertex polyhedron of Theorem C, its short check, its exact report |
-| `penta/` | Theorem A: chart derivation (`shapes.py`), rigorous kernel (`core.py`), verifier (`verify.py`); untrusted search; Monte-Carlo sanity check |
-| `lb_joint/` | Theorem B: standalone verifier, certificates for V = 4…8, sphere-completeness checks; untrusted generators; V = 9 experiments |
-| `verify/` | `exact_verify.py`: exact rational classifier of all equilibria of a polyhedron (+ tests; certified 16/18-vertex examples) |
-| `audit/` | independent AI audits of Theorems A and B, with separate exact checkers and logs |
-| `search_vertices/`, `search_faces/` | searches for small monostatic polyhedra; certified 14/15-vertex and 14/15-face bodies; Reshetov's bodies re-verified |
-| `lowerbound/` | replication of the SDP method of Bozóki–Domokos–Papp–Regős and where it stops |
-| `explore/` | exploratory scripts |
+## Scientific scope
+
+This is a constructive upper bound V_U <= 14, not a minimality proof.
+A public sixteen-vertex construction is explicitly cited. The construction
+has more edges and facets than that example; it is not an improvement in
+every size measure. The body has two stable equilibria and is not a polyhedral
+Gomboc. The literature comparison is limited to the sources found and checked.
+
+The draft DOI is [10.5281/zenodo.24286668](https://doi.org/10.5281/zenodo.24286668).
+It was reserved during preparation and will resolve after the record is published.
+The private Git repository is not required for reproduction.
+
+## Earlier repository material
+
+The complete development repository also retains the historical unpublished
+A/B/C manuscript in paper/history/abc-94a1f1e and its workflow reproduce_abc.py.
+Those files and the A/B certificates are deliberately outside this C-only
+deposit. Old theorem labels in the unchanged short checker refer to that
+historical manuscript: former Theorem C is now Theorem 1, and its cited
+vertex lemma is now Lemma 1.
+
+## Author, AI assistance and licensing
+
+Claudio Mattioni · claudio.mattioni@gmail.com.
+Searches, code and writing received substantial assistance from Claude
+(Anthropic) and Codex (OpenAI). No external human expert review is claimed.
+
+Code (*.py and *.sh): MIT. All other original material: CC BY 4.0.
+See [LICENSE.md](LICENSE.md) and the full texts in LICENSES/.

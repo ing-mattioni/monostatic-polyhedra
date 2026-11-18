@@ -27,3 +27,5 @@ paper/latex/*.log
 paper/latex/*.aux
 paper/latex/*.xdv
 paper/latex/*.out
+tmp/
+output/

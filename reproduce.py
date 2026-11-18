@@ -1,182 +1,111 @@
 #!/usr/bin/env python3
-"""
-reproduce.py -- one command that re-checks all three theorems from the files in this repository.
+"""Reproduce the fourteen-vertex paper using Python 3.10+ and its standard library.
 
-    python reproduce.py                 # everything (about 10 minutes with 8+ cores)
-    python reproduce.py --quick         # Theorem C, Theorem B for V <= 7, sphere-list completeness (seconds)
-    python reproduce.py --workers 4     # number of processes for penta/verify.py (default: all cores)
-    python reproduce.py --with-tests    # also run the tamper tests of the verifiers
-    python reproduce.py --with-audit    # also run the independent Theorem B checker (audit/theoremB)
+    python reproduce.py
+    python -I -S reproduce.py --log reproduce.log
 
-Setup from a clean checkout (Python 3.11 tested):
-    python -m venv venv-verify
-    venv-verify/bin/python -m pip install -r requirements-verify.txt      # Windows: venv-verify\Scripts\python
-    venv-verify/bin/python reproduce.py
-
-Steps:
-  0. environment report (Python, platform, versions of sympy / python-flint);
-  1. SHA-256 of the certificate files and of the trusted checking code against CHECKSUMS.sha256
-     (text files are hashed with LF line endings, as stored in git, so the hashes do not depend on the
-     platform's checkout settings);
-  2. Theorem C: examples/V14_short_check.py and verify/exact_verify.py on the 14-vertex example;
-  3. Theorem B: lb_joint/verify_joint.py for V = 4..8, and completeness of the sphere lists twice
-     (exhaustive enumeration, lb_joint/enumerate_spheres.py, and Wagner's flip theorem,
-     lb_joint/flip_closure.py);
-  4. Theorem A: penta/verify.py, run with `python -O` (the verifier contains no `assert`).
-Every step is a separate process; the script exits with status 0 iff every step exits with status 0.
-A transcript is written to reproduce.log (or --log FILE).
+The historical A/B/C workflow is preserved separately as reproduce_abc.py.
 """
 import argparse
 import hashlib
-import os
+import json
+from pathlib import Path
 import platform
 import subprocess
 import sys
+import tempfile
 import time
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
-CHECKSUMS = os.path.join(ROOT, "CHECKSUMS.sha256")
-
-TRUSTED_CODE = ["lb_joint/verify_joint.py", "lb_joint/enumerate_spheres.py", "lb_joint/flip_closure.py",
-                "examples/V14_short_check.py", "verify/exact_verify.py",
-                "penta/verify.py", "penta/core.py", "penta/shapes.py"]
-CERTIFICATES = ["lb_joint/certs_V4.jsonl.gz", "lb_joint/certs_V5.jsonl.gz", "lb_joint/certs_V6.jsonl.gz",
-                "lb_joint/certs_V7.jsonl.gz", "lb_joint/certs_V8.jsonl.gz", "lb_joint/exp1_V8_certG.jsonl.gz",
-                "examples/V14_integer.json", "penta/certs_Z.json.gz", "penta/certs_P.json.gz"]
+ROOT = Path(__file__).resolve().parent
+REQUIRED = {
+    "reproduce.py", "examples/V14_integer.json", "examples/V14_short_check.py",
+    "verify/exact_verify.py", "verify/check_c.py", "verify/check_manuscript.py",
+    "examples/V14_exact_report.json", "examples/V14_family_report.json",
+    "paper/latex/main.tex", "paper/latex/equilibrium_ledger.tex", "paper/latex/make_ledger.py",
+}
 
 
-def sha256(rel):
-    with open(os.path.join(ROOT, rel), "rb") as fh:
-        data = fh.read()
-    if not rel.endswith(".gz"):
-        data = data.replace(b"\r\n", b"\n")
-    return hashlib.sha256(data).hexdigest()
+def need(condition, message):
+    if not condition:
+        raise ValueError(message)
 
 
-def steps(quick, workers):
-    py = [sys.executable]
-    out = [("Theorem C: short exact check of the 14-vertex example", py + ["examples/V14_short_check.py"]),
-           ("Theorem C: full exact equilibrium classification", py + ["verify/exact_verify.py",
-                                                                     "examples/V14_integer.json"])]
-    for V in range(4, 9):
-        if quick and V == 8:
+def integrity():
+    seen = set()
+    for line in (ROOT/"CHECKSUMS_C.sha256").read_text(encoding="utf-8").splitlines():
+        if not line or line.startswith("#"):
             continue
-        files = [f"lb_joint/certs_V{V}.jsonl.gz"] + (["lb_joint/exp1_V8_certG.jsonl.gz"] if V == 8 else [])
-        out.append((f"Theorem B: certificates, V = {V}", py + ["lb_joint/verify_joint.py", str(V)] + files))
-    for V in range(4, 9):
-        if quick and V == 8:
-            continue
-        out.append((f"Theorem B: sphere list complete (enumeration), V = {V}",
-                    py + ["lb_joint/enumerate_spheres.py", str(V), f"lb_joint/certs_V{V}.jsonl.gz"]))
-        out.append((f"Theorem B: sphere list complete (flip closure), V = {V}",
-                    py + ["lb_joint/flip_closure.py", str(V), f"lb_joint/certs_V{V}.jsonl.gz"]))
-    if not quick:
-        out.append(("Theorem A: rigorous cover of all pentahedra (python -O)",
-                    py + ["-O", "penta/verify.py", "--workers", str(workers)]))
-    return out
-
-
-def tests():
-    py = [sys.executable]
-    return [("tamper tests of verify_joint.py", py + ["lb_joint/test_verifier.py"])]
-
-
-def audit_steps(quick, workers):
-    """the independent re-implementation of the Theorem B check (audit/theoremB, separate code)"""
-    py = [sys.executable]
-    out = []
-    for V in range(4, 8 if quick else 9):
-        files = [f"lb_joint/certs_V{V}.jsonl.gz"] + (["lb_joint/exp1_V8_certG.jsonl.gz"] if V == 8 else [])
-        out.append((f"Theorem B, independent audit checker, V = {V}",
-                    py + ["audit/theoremB/check_theoremB.py", str(V)] + files + [f"--procs={workers}", "--quiet"]))
-    return out
+        digest, rel = line.split("  ", 1)
+        path = (ROOT/rel).resolve()
+        need(path.is_relative_to(ROOT) and rel not in seen, "Invalid manifest path: "+rel)
+        seen.add(rel)
+        data = path.read_bytes()
+        # Match Git LF text on every platform. PDF and other binary files are raw.
+        if path.suffix.lower() in {".py", ".md", ".tex", ".json", ".cff", ".txt", ".svg", ".log"}:
+            data = data.replace(b"\r\n", b"\n")
+        need(hashlib.sha256(data).hexdigest() == digest, "Hash mismatch: "+rel)
+    need(REQUIRED <= seen, "Manifest omits required verification inputs")
+    return len(seen)
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__.split("\n")[1])
-    ap.add_argument("--quick", action="store_true")
-    ap.add_argument("--workers", type=int, default=os.cpu_count() or 4)
-    ap.add_argument("--with-tests", action="store_true")
-    ap.add_argument("--with-audit", action="store_true", help="also run the independent Theorem B checker")
-    ap.add_argument("--log", default=os.path.join(ROOT, "reproduce.log"))
-    ap.add_argument("--write-checksums", action="store_true", help="(maintainers) regenerate CHECKSUMS.sha256")
-    a = ap.parse_args()
-    if a.write_checksums:
-        with open(CHECKSUMS, "w", encoding="ascii", newline="\n") as fh:
-            for rel in CERTIFICATES + TRUSTED_CODE:
-                fh.write(f"{sha256(rel)}  {rel}\n")
-        print(f"wrote {CHECKSUMS}")
-        return 0
-
-    log = open(a.log, "w", encoding="utf-8", newline="\n")
-
-    def say(text=""):
-        print(text, flush=True)
-        log.write(text + "\n")
-        log.flush()
-
-    t_start = time.time()
-    say(f"reproduce.py  {time.strftime('%Y-%m-%d %H:%M:%S')}  {'(quick)' if a.quick else '(full)'}")
-    say(f"python {platform.python_version()} ({platform.python_implementation()}), {platform.platform()}, "
-        f"{os.cpu_count()} logical CPUs")
-    for mod in ("sympy", "flint"):
-        try:
-            m = __import__(mod)
-            say(f"  {mod} {getattr(m, '__version__', '?')}")
-        except ImportError:
-            say(f"  {mod}: NOT INSTALLED" + ("" if a.quick else "  (needed for Theorem A)"))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--log", type=Path, default=ROOT/"reproduce.log")
+    args = parser.parse_args()
+    log = args.log.resolve()
+    # Never overwrite an input or the supplied frozen transcript.
+    need(log.suffix == ".log" and log.name not in {"reproduce_extracted.log", "validation.log"},
+         "Choose a new .log filename, not an archived transcript")
+    lines = []
+    def emit(text):
+        print(text)
+        lines.append(text)
+    started = time.monotonic()
+    passed = 0
     try:
-        commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
-        dirty = subprocess.run(["git", "status", "--porcelain", "--untracked-files=no"], cwd=ROOT,
-                               capture_output=True, text=True).stdout.strip()
-        say(f"git commit {commit or '?'}{' (with local modifications)' if dirty else ''}")
-    except OSError:
-        say("git: not available")
-
-    results = []
-    # 1. checksums
-    say("\n== SHA-256 of certificate files and trusted code (CHECKSUMS.sha256)")
-    ok_hash = True
-    with open(CHECKSUMS, encoding="ascii") as fh:
-        listed = [line.split() for line in fh if line.strip()]
-    for digest, rel in listed:
-        if not os.path.exists(os.path.join(ROOT, rel)):
-            say(f"  MISSING  {rel}")
-            ok_hash = False
-            continue
-        got = sha256(rel)
-        say(f"  {'ok      ' if got == digest else 'MISMATCH'} {got[:16]}...  {rel}")
-        ok_hash &= got == digest
-    if {rel for _, rel in listed} != set(CERTIFICATES + TRUSTED_CODE):
-        say("  the list of files in CHECKSUMS.sha256 is not the expected one")
-        ok_hash = False
-    results.append(("SHA-256 checksums", ok_hash, 0.0))
-
-    # 2.-4. verifiers
-    todo = (steps(a.quick, a.workers) + (tests() if a.with_tests else [])
-            + (audit_steps(a.quick, a.workers) if a.with_audit else []))
-    env = dict(os.environ, OMP_NUM_THREADS="1", PYTHONIOENCODING="utf-8")
-    for title, cmd in todo:
-        say(f"\n== {title}\n$ {' '.join(['python'] + cmd[1:])}")
-        t0 = time.time()
-        p = subprocess.run(cmd, cwd=ROOT, env=env, capture_output=True, text=True, encoding="utf-8",
-                           errors="replace")
-        dt = time.time() - t0
-        lines = (p.stdout + p.stderr).rstrip().splitlines()
-        for line in lines[-12:] if len(lines) > 12 else lines:
-            say("  | " + line)
-        say(f"  -> exit status {p.returncode}  [{dt:.1f}s]")
-        results.append((title, p.returncode == 0, dt))
-
-    say("\n== SUMMARY")
-    for title, ok, dt in results:
-        say(f"  {'PASS' if ok else 'FAIL'}  {title}  [{dt:.0f}s]")
-    all_ok = all(ok for _, ok, _ in results)
-    say(f"\n{'ALL STEPS PASSED' if all_ok else 'SOME STEPS FAILED'}"
-        f"{' (quick mode: V = 8 and Theorem A skipped)' if a.quick else ''}; total {time.time() - t_start:.0f}s")
-    log.close()
-    return 0 if all_ok else 1
+        emit("Fourteen-vertex construction: version 1.0")
+        emit("Python "+platform.python_version()+"; "+platform.system()+"; standard-library verification")
+        emit("PASS 1/8: integrity of "+str(integrity())+" archived files (LF-normalized text)")
+        passed += 1
+        with tempfile.TemporaryDirectory(prefix="mono14-") as temp:
+            temp = Path(temp)
+            commands = [
+                ("short integer existence proof", ["examples/V14_short_check.py"]),
+                ("rational hull and complete equilibrium classification",
+                 ["verify/exact_verify.py", "examples/V14_integer.json", "--report", str(temp/"exact.json")]),
+                ("independent integer hull, equilibrium census and contraction family",
+                 ["verify/check_c.py", "--report", str(temp/"family.json")]),
+            ]
+            for label, command in commands:
+                proc = subprocess.run([sys.executable, "-I", "-S", "-B", *command], cwd=ROOT,
+                                      capture_output=True, text=True, encoding="utf-8")
+                # Keep transcripts portable and free of temporary absolute paths.
+                output = (proc.stdout+proc.stderr).replace(str(temp), "<temporary>")
+                emit(output.rstrip())
+                need(proc.returncode == 0, label+" failed")
+                passed += 1
+                emit(f"PASS {passed}/8: {label}")
+            for generated, stored in [("exact.json", "V14_exact_report.json"), ("family.json", "V14_family_report.json")]:
+                actual = json.loads((temp/generated).read_text(encoding="utf-8"))
+                expected = json.loads((ROOT/"examples"/stored).read_text(encoding="utf-8"))
+                need(actual == expected, "Regenerated report differs: "+stored)
+                passed += 1
+                emit(f"PASS {passed}/8: regenerated {stored} agrees")
+            for mode in ("tables", "ledger"):
+                proc = subprocess.run([sys.executable, "-I", "-S", "-B", "verify/check_manuscript.py", mode],
+                                      cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+                emit((proc.stdout+proc.stderr).rstrip())
+                need(proc.returncode == 0, "Manuscript "+mode+" mismatch")
+                passed += 1
+                emit(f"PASS {passed}/8: manuscript {mode}")
+        emit(f"SUCCESS: {passed}/8 checks in {time.monotonic()-started:.3f} seconds.")
+        return 0
+    except (OSError, ValueError) as exc:
+        emit(f"FAILED after {passed}/8 checks: {exc}")
+        return 1
+    finally:
+        log.write_text("\n".join(lines)+"\n", encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    raise SystemExit(main())
