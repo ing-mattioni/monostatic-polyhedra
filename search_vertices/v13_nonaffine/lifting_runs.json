@@ -1,0 +1,961 @@
+{
+ "control": 0.009223609297249497,
+ "runs": [
+  {
+   "seed": 0,
+   "left": 6,
+   "programs": 295,
+   "score": -0.020282889650717333,
+   "flat_lp": -0.02028651170526473,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 1,
+   "left": 5,
+   "programs": 310,
+   "score": -0.02375222321786108,
+   "flat_lp": -0.023935419051681114,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 2,
+   "left": 7,
+   "programs": 246,
+   "score": -0.013419768971563408,
+   "flat_lp": -0.01346486365644466,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 3,
+   "left": 4,
+   "programs": 403,
+   "score": -0.027454996924445828,
+   "flat_lp": -0.027506372623136682,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 4,
+   "left": 8,
+   "programs": 263,
+   "score": -0.021573621639116906,
+   "flat_lp": -0.021666927442371774,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 5,
+   "programs": 0
+  },
+  {
+   "seed": 6,
+   "programs": 0
+  },
+  {
+   "seed": 7,
+   "left": 6,
+   "programs": 310,
+   "score": -0.009698115765071166,
+   "flat_lp": -0.009699091492001032,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 8,
+   "left": 5,
+   "programs": 218,
+   "score": -0.010341860402995326,
+   "flat_lp": -0.010342000582241441,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 9,
+   "left": 7,
+   "programs": 442,
+   "score": -0.024877822585849432,
+   "flat_lp": -0.025063117444437143,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 10,
+   "left": 4,
+   "programs": 413,
+   "score": -0.029590098635962132,
+   "flat_lp": -0.02977350554012934,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 11,
+   "left": 8,
+   "programs": 438,
+   "score": -0.04419894512727848,
+   "flat_lp": -0.04473234379996831,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 12,
+   "programs": 0
+  },
+  {
+   "seed": 13,
+   "programs": 0
+  },
+  {
+   "seed": 14,
+   "left": 6,
+   "programs": 215,
+   "score": -0.009307872178326921,
+   "flat_lp": -0.009334991747456847,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 15,
+   "left": 5,
+   "programs": 306,
+   "score": -0.013152959017922836,
+   "flat_lp": -0.013196852067482716,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 16,
+   "left": 7,
+   "programs": 335,
+   "score": -0.02961062475417925,
+   "flat_lp": -0.029832864339619125,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 17,
+   "left": 4,
+   "programs": 416,
+   "score": -0.01801207184025276,
+   "flat_lp": -0.01806646060306663,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 18,
+   "left": 8,
+   "programs": 351,
+   "score": -0.02453933902058808,
+   "flat_lp": -0.024688725854482653,
+   "counts": [
+    2,
+    12,
+    12
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 19,
+   "programs": 0
+  },
+  {
+   "seed": 20,
+   "programs": 0
+  },
+  {
+   "seed": 21,
+   "left": 6,
+   "programs": 306,
+   "score": -0.02026709379523322,
+   "flat_lp": -0.020271327540535004,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 22,
+   "left": 5,
+   "programs": 294,
+   "score": -0.01024281580608471,
+   "flat_lp": -0.010252869101719842,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 23,
+   "left": 7,
+   "programs": 299,
+   "score": -0.01129037867145746,
+   "flat_lp": -0.011329005346187698,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 24,
+   "left": 4,
+   "programs": 291,
+   "score": -0.014566117475894695,
+   "flat_lp": -0.01462830019035144,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 25,
+   "left": 8,
+   "programs": 334,
+   "score": -0.016182012162565686,
+   "flat_lp": -0.016192830346141378,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 26,
+   "programs": 0
+  },
+  {
+   "seed": 27,
+   "left": 9,
+   "programs": 468,
+   "score": -0.07214226527604671,
+   "flat_lp": -0.07233086011199569,
+   "counts": [
+    2,
+    12,
+    12
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 28,
+   "left": 6,
+   "programs": 358,
+   "score": -0.020171460988847457,
+   "flat_lp": -0.020175029931649924,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 29,
+   "left": 5,
+   "programs": 288,
+   "score": -0.01088329293427789,
+   "flat_lp": -0.010883359672775806,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 30,
+   "left": 7,
+   "programs": 380,
+   "score": -0.022202555651098955,
+   "flat_lp": -0.022375980698737225,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 31,
+   "programs": 0
+  },
+  {
+   "seed": 32,
+   "left": 8,
+   "programs": 258,
+   "score": -0.026784913518186123,
+   "flat_lp": -0.02698333096030006,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 33,
+   "programs": 0
+  },
+  {
+   "seed": 34,
+   "programs": 0
+  },
+  {
+   "seed": 35,
+   "left": 6,
+   "programs": 288,
+   "score": -0.00991254428198268,
+   "flat_lp": -0.009912592106665508,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 36,
+   "programs": 0
+  },
+  {
+   "seed": 37,
+   "left": 7,
+   "programs": 274,
+   "score": -0.01183931425531846,
+   "flat_lp": -0.011878300632355773,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 38,
+   "programs": 0
+  },
+  {
+   "seed": 39,
+   "left": 8,
+   "programs": 271,
+   "score": -0.015494239665887264,
+   "flat_lp": -0.0154954024595238,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 40,
+   "programs": 0
+  },
+  {
+   "seed": 41,
+   "programs": 0
+  },
+  {
+   "seed": 42,
+   "left": 6,
+   "programs": 311,
+   "score": -0.011231466800631772,
+   "flat_lp": -0.011244799900844144,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 43,
+   "left": 5,
+   "programs": 204,
+   "score": -0.010345364654720267,
+   "flat_lp": -0.010345357205700723,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 44,
+   "left": 7,
+   "programs": 236,
+   "score": -0.024603374379074935,
+   "flat_lp": -0.024811524043058402,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 45,
+   "left": 4,
+   "programs": 364,
+   "score": -0.02465778837840997,
+   "flat_lp": -0.024809456804606618,
+   "counts": [
+    2,
+    12,
+    12
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 46,
+   "left": 8,
+   "programs": 414,
+   "score": -0.027503823048889067,
+   "flat_lp": -0.027514908284454655,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 47,
+   "programs": 0
+  },
+  {
+   "seed": 48,
+   "left": 9,
+   "programs": 458,
+   "score": -0.0577882546129615,
+   "flat_lp": -0.05840706839603822,
+   "counts": [
+    2,
+    12,
+    12
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 49,
+   "left": 6,
+   "programs": 239,
+   "score": -0.02010357069216819,
+   "flat_lp": -0.02010764405872947,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 50,
+   "left": 5,
+   "programs": 332,
+   "score": -0.011108044995319465,
+   "flat_lp": -0.011147327120011886,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 51,
+   "left": 7,
+   "programs": 274,
+   "score": -0.012129270359923115,
+   "flat_lp": -0.01217131461042766,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 52,
+   "left": 4,
+   "programs": 485,
+   "score": -0.032050844972790274,
+   "flat_lp": -0.032234633486756606,
+   "counts": [
+    2,
+    12,
+    12
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 53,
+   "left": 8,
+   "programs": 398,
+   "score": -0.03487857414800573,
+   "flat_lp": -0.03524353987005579,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 54,
+   "left": 3,
+   "programs": 336,
+   "score": -0.03105305925402346,
+   "flat_lp": -0.031104759272528565,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 55,
+   "left": 9,
+   "programs": 259,
+   "score": -0.04822267380432433,
+   "flat_lp": -0.048621399686672666,
+   "counts": [
+    2,
+    12,
+    12
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 56,
+   "left": 6,
+   "programs": 216,
+   "score": -0.009394738673199994,
+   "flat_lp": -0.009419249095569623,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 57,
+   "left": 5,
+   "programs": 287,
+   "score": -0.01277634041168323,
+   "flat_lp": -0.01281837361205793,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 58,
+   "left": 7,
+   "programs": 343,
+   "score": -0.023961474697810365,
+   "flat_lp": -0.024150487833880435,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 59,
+   "programs": 0
+  },
+  {
+   "seed": 60,
+   "left": 8,
+   "programs": 261,
+   "score": -0.016507107105890255,
+   "flat_lp": -0.016535162240501847,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 61,
+   "programs": 0
+  },
+  {
+   "seed": 62,
+   "left": 9,
+   "programs": 319,
+   "score": -0.033334964591984685,
+   "flat_lp": -0.0333846295788741,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 63,
+   "left": 6,
+   "programs": 216,
+   "score": -0.00968150053147108,
+   "flat_lp": -0.009709843753092248,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 64,
+   "left": 5,
+   "programs": 272,
+   "score": -0.015578272210968878,
+   "flat_lp": -0.015640607720624315,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 65,
+   "left": 7,
+   "programs": 327,
+   "score": -0.023427384613638004,
+   "flat_lp": -0.023603219658350678,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 66,
+   "programs": 0
+  },
+  {
+   "seed": 67,
+   "left": 8,
+   "programs": 306,
+   "score": -0.021770974677216188,
+   "flat_lp": -0.02185877954616261,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 68,
+   "programs": 0
+  },
+  {
+   "seed": 69,
+   "left": 9,
+   "programs": 270,
+   "score": -0.05184510352150709,
+   "flat_lp": -0.05246861030977368,
+   "counts": [
+    2,
+    12,
+    12
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 70,
+   "left": 6,
+   "programs": 215,
+   "score": -0.009348032837802884,
+   "flat_lp": -0.009372450745130196,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 71,
+   "left": 5,
+   "programs": 251,
+   "score": -0.011664207285065809,
+   "flat_lp": -0.011664715856144542,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 72,
+   "left": 7,
+   "programs": 254,
+   "score": -0.011293616354302037,
+   "flat_lp": -0.011332206265156693,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 73,
+   "left": 4,
+   "programs": 551,
+   "score": -0.018986776651910602,
+   "flat_lp": -0.01905720767018376,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 74,
+   "left": 8,
+   "programs": 301,
+   "score": -0.016874742023157488,
+   "flat_lp": -0.01692121330700106,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 75,
+   "left": 3,
+   "programs": 321,
+   "score": -0.039000141017432495,
+   "flat_lp": -0.03937841505614064,
+   "counts": [
+    2,
+    12,
+    12
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 76,
+   "left": 9,
+   "programs": 312,
+   "score": -0.05138461152013809,
+   "flat_lp": -0.05198868612809009,
+   "counts": [
+    2,
+    12,
+    12
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 77,
+   "left": 6,
+   "programs": 216,
+   "score": -0.010007389829165523,
+   "flat_lp": -0.010035930046463595,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 78,
+   "left": 5,
+   "programs": 316,
+   "score": -0.01127529350057737,
+   "flat_lp": -0.011312628931268238,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 79,
+   "left": 7,
+   "programs": 341,
+   "score": -0.011248052766140777,
+   "flat_lp": -0.011285363735592215,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 80,
+   "left": 4,
+   "programs": 317,
+   "score": -0.042675672225381836,
+   "flat_lp": -0.04311193797179662,
+   "counts": [
+    2,
+    13,
+    13
+   ],
+   "verts": 13,
+   "certified": true
+  },
+  {
+   "seed": 81,
+   "programs": 0
+  },
+  {
+   "seed": 82,
+   "programs": 0
+  },
+  {
+   "seed": 83,
+   "programs": 0
+  }
+ ]
+}

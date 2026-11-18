@@ -1,0 +1,2365 @@
+[
+ {
+  "seed": 0,
+  "family": "pair",
+  "initial": [
+   11,
+   -0.039056762522020116
+  ],
+  "score": -0.020546634463160043,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 1,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.04741856174016847
+  ],
+  "score": -0.21252370980823979,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 2,
+  "family": "pair",
+  "initial": [
+   99,
+   -3.0
+  ],
+  "score": -0.02455067469553267,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 3,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.1011815200829821
+  ],
+  "score": -0.026627726580158512,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 10
+ },
+ {
+  "seed": 4,
+  "family": "pair",
+  "initial": [
+   99,
+   -3.0
+  ],
+  "score": -0.026929001869683424,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 5,
+  "family": "pair",
+  "initial": [
+   7,
+   -0.01043031725560252
+  ],
+  "score": -0.020574611605124818,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 6,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.04275868182781815
+  ],
+  "score": -0.020641907930012072,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 8
+ },
+ {
+  "seed": 7,
+  "family": "pair",
+  "initial": [
+   8,
+   -0.07775998153206068
+  ],
+  "score": -0.03239341084432114,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 8,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.08756786719116173
+  ],
+  "score": -0.08093008705432249,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 9,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.09921899484665747
+  ],
+  "score": -0.024488921079783343,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 10,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.08631340165518635
+  ],
+  "score": -0.021943855353293257,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 10
+ },
+ {
+  "seed": 11,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.0371094031130155
+  ],
+  "score": -0.021570700528626727,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 10
+ },
+ {
+  "seed": 12,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.030017780662084565
+  ],
+  "score": -0.021323442589398632,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 13,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.013874919368700212
+  ],
+  "score": -0.027151793924520107,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 14,
+  "family": "pair",
+  "initial": [
+   5,
+   -0.06906888121827076
+  ],
+  "score": -0.02102341511493825,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 15,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.09607521505533981
+  ],
+  "score": -0.023935001603614236,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 16,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.08332122728676077
+  ],
+  "score": -0.024061328591653403,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 17,
+  "family": "pair",
+  "initial": [
+   12,
+   -0.047133975444281835
+  ],
+  "score": -0.13911188610600694,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 13
+ },
+ {
+  "seed": 18,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.04314153912454176
+  ],
+  "score": -0.1318990149493817,
+  "counts": [
+   2,
+   8,
+   8
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 19,
+  "family": "pair",
+  "initial": [
+   12,
+   -0.11010095472985748
+  ],
+  "score": -0.23033934898412936,
+  "counts": [
+   2,
+   10,
+   10
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 20,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.08455502883530666
+  ],
+  "score": -0.027233985968583528,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 21,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.08407158900651966
+  ],
+  "score": -0.026013825563795508,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 22,
+  "family": "pair",
+  "initial": [
+   5,
+   -0.10415393581746024
+  ],
+  "score": -0.039242086192152165,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 12,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 23,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.09308853137327877
+  ],
+  "score": -0.023902552862038913,
+  "counts": [
+   3,
+   3,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 8
+ },
+ {
+  "seed": 24,
+  "family": "pair",
+  "initial": [
+   99,
+   -3.0
+  ],
+  "score": -0.027361450940385116,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 25,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.01491425831710312
+  ],
+  "score": -0.029743638831233935,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 26,
+  "family": "pair",
+  "initial": [
+   8,
+   -0.0677970081341418
+  ],
+  "score": -0.026822556329557146,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 27,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.08630767231201365
+  ],
+  "score": -0.024048929120296263,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 28,
+  "family": "pair",
+  "initial": [
+   12,
+   -0.04661577479822425
+  ],
+  "score": -0.026225303944462163,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 29,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.04813299344228324
+  ],
+  "score": -0.02052836145214642,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 30,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.11393453135292052
+  ],
+  "score": -0.0474338368953062,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 31,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.0843202113362227
+  ],
+  "score": -0.024228030651472606,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 8
+ },
+ {
+  "seed": 32,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.07711869131989016
+  ],
+  "score": -0.027718081834533073,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 33,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.08315868584812636
+  ],
+  "score": -0.024068348479431224,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 34,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.07983710775536203
+  ],
+  "score": -0.024407022540231856,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 35,
+  "family": "pair",
+  "initial": [
+   99,
+   -3.0
+  ],
+  "score": -0.03324687467006693,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 36,
+  "family": "pair",
+  "initial": [
+   8,
+   -0.015821594336481174
+  ],
+  "score": -0.016514083149451096,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 1
+ },
+ {
+  "seed": 37,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.07807328166015118
+  ],
+  "score": -0.024019185910473955,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 38,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.043359811209753636
+  ],
+  "score": -0.18022694398532627,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 39,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.046330347187413946
+  ],
+  "score": -0.02823611287609865,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 40,
+  "family": "pair",
+  "initial": [
+   99,
+   -3.0
+  ],
+  "score": -0.024921335485171694,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 9
+ },
+ {
+  "seed": 41,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.08105264149992257
+  ],
+  "score": -0.02916183239142126,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 42,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.08299627297008433
+  ],
+  "score": -0.02409300642584664,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 8
+ },
+ {
+  "seed": 43,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.08843381219288197
+  ],
+  "score": -0.02409945332272617,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 44,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.08942425411828692
+  ],
+  "score": -0.02781444489716458,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 45,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.07475738825125869
+  ],
+  "score": -0.024059458529907252,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 8
+ },
+ {
+  "seed": 46,
+  "family": "pair",
+  "initial": [
+   11,
+   -0.07431264513059001
+  ],
+  "score": -0.020990672188829263,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 47,
+  "family": "pair",
+  "initial": [
+   11,
+   -0.01721031563633614
+  ],
+  "score": -0.03527461226829679,
+  "counts": [
+   2,
+   8,
+   8
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 48,
+  "family": "pair",
+  "initial": [
+   99,
+   -3.0
+  ],
+  "score": -0.1683406938805379,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 49,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.10685690364860698
+  ],
+  "score": -0.025792047301547764,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 50,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.08284268063868905
+  ],
+  "score": -0.02400900671860572,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 51,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.07931072969068323
+  ],
+  "score": -0.025855581106533874,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 52,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.07974732079036084
+  ],
+  "score": -0.02405633367697426,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 53,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.07689306533486073
+  ],
+  "score": -0.02791229197656367,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 54,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.07555782026839142
+  ],
+  "score": -0.026434485180652886,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 55,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.04107826674315363
+  ],
+  "score": -0.021923951094127446,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 56,
+  "family": "pair",
+  "initial": [
+   12,
+   -0.021082935984802646
+  ],
+  "score": -0.022657134944964675,
+  "counts": [
+   4,
+   12,
+   10
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 1
+ },
+ {
+  "seed": 57,
+  "family": "pair",
+  "initial": [
+   7,
+   -0.12377990304364772
+  ],
+  "score": -0.02408114229439852,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 9
+ },
+ {
+  "seed": 58,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.08239636675086459
+  ],
+  "score": -0.02901459761370494,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 59,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.07461163659347855
+  ],
+  "score": -0.027748846201733728,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 60,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.07411725582785697
+  ],
+  "score": -0.029970566153047332,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 61,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.07232363176410232
+  ],
+  "score": -0.02922066554240661,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 62,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.07840140098929527
+  ],
+  "score": -0.04998704748087284,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 63,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.04741669269424689
+  ],
+  "score": -0.025783297937606458,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 64,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.03546569412086664
+  ],
+  "score": -0.020743147569293983,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 65,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.042823433018725196
+  ],
+  "score": -0.1649146479945543,
+  "counts": [
+   2,
+   9,
+   9
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 66,
+  "family": "pair",
+  "initial": [
+   11,
+   -0.03908491089294716
+  ],
+  "score": -0.03060008198114258,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 67,
+  "family": "pair",
+  "initial": [
+   12,
+   -0.04725707485870794
+  ],
+  "score": -0.19966148429982483,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 11
+ },
+ {
+  "seed": 68,
+  "family": "pair",
+  "initial": [
+   12,
+   -0.04623220837674672
+  ],
+  "score": -0.16744770263861383,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 11
+ },
+ {
+  "seed": 69,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.041719576693671136
+  ],
+  "score": -0.0214573505931409,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 70,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.04064556483847312
+  ],
+  "score": -0.025237084120627983,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 71,
+  "family": "pair",
+  "initial": [
+   11,
+   -0.03215913861139422
+  ],
+  "score": -0.138760780341403,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 1
+ },
+ {
+  "seed": 72,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.05003096704955708
+  ],
+  "score": -0.02042266554461114,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 73,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.047278756977154855
+  ],
+  "score": -0.026698665044364855,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 74,
+  "family": "pair",
+  "initial": [
+   12,
+   -0.047376157843811564
+  ],
+  "score": -0.020275612313797403,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 75,
+  "family": "pair",
+  "initial": [
+   13,
+   -0.04959918925642826
+  ],
+  "score": -0.026873763960241197,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 10
+ },
+ {
+  "seed": 76,
+  "family": "pair",
+  "initial": [
+   11,
+   -0.055280487640975005
+  ],
+  "score": -0.14897314909232795,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 11
+ },
+ {
+  "seed": 77,
+  "family": "pair",
+  "initial": [
+   11,
+   -0.05119430462406824
+  ],
+  "score": -0.05119430462406824,
+  "counts": [
+   2,
+   11,
+   11
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 0
+ },
+ {
+  "seed": 78,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.0910936075980487
+  ],
+  "score": -0.026575232362676268,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 79,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.09266366189253339
+  ],
+  "score": -0.026326809778507453,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 80,
+  "family": "pair",
+  "initial": [
+   99,
+   -3.0
+  ],
+  "score": -0.024003860643981627,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 8
+ },
+ {
+  "seed": 81,
+  "family": "pair",
+  "initial": [
+   8,
+   -0.018834420091687107
+  ],
+  "score": -0.04253945983981788,
+  "counts": [
+   3,
+   3,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 82,
+  "family": "pair",
+  "initial": [
+   9,
+   -0.05771667980854082
+  ],
+  "score": -0.021081658384496403,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 12
+ },
+ {
+  "seed": 83,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.08004923459034335
+  ],
+  "score": -0.025761461705592226,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 9
+ },
+ {
+  "seed": 84,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.10082760189089474
+  ],
+  "score": -0.021875341681169648,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 11
+ },
+ {
+  "seed": 85,
+  "family": "pair",
+  "initial": [
+   5,
+   -0.07974767255375075
+  ],
+  "score": -0.13505970679439816,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 12
+ },
+ {
+  "seed": 86,
+  "family": "pair",
+  "initial": [
+   4,
+   -0.0801824272329379
+  ],
+  "score": -0.07703098604308178,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 87,
+  "family": "pair",
+  "initial": [
+   99,
+   -3.0
+  ],
+  "score": -0.057777383885864134,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 88,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.08336119159809695
+  ],
+  "score": -0.02275117786208767,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 9
+ },
+ {
+  "seed": 89,
+  "family": "pair",
+  "initial": [
+   3,
+   -0.07478464872416751
+  ],
+  "score": -0.025356869780108093,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 90,
+  "family": "pair",
+  "initial": [
+   12,
+   -0.05809553104357395
+  ],
+  "score": -0.023923632604088987,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 91,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028222596522107957,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 92,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.02813261125314312,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 93,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481829505340333,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 94,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028222596216616293,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 95,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.028132612689418197,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 96,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481509830297381,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 97,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028224767345468266,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 98,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.028143650435186972,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 99,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007482009169879732,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 100,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028222596082708377,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 101,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.028132479384949716,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 102,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007483167448969496,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 1
+ },
+ {
+  "seed": 103,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028230484647735664,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 104,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.02814563584398888,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 105,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481772521845218,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 106,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028222596149336285,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 107,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.02814721334893813,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 108,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481472186695136,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 109,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.02823032232696542,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 110,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.02814370049029414,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 111,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481544910910583,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 112,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.0282295978645525,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 113,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.02807125046440821,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 10
+ },
+ {
+  "seed": 114,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007483102662016065,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 115,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028213646170038686,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 116,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.028132207649850378,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 5
+ },
+ {
+  "seed": 117,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481732094872694,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 118,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028222594046884635,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 119,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.02814498710359846,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 120,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481975221359872,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 121,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028223732994529765,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 122,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.028166884749441904,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 123,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.019684421784792544,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 124,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028232424598624115,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 6
+ },
+ {
+  "seed": 125,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.028135492280537557,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 8
+ },
+ {
+  "seed": 126,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.0074818264158440775,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 127,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028222596406761905,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 128,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.02809914183099928,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 129,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481732104457302,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 130,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028222592307936084,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 131,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.028146809441679233,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 7
+ },
+ {
+  "seed": 132,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007482264317382967,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 2
+ },
+ {
+  "seed": 133,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.028226511650474684,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 134,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.028139430836776648,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 9
+ },
+ {
+  "seed": 135,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481430264960514,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 136,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.02843264283688809
+  ],
+  "score": -0.02822651153744758,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ },
+ {
+  "seed": 137,
+  "family": "sweeps",
+  "initial": [
+   2,
+   -0.04927965301583802
+  ],
+  "score": -0.02814424536618913,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 4
+ },
+ {
+  "seed": 138,
+  "family": "sweeps",
+  "initial": [
+   13,
+   -0.007484683933100172
+  ],
+  "score": -0.007481975221351907,
+  "counts": [
+   2,
+   13,
+   13
+  ],
+  "vertices": 13,
+  "certified": true,
+  "changed": 3
+ }
+]

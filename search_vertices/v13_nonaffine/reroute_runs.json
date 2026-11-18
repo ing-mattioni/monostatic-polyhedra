@@ -1,0 +1,1562 @@
+[
+ {
+  "seed": 0,
+  "counts": [
+   2,
+   4,
+   4
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.5547962477906372
+ },
+ {
+  "seed": 1,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.6321801768270319
+ },
+ {
+  "seed": 2,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07306802128338508
+ },
+ {
+  "seed": 3,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.026540970777969734
+ },
+ {
+  "seed": 4,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.1475899883489596
+ },
+ {
+  "seed": 5,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07343750755040991
+ },
+ {
+  "seed": 6,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.09177885379543868
+ },
+ {
+  "seed": 7,
+  "counts": [
+   2,
+   10,
+   10
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.12796059763641232
+ },
+ {
+  "seed": 8,
+  "counts": [
+   2,
+   11,
+   11
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.37480040447920254
+ },
+ {
+  "seed": 9,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.0913463160631619
+ },
+ {
+  "seed": 10,
+  "counts": [
+   2,
+   12,
+   12
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.029581215684946892
+ },
+ {
+  "seed": 11,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.23160119479135172
+ },
+ {
+  "seed": 12,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.14752047101502652
+ },
+ {
+  "seed": 13,
+  "counts": [
+   2,
+   11,
+   11
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.09782319930712197
+ },
+ {
+  "seed": 14,
+  "counts": [
+   2,
+   9,
+   9
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.41625030892290843
+ },
+ {
+  "seed": 15,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.7528279978346571
+ },
+ {
+  "seed": 16,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4485137220098131
+ },
+ {
+  "seed": 17,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.44899198063309215
+ },
+ {
+  "seed": 18
+ },
+ {
+  "seed": 19,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.44909120654327767
+ },
+ {
+  "seed": 20,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.22707507997151008
+ },
+ {
+  "seed": 21,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.5404707854377193
+ },
+ {
+  "seed": 22,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4577904051717809
+ },
+ {
+  "seed": 23,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.08739886378084738
+ },
+ {
+  "seed": 24,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.11653790764315951
+ },
+ {
+  "seed": 25,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.0740612809881903
+ },
+ {
+  "seed": 26,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.6175270248364743
+ },
+ {
+  "seed": 27,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.026540970777969734
+ },
+ {
+  "seed": 28,
+  "counts": [
+   3,
+   3,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.41538425205159835
+ },
+ {
+  "seed": 29,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.02968873601956485
+ },
+ {
+  "seed": 30,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.02617460369205618
+ },
+ {
+  "seed": 31,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07333562707089458
+ },
+ {
+  "seed": 32,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.10672784785625301
+ },
+ {
+  "seed": 33,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.0913463160631619
+ },
+ {
+  "seed": 34,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.5665776894760594
+ },
+ {
+  "seed": 35,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.21604399649691383
+ },
+ {
+  "seed": 36,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3550289120578778
+ },
+ {
+  "seed": 37,
+  "counts": [
+   2,
+   8,
+   8
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3411118888816898
+ },
+ {
+  "seed": 38,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.7779694534000863
+ },
+ {
+  "seed": 39,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3612177233730182
+ },
+ {
+  "seed": 40,
+  "counts": [
+   2,
+   4,
+   4
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.38082204841975487
+ },
+ {
+  "seed": 41,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07478480747252607
+ },
+ {
+  "seed": 42,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.5267823948743401
+ },
+ {
+  "seed": 43,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.24015966346810802
+ },
+ {
+  "seed": 44,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.22447648488731514
+ },
+ {
+  "seed": 45,
+  "counts": [
+   2,
+   5,
+   5
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3266237642271528
+ },
+ {
+  "seed": 46,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.39796691571118975
+ },
+ {
+  "seed": 47,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.6878851667072151
+ },
+ {
+  "seed": 48,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.36951631510380967
+ },
+ {
+  "seed": 49,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.088831340493184
+ },
+ {
+  "seed": 50,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3200211034532267
+ },
+ {
+  "seed": 51,
+  "counts": [
+   2,
+   8,
+   8
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.25891822518516605
+ },
+ {
+  "seed": 52,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07573003988642836
+ },
+ {
+  "seed": 53,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.2350192134706848
+ },
+ {
+  "seed": 54,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.09177885379543868
+ },
+ {
+  "seed": 55,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.559115339075581
+ },
+ {
+  "seed": 56,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.707529884712493
+ },
+ {
+  "seed": 57,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.0913463160631619
+ },
+ {
+  "seed": 58,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.23366611334955023
+ },
+ {
+  "seed": 59,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.448564804754641
+ },
+ {
+  "seed": 60,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.18900769305048107
+ },
+ {
+  "seed": 61,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.08736236632489587
+ },
+ {
+  "seed": 62,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.0731735310592716
+ },
+ {
+  "seed": 63,
+  "counts": [
+   2,
+   5,
+   5
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.5400729601887082
+ },
+ {
+  "seed": 64,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07574836363985289
+ },
+ {
+  "seed": 65,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.34048051857138384
+ },
+ {
+  "seed": 66,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.09177885379543868
+ },
+ {
+  "seed": 67,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.08775873914304504
+ },
+ {
+  "seed": 68,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.0787408696748415
+ },
+ {
+  "seed": 69
+ },
+ {
+  "seed": 70,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.445621110871021
+ },
+ {
+  "seed": 71,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4146180683895256
+ },
+ {
+  "seed": 72,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.25747197345093265
+ },
+ {
+  "seed": 73,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07564718611102353
+ },
+ {
+  "seed": 74,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.2127388932246707
+ },
+ {
+  "seed": 75,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.026540970777969734
+ },
+ {
+  "seed": 76,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.1774863225937796
+ },
+ {
+  "seed": 77,
+  "counts": [
+   2,
+   5,
+   5
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3975988881956682
+ },
+ {
+  "seed": 78,
+  "counts": [
+   2,
+   5,
+   5
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.27322336791126284
+ },
+ {
+  "seed": 79,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.20345581318942968
+ },
+ {
+  "seed": 80,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.37585761127517964
+ },
+ {
+  "seed": 81,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4247662196054797
+ },
+ {
+  "seed": 82,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.5721967637756371
+ },
+ {
+  "seed": 83,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.14752498363706168
+ },
+ {
+  "seed": 84,
+  "counts": [
+   2,
+   4,
+   4
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4505713323341701
+ },
+ {
+  "seed": 85,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.7841310528825822
+ },
+ {
+  "seed": 86,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.6886799904755305
+ },
+ {
+  "seed": 87,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.47063284398034066
+ },
+ {
+  "seed": 88,
+  "counts": [
+   2,
+   11,
+   11
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.0945019026648269
+ },
+ {
+  "seed": 89,
+  "counts": [
+   2,
+   4,
+   4
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.6233151786098188
+ },
+ {
+  "seed": 90,
+  "counts": [
+   2,
+   8,
+   8
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.20784611226743466
+ },
+ {
+  "seed": 91,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.6052350210517784
+ },
+ {
+  "seed": 92
+ },
+ {
+  "seed": 93,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4411555268369652
+ },
+ {
+  "seed": 94,
+  "counts": [
+   2,
+   10,
+   10
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.18115983461559446
+ },
+ {
+  "seed": 95,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.2771299243950432
+ },
+ {
+  "seed": 96,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.36951631510380967
+ },
+ {
+  "seed": 97,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.03018104590477998
+ },
+ {
+  "seed": 98,
+  "counts": [
+   2,
+   10,
+   10
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3790269755837946
+ },
+ {
+  "seed": 99,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.337801341554607
+ },
+ {
+  "seed": 100,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07515341317246997
+ },
+ {
+  "seed": 101,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.0882034936497229
+ },
+ {
+  "seed": 102,
+  "counts": [
+   2,
+   8,
+   8
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3724360229592643
+ },
+ {
+  "seed": 103,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.44874792283427073
+ },
+ {
+  "seed": 104,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07759179948230713
+ },
+ {
+  "seed": 105,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4287195802397044
+ },
+ {
+  "seed": 106,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4484508251193608
+ },
+ {
+  "seed": 107,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3531527682006649
+ },
+ {
+  "seed": 108,
+  "counts": [
+   2,
+   4,
+   4
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.6499263115843065
+ },
+ {
+  "seed": 109,
+  "counts": [
+   2,
+   12,
+   12
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07101631832346028
+ },
+ {
+  "seed": 110,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07616373478438818
+ },
+ {
+  "seed": 111,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.026540970777969734
+ },
+ {
+  "seed": 112,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.32424898139794944
+ },
+ {
+  "seed": 113,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4497509036520254
+ },
+ {
+  "seed": 114,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.5524195252353651
+ },
+ {
+  "seed": 115,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.22790730145245355
+ },
+ {
+  "seed": 116,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.45174303178841396
+ },
+ {
+  "seed": 117,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.0913463160631619
+ },
+ {
+  "seed": 118,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4484504317725432
+ },
+ {
+  "seed": 119,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4484804057594044
+ },
+ {
+  "seed": 120,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.43184528373279313
+ },
+ {
+  "seed": 121,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.19158441054656605
+ },
+ {
+  "seed": 122,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4493555518792128
+ },
+ {
+  "seed": 123,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4704633024611485
+ },
+ {
+  "seed": 124,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.38815716687914387
+ },
+ {
+  "seed": 125,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3681814369263027
+ },
+ {
+  "seed": 126,
+  "counts": [
+   2,
+   3,
+   3
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4923592271570352
+ },
+ {
+  "seed": 127,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.23456131975975753
+ },
+ {
+  "seed": 128,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.289639552612109
+ },
+ {
+  "seed": 129,
+  "counts": [
+   2,
+   4,
+   4
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.39119092279679696
+ },
+ {
+  "seed": 130,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.4536076747261811
+ },
+ {
+  "seed": 131,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.07302010982883966
+ },
+ {
+  "seed": 132,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.618463731305531
+ },
+ {
+  "seed": 133,
+  "counts": [
+   2,
+   8,
+   8
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.3009235548651961
+ },
+ {
+  "seed": 134,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.5255799581379188
+ },
+ {
+  "seed": 135,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.7602822044938488
+ },
+ {
+  "seed": 136,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.5467977347268379
+ },
+ {
+  "seed": 137,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.21690692242507975
+ },
+ {
+  "seed": 138,
+  "counts": [
+   2,
+   6,
+   6
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.6484901876684775
+ },
+ {
+  "seed": 139,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.33522324777809
+ },
+ {
+  "seed": 140,
+  "counts": [
+   2,
+   7,
+   7
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.2798405329184825
+ },
+ {
+  "seed": 141,
+  "counts": [
+   2,
+   8,
+   8
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.34376461423631327
+ },
+ {
+  "seed": 142,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.03601093750882306
+ },
+ {
+  "seed": 143,
+  "counts": [
+   2,
+   2,
+   2
+  ],
+  "vertices": 13,
+  "certified": true,
+  "score": -0.029886997925793815
+ }
+]

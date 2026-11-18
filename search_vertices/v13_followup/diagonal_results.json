@@ -1,0 +1,90 @@
+{
+  "control": {
+    "vertices": 14,
+    "volume": "30146277/2",
+    "possible_roots": [
+      {
+        "root": 0,
+        "weights": [
+          "32594861411131204009926652534856559878698299896752/82603339349900969187231765214715888377139108160495",
+          "10819076790698244298166185488722918074586166332411/27534446449966989729077255071571962792379702720165",
+          "1174968409961760540755642/5529881219256913765293429"
+        ],
+        "zero": 0,
+        "unstable": 1
+      }
+    ]
+  },
+  "deletions": [
+    {
+      "vertices": 13,
+      "volume": "80309807/6",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "14766710",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "29984941/2",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "29819469/2",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "44150633/3",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "82000619/6",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "13164805",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "40201169/3",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "13786899",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "43898351/3",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "44866642/3",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "45068513/3",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "90034849/6",
+      "possible_roots": []
+    },
+    {
+      "vertices": 13,
+      "volume": "88862635/6",
+      "possible_roots": []
+    }
+  ]
+}

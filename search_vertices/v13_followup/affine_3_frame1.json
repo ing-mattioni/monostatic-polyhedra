@@ -1,0 +1,11 @@
+{
+ "nodes": 1735,
+ "exact_leaves": 989,
+ "cycle_leaves": 585,
+ "unresolved": 0,
+ "feasible": [],
+ "excluded_roots": [
+  10,
+  11
+ ]
+}

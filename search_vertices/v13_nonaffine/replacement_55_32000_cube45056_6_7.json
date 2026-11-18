@@ -1,0 +1,16 @@
+[
+ {
+  "removed": [
+   6,
+   7
+  ],
+  "nodes": 5343,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 2672,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ }
+]

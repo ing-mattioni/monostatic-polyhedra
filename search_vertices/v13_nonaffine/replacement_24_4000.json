@@ -1,0 +1,1276 @@
+[
+ {
+  "removed": [
+   0,
+   1
+  ],
+  "nodes": 55,
+  "leaves": {
+   "outside": 6,
+   "inside12": 0,
+   "excluded": 22,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   2
+  ],
+  "nodes": 41,
+  "leaves": {
+   "outside": 3,
+   "inside12": 0,
+   "excluded": 18,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   3
+  ],
+  "nodes": 27,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 14,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   4
+  ],
+  "nodes": 31,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 16,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   5
+  ],
+  "nodes": 29,
+  "leaves": {
+   "outside": 1,
+   "inside12": 0,
+   "excluded": 14,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   6
+  ],
+  "nodes": 107,
+  "leaves": {
+   "outside": 17,
+   "inside12": 0,
+   "excluded": 37,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   7
+  ],
+  "nodes": 115,
+  "leaves": {
+   "outside": 17,
+   "inside12": 0,
+   "excluded": 41,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   8
+  ],
+  "nodes": 33,
+  "leaves": {
+   "outside": 3,
+   "inside12": 0,
+   "excluded": 14,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   9
+  ],
+  "nodes": 35,
+  "leaves": {
+   "outside": 2,
+   "inside12": 0,
+   "excluded": 16,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   10
+  ],
+  "nodes": 27,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 14,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   11
+  ],
+  "nodes": 39,
+  "leaves": {
+   "outside": 2,
+   "inside12": 0,
+   "excluded": 18,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   12
+  ],
+  "nodes": 43,
+  "leaves": {
+   "outside": 4,
+   "inside12": 0,
+   "excluded": 18,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   0,
+   13
+  ],
+  "nodes": 57,
+  "leaves": {
+   "outside": 5,
+   "inside12": 0,
+   "excluded": 24,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   2
+  ],
+  "nodes": 121,
+  "leaves": {
+   "outside": 17,
+   "inside12": 0,
+   "excluded": 44,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   3
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 1,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   4
+  ],
+  "nodes": 23,
+  "leaves": {
+   "outside": 1,
+   "inside12": 0,
+   "excluded": 11,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   5
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   6
+  ],
+  "nodes": 13,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 7,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   7
+  ],
+  "nodes": 9,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 5,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   8
+  ],
+  "nodes": 9,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 5,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   9
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   10
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   11
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   12
+  ],
+  "nodes": 23,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 12,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   1,
+   13
+  ],
+  "nodes": 27,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 14,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   3
+  ],
+  "nodes": 141,
+  "leaves": {
+   "outside": 8,
+   "inside12": 0,
+   "excluded": 63,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   4
+  ],
+  "nodes": 59,
+  "leaves": {
+   "outside": 3,
+   "inside12": 0,
+   "excluded": 27,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   5
+  ],
+  "nodes": 23,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 12,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   6
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 10,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   7
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   8
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   9
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 10,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   10
+  ],
+  "nodes": 13,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 7,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   11
+  ],
+  "nodes": 13,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 7,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   12
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 10,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   2,
+   13
+  ],
+  "nodes": 23,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 12,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   4
+  ],
+  "nodes": 229,
+  "leaves": {
+   "outside": 25,
+   "inside12": 0,
+   "excluded": 90,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   5
+  ],
+  "nodes": 63,
+  "leaves": {
+   "outside": 7,
+   "inside12": 0,
+   "excluded": 25,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   6
+  ],
+  "nodes": 49,
+  "leaves": {
+   "outside": 6,
+   "inside12": 0,
+   "excluded": 19,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   7
+  ],
+  "nodes": 43,
+  "leaves": {
+   "outside": 4,
+   "inside12": 0,
+   "excluded": 18,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   8
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   9
+  ],
+  "nodes": 15,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 8,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   10
+  ],
+  "nodes": 9,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 5,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   11
+  ],
+  "nodes": 9,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 5,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   12
+  ],
+  "nodes": 15,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 8,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   3,
+   13
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 10,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   4,
+   5
+  ],
+  "nodes": 137,
+  "leaves": {
+   "outside": 18,
+   "inside12": 0,
+   "excluded": 51,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   4,
+   6
+  ],
+  "nodes": 143,
+  "leaves": {
+   "outside": 23,
+   "inside12": 0,
+   "excluded": 49,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   4,
+   7
+  ],
+  "nodes": 71,
+  "leaves": {
+   "outside": 7,
+   "inside12": 0,
+   "excluded": 29,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   4,
+   8
+  ],
+  "nodes": 25,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 13,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   4,
+   9
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   4,
+   10
+  ],
+  "nodes": 11,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 6,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   4,
+   11
+  ],
+  "nodes": 11,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 6,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   4,
+   12
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   4,
+   13
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 10,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   5,
+   6
+  ],
+  "nodes": 85,
+  "leaves": {
+   "outside": 10,
+   "inside12": 0,
+   "excluded": 33,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   5,
+   7
+  ],
+  "nodes": 153,
+  "leaves": {
+   "outside": 22,
+   "inside12": 0,
+   "excluded": 55,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   5,
+   8
+  ],
+  "nodes": 33,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 17,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   5,
+   9
+  ],
+  "nodes": 25,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 13,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   5,
+   10
+  ],
+  "nodes": 21,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 11,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   5,
+   11
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   5,
+   12
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 10,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   5,
+   13
+  ],
+  "nodes": 11,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 6,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   6,
+   7
+  ],
+  "nodes": 59,
+  "leaves": {
+   "outside": 3,
+   "inside12": 0,
+   "excluded": 27,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   6,
+   8
+  ],
+  "nodes": 125,
+  "leaves": {
+   "outside": 8,
+   "inside12": 0,
+   "excluded": 55,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   6,
+   9
+  ],
+  "nodes": 49,
+  "leaves": {
+   "outside": 1,
+   "inside12": 0,
+   "excluded": 24,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   6,
+   10
+  ],
+  "nodes": 29,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 15,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   6,
+   11
+  ],
+  "nodes": 25,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 13,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   6,
+   12
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 10,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   6,
+   13
+  ],
+  "nodes": 9,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 5,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   7,
+   8
+  ],
+  "nodes": 75,
+  "leaves": {
+   "outside": 10,
+   "inside12": 0,
+   "excluded": 28,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   7,
+   9
+  ],
+  "nodes": 149,
+  "leaves": {
+   "outside": 26,
+   "inside12": 0,
+   "excluded": 49,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   7,
+   10
+  ],
+  "nodes": 71,
+  "leaves": {
+   "outside": 5,
+   "inside12": 0,
+   "excluded": 31,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   7,
+   11
+  ],
+  "nodes": 37,
+  "leaves": {
+   "outside": 2,
+   "inside12": 0,
+   "excluded": 17,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   7,
+   12
+  ],
+  "nodes": 17,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 9,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   7,
+   13
+  ],
+  "nodes": 9,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 5,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   8,
+   9
+  ],
+  "nodes": 111,
+  "leaves": {
+   "outside": 18,
+   "inside12": 0,
+   "excluded": 38,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   8,
+   10
+  ],
+  "nodes": 89,
+  "leaves": {
+   "outside": 11,
+   "inside12": 0,
+   "excluded": 34,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   8,
+   11
+  ],
+  "nodes": 47,
+  "leaves": {
+   "outside": 3,
+   "inside12": 0,
+   "excluded": 21,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   8,
+   12
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 10,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   8,
+   13
+  ],
+  "nodes": 11,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 6,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   9,
+   10
+  ],
+  "nodes": 225,
+  "leaves": {
+   "outside": 38,
+   "inside12": 0,
+   "excluded": 75,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   9,
+   11
+  ],
+  "nodes": 61,
+  "leaves": {
+   "outside": 6,
+   "inside12": 0,
+   "excluded": 25,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   9,
+   12
+  ],
+  "nodes": 25,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 13,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   9,
+   13
+  ],
+  "nodes": 21,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 11,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   10,
+   11
+  ],
+  "nodes": 181,
+  "leaves": {
+   "outside": 19,
+   "inside12": 0,
+   "excluded": 72,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   10,
+   12
+  ],
+  "nodes": 45,
+  "leaves": {
+   "outside": 2,
+   "inside12": 0,
+   "excluded": 21,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   10,
+   13
+  ],
+  "nodes": 21,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 11,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   11,
+   12
+  ],
+  "nodes": 121,
+  "leaves": {
+   "outside": 9,
+   "inside12": 0,
+   "excluded": 52,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   11,
+   13
+  ],
+  "nodes": 19,
+  "leaves": {
+   "outside": 0,
+   "inside12": 0,
+   "excluded": 10,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ },
+ {
+  "removed": [
+   12,
+   13
+  ],
+  "nodes": 139,
+  "leaves": {
+   "outside": 23,
+   "inside12": 0,
+   "excluded": 47,
+   "unresolved": 0
+  },
+  "first_unresolved": null
+ }
+]
