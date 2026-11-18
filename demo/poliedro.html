@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f5ef">
+<title>Quattordici vertici. Un solo instabile. · Claudio Mattioni</title>
+<style>
+:root{--paper:#f6f5ef;--panel:#fcfbf6;--ink:#19342f;--muted:#53665c;--rule:#cbd2c4;--green:#205c4f;--stage:#102e2d;--mint:#a6d9bc;--orange:#ad431f;--coral:#ff9867;--serif:"Instrument Serif","Baskerville",Georgia,serif;--sans:"DM Sans","Segoe UI",Arial,sans-serif;--mono:"IBM Plex Mono",Consolas,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font:15px/1.5 var(--sans)}button,input{font:inherit}button,a,input{touch-action:manipulation}button{cursor:pointer;color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,canvas:focus-visible{outline:3px solid #c26834;outline-offset:3px}a{color:inherit;text-underline-offset:.22em}button{border:0}button:disabled{cursor:default}button,summary,a{ -webkit-tap-highlight-color:transparent}.wrap{width:min(1344px,calc(100% - clamp(32px,8vw,136px)));margin:auto}header{border-bottom:1px solid var(--rule)}.bar{display:flex;justify-content:space-between;align-items:center;min-height:60px;gap:16px}.brand{display:flex;align-items:center;gap:11px;font-size:15px;font-weight:650;letter-spacing:-.015em}.brand svg{width:32px;height:32px}.bar a{font-size:13px;text-decoration:none}.bar a:hover{text-decoration:underline}.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:6%;align-items:end;padding:clamp(27px,3.1vw,50px) 0 clamp(25px,2.7vw,42px)}h1,h2,h3,p{margin:0}h1,h2,h3{font-weight:400}h1{font:400 clamp(46px,5.05vw,81px)/.98 var(--serif);letter-spacing:-.06em}h1 em{color:var(--green);font-weight:400}.intro{max-width:450px;padding:0 0 3px}.intro p{font-size:clamp(15px,1.17vw,19px);line-height:1.48}.credit{margin-top:13px;color:var(--muted);font:11px/1.4 var(--mono);letter-spacing:.02em}.lab{display:grid;grid-template-columns:minmax(0,1fr) clamp(295px,26.5vw,380px);border:1px solid var(--rule);border-radius:12px;overflow:hidden;background:var(--panel)}.stage{min-width:0;display:flex;flex-direction:column}.stage-top,.stage-bottom{display:flex;align-items:center;gap:12px;padding:11px 18px}.stage-top{justify-content:space-between;flex-wrap:wrap}.stage-bottom{flex-wrap:wrap;justify-content:space-between;border-top:1px solid var(--rule);min-height:51px}.segment{display:inline-flex;gap:2px;padding:3px;border-radius:7px;background:#e8ece2}.segment button,.views button,.icon-btn{background:transparent;font-size:13px;font-weight:600;border-radius:5px;line-height:1.4;padding:7px 12px}.segment button[aria-pressed=true]{color:#f6f9f0;background:var(--green)}.segment button:hover:not([aria-pressed=true]){background:#dce5d8}.icon-btn{color:var(--muted);display:inline-flex;gap:5px;align-items:center;padding:6px}.icon-btn:hover{background:#e8ece2}.icon{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.viewport{position:relative;isolation:isolate;overflow:hidden;flex:1;min-height:clamp(365px,31.1vw,490px);background-color:var(--stage);background-image:radial-gradient(ellipse at 44% 42%,#29514977,transparent 65%),radial-gradient(#53726a77 .65px,transparent .9px);background-size:auto,18px 18px}.viewport canvas{display:block;width:100%;height:100%;position:absolute;inset:0;touch-action:pan-y;cursor:grab}.viewport canvas.dragging{cursor:grabbing;touch-action:none}.views{position:absolute;top:13px;left:15px;display:inline-flex;gap:1px;background:#102e2df0;border:1px solid #5d796c;border-radius:7px;padding:2px}.views button{color:#d7e9db;font-size:12px;padding:5px 9px}.views button[aria-pressed=true]{background:#dfebdb;color:#173c32}.views button:hover:not([aria-pressed=true]){background:#305448}.display-note{position:absolute;right:15px;bottom:13px;color:#dcebdd;background:#102e2de6;border:1px solid #516e62;padding:3px 7px;border-radius:4px;font:11px/1.45 var(--mono);pointer-events:none}.model-legend{position:absolute;left:15px;bottom:15px;display:flex;gap:13px;color:#ecf5e9;font-size:12px;align-items:center;pointer-events:none}.model-legend span,.legend-key{display:inline-flex;align-items:center;gap:6px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--coral);border:1px solid #ffcc9d}.cross{font:bold 16px/1 var(--mono);color:#fbe9a0}.swatch{border:1px solid #819a8c;border-radius:2px;width:57px;height:8px;background:linear-gradient(90deg,#204a48,#75ad85,#f8e5a4)}.tick{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer}.tick input{accent-color:var(--green);width:16px;height:16px;margin:0}.tick:has(input:disabled){opacity:.55;cursor:default}.controls{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.hint{font-size:12px;color:var(--muted)}aside{border-left:1px solid var(--rule);padding:clamp(18px,1.7vw,27px);display:flex;flex-direction:column}h2{font:400 clamp(26px,2.25vw,34px)/1.11 var(--serif);letter-spacing:-.045em}.select-title{font-weight:600;font-size:13px;margin:15px 0 8px;display:flex;justify-content:space-between;gap:6px}.number-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.number-grid button{height:32px;border:1px solid #c6cec0;background:transparent;border-radius:4px;font:14px var(--mono)}.number-grid button:hover{background:#e8eee1}.number-grid button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:white}.number-grid button.is-unstable{box-shadow:inset 0 -3px 0 #d6774c}.readout{margin-top:15px;padding-top:14px;border-top:1px solid var(--rule)}.readout h3{font:400 26px/1.15 var(--serif);letter-spacing:-.035em}.status{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:650;margin:5px 0;color:var(--orange)}.status::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}.status.out{color:var(--green)}.readout p{font-size:14px;line-height:1.46;color:var(--muted)}.value{margin-top:10px;font:13px/1.45 var(--mono);overflow-wrap:anywhere}.follow{display:inline-flex;font-size:13px;font-weight:650;padding:5px 0;background:transparent;color:var(--green);text-decoration:underline;text-underline-offset:3px}.counts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:auto;padding-top:17px;gap:7px}.counts div{border-top:1px solid var(--rule);padding-top:7px}.counts b{display:block;font:400 25px/1.15 var(--serif)}.counts small{color:var(--muted);font-size:12px}.notes{display:grid;grid-template-columns:1.06fr 1fr;gap:clamp(25px,6.5vw,105px);padding:clamp(30px,3.6vw,55px) 0}.notes h2{font-size:clamp(26px,2.1vw,34px);margin-bottom:10px}.notes p{font-size:15px;color:var(--muted);max-width:66ch}.text-link{padding:0;background:none;color:var(--green);font-weight:600;text-decoration:underline;text-underline-offset:3px}.slider-row{display:flex;align-items:center;gap:12px;margin-top:13px;color:var(--ink);font-size:13px}.slider-row input{width:min(200px,44%);accent-color:var(--green)}output{font-family:var(--mono);min-width:56px}.caption{padding:11px 18px;background:#eef1e8;color:#3f584b;border-top:1px solid var(--rule);font-size:13px;line-height:1.45;min-height:41px}.caption strong{color:var(--ink)}.notes article+article{border-left:1px solid var(--rule);padding-left:clamp(20px,3vw,50px)}details{border-top:1px solid var(--rule);padding:15px 0}summary{cursor:pointer;font-weight:600}details p{max-width:95ch;margin:9px 0;color:var(--muted)}footer{display:flex;gap:12px;justify-content:space-between;align-items:center;border-top:1px solid var(--rule);padding:16px 0 27px;color:var(--muted);font-size:12px}.formula{font:13px var(--mono)}[hidden]{display:none!important}
+@media(max-width:900px){.wrap{width:calc(100% - 40px)}.hint{display:none}.hero{grid-template-columns:1.18fr 1fr}.lab{grid-template-columns:minmax(0,1fr) 280px}.viewport{min-height:360px}.notes{gap:26px}.model-legend{gap:8px}.stage-top,.stage-bottom{padding-inline:12px}.stage-bottom{gap:7px}.controls{gap:9px}}
+@media(max-width:720px){.wrap{width:calc(100% - 28px)}.hero{display:block;padding:26px 0 21px}.intro{margin-top:15px;max-width:560px}.credit{margin-top:7px}.lab{display:block}.stage-top .icon-btn span{display:none}.viewport{height:clamp(330px,72vw,420px);min-height:0;flex:auto}.stage-bottom{justify-content:flex-start}.lab aside{border-left:0;border-top:1px solid var(--rule);padding:19px}.counts{max-width:410px}.number-grid{max-width:430px}.notes{display:block;padding:28px 0 16px}.notes article+article{padding:20px 0 0;margin:20px 0 6px;border:0;border-top:1px solid var(--rule)}.bar{min-height:49px}.bar a{font-size:12px}.brand{font-size:14px;gap:6px}.brand svg{width:27px}.display-note{font-size:10px;right:8px;bottom:10px}.model-legend{left:10px;bottom:11px;font-size:11px}.views{top:10px;left:10px}.notes p{font-size:14px}footer{flex-wrap:wrap}}
+@media(max-width:380px){.display-note{bottom:32px}.model-legend{bottom:10px}}
+.readout .measure-note{margin-top:5px;font-size:12px;line-height:1.4}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><div class="brand"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M3 24 12 7 27 4 33 20 23 31 9 30Z" fill="#e0e8d8" stroke="#254e41" stroke-width="1.4"/><path d="m3 24 17-11 7-9M12 7l8 6 3 18m10-11-13-7L9 30" fill="none" stroke="#254e41" stroke-width="1.2"/><circle cx="27" cy="4" r="2.6" fill="#c65f36"/></svg>Geometria dell’equilibrio</div><a href="#note">Nota scientifica ↓</a></div></header>
+<main class="wrap"><section class="hero"><h1>Quattordici vertici.<br><em>Un solo instabile.</em></h1><div class="intro"><p>Bastano 14 vertici per costruire un poliedro convesso omogeneo con una sola punta di equilibrio. Gli esempi precedenti confrontati nel paper ne usano 16 e 18.</p><div class="credit">Claudio Mattioni · Novembre 2026</div></div></section>
+<section class="lab" aria-label="Esploratore del poliedro"><div class="stage">
+<div class="stage-top"><div class="segment" aria-label="Scegli la costruzione" role="group"><button type="button" data-body="0" aria-pressed="true">Esempio a 14</button><button type="button" data-body="1" aria-pressed="false">Candidato a 13</button></div><button type="button" id="reset" class="icon-btn" aria-label="Ripristina la vista" title="Ripristina la vista"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7a6.3 6.3 0 1 1-.1 6M4 2.9V7h4.1"/></svg><span>Ripristina vista</span></button></div>
+<div class="viewport" id="viewport"><canvas id="plot" tabindex="0" aria-label="Modello geometrico. Trascina per ruotare la vista 3D oppure usa le frecce. Seleziona i vertici anche dal pannello di lettura."></canvas>
+<div class="views" role="group" aria-label="Tipo di vista"><button type="button" data-view="volume" aria-pressed="true">3D</button><button type="button" data-view="support" aria-pressed="false">In appoggio</button><button type="button" data-view="thickness" aria-pressed="false">Spessore</button><button type="button" data-view="profile" aria-pressed="false">Profilo</button></div>
+<div class="model-legend" id="legend"></div><div class="display-note" id="display-note"></div></div>
+<div class="stage-bottom"><div class="controls"><label class="tick"><input id="amp" type="checkbox" checked>Amplifica z</label><label class="tick"><input id="arrows" type="checkbox">Frecce testimone</label><label class="tick"><input id="plane" type="checkbox">Piano per il vertice</label></div><span class="hint" id="hint">Trascina per ruotare · Clicca un vertice</span></div>
+<div class="caption" id="caption"></div></div>
+<aside><h2>Esplora i vertici</h2><div class="select-title">Seleziona un vertice</div><div class="number-grid" id="vertices" role="group" aria-label="Vertici del solido"></div>
+<div class="readout" aria-live="polite" aria-atomic="true"><h3 id="vertex-name"></h3><div class="status" id="status"></div><p id="explain"></p><div class="value" id="measure"></div><p class="measure-note">Angoli del solido reale, prima della proiezione e dell’amplificazione grafica.</p><button type="button" id="follow" class="follow"></button></div>
+<div class="counts" aria-label="Equilibri del modello visualizzato" id="counts"></div></aside></section>
+<section class="notes" id="note"><article><h2>Una doppia spirale, senza apice</h2><p>I vertici seguono due bracci che si incontrano in V0. Alzando e abbassando il bordo si concentra più materiale nella parte inferiore della pianta. Il baricentro del volume si sposta quanto basta perché tutti e tredici gli altri vertici abbiano una direzione di fuga. <button type="button" class="text-link" id="show-map">Vedi la mappa dello spessore ↗</button></p></article>
+<article><h2>Quanto si può assottigliare?</h2><p>Nell’esempio a 14, moltiplicando tutte le altezze per uno stesso fattore <i>t</i>, V0 resta l’unico vertice instabile per ogni 0 &lt; <i>t</i> ≤ 1. La proiezione del baricentro rimane ferma. Il cursore applica la contrazione al solido.</p><div class="slider-row"><label for="contraction">Fattore <i>t</i></label><input id="contraction" type="range" min="1" max="100" value="100" step="1" aria-describedby="slider-help"><output for="contraction" id="factor">1,00</output></div><span id="slider-help" class="hint">La contrazione riguarda solo l’esempio a 14 vertici.</span></article></section>
+<details><summary>Il risultato e i dati della demo</summary><p>L’esempio ha 14 vertici, 36 spigoli e 24 facce triangolari. Nelle coordinate originali le facce stabili sono {0, 5, 7} e {0, 6, 13}. Lo spigolo di sella è {6, 7}. La costruzione riduce a 14 il limite superiore rispetto agli esempi a 18 e a 16 vertici confrontati nel manoscritto. La minimalità resta aperta.</p><p>Il candidato a 13 ha due vertici instabili, V0 e V12. È uno degli esiti verificati della ricerca successiva. Per l’esempio originale a 14, fissare dodici dei suoi vertici e aggiungere un tredicesimo punto in qualunque posizione produce almeno due instabili ogni volta che i tredici punti sono tutti estremi. L’esclusione riguarda quella famiglia.</p><p>Le coordinate razionali, le facce, i baricentri volumetrici e i testimoni dei due modelli sono incorporati in questa pagina. Per le disuguaglianze mostrate il segno è calcolato con interi esatti. La grafica usa proiezioni numeriche. L’opzione «Amplifica z» cambia soltanto la scala del disegno. Le frecce testimone indicano spigoli con prodotto scalare positivo. Nella mappa dello spessore, la freccia da L a C mostra lo spostamento del baricentro.</p></details>
+<footer><span>Claudio Mattioni · <cite>A homogeneous mono-unstable polyhedron with fourteen vertices</cite></span><span>Dati e testo · CC BY 4.0</span></footer></main><noscript>Per ruotare i solidi e ispezionare i vertici, attiva JavaScript nel browser.</noscript>
+<script type="application/json" id="geometry">[{"points":[["-4","1000","-1"],["-477","638","-3"],["-633","344","-2"],["-657","62","-4"],["-577","-182","5"],["-432","-355","-11"],["-242","-454","13"],["181","-490","-12"],["359","-426","12"],["518","-295","-6"],["630","-103","5"],["670","128","3"],["626","374","2"],["474","636","2"]],"faces":[[1,0,5],[1,6,0],[5,0,7],[6,13,0],[0,9,7],[0,13,9],[3,2,1],[2,4,1],[3,1,5],[4,6,1],[3,4,2],[3,5,4],[4,5,6],[5,7,6],[6,7,8],[6,8,13],[7,9,8],[8,9,10],[8,10,11],[8,11,12],[8,12,13],[9,11,10],[9,12,11],[13,12,9]],"centroid":["-135509395/51679332","87837359/90438831","1717399/25839666"],"unstable":[0],"stable":[[5,0,7],[6,13,0]],"saddle":[[6,7]],"witness":[null,0,1,2,3,4,5,8,9,10,11,12,13,0],"W":"361755324","C":["-948565765","351349436","24043586"],"hash":"86f750b72a72a1e820ac13a9c4be4d8353d474ef6eb97bfae3f5ec54d409447e"},{"points":[["1451501101/1250000000","717338057/2000000000","-146562337/10000000000"],["234503253/200000000","166851513/500000000","-15238779/1000000000"],["229684703/200000000","-227754209/1000000000","-13539743/500000000"],["187419591/200000000","-662900423/1000000000","-30716281/1000000000"],["76046087/125000000","-475011857/500000000","-92181/3125000"],["1254617639/10000000000","-10729982737/10000000000","-3320933/200000000"],["-15961203/125000000","-65852669/62500000","-530663/40000000"],["-3875782851/5000000000","-3529766671/5000000000","79102441/5000000000"],["-1139996901/1250000000","-2531227143/5000000000","196715561/10000000000"],["-5412525423/5000000000","-94443039/10000000000","380332553/10000000000"],["-10173394933/10000000000","800453559/2000000000","219961259/5000000000"],["-91477757/125000000","424284397/500000000","464117/10000000"],["-255169703/1000000000","578328577/500000000","20116339/500000000"]],"faces":[[2,0,1],[12,1,0],[4,0,2],[6,0,4],[12,0,6],[3,2,1],[5,3,1],[7,5,1],[7,1,12],[4,2,3],[5,4,3],[6,4,5],[7,6,5],[8,6,7],[8,12,6],[9,8,7],[9,7,11],[7,12,11],[9,10,8],[10,11,8],[8,11,12],[9,11,10]],"centroid":["-156466062184050924288243712991599016131/1535070630468076802994754358840000000000","-93854061686747589540605916423780538253/383767657617019200748688589710000000000","1109501710794964423726028071736524777/191883828808509600374344294855000000000"],"unstable":[0,12],"stable":[[12,0,6],[7,1,12]],"saddle":[[0,12],[6,7]],"witness":[null,0,1,2,3,4,5,8,9,10,11,12,null],"hash":"d8a7d393e003ec9e2b0bcd058f4c7b7e162f99d863624b7b8267255552068203"}]</script>
+<script>
+"use strict";
+const el = id => document.getElementById(id);
+const canvas = el("plot"), ctx = canvas.getContext("2d");
+const dot = (a,b) => a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
+const sub = (a,b) => a.map((v,k)=>v-b[k]);
+const cross = (a,b) => [a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+const mul = (a,k) => a.map(v=>v*k);
+const unit = a => mul(a,1/Math.hypot(...a));
+const fmt = (v,n=1) => v.toLocaleString("it-IT",{minimumFractionDigits:n,maximumFractionDigits:n});
+function fraction(s) {
+  const [n,d="1"] = s.split("/");
+  return [BigInt(n), BigInt(d)];
+}
+function gcd(a,b) {while (b) [a,b]=[b,a%b]; return a;}
+function loadModel(raw) {
+  const fractions=[...raw.points,raw.centroid].map(p=>p.map(fraction));
+  const den=fractions.flat().reduce((m,p)=>m/gcd(m,p[1])*p[1],1n);
+  const integer=fractions.map(p=>p.map(([n,d])=>n*(den/d)));
+  const floating=fractions.map(p=>p.map(([n,d])=>Number(n)/Number(d)));
+  const points=floating.slice(0,-1), c=floating.at(-1);
+  const lo=[0,1,2].map(k=>Math.min(...points.map(p=>p[k])));
+  const hi=[0,1,2].map(k=>Math.max(...points.map(p=>p[k])));
+  const origin=lo.map((v,k)=>(v+hi[k])/2), span=Math.max(hi[0]-lo[0],hi[1]-lo[1]);
+  const edges=new Map(), adj=points.map(()=>[]);
+  for(const face of raw.faces) for(let k=0;k<3;k++){
+    const i=face[k],j=face[(k+1)%3],key=[Math.min(i,j),Math.max(i,j)].join("-");
+    if(!edges.has(key)){edges.set(key,[i,j]);adj[i].push(j);adj[j].push(i);}
+  }
+  // The upward-facing facets tile the projected footprint once.
+  let area2=0;
+  const sum=[0,0];
+  for(const f of raw.faces){
+    const [a,b,d]=f.map(i=>points[i]),weight=cross(sub(b,a),sub(d,a))[2];
+    if(weight<=0)continue;
+    area2+=weight;
+    for(let k=0;k<2;k++)sum[k]+=weight*(a[k]+b[k]+d[k])/3;
+  }
+  const lamina=[sum[0]/area2,sum[1]/area2,0];
+  return {...raw, integer, points, c, lo, hi, origin, span, adj, lamina, edges:[...edges.values()]};
+}
+const models=JSON.parse(el("geometry").textContent).map(loadModel);
+let body=0, view="volume", active=0, factor=100, yaw=.53, elevation=.62, analysis;
+let hits=[],frame=0,pointer=null,hover=null,extent={w:0,h:0};
+const model=()=>models[body];
+const contraction=()=>body===0?factor/100:1;
+const amplify=()=>el("amp").checked?(body===0?18:5):1;
+function classify(){
+  const m=model(), ratio=BigInt(body===0?factor:100);
+  const compact=m.integer.map(([x,y,z])=>[x*100n,y*100n,z*ratio]);
+  const c=compact.at(-1),p=compact.slice(0,-1);
+  const rad=p.map(v=>sub(v,c));
+  const products=p.map((v,i)=>m.adj[i].map(j=>dot(sub(p[j],v),rad[i])));
+  const unstable=products.map(row=>row.every(v=>v<0n));
+  let stable=0,saddles=0;
+  for(const face of m.faces){
+    const [a,b,d]=face.map(i=>p[i]),n=cross(sub(b,a),sub(d,a)),N=dot(n,n),h=dot(n,sub(a,c));
+    if(face.every((i,k)=>{
+      const j=face[(k+1)%3],foot=sub(c,p[i]).map((x,l)=>N*x+h*n[l]);
+      return dot(n,cross(sub(p[j],p[i]),foot))>0n;
+    }))stable++;
+  }
+  for(const [i,j] of m.edges){
+    const e=sub(p[j],p[i]),N=dot(e,e),tn=dot(sub(c,p[i]),e);
+    if(tn<=0n||tn>=N)continue;
+    const outward=rad[i].map((x,k)=>N*x+tn*e[k]);
+    if(p.every((v,k)=>k===i||k===j||dot(sub(v,p[i]),outward)<0n))saddles++;
+  }
+  for(let i=0;i<p.length;i++){
+    const j=m.witness[i];
+    if(unstable[i]!==m.unstable.includes(i) || (!unstable[i]&&(j===null||!m.adj[i].includes(j)||dot(sub(p[j],p[i]),rad[i])<=0n)))
+      throw Error("Dati incompatibili con il certificato al vertice "+i);
+  }
+  if((body===1||factor===100)&&(stable!==m.stable.length||saddles!==m.saddle.length))
+    throw Error("Conteggi delle facce o degli spigoli incompatibili");
+  return {unstable,stable,saddles};
+}
+function angle(i,j){
+  const m=model();
+  const a=unit(physical(sub(m.points[i],m.c))),b=unit(physical(sub(m.points[j],m.points[i])));
+  return Math.acos(Math.max(-1,Math.min(1,dot(a,b))))*180/Math.PI;
+}
+function physical(p){return [p[0],p[1],p[2]*contraction()];}
+function radialDirection(){return unit(sub(physical(model().points[active]),physical(model().c)));}
+function refreshControls(){
+  document.querySelectorAll("[data-body]").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.body===body)));
+  document.querySelectorAll("[data-view]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.view===view)));
+  el("amp").disabled=view==="thickness"||view==="support";
+  el("plane").disabled=view==="thickness"||view==="support";
+  el("contraction").disabled=body!==0;
+  el("factor").textContent=body===0?fmt(contraction(),2):"—";
+  el("hint").textContent=view==="volume"?"Trascina per ruotare · Clicca un vertice":"Clicca un vertice";
+  canvas.style.touchAction=view==="volume"?"none":"pan-y";
+  el("legend").innerHTML=view==="thickness"?'<span>Più sottile</span><i class="swatch"></i><span>Più spesso</span>':'<span><i class="dot"></i> Instabile</span><span><i class="cross">+</i> Baricentro</span>';
+  const scaleLabel=view==="thickness"?"Pianta xy":view==="support"?"Scala reale":"Scala z ×"+amplify();
+  el("display-note").textContent=scaleLabel+" · t = "+fmt(contraction(),2);
+  let note="";
+  if(view==="thickness"){
+    note=body===0?"La losanga L è il baricentro della lamina piana uniforme. Il volume più spesso in basso sposta il baricentro da L alla croce C. Il colore misura lo spessore relativo.":"Il colore mostra lo spessore relativo del candidato. Il segno + indica la proiezione del baricentro del volume.";
+  }else if(view==="support"){
+    const j=model().witness[active];
+    if(j===null){
+      note="V"+active+" è sotto il baricentro. Il resto del solido è interamente sopra il piano orizzontale e il contatto avviene solo sulla punta.";
+    }else{
+      const height=dot(sub(physical(model().points[j]),physical(model().points[active])),radialDirection());
+      note="Con il baricentro sulla verticale di V"+active+", V"+j+" scende di "+height.toLocaleString("it-IT",{maximumSignificantDigits:4})+" unità sotto il piano. Questo impedisce l’appoggio sulla punta, anche quando lo scarto è più piccolo di un pixel.";
+    }
+  }else if(el("plane").checked){
+    note="Il piano per V"+active+" è perpendicolare al raggio dal baricentro. "+(analysis.unstable[active]?"Tocca il solido soltanto in questo vertice.":"Lo spigolo verso V"+model().witness[active]+" oltrepassa il piano.");
+  }else if(view==="profile"){
+    note="Vista lungo l’asse y. Osserva come le altezze dei vertici aprono e chiudono lo spessore del solido.";
+  }else if(body===0){
+    note="V0 è l’unica punta di equilibrio. Seleziona uno degli altri tredici vertici per vedere lo spigolo che lo esclude.";
+  }else{
+    note="In questo candidato verificato restano due punte di equilibrio, V0 e V12. L’esistenza di un esempio a 13 con una sola punta resta aperta.";
+  }
+  el("caption").textContent=note;
+}
+function buildVertexButtons(){
+  const grid=el("vertices");grid.replaceChildren();
+  model().points.forEach((p,i)=>{
+    const b=document.createElement("button");b.type="button";b.textContent=i;b.dataset.vertex=i;
+    b.addEventListener("click",()=>selectVertex(i));grid.append(b);
+  });
+}
+function updateInspector(){
+  const m=model(), u=analysis.unstable[active],j=m.witness[active];
+  const angles=m.adj[active].map(k=>angle(active,k));
+  el("vertex-name").textContent="Vertice V"+active;
+  el("status").textContent=u?"Equilibrio instabile":"Equilibrio escluso";
+  el("status").classList.toggle("out",!u);
+  el("explain").textContent=u
+    ?"Tutti i "+m.adj[active].length+" spigoli formano un angolo ottuso con il raggio che arriva dal baricentro. Il piano perpendicolare al raggio sostiene il solido sulla punta. L’equilibrio è instabile rispetto a piccole inclinazioni."
+    :"Lo spigolo da V"+active+" a V"+j+" forma un angolo acuto con il raggio che arriva dal baricentro. Il solido attraversa il piano perpendicolare al raggio in V"+active+".";
+  el("measure").textContent=u?"Angolo minimo  "+fmt(Math.min(...angles),3)+"°":"Angolo V"+active+" → V"+j+"   "+fmt(angle(active,j),5)+"°";
+  el("follow").textContent=u?("Esamina V"+(body===0?6:1)+" →"):("Segui lo spigolo fino a V"+j+" →");
+  const U=analysis.unstable.filter(Boolean).length;
+  el("counts").innerHTML=[[U,U===1?"instabile":"instabili"],[analysis.stable,"stabili"],[analysis.saddles,analysis.saddles===1?"sella":"selle"]].map(([n,s])=>"<div><b>"+n+"</b><small>"+s+"</small></div>").join("");
+  document.querySelectorAll("[data-vertex]").forEach(b=>{
+    const i=+b.dataset.vertex;b.setAttribute("aria-pressed",String(i===active));
+    b.setAttribute("aria-label","Vertice "+i+(analysis.unstable[i]?", instabile":""));
+    b.classList.toggle("is-unstable",analysis.unstable[i]);
+  });
+  refreshControls(); requestDraw();
+}
+function selectVertex(i){active=i;hover=null;updateInspector();}
+function changeBody(index){
+  body=index;active=0;hover=null;analysis=classify();buildVertexButtons();updateInspector();
+}
+function changeView(next){
+  view=next;hover=null;refreshControls();requestDraw();
+}
+function requestDraw(){if(!frame)frame=requestAnimationFrame(()=>{frame=0;draw();});}
+function resetCamera(){yaw=.53;elevation=.62;hover=null;changeView("volume");}
+function pointsOnScreen(w,h) {
+  const m=model(), az=view==="profile"||view==="thickness"?0:yaw;
+  const elev=view==="profile"?0:view==="thickness"?Math.PI/2:elevation;
+  const ca=Math.cos(az),sa=Math.sin(az),ce=Math.cos(elev),se=Math.sin(elev);
+  const zScale=view==="thickness"?1:amplify(),t=contraction();
+  const obj=p=>[(p[0]-m.origin[0])/m.span,(p[1]-m.origin[1])/m.span,(p[2]-m.origin[2])*t*zScale/m.span];
+  const screen=v=>{
+    const x=v[0]*ca-v[1]*sa,y=v[0]*sa+v[1]*ca;
+    return [x,-y*se-v[2]*ce,-y*ce+v[2]*se];
+  };
+  // Fixed camera magnification during rotation and contraction, including profile view.
+  const raw=m.points.map(obj),screenRaw=raw.map(screen);
+  const bottomInset=w<=352?24:0;
+  const safeH=h-100-bottomInset,safeW=w-62;
+  // Use a fixed per-view framing reference so toggling thickness cannot cancel its visible effect.
+  const baseHeight=elev,baseAz=az;
+  const ref=m.points.map(p=>{
+    const u=(p[0]-m.origin[0])/m.span,v=(p[1]-m.origin[1])/m.span,z=(p[2]-m.origin[2])*(body===0?18:5)/m.span;
+    return [u*Math.cos(baseAz)-v*Math.sin(baseAz),-(u*Math.sin(baseAz)+v*Math.cos(baseAz))*Math.sin(baseHeight)-z*Math.cos(baseHeight)];
+  });
+  const lower=[0,1].map(k=>Math.min(...ref.map(q=>q[k]))),upper=[0,1].map(k=>Math.max(...ref.map(q=>q[k])));
+  const fixedScale=Math.min(safeW/(upper[0]-lower[0]),safeH/(upper[1]-lower[1]),Math.min(w,h)*1.48);
+  const ox=w*.50-(lower[0]+upper[0])*.5*fixedScale,oy=(h-bottomInset)*.52-(lower[1]+upper[1])*.5*fixedScale;
+  const pixel=q=>[ox+q[0]*fixedScale,oy+q[1]*fixedScale,q[2]];
+  return {pos:screenRaw.map(pixel),raw,project:p=>pixel(screen(obj(p))),ox,oy,scale:fixedScale};
+}
+function supportedOrientation(w,h){
+  const m=model(),r=radialDirection(),right=unit(cross([0,0,1],r)),toward=cross(r,right);
+  const origin=physical(m.points[active]),raw=m.points.map(physical);
+  const toScreen=p=>{
+    const d=sub(p,origin);return [dot(d,right),dot(d,r),dot(d,toward)];
+  };
+  const q=raw.map(toScreen);
+  const lo=[0,1].map(k=>Math.min(...q.map(v=>v[k]))),hi=[0,1].map(k=>Math.max(...q.map(v=>v[k])));
+  const bottomInset=w<=352?24:0;
+  const scale=Math.min((w-70)/(hi[0]-lo[0]),(h-112-bottomInset)/(hi[1]-lo[1]));
+  const ox=w/2-(lo[0]+hi[0])*.5*scale,oy=(h-bottomInset)*.51-(lo[1]+hi[1])*.5*scale;
+  const pixel=v=>[ox+v[0]*scale,oy+v[1]*scale,v[2]];
+  return {raw,pos:q.map(pixel),project:p=>pixel(toScreen(physical(p))),ground:oy};
+}
+function line(a,b,color,width=1,dashes=[]){
+  ctx.save();ctx.strokeStyle=color;ctx.lineWidth=width;ctx.setLineDash(dashes);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();ctx.restore();
+}
+function polygon(points,fill,stroke,width=1){
+  ctx.beginPath();ctx.moveTo(points[0][0],points[0][1]);for(const p of points.slice(1))ctx.lineTo(p[0],p[1]);ctx.closePath();
+  if(fill){ctx.fillStyle=fill;ctx.fill();}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke();}
+}
+function circle(p,r,fill,stroke,width=1){
+  ctx.beginPath();ctx.arc(p[0],p[1],r,0,2*Math.PI);if(fill){ctx.fillStyle=fill;ctx.fill();}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke();}
+}
+function arrow(a,b,color,width=2){
+  const x=b[0]-a[0],y=b[1]-a[1],d=Math.hypot(x,y);if(d<14)return;
+  const dx=x/d,dy=y/d, l=Math.max(5,Math.min(9,d*.17));
+  const start=[a[0]+dx*5,a[1]+dy*5],tip=[b[0]-dx*6,b[1]-dy*6],base=[tip[0]-dx*l,tip[1]-dy*l];
+  line(start,base,color,width);polygon([tip,[base[0]-dy*l*.45,base[1]+dx*l*.45],[base[0]+dy*l*.45,base[1]-dx*l*.45]],color);
+}
+function label(p,text,colour,dx,dy){
+  ctx.font="600 12px Consolas, monospace";const tw=ctx.measureText(text).width+10;
+  const x=Math.min(extent.w-tw-4,Math.max(3,p[0]+dx-(dx<0?tw:0))),y=Math.min(extent.h-12,Math.max(14,p[1]+dy));
+  ctx.fillStyle="#12322fec";ctx.fillRect(x,y-10,tw,17);ctx.fillStyle=colour;ctx.textBaseline="middle";ctx.fillText(text,x+5,y-1);
+}
+function getThickness(m){
+  if(m.mapImage)return m.mapImage;
+  const xmin=m.lo[0],ymin=m.lo[1],xmax=m.hi[0],ymax=m.hi[1];
+  const w=Math.ceil(450*(xmax-xmin)/m.span),h=Math.ceil(450*(ymax-ymin)/m.span);
+  const top=new Float64Array(w*h).fill(-Infinity),bottom=new Float64Array(w*h).fill(Infinity);
+  const pix=p=>[(p[0]-xmin)/(xmax-xmin)*w,(ymax-p[1])/(ymax-ymin)*h,p[2]];
+  for(const f of m.faces){
+    const [a,b,c]=f.map(i=>pix(m.points[i]));
+    const den=(b[1]-c[1])*(a[0]-c[0])+(c[0]-b[0])*(a[1]-c[1]);if(Math.abs(den)<1e-14)continue;
+    const x0=Math.max(0,Math.floor(Math.min(a[0],b[0],c[0]))),x1=Math.min(w-1,Math.ceil(Math.max(a[0],b[0],c[0])));
+    const y0=Math.max(0,Math.floor(Math.min(a[1],b[1],c[1]))),y1=Math.min(h-1,Math.ceil(Math.max(a[1],b[1],c[1])));
+    for(let y=y0;y<=y1;y++)for(let x=x0;x<=x1;x++){
+      const dx=x+.5-c[0],dy=y+.5-c[1],u=((b[1]-c[1])*dx+(c[0]-b[0])*dy)/den;
+      const v=((c[1]-a[1])*dx+(a[0]-c[0])*dy)/den,t=1-u-v;
+      if(Math.min(u,v,t)<-1e-9)continue;
+      const z=u*a[2]+v*b[2]+t*c[2],idx=y*w+x;
+      top[idx]=Math.max(top[idx],z);bottom[idx]=Math.min(bottom[idx],z);
+    }
+  }
+  let max=0;for(let i=0;i<w*h;i++)max=Math.max(max,top[i]-bottom[i]);
+  const off=document.createElement("canvas");off.width=w;off.height=h;
+  const g=off.getContext("2d"),img=g.createImageData(w,h),stops=[[32,74,72],[62,122,102],[118,174,133],[195,209,145],[248,229,164]];
+  for(let i=0;i<w*h;i++){
+    if(!Number.isFinite(bottom[i]))continue;
+    const pos=Math.max(0,Math.min(4,(top[i]-bottom[i])/max*4)),j=Math.min(3,Math.floor(pos)),f=pos-j;
+    for(let k=0;k<3;k++)img.data[4*i+k]=stops[j][k]*(1-f)+stops[j+1][k]*f;
+    img.data[4*i+3]=255;
+  }
+  g.putImageData(img,0,0);m.mapImage=off;return off;
+}
+function drawPlane(info){
+  const m=model(),p=m.points[active],t=contraction(),zScale=amplify();
+  const n=unit([(p[0]-m.c[0]),p[1]-m.c[1],(p[2]-m.c[2])*t]);
+  const u=unit(cross(n,Math.abs(n[2])<.9?[0,0,1]:[0,1,0])),v=unit(cross(n,u));
+  const reach=m.span*.20,vReach=reach/Math.max(1,zScale);
+  const corners=[[-1,-1],[1,-1],[1,1],[-1,1]].map(([a,b])=>{
+    const delta=u.map((val,k)=>a*reach*val+b*vReach*v[k]);
+    return info.project(p.map((val,k)=>val+delta[k]/(k===2?t:1)));
+  });
+  polygon(corners,"#ffcf9e30","#ffbf8d",1.2);
+}
+function draw(){
+  const box=canvas.getBoundingClientRect();if(!box.width||!box.height)return;
+  const w=box.width,h=box.height,dpr=Math.min(2,window.devicePixelRatio||1);
+  if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}
+  ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);ctx.lineJoin="round";ctx.lineCap="round";extent={w,h};
+  const m=model(),info=view==="support"?supportedOrientation(w,h):pointsOnScreen(w,h),{pos,raw}=info,c=info.project(m.c);
+  if(view==="support"){
+    const gy=info.ground;
+    ctx.fillStyle="#b5c4a41c";ctx.fillRect(0,gy,w,h-gy);
+    for(let x=-10;x<w+12;x+=14)line([x,gy],[x-8,gy+8],"#c0d7bc60",1);
+    line([0,gy],[w,gy],"#d0dbc4",1.1);
+  }
+  if(view==="thickness"){
+    const a=info.project([m.lo[0],m.hi[1],0]),b=info.project([m.hi[0],m.lo[1],0]);
+    ctx.drawImage(getThickness(m),a[0],a[1],b[0]-a[0],b[1]-a[1]);
+    for(const f of m.faces){
+      const n=cross(sub(m.points[f[1]],m.points[f[0]]),sub(m.points[f[2]],m.points[f[0]]));
+      if(n[2]>0)polygon(f.map(i=>pos[i]),null,"#e7ffdc38",.8);
+    }
+  }else{
+    const order=m.faces.map((f,i)=>({f,i,depth:f.reduce((s,k)=>s+pos[k][2],0)})).sort((a,b)=>a.depth-b.depth);
+    for(const {f,i} of order){
+      const projected=f.map(k=>pos[k]);
+      const [pa,pb,pc]=projected;
+      if((pb[0]-pa[0])*(pc[1]-pa[1])-(pb[1]-pa[1])*(pc[0]-pa[0])>=0)continue;
+      const [a,b,d]=f.map(k=>raw[k]);const normal=unit(cross(sub(b,a),sub(d,a)));
+      const light=(dot(normal,[-.43,-.35,.83])*.5+.5);
+      const lum=31+light*41+((i%5)-2)*.9;
+      polygon(projected,"hsl(153,25%,"+lum+"%)","#244a40",1.05);
+    }
+    if(view!=="support"&&el("plane").checked)drawPlane(info);
+  }
+  line(c,pos[active],"#203c36",2.4,[5,4]);line(c,pos[active],"#fae8a8",1.2,[5,4]);
+  const selectedTarget=m.witness[active];
+  if(el("arrows").checked)m.witness.forEach((j,i)=>{
+    if(j===null)return;
+    arrow(pos[i],pos[j],"#143e35",4.3);arrow(pos[i],pos[j],"#e1f5bf",1.6);
+  });
+  pos.forEach((p,i)=>{circle(p,2.8,"#b3d8b9","#254e42",1.1);});
+  if(selectedTarget!==null){arrow(pos[active],pos[selectedTarget],"#fff4bc",3.2);circle(pos[selectedTarget],4,"#ffefb6","#284a3c",1.2);}
+  m.unstable.forEach(i=>{circle(pos[i],7.9,"#d476482b","#ffbb89",1.2);circle(pos[i],4.5,"#ff9664","#253a30",1);});
+  if(!analysis.unstable[active]){circle(pos[active],6,"#fbecb2","#183e34",1.7);}
+  if(hover!==null&&hover!==active)circle(pos[hover],6,null,"#fff6cf",1.4);
+  if(view==="thickness"&&body===0){
+    const l=info.project(m.lamina),x=l[0],y=l[1];
+    arrow(l,c,"#273e38",2.4);
+    polygon([[x,y-4],[x+4,y],[x,y+4],[x-4,y]],"#e0f9ed","#25463b",1);
+    label(l,"L","#d9fff1",-9,-6);
+  }
+  circle(c,6,"#203c36bb","#fcebb0",1);line([c[0]-8,c[1]],[c[0]+8,c[1]],"#fcebb0",1.5);line([c[0],c[1]-8],[c[0],c[1]+8],"#fcebb0",1.5);
+  label(c,"C","#ffeeaf",9,10);
+  const labels=new Set([...m.unstable,active]);if(selectedTarget!==null)labels.add(selectedTarget);if(hover!==null)labels.add(hover);
+  for(const i of labels){
+    const p=pos[i],l=p[0]<c[0]?-9:9,dy=p[1]<c[1]?-8:11;
+    label(p,"V"+i,analysis.unstable[i]?"#ffb68a":"#fff2c8",l,dy);
+  }
+  hits=pos;
+}
+function nearest(x,y){
+  let best=null,dist=17;
+  hits.forEach((p,i)=>{const d=Math.hypot(p[0]-x,p[1]-y);if(d<dist){best=i;dist=d;}});
+  return best;
+}
+function local(e){const b=canvas.getBoundingClientRect();return [e.clientX-b.left,e.clientY-b.top];}
+canvas.addEventListener("pointerdown",e=>{
+  if(pointer||e.button!==0)return;
+  const [x,y]=local(e);pointer={id:e.pointerId,x,y,lastX:x,lastY:y,drag:false};canvas.setPointerCapture(e.pointerId);
+});
+canvas.addEventListener("pointermove",e=>{
+  const [x,y]=local(e);
+  if(!pointer){const i=nearest(x,y);if(i!==hover){hover=i;requestDraw();}return;}
+  if(pointer.id!==e.pointerId)return;
+  if(Math.hypot(x-pointer.x,y-pointer.y)>4)pointer.drag=true;
+  if(pointer.drag&&view==="volume"){
+    yaw+=(x-pointer.lastX)*.012;elevation=Math.max(-1.52,Math.min(1.52,elevation+(y-pointer.lastY)*.012));
+    canvas.classList.add("dragging");hover=null;requestDraw();
+  }
+  pointer.lastX=x;pointer.lastY=y;
+});
+canvas.addEventListener("pointerup",e=>{
+  if(!pointer||pointer.id!==e.pointerId)return;
+  if(!pointer.drag){const i=nearest(...local(e));if(i!==null)selectVertex(i);}
+  pointer=null;canvas.classList.remove("dragging");
+});
+canvas.addEventListener("pointercancel",()=>{pointer=null;canvas.classList.remove("dragging");});
+canvas.addEventListener("pointerleave",()=>{if(!pointer){hover=null;requestDraw();}});
+canvas.addEventListener("keydown",e=>{
+  if(view!=="volume"||!["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(e.key))return;
+  e.preventDefault();yaw+=e.key==="ArrowLeft"?-.12:e.key==="ArrowRight"?.12:0;
+  elevation=Math.max(-1.52,Math.min(1.52,elevation+(e.key==="ArrowUp"?.12:e.key==="ArrowDown"?-.12:0)));requestDraw();
+});
+document.querySelectorAll("[data-body]").forEach(b=>b.onclick=()=>changeBody(+b.dataset.body));
+document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>changeView(b.dataset.view));
+for(const id of ["amp","arrows","plane"])el(id).onchange=()=>{refreshControls();requestDraw();};
+el("follow").onclick=()=>{const j=model().witness[active];selectVertex(j===null?(body===0?6:1):j);};
+el("reset").onclick=()=>{el("amp").checked=true;el("plane").checked=false;el("arrows").checked=false;resetCamera();};
+el("contraction").oninput=e=>{factor=+e.target.value;analysis=classify();updateInspector();};
+el("show-map").onclick=()=>{changeBody(0);changeView("thickness");el("viewport").scrollIntoView({block:"center"});};
+new ResizeObserver(requestDraw).observe(el("viewport"));changeBody(0);
+</script>
+</body></html>

@@ -8,8 +8,10 @@ volume centroid. Every positive vertical contraction by a factor at most one
 also has exactly one unstable equilibrium. The full S/H census is asserted
 for the supplied integer example, not for every contraction.
 
-Start with the [paper PDF](paper/latex/main.pdf), its
-[Markdown companion](paper/paper.md), or the [review guide](REVIEW_GUIDE.md).
+Read the [paper PDF](paper/latex/main.pdf) or open the
+[interactive demo (English)](https://claude.ai/artifact/FLTsDzvhxB97iQ1TL2zFbP)
+to see why V0 is the only vertex on which the solid can balance.
+The [Markdown companion](paper/paper.md) and [review guide](REVIEW_GUIDE.md) are also available.
 
 ## Reproduce the proof
 
